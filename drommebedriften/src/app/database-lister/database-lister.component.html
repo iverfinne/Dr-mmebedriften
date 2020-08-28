@@ -1,0 +1,50 @@
+<div class="container">
+
+    <!-- Søke-område -->
+    <div class="sok-container">
+        <mat-icon style="z-index: 1; position: absolute; left: 70px; color: gray;">search</mat-icon>
+        <input #sok type="text" placeholder="Søk etter bedrift, bransje ..." (input)="eitSokAvBedrifter(sok)">
+        <div class="visning-val">
+            <div #vi0 class="aktiv" (click)="visning(vi0, 0)">
+                <mat-icon>view_comfy</mat-icon>
+            </div>
+            <div #vi1 (click)="visning(vi1, 1)">
+                <mat-icon>format_list_bulleted</mat-icon>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alle bedrifter ramset opp -->
+    <div [@bedrifter]="bedrifterVisningsType" #bedrifterFliserContainer class="bedrifter-fliser-container">
+        <!-- Ein bedrift -->
+        <ng-container *ngIf="alleBedrifterVisning else lasterInn">
+            <ng-container *ngIf="alleBedrifterVisning.length > 0 else nullResultatSok">
+                <div [@bedriftFlis]="bedrifterVisningsType" class="flis" *ngFor="let bedrift of alleBedrifterVisning">
+                    <div class="logo">
+                        <div *ngIf="bedrift.logoLink else broken"
+                            [style.backgroundImage]="'url(' + bedrift.logoLink + ')'">
+                        </div>
+                        <ng-template #broken>
+                            <mat-icon>broken_image</mat-icon>
+                        </ng-template>
+                    </div>
+                    <div class="annet">
+                        <h2 [innerHTML]="bedrift.namn" style="margin: 0 0 5px"></h2>
+                        <p [innerHTML]="bedrift.beskriving1"></p>
+
+                        <button mat-raised-button color="primary" [routerLink]="bedrift.ruterLink">
+                            Koble til
+                        </button>
+                    </div>
+                </div>
+            </ng-container>
+        </ng-container>
+        <ng-template #lasterInn>
+            <mat-spinner></mat-spinner>
+        </ng-template>
+        <ng-template #nullResultatSok>
+            Ingen treff på ditt søk "{{ sok.value.trim() }}".
+        </ng-template>
+    </div>
+
+</div>

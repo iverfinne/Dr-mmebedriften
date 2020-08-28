@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+    width: calc(500px + 1px * 2);
+    height: calc(470px + 1px * 2);
+    background-color: white;
+    opacity: 0.98;
+    margin: auto;
+    overflow: hidden;
+
+    iframe {
+        height: calc(100% - 30px - 2px * 2);
+        width: calc(100% - 2px * 2);
+        margin: 0;
+        overflow: hidden;
+
+        border: 2px solid rgba(122, 122, 122, 0.11);
+        border-radius: 10px;
+
+        padding-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+}
