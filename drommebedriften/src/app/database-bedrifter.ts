@@ -8,7 +8,7 @@ const LocalPaths = {
 };
 
 // Alle Bedrifter - Lokal database
-export const BedrifterTest: Bedrift[] = [
+/* export const BedrifterTest: Bedrift[] = [
     {
         namn: 'DNB',
         ruterLink: `${LocalPaths.path_ruterLink1}dnb`,
@@ -27,7 +27,7 @@ export const BedrifterTest: Bedrift[] = [
             }
         ]
     }
-];
+]; */
 export const Bedrifter: Bedrift[] = [
     {
         namn: 'DNV GL',
