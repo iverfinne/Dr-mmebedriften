@@ -149,6 +149,29 @@
     }
 }
 
+// Tablet
+@media screen and (max-width: 768px) {
+    .container {
+        .sok-container {
+            width: 100%;
+            height: 70px;
+            margin-bottom: -20px;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            >input {
+                width: calc(100% - 50px);
+            }
+
+            .visning-val {
+                display: none;
+            }
+        }
+    }
+}
+
 // Medium mobil
 @media screen and (max-width: 376px) {
     .container {
