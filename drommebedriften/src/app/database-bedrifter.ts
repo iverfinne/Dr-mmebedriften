@@ -72,5 +72,16 @@ export const Bedrifter: Bedrift[] = [
         linktekst1: 0,
         link1: 'https://www.regjeringen.no/no/dep/fin/id216/',
         tilleggskort: []
+    },
+    {
+        namn: 'Sjøfartsdirektoratet',
+        ruterLink: `${LocalPaths.path_ruterLink1}Sjøfartsdirektoratet`,
+        logoLink: `${LocalPaths.path_bedriftLogo}Sjøfartsdirektoratet.png`,
+        framsidebileteLink: null,
+        beskriving1: `Sjøfartsdirektoratet er eit forvaltningsorgan under Nærings- og fiskeridepartementet og Klima- og miljødepartementet med myndigheitsansvar overfor norskregistrerte skip og utanlandske skip som går inn til norske hamner.`,
+        beskriving2: `Sjøfartsdirektoratet er eit forvaltningsorgan under Nærings- og fiskeridepartementet og Klima- og miljødepartementet med myndigheitsansvar overfor norskregistrerte skip og utanlandske skip som går inn til norske hamner.`,
+        linktekst1: 0,
+        link1: 'https://www.sdir.no/',
+        tilleggskort: []
     }
 ];
