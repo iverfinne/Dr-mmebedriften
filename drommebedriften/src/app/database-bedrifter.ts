@@ -61,5 +61,16 @@ export const Bedrifter: Bedrift[] = [
         linktekst1: 0,
         link1: 'https://www.yara.no/',
         tilleggskort: []
+    },
+    {
+        namn: 'Finansdepartementet',
+        ruterLink: `${LocalPaths.path_ruterLink1}Finansdepartementet`,
+        logoLink: `${LocalPaths.path_bedriftLogo}Finansdepartementet.png`,
+        framsidebileteLink: null,
+        beskriving1: `Finansdepartementet (FIN) har ansvaret for å planlegge og iverksette den økonomiske politikken, budsjettpolitikken, skatte- og avgiftspolitikken, finansiell stabilitet og forvaltningen av Statens pensjonsfond.`,
+        beskriving2: `Finansdepartementet (FIN) har ansvaret for å planlegge og iverksette den økonomiske politikken, budsjettpolitikken, skatte- og avgiftspolitikken, finansiell stabilitet og forvaltningen av Statens pensjonsfond.`,
+        linktekst1: 0,
+        link1: 'https://www.regjeringen.no/no/dep/fin/id216/',
+        tilleggskort: []
     }
 ];
