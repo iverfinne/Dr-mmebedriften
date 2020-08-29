@@ -148,3 +148,30 @@
         }
     }
 }
+
+// Medium mobil
+@media screen and (max-width: 376px) {
+    .container {
+        .bedrifter-fliser-container {
+            padding: 35px 10px;
+
+            .flis {
+                border-radius: 9px;
+
+                .logo {
+                    height: 250px;
+                }
+
+                .annet {
+                    padding: 12px;
+
+                    >button {
+                        width: 95%;
+                        margin-top: 33px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

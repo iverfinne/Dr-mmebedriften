@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AlleBedrifterComponent } from './alle-bedrifter/alle-bedrifter.component';
+import { EinBedriftComponent } from './ein-bedrift/ein-bedrift.component';
+import { StudentTestComponent } from './student-test/student-test.component';
+import { OmOssComponent } from './om-oss/om-oss.component';
 
 const routes: Routes = [
   {
@@ -9,15 +12,20 @@ const routes: Routes = [
   },
   {
     path: 'bedriften/:bedrift',
-    component: AlleBedrifterComponent
+    component: EinBedriftComponent
   },
   {
     path: 'ta-testen',
-    component: AlleBedrifterComponent
+    component: StudentTestComponent
   },
   {
     path: 'om-oss',
-    component: AlleBedrifterComponent
+    component: OmOssComponent
+  },
+  {
+    path: '**',
+    pathMatch: 'full',
+    redirectTo: ''
   }
 ];
 

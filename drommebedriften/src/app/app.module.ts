@@ -12,13 +12,19 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { EinBedriftComponent } from './ein-bedrift/ein-bedrift.component';
+import { StudentTestComponent } from './student-test/student-test.component';
+import { OmOssComponent } from './om-oss/om-oss.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlleBedrifterComponent,
     BedriftQuizComponent,
-    DatabaseListerComponent
+    DatabaseListerComponent,
+    EinBedriftComponent,
+    StudentTestComponent,
+    OmOssComponent
   ],
   imports: [
     BrowserModule,

@@ -8,18 +8,19 @@
     padding-top: 10px;
 
     .toolbar {
-        position: sticky;
+        position: fixed;
         box-sizing: border-box;
-        z-index: 1;
+        z-index: 2;
         left: 0;
-        top: -2px;
+        top: 0;
         width: 100%;
         height: 60px;
         background-color: white;
         overflow: visible;
-        // box-shadow: 0px -7px 7px 7px rgb(0 0 0 / 0.28);
+        box-shadow: 0px -7px 7px 7px rgb(0 0 0 / 0.28);
         padding-left: 10px;
-        border-top: 1px solid rgb(206, 206, 206);
+        // border-top: 1px solid rgb(206, 206, 206);
+        opacity: 0.9;
 
         display: flex;
         justify-content: flex-start;
@@ -27,8 +28,15 @@
 
         margin-bottom: 20px;
 
+        transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        &:hover {
+            opacity: 0.98;
+        }
+
         >button {
             color: gray;
+            display: none;
         }
 
         .logo {
@@ -38,31 +46,36 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            margin-bottom: -10px;
-            margin-left: 6px;
+            margin-top: 0px;
+            margin-left: 3px;
             outline: none;
         }
 
         .undermeny {
+            display: none;
+        }
+
+        .undermeny-stor-skjerm {
             position: absolute;
             z-index: 0;
-            left: 0;
-            top: 58px;
+            left: 320px;
+            top: 0;
             background-color: white;
-            width: 100%;
-            height: calc(60px * 4);
-            box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.08);
+            width: calc(100% - 320px);
+            height: 60px;
+            box-sizing: border-box;
 
             display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
             align-items: center;
-            margin: auto;
+
+            padding-left: 50px;
 
             >div {
-                width: 300px;
+                width: auto;
                 height: auto;
-                padding: 10px 10px;
+                padding: 0 36px;
                 text-align: center;
                 cursor: pointer;
                 box-sizing: border-box;
@@ -83,6 +96,102 @@
                 }
 
                 transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+// Tablet
+@media screen and (max-width: 769px) {
+    .container {
+        .toolbar {
+
+            >button {
+                display: block;
+            }
+
+            .logo {
+                width: 300px;
+                margin-bottom: -10px;
+                margin-left: 6px;
+            }
+
+            .undermeny {
+                position: absolute;
+                z-index: 0;
+                left: 0;
+                top: 58px;
+                background-color: white;
+                width: 100%;
+                height: calc(60px * 4);
+                box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.08);
+                box-sizing: border-box;
+
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+
+                >div {
+                    width: 300px;
+                    height: auto;
+                    padding: 10px 10px;
+                    text-align: center;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    color: rgb(13, 53, 53);
+                    outline-color: rgba(0, 128, 128, 0.178);
+
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    >div {
+                        display: flex;
+                    }
+
+                    &:hover {
+                        color: rgb(35, 112, 112);
+                    }
+
+                    transition: 0.3s ease-in-out;
+                }
+            }
+
+            .undermeny-stor-skjerm {
+                display: none;
+            }
+        }
+    }
+}
+
+// Stor mobil
+@media screen and (max-width: 426px) {
+    .container {
+        .toolbar {
+            height: 55px;
+
+            .logo {
+                width: 260px;
+                margin-bottom: -10px;
+                margin-left: 6px;
+            }
+        }
+    }
+}
+
+// Liten mobil
+@media screen and (max-width: 320px) {
+    .container {
+        .toolbar {
+            height: 50px;
+
+            .logo {
+                width: 230px;
+                margin-bottom: -8px;
+                margin-left: 6px;
             }
         }
     }

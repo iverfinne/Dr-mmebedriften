@@ -1,14 +1,12 @@
-import { trigger, transition, style, animate, state, query, animateChild, group, keyframes, stagger } from '@angular/animations';
+import { trigger, transition, style, animate, state, query, keyframes, stagger } from '@angular/animations';
 
 const menyAv = {
     transform: 'translateX(-100%) translateY(-20px)',
-    opacity: 0,
-    display: 'flex'
+    opacity: 0
 };
 const menyPaa = {
     transform: 'translateX(0) translateY(0)',
-    opacity: 1,
-    display: 'flex'
+    opacity: 1
 };
 export const meny = trigger('meny', [
     state('menyAv', style(menyAv)),
