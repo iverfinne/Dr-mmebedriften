@@ -1,37 +1,16 @@
 import { Bedrift } from './type-oversikt';
 
 // Understier til mapper med filer i
-const LocalPaths = {
+export const LocalPaths = {
     path_bedriftLogo: '../assets/lokal-bedriftlogo/',
-    path_bedriftFramsidebilete: '../assets/lokal-bedriftframsidebilete/',
-    path_ruterLink1: '/bedriften/'
+    path_bedriftFramsidebilete: '../assets/lokal-bedriftframsidebilete/'
 };
 
 // Alle Bedrifter - Lokal database
-/* export const BedrifterTest: Bedrift[] = [
-    {
-        namn: 'DNB',
-        ruterLink: `${LocalPaths.path_ruterLink1}dnb`,
-        logoLink: `${LocalPaths.path_bedriftLogo}DNB.jpg`,
-        framsidebileteLink: null,
-        beskriving1: 'DNB er ... test ... test 2...',
-        beskriving2: null,
-        linktekst1: 0,
-        link1: 'https://www.dnb.no/',
-        tilleggskort: [
-            {
-                tittel: 'DNB - middagen',
-                beskriving1: 'Beskrivelse om middagen test 1 ...',
-                linktekst1: 0,
-                link1: 'https://www.dnb.no/dnbnyheter/no/din-okonomi/fattig-student-sparer-store-summer'
-            }
-        ]
-    }
-]; */
 export const Bedrifter: Bedrift[] = [
     {
         namn: 'DNV GL',
-        ruterLink: `${LocalPaths.path_ruterLink1}dnv-gl`,
+        ruterLink: 'dnv-gl',
         logoLink: `${LocalPaths.path_bedriftLogo}dnv_gl.png`,
         framsidebileteLink: null,
         beskriving1: `With chosen in our goal of securing life, values and environmental supply DNV GL organizations to make security and sustainability in the customer's businesses.`,
@@ -42,7 +21,7 @@ export const Bedrifter: Bedrift[] = [
     },
     {
         namn: 'Bouvet',
-        ruterLink: `${LocalPaths.path_ruterLink1}bouvet`,
+        ruterLink: 'bouvet',
         logoLink: `${LocalPaths.path_bedriftLogo}bouvet.png`,
         framsidebileteLink: null,
         beskriving1: `Bouvet er et norsk konsulentselskap som bistår bedrifter og samfunnsaktører i alle bransjer.`,
@@ -53,7 +32,7 @@ export const Bedrifter: Bedrift[] = [
     },
     {
         namn: 'Yara',
-        ruterLink: `${LocalPaths.path_ruterLink1}yara`,
+        ruterLink: 'yara',
         logoLink: `${LocalPaths.path_bedriftLogo}yara.png`,
         framsidebileteLink: null,
         beskriving1: `Yaras produktportefølje og agronomiske ekspertise blir stadig mer verdifull i et miljø med økt fokus på effektivitet i landbruket, matsikkerhet og god produktforvaltning. I Norge leverer vi et komplett sortiment tilpasset alle typer produksjoner i norsk landbruk.`,
@@ -64,22 +43,20 @@ export const Bedrifter: Bedrift[] = [
     },
     {
         namn: 'Finansdepartementet',
-        ruterLink: `${LocalPaths.path_ruterLink1}Finansdepartementet`,
+        ruterLink: 'finansdepartementet',
         logoLink: `${LocalPaths.path_bedriftLogo}Finansdepartementet.png`,
         framsidebileteLink: null,
         beskriving1: `Finansdepartementet (FIN) har ansvaret for å planlegge og iverksette den økonomiske politikken, budsjettpolitikken, skatte- og avgiftspolitikken, finansiell stabilitet og forvaltningen av Statens pensjonsfond.`,
-        beskriving2: `Finansdepartementet (FIN) har ansvaret for å planlegge og iverksette den økonomiske politikken, budsjettpolitikken, skatte- og avgiftspolitikken, finansiell stabilitet og forvaltningen av Statens pensjonsfond.`,
         linktekst1: 0,
         link1: 'https://www.regjeringen.no/no/dep/fin/id216/',
         tilleggskort: []
     },
     {
         namn: 'Sjøfartsdirektoratet',
-        ruterLink: `${LocalPaths.path_ruterLink1}Sjøfartsdirektoratet`,
+        ruterLink: 'sjofartsdirektoratet',
         logoLink: `${LocalPaths.path_bedriftLogo}Sjøfartsdirektoratet.png`,
         framsidebileteLink: null,
         beskriving1: `Sjøfartsdirektoratet er eit forvaltningsorgan under Nærings- og fiskeridepartementet og Klima- og miljødepartementet med myndigheitsansvar overfor norskregistrerte skip og utanlandske skip som går inn til norske hamner.`,
-        beskriving2: `Sjøfartsdirektoratet er eit forvaltningsorgan under Nærings- og fiskeridepartementet og Klima- og miljødepartementet med myndigheitsansvar overfor norskregistrerte skip og utanlandske skip som går inn til norske hamner.`,
         linktekst1: 0,
         link1: 'https://www.sdir.no/',
         tilleggskort: []

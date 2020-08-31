@@ -1,1 +1,32 @@
-<p>ein-bedrift works!</p>
+<div class="container">
+    <button mat-mini-fab color="primary" class="pil-tilbake" routerLink="['', { outlets: { bedrift: null } }]">
+        <mat-icon>first_page</mat-icon>
+    </button>
+
+    <ng-container *ngIf="einBedrift else laster">
+        <div @einBedrift>
+            <div class="header"
+                [style.backgroundImage]="einBedrift.framsidebileteLink ? 'url(' + einBedrift.framsidebileteLink + ')' : ''">
+                <div class="logo" [style.backgroundImage]="'url(' + einBedrift.logoLink + ')'"></div>
+            </div>
+            <div class="tekst">
+                <h1 [innerHTML]="einBedrift.namn"></h1>
+                <p [innerHTML]="einBedrift.beskriving1"></p>
+
+                <p class="link1">
+                    <a [href]="einBedrift.link1"
+                        [innerHTML]="einBedrift.linktekst1 !== 0 ? einBedrift.linktekst1 : einBedrift.namn + ' - Hjemmeside'"
+                        target="_blank" rel="noopener"></a>
+                    <sup><mat-icon>open_in_new</mat-icon></sup>
+                    <br>
+                    <span></span>
+                </p>
+
+                <p [innerHTML]="einBedrift.beskriving2"></p>
+            </div>
+        </div>
+    </ng-container>
+    <ng-template #laster>
+        Laster inn...
+    </ng-template>
+</div>

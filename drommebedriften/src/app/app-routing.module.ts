@@ -7,12 +7,15 @@ import { OmOssComponent } from './om-oss/om-oss.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: AlleBedrifterComponent
-  },
-  {
-    path: 'bedriften/:bedrift',
-    component: EinBedriftComponent
+    path: 'bedrifter',
+    component: AlleBedrifterComponent,
+    children: [
+      {
+        path: ':bedrift',
+        component: EinBedriftComponent,
+        outlet: 'bedrift'
+      }
+    ]
   },
   {
     path: 'ta-testen',
@@ -25,7 +28,7 @@ const routes: Routes = [
   {
     path: '**',
     pathMatch: 'full',
-    redirectTo: ''
+    redirectTo: 'bedrifter'
   }
 ];
 

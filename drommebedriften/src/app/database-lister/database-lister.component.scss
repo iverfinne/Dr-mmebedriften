@@ -42,7 +42,7 @@
             max-width: 130px;
             height: 48px;
             background-color: white;
-            border: 1px solid transparentize($color: rgb(159, 170, 175), $amount: 0.7);
+            // border: 1px solid transparentize($color: rgb(159, 170, 175), $amount: 0.7);
             border-radius: 10px;
             margin-left: 23px;
             overflow: hidden;
@@ -85,22 +85,18 @@
         position: relative;
         width: 100%;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: flex-start;
 
         box-sizing: border-box;
         padding: 45px 20px;
 
         .flis {
-            background-color: white;
             width: 100%;
-            max-width: 400px;
-            height: auto;
+            height: 534px;
             overflow: hidden;
+            background-color: white;
 
             border-radius: 4px;
-            box-shadow: 0px 3px 8px 2px rgb(0 0 0 / 21%);
+            box-shadow: 0px 3px 8px 2px rgb(0 0 0 / 10%);
 
             .logo {
                 position: relative;
@@ -114,8 +110,8 @@
                 >div {
                     width: 100%;
                     height: 100%;
-                    background-color: orange;
-                    background-size: cover;
+                    background-color: white;
+                    background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;
                 }
@@ -131,7 +127,7 @@
             .annet {
                 position: relative;
                 width: 100%;
-                height: auto;
+                height: 221px;
 
                 box-sizing: border-box;
                 padding: 16px;
@@ -140,9 +136,10 @@
 
                 >button {
                     display: block;
+                    position: absolute;
+                    bottom: 19px;
+                    left: calc(10% / 2);
                     width: 90%;
-                    margin: auto;
-                    margin-top: 30px;
                 }
             }
         }

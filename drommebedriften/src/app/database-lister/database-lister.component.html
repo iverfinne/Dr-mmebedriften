@@ -30,17 +30,18 @@
                     </div>
                     <div class="annet">
                         <h2 [innerHTML]="bedrift.namn" style="margin: 0 0 5px"></h2>
-                        <p [innerHTML]="bedrift.beskriving1"></p>
+                        <p [innerHTML]="forkortString(bedrift.beskriving1, 160)"></p>
 
-                        <button mat-raised-button color="primary" [routerLink]="bedrift.ruterLink">
-                            Koble til
+                        <button mat-raised-button color="primary"
+                            [routerLink]="['/bedrifter', { outlets: { bedrift: bedrift.ruterLink } }]">
+                            Koble til <sup>(Les mer)</sup>
                         </button>
                     </div>
                 </div>
             </ng-container>
         </ng-container>
         <ng-template #lasterInn>
-            <mat-spinner></mat-spinner>
+            <mat-spinner style="margin: auto;"></mat-spinner>
         </ng-template>
         <ng-template #nullResultatSok>
             Ingen treff på ditt søk "{{ sok.value.trim() }}".
