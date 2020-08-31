@@ -9,6 +9,31 @@ export const LocalPaths = {
 // Alle Bedrifter - Lokal database
 export const Bedrifter: Bedrift[] = [
     {
+        namn: 'Tester',
+        ruterLink: 'tester',
+        logoLink: null,
+        framsidebileteLink: null,
+        beskriving1: 'tester1',
+        beskriving2: 'tester2',
+        linktekst1: 0,
+        link1: 'https://www.google.no/',
+        googleFormHTMLEmbedLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true',
+        tilleggskort: [
+            {
+                tittel: 'Test1',
+                beskriving1: 'Dette er ein test1.',
+                linktekst1: 'Custom link-tekst',
+                link1: 'https://google.no'
+            },
+            {
+                tittel: 'Test2',
+                beskriving1: 'Dette er ein test2.',
+                linktekst1: 0,
+                link1: 'https://google.no'
+            }
+        ]
+    },
+    {
         namn: 'DNV GL',
         ruterLink: 'dnv-gl',
         logoLink: `${LocalPaths.path_bedriftLogo}dnv_gl.png`,
@@ -17,21 +42,8 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: `DNV GL is a global quality assurance and risk management company. Driven by our purpose of safeguarding life, property and the environment, we enable our customers to advance the safety and sustainability of their business. We provide classification, technical assurance, software and independent expert advisory services to the maritime, oil & gas, power and renewables industries. We also provide certification and supply chain services to customers across a wide range of industries. Operating in more than 100 countries, our experts are dedicated to helping customers make the world safer, smarter and greener.`,
         linktekst1: 0,
         link1: 'https://www.dnvgl.no/',
-        /* test-link=> */googleFormHTMLEmbedLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true',
-        tilleggskort: [
-            /* test=> */{
-                tittel: 'Test1',
-                beskriving1: 'Dette er ein test1.',
-                linktekst1: 'Custom link-tekst',
-                link1: 'https://google.no'
-            },
-            /* test=> */{
-                tittel: 'Test2',
-                beskriving1: 'Dette er ein test2.',
-                linktekst1: 0,
-                link1: 'https://google.no'
-            }
-        ]
+        googleFormHTMLEmbedLink: null,
+        tilleggskort: []
     },
     {
         namn: 'Bouvet',

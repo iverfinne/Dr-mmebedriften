@@ -16,7 +16,14 @@
         <div>
             <div class="header"
                 [style.backgroundImage]="einBedrift.framsidebileteLink ? 'url(' + einBedrift.framsidebileteLink + ')' : ''">
-                <div class="logo" [style.backgroundImage]="'url(' + einBedrift.logoLink + ')'"></div>
+                <div class="logo">
+                    <div *ngIf="einBedrift.logoLink else broken"
+                        [style.backgroundImage]="'url(' + einBedrift.logoLink + ')'">
+                    </div>
+                    <ng-template #broken>
+                        <mat-icon>broken_image</mat-icon>
+                    </ng-template>
+                </div>
             </div>
             <div class="tekst">
                 <h1 [innerHTML]="einBedrift.namn"></h1>
