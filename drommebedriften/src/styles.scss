@@ -40,6 +40,29 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+
+  font-size: 1.15em;
+  line-height: 25px;
+  color: rgb(39, 39, 39);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: rgb(29, 29, 29);
+}
+
+.container {
+  h1 {
+    margin-block-end: 40px;
+  }
+}
+
 ._pc {
   @media screen and (max-width: 860px) {
     display: none;

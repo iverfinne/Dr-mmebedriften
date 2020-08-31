@@ -1,5 +1,6 @@
-import { trigger, transition, style, animate, state, query, keyframes, stagger } from '@angular/animations';
+import { trigger, transition, style, animate, state, query, keyframes, stagger, group } from '@angular/animations';
 
+// Meny
 const menyAv = {
     transform: 'translateX(-100%) translateY(-20px)',
     opacity: 0
@@ -19,11 +20,11 @@ export const meny = trigger('meny', [
     ])))
 ]);
 
-// Bedrifter Visning
+// Bedrifter
 const bedriftStilFerdig = {
     bedrifterComfy: {
         flexFlow: 'row wrap',
-        justifyContent: 'space-around',
+        justifyContent: 'space-between',
         alignItems: 'flex-start'
     },
     bedrifterListe: {
@@ -32,11 +33,15 @@ const bedriftStilFerdig = {
         alignItems: 'center'
     },
     bedrifterBedriftComfy: {
+        flex: '1 400px',
+        width: 'auto',
         transform: 'none',
-        margin: '20px 0',
+        margin: '20px 10px',
         opacity: '1'
     },
     bedrifterBedriftListe: {
+        flex: 'none',
+        width: '400px',
         transform: 'none',
         margin: '13px 0',
         opacity: '1'
@@ -48,8 +53,8 @@ export const bedrifter = trigger('bedrifter', [
     transition('comfy => liste', [
         animate('0ms 0ms', keyframes([style(bedriftStilFerdig.bedrifterListe)])),
         query('@bedriftFlis', [
-            style({ transform: 'translateY(10px)', opacity: '0' }),
-            stagger(200, [
+            style({ width: '400px', transform: 'translateY(10px)', opacity: '0' }),
+            stagger(350, [
                 animate('250ms 0ms ease-in', keyframes([style(bedriftStilFerdig.bedrifterBedriftListe)]))
             ]),
         ], { optional: true })
@@ -57,14 +62,49 @@ export const bedrifter = trigger('bedrifter', [
     transition('liste => comfy', [
         animate('0ms 0ms', keyframes([style(bedriftStilFerdig.bedrifterComfy)])),
         query('@bedriftFlis', [
-            style({ transform: 'translateY(-20px)', opacity: '0' }),
-            stagger(200, [
+            style({ width: '400px', transform: 'translateY(-20px)', opacity: '0' }),
+            /* stagger(200, [
                 animate('250ms 0ms ease-in', keyframes([style(bedriftStilFerdig.bedrifterBedriftComfy)]))
-            ]),
+            ]), */
+            animate('250ms 0ms ease-in', keyframes([style(bedriftStilFerdig.bedrifterBedriftComfy)]))
         ], { optional: true })
     ])
 ]);
 export const bedriftFlis = trigger('bedriftFlis', [
     state('comfy', style(bedriftStilFerdig.bedrifterBedriftComfy)),
     state('liste', style(bedriftStilFerdig.bedrifterBedriftListe))
+]);
+
+// Ein bedrift
+export const einBedrift = trigger('einBedrift', [
+    transition(':enter', [
+        query('.header .logo', [
+            style({ transform: 'translateY(-10px)', opacity: '0' }),
+            animate('800ms 200ms ease-out')
+        ], { optional: true })
+    ])
+]);
+
+// Om oss
+export const omOssContainer = trigger('omOssContainer', [
+    transition(':enter', [
+        query('div .tekst', [
+            group([
+                query('h3', [
+                    style({
+                        opacity: '0',
+                        transform: 'translateX(-60px)'
+                    }),
+                    stagger(1300, animate('500ms 100ms ease-out'))
+                ]),
+                query('p', [
+                    style({
+                        opacity: '0',
+                        transform: 'translateY(30px)'
+                    }),
+                    stagger(1100, animate('900ms 800ms ease-out'))
+                ])
+            ])
+        ])
+    ])
 ]);

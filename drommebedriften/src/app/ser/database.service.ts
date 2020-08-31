@@ -10,7 +10,11 @@ export class DatabaseService {
 
   constructor() { }
 
-  async hentAlleBedrifter(): Promise<Bedrift[]> {
-    return Bedrifter;
+  async hentAlleBedrifter(): Promise<Bedrift[]> { return Bedrifter; }
+
+  async hentEinBedrift(bedriftLinkID: string): Promise<Bedrift | null> {
+    const einBedrift = Bedrifter.filter(v => v.ruterLink.toLocaleLowerCase() === bedriftLinkID.toLocaleLowerCase())[0];
+
+    if (einBedrift) { return einBedrift; } return null;
   }
 }

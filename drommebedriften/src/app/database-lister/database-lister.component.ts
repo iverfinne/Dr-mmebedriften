@@ -53,9 +53,11 @@ export class DatabaseListerComponent implements OnInit {
     // Aktiver
     visningsElement.classList.add('aktiv');
 
-    this.bedrifterVisningsType === 'comfy' ? this.bedrifterVisningsType = 'liste' : this.bedrifterVisningsType = 'comfy';
-
-    if (type === 0) { window.localStorage.setItem('visningsTypeBedrifter', '0'); } else {
+    if (type === 0) {
+      this.bedrifterVisningsType = 'comfy';
+      window.localStorage.setItem('visningsTypeBedrifter', '0');
+    } else {
+      this.bedrifterVisningsType = 'liste';
       window.localStorage.setItem('visningsTypeBedrifter', '1');
     }
   }
@@ -126,6 +128,12 @@ export class DatabaseListerComponent implements OnInit {
     this.startEitNyttSok = setTimeout(async () => {
       this.alleBedrifterVisning = await this.enkelSokMotor(this.alleBedrifter, inputElement.value);
     }, 600);
+  }
+
+  forkortString(data: string, lengde: number): string {
+    if (data.length <= lengde) { return data; }
+
+    return `${data.slice(0, lengde)} <b>...</b>`;
   }
 
 }
