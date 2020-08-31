@@ -7,6 +7,7 @@ export interface Bedrift {
     beskriving2?: string;
     linktekst1?: string | 0; // 0 = Standard visning for linktekst. Namn + tekst som ref. til heimeside
     link1?: string;
+    googleFormHTMLEmbedLink?: string;
     tilleggskort?: BedriftTilleggskort[];
 }
 export interface BedriftTilleggskort {

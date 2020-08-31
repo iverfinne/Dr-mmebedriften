@@ -45,6 +45,22 @@ const bedriftStilFerdig = {
         transform: 'none',
         margin: '13px 0',
         opacity: '1'
+    },
+    bedriftEinBedriftAv: {
+        transform: 'translateX(-100%)',
+        opacity: '0'
+    },
+    bedriftEinBedriftPa: {
+        transform: 'translateY(0)',
+        opacity: '1'
+    },
+    googleFormAv: {
+        top: '-100%',
+        backgroundColor: 'rgb(15 21 19 / 0%)'
+    },
+    googleFormPa: {
+        top: '0',
+        backgroundColor: 'rgb(15 21 19 / 73%)'
     }
 };
 export const bedrifter = trigger('bedrifter', [
@@ -77,12 +93,37 @@ export const bedriftFlis = trigger('bedriftFlis', [
 
 // Ein bedrift
 export const einBedrift = trigger('einBedrift', [
-    transition(':enter', [
-        query('.header .logo', [
-            style({ transform: 'translateY(-10px)', opacity: '0' }),
-            animate('800ms 200ms ease-out')
-        ], { optional: true })
+    state('av', style(bedriftStilFerdig.bedriftEinBedriftAv)),
+    state('pa', style(bedriftStilFerdig.bedriftEinBedriftPa)),
+    transition('* => pa', [
+        group([
+            query(':self', [
+                style(bedriftStilFerdig.bedriftEinBedriftAv),
+                animate('420ms 0ms ease-in', style(bedriftStilFerdig.bedriftEinBedriftPa)),
+            ]),
+            query('div .header .logo', [
+                style({ transform: 'translateY(-10px)', opacity: '0' }),
+                animate('800ms 400ms ease-out')
+            ], { optional: true })
+        ])
+    ]),
+    transition('pa => av', [
+        group([
+            query(':self', [
+                animate('300ms 0ms ease-out', style(bedriftStilFerdig.bedriftEinBedriftAv)),
+            ])
+        ])
     ])
+]);
+export const dynamiskGoogleFormEinBedrift = trigger('dynamiskGoogleFormEinBedrift', [
+    state('av', style(bedriftStilFerdig.googleFormAv)),
+    state('pa', style(bedriftStilFerdig.googleFormPa)),
+    transition('av => pa', animate('400ms 0ms ease-in', keyframes([
+        style(bedriftStilFerdig.googleFormPa)
+    ]))),
+    transition('pa => av', animate('300ms 0ms ease-in', keyframes([
+        style(bedriftStilFerdig.googleFormAv)
+    ])))
 ]);
 
 // Om oss

@@ -15,6 +15,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { EinBedriftComponent } from './ein-bedrift/ein-bedrift.component';
 import { StudentTestComponent } from './student-test/student-test.component';
 import { OmOssComponent } from './om-oss/om-oss.component';
+import { DynamiskGoogleFormHTMLComponent } from './dynamisk-google-form-html/dynamisk-google-form-html.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { OmOssComponent } from './om-oss/om-oss.component';
     DatabaseListerComponent,
     EinBedriftComponent,
     StudentTestComponent,
-    OmOssComponent
+    OmOssComponent,
+    DynamiskGoogleFormHTMLComponent
   ],
   imports: [
     BrowserModule,

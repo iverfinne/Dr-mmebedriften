@@ -1,10 +1,19 @@
-<div class="container">
-    <button mat-mini-fab color="primary" class="pil-tilbake" routerLink="['', { outlets: { bedrift: null } }]">
-        <mat-icon>first_page</mat-icon>
-    </button>
+<ng-container *ngIf="einBedrift && einBedrift.googleFormHTMLEmbedLink">
+    <app-dynamisk-google-form-html [htmlLink]="einBedrift.googleFormHTMLEmbedLink"></app-dynamisk-google-form-html>
+</ng-container>
 
-    <ng-container *ngIf="einBedrift else laster">
-        <div @einBedrift>
+<ng-container *ngIf="einBedrift else laster">
+    <div [@einBedrift]="containerStatus" class="container">
+        <button mat-mini-fab color="primary" class="pil-tilbake" (click)="lukkPanel()">
+            <mat-icon>first_page</mat-icon>
+        </button>
+        <button *ngIf="einBedrift && einBedrift.googleFormHTMLEmbedLink" mat-raised-button color="primary"
+            class="opne-google-form" (click)="opneUndersokelse()">
+            <mat-icon>dynamic_form</mat-icon>
+            Undersøkelse
+        </button>
+
+        <div>
             <div class="header"
                 [style.backgroundImage]="einBedrift.framsidebileteLink ? 'url(' + einBedrift.framsidebileteLink + ')' : ''">
                 <div class="logo" [style.backgroundImage]="'url(' + einBedrift.logoLink + ')'"></div>
@@ -38,8 +47,8 @@
                 </div>
             </div>
         </div>
-    </ng-container>
-    <ng-template #laster>
-        Laster inn...
-    </ng-template>
-</div>
+    </div>
+</ng-container>
+<ng-template #laster>
+    Laster inn...
+</ng-template>

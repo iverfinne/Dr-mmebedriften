@@ -17,6 +17,16 @@
         opacity: 0.9;
     }
 
+    .opne-google-form {
+        z-index: 1;
+        position: absolute;
+        left: calc(17px + 40px + 10px);
+        top: calc(40vh + 20px);
+        background-color: cadetblue;
+        opacity: 0.9;
+        transform: translateY(14px);
+    }
+
     >div {
         position: relative;
         width: 100%;
@@ -146,6 +156,7 @@
                     }
 
                     $farge2: cadetblue;
+
                     >a {
                         display: block;
                         color: white;
@@ -164,7 +175,7 @@
                         &:hover {
                             background-color: lighten($color: $farge2, $amount: 3%);
                         }
-                        
+
                         &:active {
                             background-color: darken($color: $farge2, $amount: 2%);
                         }

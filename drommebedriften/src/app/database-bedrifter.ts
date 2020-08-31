@@ -17,14 +17,15 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: `DNV GL is a global quality assurance and risk management company. Driven by our purpose of safeguarding life, property and the environment, we enable our customers to advance the safety and sustainability of their business. We provide classification, technical assurance, software and independent expert advisory services to the maritime, oil & gas, power and renewables industries. We also provide certification and supply chain services to customers across a wide range of industries. Operating in more than 100 countries, our experts are dedicated to helping customers make the world safer, smarter and greener.`,
         linktekst1: 0,
         link1: 'https://www.dnvgl.no/',
+        /* test-link=> */googleFormHTMLEmbedLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true',
         tilleggskort: [
-            {
+            /* test=> */{
                 tittel: 'Test1',
                 beskriving1: 'Dette er ein test1.',
                 linktekst1: 'Custom link-tekst',
                 link1: 'https://google.no'
             },
-            {
+            /* test=> */{
                 tittel: 'Test2',
                 beskriving1: 'Dette er ein test2.',
                 linktekst1: 0,
@@ -41,6 +42,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: `Bouvet er et skandinavisk konsulentselskap, som gjennom rådgivning, utvikling, design og forvaltning, bidrar til å maksimere effekter i krysningspunktet mellom moderne teknologi og digital kommunikasjon. Flotte ord - ingen overflødige. Varen vi leverer kommer fra faglig styrke. Derfor har vi også et bevisst forhold til faglig utvikling, som kommer i mange former tilpasset den enkelte. Vi har blant annet fagkvelder, arkitektskole, systemutviklerskole, deltakelse på konferanser, hackatons og internkonferanser med fokus på kompetansedeling.`,
         linktekst1: 0,
         link1: 'https://www.bouvet.no/',
+        googleFormHTMLEmbedLink: null,
         tilleggskort: []
     },
     {
@@ -62,6 +64,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: `Finansdepartementet (FIN) har ansvaret for å planlegge og iverksette den økonomiske politikken, budsjettpolitikken, skatte- og avgiftspolitikken, finansiell stabilitet og forvaltningen av Statens pensjonsfond.`,
         linktekst1: 0,
         link1: 'https://www.regjeringen.no/no/dep/fin/id216/',
+        googleFormHTMLEmbedLink: null,
         tilleggskort: []
     },
     {
@@ -82,6 +85,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: ``,
         linktekst1: 0,
         link1: 'https://www.tryg.no/',
+        googleFormHTMLEmbedLink: null,
         tilleggskort: []
     },
     {
@@ -92,6 +96,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: ``,
         linktekst1: 0,
         link1: 'https://www.obos.no/',
+        googleFormHTMLEmbedLink: null,
         tilleggskort: []
     },
     {
@@ -102,6 +107,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: ``,
         linktekst1: 0,
         link1: 'https://www.tekna.no/',
+        googleFormHTMLEmbedLink: null,
         tilleggskort: []
     },
     {
@@ -112,6 +118,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: ``,
         linktekst1: 0,
         link1: 'https://www.accenture.no/',
+        googleFormHTMLEmbedLink: null,
         tilleggskort: []
     },
     {
@@ -122,6 +129,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: ``,
         linktekst1: 0,
         link1: 'https://www.forsvaret.no/',
+        googleFormHTMLEmbedLink: null,
         tilleggskort: []
     }
 ];
