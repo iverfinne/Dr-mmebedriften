@@ -60,5 +60,55 @@ export const Bedrifter: Bedrift[] = [
         linktekst1: 0,
         link1: 'https://www.sdir.no/',
         tilleggskort: []
+    },
+    {
+        namn: 'Tryg',
+        ruterLink: 'tryg',
+        logoLink: `${LocalPaths.path_bedriftLogo}Tryg.png`,
+        framsidebileteLink: null,
+        beskriving1: ``,
+        linktekst1: 0,
+        link1: 'https://www.tryg.no/',
+        tilleggskort: []
+    },
+    {
+        namn: 'OBOS',
+        ruterLink: 'obos',
+        logoLink: `${LocalPaths.path_bedriftLogo}OBOS.png`,
+        framsidebileteLink: null,
+        beskriving1: ``,
+        linktekst1: 0,
+        link1: 'https://www.obos.no/',
+        tilleggskort: []
+    },
+    {
+        namn: 'Tekna',
+        ruterLink: 'tekna',
+        logoLink: `${LocalPaths.path_bedriftLogo}Tekna.png`,
+        framsidebileteLink: null,
+        beskriving1: ``,
+        linktekst1: 0,
+        link1: 'https://www.tekna.no/',
+        tilleggskort: []
+    },
+    {
+        namn: 'Accenture',
+        ruterLink: 'accenture',
+        logoLink: `${LocalPaths.path_bedriftLogo}Accenture.png`,
+        framsidebileteLink: null,
+        beskriving1: ``,
+        linktekst1: 0,
+        link1: 'https://www.accenture.no/',
+        tilleggskort: []
+    },
+    {
+        namn: 'Forsvaret',
+        ruterLink: 'forsvaret',
+        logoLink: `${LocalPaths.path_bedriftLogo}Forsvaret.png`,
+        framsidebileteLink: null,
+        beskriving1: ``,
+        linktekst1: 0,
+        link1: 'https://www.forsvaret.no/',
+        tilleggskort: []
     }
 ];
