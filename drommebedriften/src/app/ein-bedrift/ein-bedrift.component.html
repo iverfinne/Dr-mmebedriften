@@ -17,12 +17,25 @@
                     <a [href]="einBedrift.link1"
                         [innerHTML]="einBedrift.linktekst1 !== 0 ? einBedrift.linktekst1 : einBedrift.namn + ' - Hjemmeside'"
                         target="_blank" rel="noopener"></a>
-                    <sup><mat-icon>open_in_new</mat-icon></sup>
+                    <sup>
+                        <mat-icon>open_in_new</mat-icon>
+                    </sup>
                     <br>
                     <span></span>
                 </p>
 
                 <p [innerHTML]="einBedrift.beskriving2"></p>
+
+                <div class="tilleggskort" *ngIf="einBedrift.tilleggskort">
+                    <div *ngFor="let kort of einBedrift.tilleggskort">
+                        <h1 style="margin-block-end: 5px;" [innerHTML]="kort.tittel"></h1>
+                        <p [innerHTML]="kort.beskriving1"></p>
+
+                        <a [href]="kort.link1"
+                            [innerHTML]="kort.linktekst1 === 0 ? 'Les mer om ' + kort.tittel + ' her' : kort.linktekst1"
+                            target="_blank" rel="noopener"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </ng-container>

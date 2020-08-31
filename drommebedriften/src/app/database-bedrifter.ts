@@ -17,7 +17,20 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: `DNV GL is a global quality assurance and risk management company. Driven by our purpose of safeguarding life, property and the environment, we enable our customers to advance the safety and sustainability of their business. We provide classification, technical assurance, software and independent expert advisory services to the maritime, oil & gas, power and renewables industries. We also provide certification and supply chain services to customers across a wide range of industries. Operating in more than 100 countries, our experts are dedicated to helping customers make the world safer, smarter and greener.`,
         linktekst1: 0,
         link1: 'https://www.dnvgl.no/',
-        tilleggskort: []
+        tilleggskort: [
+            {
+                tittel: 'Test1',
+                beskriving1: 'Dette er ein test1.',
+                linktekst1: 'Custom link-tekst',
+                link1: 'https://google.no'
+            },
+            {
+                tittel: 'Test2',
+                beskriving1: 'Dette er ein test2.',
+                linktekst1: 0,
+                link1: 'https://google.no'
+            }
+        ]
     },
     {
         namn: 'Bouvet',
