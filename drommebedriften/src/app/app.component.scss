@@ -172,6 +172,10 @@
         .toolbar {
             height: 55px;
 
+            .undermeny {
+                top: 55px;
+            }
+
             .logo {
                 width: 260px;
                 margin-bottom: -10px;
@@ -186,6 +190,10 @@
     .container {
         .toolbar {
             height: 50px;
+
+            .undermeny {
+                top: 50px;
+            }
 
             .logo {
                 width: 230px;
