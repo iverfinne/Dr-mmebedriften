@@ -1,0 +1,12 @@
+Igjen:
+
+- Klikk på intern link, justerer scroll posisjonen til start |
+- Lage til intersection observer for alle bedrifter fliser sin bilete.
+  (sånn dei lastes berre inn når det trengs) |
+- Legge til iframe for "testen" (brukes av mobil) | OK
+- Legge til tilleggskort for kva som helst for ein bedrift | OK
+- Legge til Google Forms på sida (DB) | OK
+
+Små-ting:
+
+- Juster opp undermenyen litt på mobil |
