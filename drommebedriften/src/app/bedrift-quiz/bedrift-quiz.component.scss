@@ -19,5 +19,18 @@
         padding-bottom: 10px;
         box-sizing: border-box;
     }
+}
 
+@media screen and (max-width: 768px) {
+    .container {
+        position: relative;
+        width: calc(100% - 4px);
+        max-width: calc(500px + 1px * 2);
+        height: calc(470px + 1px * 2);
+        background-color: white;
+        opacity: 0.98;
+        margin: auto;
+        transform: translateX(2px);
+        overflow: hidden;
+    }
 }
