@@ -10,3 +10,5 @@ Igjen:
 Små-ting:
 
 - Juster opp undermenyen litt på mobil | OK
+- Justere litt opp min-vidde på tilleggskort | 
+- Sjekk att framsidebilete er OK tilpasset for ein bedrift | 

@@ -6,6 +6,20 @@ export const LocalPaths = {
     path_bedriftFramsidebilete: '../assets/lokal-bedriftframsidebilete/'
 };
 
+// Ein heile Google Form Iframe Embed link:
+// E.g.: <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" ...... </iframe>
+function gfise(iframeEmbedLink?: string): string | null {
+    if (iframeEmbedLink) {
+        const linkSplit = iframeEmbedLink.split('"');
+        const googleFormIframeSource = linkSplit[1];
+
+        return googleFormIframeSource;
+    }
+
+    return null;
+}
+
+
 // Alle Bedrifter - Lokal database
 export const Bedrifter: Bedrift[] = [
     {
@@ -17,7 +31,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: 'tester2',
         linktekst1: 0,
         link1: 'https://www.google.no/',
-        googleFormHTMLEmbedLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true',
+        googleFormHTMLEmbedLink: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
         tilleggskort: [
             {
                 tittel: 'Test1',
@@ -42,7 +56,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: `DNV GL is a global quality assurance and risk management company. Driven by our purpose of safeguarding life, property and the environment, we enable our customers to advance the safety and sustainability of their business. We provide classification, technical assurance, software and independent expert advisory services to the maritime, oil & gas, power and renewables industries. We also provide certification and supply chain services to customers across a wide range of industries. Operating in more than 100 countries, our experts are dedicated to helping customers make the world safer, smarter and greener.`,
         linktekst1: 0,
         link1: 'https://www.dnvgl.no/',
-        googleFormHTMLEmbedLink: null,
+        googleFormHTMLEmbedLink: gfise(),
         tilleggskort: []
     },
     {
@@ -54,7 +68,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: `Bouvet er et skandinavisk konsulentselskap, som gjennom rådgivning, utvikling, design og forvaltning, bidrar til å maksimere effekter i krysningspunktet mellom moderne teknologi og digital kommunikasjon. Flotte ord - ingen overflødige. Varen vi leverer kommer fra faglig styrke. Derfor har vi også et bevisst forhold til faglig utvikling, som kommer i mange former tilpasset den enkelte. Vi har blant annet fagkvelder, arkitektskole, systemutviklerskole, deltakelse på konferanser, hackatons og internkonferanser med fokus på kompetansedeling.`,
         linktekst1: 0,
         link1: 'https://www.bouvet.no/',
-        googleFormHTMLEmbedLink: null,
+        googleFormHTMLEmbedLink: gfise(),
         tilleggskort: []
     },
     {
@@ -66,6 +80,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: `Vår industrielle produktportefølje går til miljøforbedringer og til en rekke bransjer og prosesser. Miljøproduktene utgjør en egen produktgruppe med utspring fra nitrogenproduksjon. Denne produktgruppen spenner fra produkter og tjenester som fjerner skadelige utslipp fra kjøretøyer og stasjonære installasjoner til de som brukes til å kontrollere sjenerende lukt fra avløps- og kloakksystemer.`,
         linktekst1: 0,
         link1: 'https://www.yara.no/',
+        googleFormHTMLEmbedLink: gfise(),
         tilleggskort: []
     },
     {
@@ -76,7 +91,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: `Finansdepartementet (FIN) har ansvaret for å planlegge og iverksette den økonomiske politikken, budsjettpolitikken, skatte- og avgiftspolitikken, finansiell stabilitet og forvaltningen av Statens pensjonsfond.`,
         linktekst1: 0,
         link1: 'https://www.regjeringen.no/no/dep/fin/id216/',
-        googleFormHTMLEmbedLink: null,
+        googleFormHTMLEmbedLink: gfise(),
         tilleggskort: []
     },
     {
@@ -87,6 +102,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: `Sjøfartsdirektoratet er eit forvaltningsorgan under Nærings- og fiskeridepartementet og Klima- og miljødepartementet med myndigheitsansvar overfor norskregistrerte skip og utanlandske skip som går inn til norske hamner.`,
         linktekst1: 0,
         link1: 'https://www.sdir.no/',
+        googleFormHTMLEmbedLink: gfise(),
         tilleggskort: []
     },
     {
@@ -97,7 +113,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: ``,
         linktekst1: 0,
         link1: 'https://www.tryg.no/',
-        googleFormHTMLEmbedLink: null,
+        googleFormHTMLEmbedLink: gfise(),
         tilleggskort: []
     },
     {
@@ -108,7 +124,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: ``,
         linktekst1: 0,
         link1: 'https://www.obos.no/',
-        googleFormHTMLEmbedLink: null,
+        googleFormHTMLEmbedLink: gfise(),
         tilleggskort: []
     },
     {
@@ -119,7 +135,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: ``,
         linktekst1: 0,
         link1: 'https://www.tekna.no/',
-        googleFormHTMLEmbedLink: null,
+        googleFormHTMLEmbedLink: gfise(),
         tilleggskort: []
     },
     {
@@ -130,7 +146,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: ``,
         linktekst1: 0,
         link1: 'https://www.accenture.no/',
-        googleFormHTMLEmbedLink: null,
+        googleFormHTMLEmbedLink: gfise(),
         tilleggskort: []
     },
     {
@@ -141,7 +157,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: ``,
         linktekst1: 0,
         link1: 'https://www.forsvaret.no/',
-        googleFormHTMLEmbedLink: null,
+        googleFormHTMLEmbedLink: gfise(),
         tilleggskort: []
     }
 ];
