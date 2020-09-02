@@ -53,11 +53,23 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}dnv_gl.png`,
         framsidebileteLink: null,
         beskriving1: `With chosen in our goal of securing life, values and environmental supply DNV GL organizations to make security and sustainability in the customer's businesses.`,
-        beskriving2: `DNV GL is a global quality assurance and risk management company. Driven by our purpose of safeguarding life, property and the environment, we enable our customers to advance the safety and sustainability of their business. We provide classification, technical assurance, software and independent expert advisory services to the maritime, oil & gas, power and renewables industries. We also provide certification and supply chain services to customers across a wide range of industries. Operating in more than 100 countries, our experts are dedicated to helping customers make the world safer, smarter and greener.`,
         linktekst1: 0,
         link1: 'https://www.dnvgl.no/',
         googleFormHTMLEmbedLink: gfise(),
-        tilleggskort: []
+        tilleggskort: [
+            {
+                tittel: 'Speeddate',
+                beskriving1: 'Meld deg på speeddate med DNV GL her',
+                linktekst1: 'Custom link-tekst',
+                link1: 'https://google.no'
+            },
+            {
+                tittel: 'Middag',
+                beskriving1: 'Les mer om DNV GL middagen her',
+                linktekst1: 0,
+                link1: 'https://google.no'
+            }
+        ]
     },
     {
         namn: 'Bouvet',
@@ -157,6 +169,17 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: ``,
         linktekst1: 0,
         link1: 'https://www.forsvaret.no/',
+        googleFormHTMLEmbedLink: gfise(),
+        tilleggskort: []
+    },
+    {
+        namn: 'Knowit',
+        ruterLink: 'knowit',
+        logoLink: `${LocalPaths.path_bedriftLogo}Knowit.png`,
+        framsidebileteLink: null,
+        beskriving1: ``,
+        linktekst1: 0,
+        link1: 'https://www.knowit.no/',
         googleFormHTMLEmbedLink: gfise(),
         tilleggskort: []
     }
