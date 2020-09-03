@@ -51,13 +51,7 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
   }
 
   ngAfterViewInit(): void {
-    // Sett på lazy innlasting av bilete
-    setTimeout(() => {
-      const alleFlisElementer = document.querySelectorAll('div > .flis');
-      alleFlisElementer.forEach(flisElement => {
-        this.lazyLastInnBilete(flisElement);
-      });
-    }, 800);
+    this.leggTilNyLazyVisningBilete();
   }
 
   private async lazyLastInnBilete(bileteElmt: HTMLElement | Element): Promise<void> {
@@ -80,6 +74,18 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
 
     this.ioObservers.push({ io, targetElmt: bileteElmt });
     io.observe(bileteElmt);
+  }
+  leggTilNyLazyVisningBilete(): void {
+    this.ioObservers.forEach(v => { v.io.disconnect(); });
+    this.ioObservers = [];
+
+    // Sett på lazy innlasting av bilete
+    setTimeout(() => {
+      const alleFlisElementer = document.querySelectorAll('div > .flis');
+      alleFlisElementer.forEach(flisElement => {
+        this.lazyLastInnBilete(flisElement);
+      });
+    }, 800);
   }
 
   visning(visningsElement: HTMLElement, type: 0 | 1): void {
@@ -166,11 +172,12 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
     this.alleBedrifterVisning = null;
 
     // Start Søk
-    if (inputElement.value.length === 0) { this.alleBedrifterVisning = this.alleBedrifter; return; }
+    if (inputElement.value.length === 0) { this.alleBedrifterVisning = this.alleBedrifter; this.leggTilNyLazyVisningBilete(); return; }
     if (inputElement.value.length === 1) { this.alleBedrifterVisning = []; return; }
 
     this.startEitNyttSok = setTimeout(async () => {
       this.alleBedrifterVisning = await this.enkelSokMotor(this.alleBedrifter, inputElement.value);
+      this.leggTilNyLazyVisningBilete();
     }, 600);
   }
 
