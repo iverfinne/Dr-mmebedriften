@@ -26,7 +26,7 @@ export const Bedrifter: Bedrift[] = [
         namn: 'Tester',
         ruterLink: 'tester',
         logoLink: null,
-        framsidebileteLink: null,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}evening-55067_1280.webp`,
         beskriving1: 'tester1',
         beskriving2: 'tester2',
         linktekst1: 0,

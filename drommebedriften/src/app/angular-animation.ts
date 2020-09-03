@@ -34,6 +34,7 @@ const bedriftStilFerdig = {
     },
     bedrifterBedriftComfy: {
         flex: '1 400px',
+        flexBasis: '330px',
         width: 'auto',
         transform: 'none',
         margin: '20px 10px',
@@ -41,6 +42,7 @@ const bedriftStilFerdig = {
     },
     bedrifterBedriftListe: {
         flex: 'none',
+        flexBasis: 'none',
         width: '400px',
         transform: 'none',
         margin: '13px 0',

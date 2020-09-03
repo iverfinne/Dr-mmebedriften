@@ -1,6 +1,7 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, OnDestroy, AfterViewInit, DefaultIterableDiffer } from '@angular/core';
 import { Bedrift } from '../type-oversikt';
 import { DatabaseService } from '../ser/database.service';
+import { TypeVaktService } from '../ser/type-vakt.service';
 
 import { bedrifter, bedriftFlis } from '../angular-animation';
 
@@ -13,7 +14,7 @@ import { bedrifter, bedriftFlis } from '../angular-animation';
     bedriftFlis
   ]
 })
-export class DatabaseListerComponent implements OnInit {
+export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit {
   @ViewChild('vi0', { static: true }) vi0: ElementRef<HTMLElement>;
   @ViewChild('vi1', { static: true }) vi1: ElementRef<HTMLElement>;
 
@@ -22,8 +23,15 @@ export class DatabaseListerComponent implements OnInit {
   bedrifterVisningsType: 'comfy' | 'liste' = 'comfy';
   startEitNyttSok;
 
+  ioObservers: {
+    io: IntersectionObserver,
+    targetElmt: HTMLElement | Element
+  }[] = [];
+  length: any;
+
   constructor(
-    private databaseService: DatabaseService
+    private databaseService: DatabaseService,
+    private typeVakt: TypeVaktService
   ) { }
 
   async ngOnInit(): Promise<void> {
@@ -36,6 +44,42 @@ export class DatabaseListerComponent implements OnInit {
         this.visning(this.vi1.nativeElement, 1);
       }
     }
+  }
+
+  ngOnDestroy(): void {
+    this.ioObservers.forEach(v => { v.io.disconnect(); });
+  }
+
+  ngAfterViewInit(): void {
+    // Sett på lazy innlasting av bilete
+    setTimeout(() => {
+      const alleFlisElementer = document.querySelectorAll('div > .flis');
+      alleFlisElementer.forEach(flisElement => {
+        this.lazyLastInnBilete(flisElement);
+      });
+    }, 800);
+  }
+
+  private async lazyLastInnBilete(bileteElmt: HTMLElement | Element): Promise<void> {
+    const io = new IntersectionObserver((entries, observer) => {
+      for (const entry of entries) {
+        // /
+        // Sett inn bakgrunnsbilete (last inn...)
+        if (entry.isIntersecting) {
+          const element = entry.target.firstElementChild.firstElementChild;
+
+          // Sett inn bilete
+          if (this.typeVakt.erEitHTMLElement(element)) {
+            const evtLogoLink = element.getAttribute('data-logourl');
+
+            if (evtLogoLink) { element.style.backgroundImage = evtLogoLink; }
+          }
+        }
+      }
+    });
+
+    this.ioObservers.push({ io, targetElmt: bileteElmt });
+    io.observe(bileteElmt);
   }
 
   visning(visningsElement: HTMLElement, type: 0 | 1): void {

@@ -19,10 +19,10 @@
         <!-- Ein bedrift -->
         <ng-container *ngIf="alleBedrifterVisning else lasterInn">
             <ng-container *ngIf="alleBedrifterVisning.length > 0 else nullResultatSok">
-                <div [@bedriftFlis]="bedrifterVisningsType" class="flis" *ngFor="let bedrift of alleBedrifterVisning">
+                <div [@bedriftFlis]="bedrifterVisningsType" class="flis"
+                    *ngFor="let bedrift of alleBedrifterVisning; trackBy: flisBedriftTracker">
                     <div class="logo">
-                        <div *ngIf="bedrift.logoLink else broken"
-                            [style.backgroundImage]="'url(' + bedrift.logoLink + ')'">
+                        <div *ngIf="bedrift.logoLink else broken" [attr.data-logourl]="'url(' + bedrift.logoLink + ')'">
                         </div>
                         <ng-template #broken>
                             <mat-icon>broken_image</mat-icon>
@@ -30,7 +30,7 @@
                     </div>
                     <div class="annet">
                         <h2 [innerHTML]="bedrift.namn" style="margin: 0 0 5px"></h2>
-                        <p [innerHTML]="forkortString(bedrift.beskriving1, 160)"></p>
+                        <p [innerHTML]="forkortString(bedrift.beskriving1, 155)"></p>
 
                         <button mat-raised-button color="primary"
                             [routerLink]="['/bedrifter', { outlets: { bedrift: bedrift.ruterLink } }]">

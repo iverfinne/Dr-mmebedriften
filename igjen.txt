@@ -1,8 +1,8 @@
 Igjen:
 
-- Klikk på intern link, justerer scroll posisjonen til start |
+- Klikk på intern link, justerer scroll posisjonen til start | OK
 - Lage til intersection observer for alle bedrifter fliser sin bilete.
-  (sånn dei lastes berre inn når det trengs) |
+  (sånn dei lastes berre inn når det trengs) | OK
 - Legge til iframe for "testen" (brukes av mobil) | OK
 - Legge til tilleggskort for kva som helst for ein bedrift | OK
 - Legge til Google Forms på sida (DB) | OK
@@ -10,5 +10,6 @@ Igjen:
 Små-ting:
 
 - Juster opp undermenyen litt på mobil | OK
-- Justere litt opp min-vidde på tilleggskort | 
-- Sjekk att framsidebilete er OK tilpasset for ein bedrift | 
+- Justere litt opp min-vidde på tilleggskort | OK
+- Sjekk att framsidebilete er OK tilpasset for ein bedrift | OK - Toppstilt
+- Opplyse om Cookies? Bruker Google Cookies? | 
