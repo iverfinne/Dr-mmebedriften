@@ -4,6 +4,7 @@ import { DatabaseService } from '../ser/database.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { einBedrift } from '../angular-animation';
 import { GlobaleLyttararService } from '../ser/globale-lyttarar.service';
+import { SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   templateUrl: './ein-bedrift.component.html',
@@ -17,6 +18,8 @@ export class EinBedriftComponent implements OnInit {
   currBedriftRuterLink;
 
   containerStatus: 'av' | 'pa' = 'pa';
+
+  einBedriftCurrentGoogleFormLink: string | SafeResourceUrl;
 
   constructor(
     private ruter: Router,
@@ -37,7 +40,8 @@ export class EinBedriftComponent implements OnInit {
     this.einBedrift = await this.databaseService.hentEinBedrift(this.currBedriftRuterLink);
   }
 
-  opneUndersokelse(): void {
+  opneUndersokelse(googleFormLink: string | SafeResourceUrl): void {
+    this.einBedriftCurrentGoogleFormLink = googleFormLink;
     this.globaleLyttararService.animasjonsStatusGoogleFormEinBedrift.next('pa');
   }
 

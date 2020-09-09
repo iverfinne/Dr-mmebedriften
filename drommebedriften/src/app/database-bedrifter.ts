@@ -31,7 +31,14 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: 'tester2',
         linktekst1: 0,
         link1: 'https://www.google.no/',
-        googleFormHTMLEmbedLink: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+        gfhel: [
+            {
+                tittel: 'Mat',
+                beskriving1: 'Custom tekst for ein Google Form-undersøkelse.',
+                linktekst1: 0,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
         tilleggskort: [
             {
                 tittel: 'Test1',
@@ -60,7 +67,7 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
 `,
         linktekst1: 0,
         link1: 'https://www.dnvgl.no/',
-        googleFormHTMLEmbedLink: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+        gfhel: null,
         tilleggskort: [
             {
                 tittel: 'Speeddate',
@@ -85,7 +92,7 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         beskriving2: `Bouvet er et skandinavisk konsulentselskap, som gjennom rådgivning, utvikling, design og forvaltning, bidrar til å maksimere effekter i krysningspunktet mellom moderne teknologi og digital kommunikasjon. Flotte ord - ingen overflødige. Varen vi leverer kommer fra faglig styrke. Derfor har vi også et bevisst forhold til faglig utvikling, som kommer i mange former tilpasset den enkelte. Vi har blant annet fagkvelder, arkitektskole, systemutviklerskole, deltakelse på konferanser, hackatons og internkonferanser med fokus på kompetansedeling.`,
         linktekst1: 0,
         link1: 'https://www.bouvet.no/',
-        googleFormHTMLEmbedLink: gfise(),
+        gfhel: null,
         tilleggskort: []
     },
     {
@@ -97,7 +104,7 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         beskriving2: `Vår industrielle produktportefølje går til miljøforbedringer og til en rekke bransjer og prosesser. Miljøproduktene utgjør en egen produktgruppe med utspring fra nitrogenproduksjon. Denne produktgruppen spenner fra produkter og tjenester som fjerner skadelige utslipp fra kjøretøyer og stasjonære installasjoner til de som brukes til å kontrollere sjenerende lukt fra avløps- og kloakksystemer.`,
         linktekst1: 0,
         link1: 'https://www.yara.no/',
-        googleFormHTMLEmbedLink: gfise(),
+        gfhel: null,
         tilleggskort: []
     },
     {
@@ -108,7 +115,7 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         beskriving1: `Finansdepartementet (FIN) har ansvaret for å planlegge og iverksette den økonomiske politikken, budsjettpolitikken, skatte- og avgiftspolitikken, finansiell stabilitet og forvaltningen av Statens pensjonsfond.`,
         linktekst1: 0,
         link1: 'https://www.regjeringen.no/no/dep/fin/id216/',
-        googleFormHTMLEmbedLink: gfise(),
+        gfhel: null,
         tilleggskort: []
     },
     {
@@ -119,7 +126,7 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         beskriving1: `Sjøfartsdirektoratet er eit forvaltningsorgan under Nærings- og fiskeridepartementet og Klima- og miljødepartementet med myndigheitsansvar overfor norskregistrerte skip og utanlandske skip som går inn til norske hamner.`,
         linktekst1: 0,
         link1: 'https://www.sdir.no/',
-        googleFormHTMLEmbedLink: gfise(),
+        gfhel: null,
         tilleggskort: []
     },
     {
@@ -131,7 +138,7 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         `,
         linktekst1: 0,
         link1: 'https://www.tryg.no/',
-        googleFormHTMLEmbedLink: gfise(),
+        gfhel: null,
         tilleggskort: []
     },
     {
@@ -143,7 +150,7 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         `,
         linktekst1: 0,
         link1: 'https://www.obos.no/',
-        googleFormHTMLEmbedLink: gfise(),
+        gfhel: null,
         tilleggskort: []
     },
     {
@@ -155,7 +162,7 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         `,
         linktekst1: 0,
         link1: 'https://www.tekna.no/',
-        googleFormHTMLEmbedLink: gfise(),
+        gfhel: null,
         tilleggskort: []
     },
     {
@@ -167,7 +174,7 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         `,
         linktekst1: 0,
         link1: 'https://www.accenture.no/',
-        googleFormHTMLEmbedLink: gfise(),
+        gfhel: null,
         tilleggskort: []
     },
     {
@@ -179,7 +186,7 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         `,
         linktekst1: 0,
         link1: 'https://www.forsvaret.no/',
-        googleFormHTMLEmbedLink: gfise(),
+        gfhel: null,
         tilleggskort: []
     },
     {
@@ -191,7 +198,7 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         `,
         linktekst1: 0,
         link1: 'https://www.knowit.no/',
-        googleFormHTMLEmbedLink: gfise(),
+        gfhel: null,
         tilleggskort: []
     }
 ];

@@ -1,16 +1,11 @@
-<ng-container *ngIf="einBedrift && einBedrift.googleFormHTMLEmbedLink">
-    <app-dynamisk-google-form-html [htmlLink]="einBedrift.googleFormHTMLEmbedLink"></app-dynamisk-google-form-html>
+<ng-container *ngIf="einBedrift && einBedrift.gfhel && einBedriftCurrentGoogleFormLink">
+    <app-dynamisk-google-form-html [htmlLink]="einBedriftCurrentGoogleFormLink"></app-dynamisk-google-form-html>
 </ng-container>
 
 <ng-container *ngIf="einBedrift else laster">
     <div [@einBedrift]="containerStatus" class="container">
         <button mat-mini-fab color="primary" class="pil-tilbake" (click)="lukkPanel()">
             <mat-icon>first_page</mat-icon>
-        </button>
-        <button *ngIf="einBedrift && einBedrift.googleFormHTMLEmbedLink" mat-raised-button color="primary"
-            class="opne-google-form" (click)="opneUndersokelse()">
-            <mat-icon>dynamic_form</mat-icon>
-            Undersøkelse
         </button>
 
         <div>
@@ -26,8 +21,42 @@
                 </div>
             </div>
             <div class="tekst">
+                <div class="tilleggskort" *ngIf="einBedrift.gfhel || einBedrift.tilleggskort">
+                    <!-- Google Form som "tilleggskort" -->
+                    <ng-container *ngIf="einBedrift.gfhel">
+                        <div *ngFor="let googleFormKort of einBedrift.gfhel">
+                            <h1 style="margin-block-end: 5px;" [innerHTML]="googleFormKort.tittel"></h1>
+                            <p *ngIf="googleFormKort.beskriving1 else br" [innerHTML]="googleFormKort.beskriving1">
+                            </p>
+                            <ng-template #br>
+                                <p>
+                                    Google Form-skjema
+                                </p>
+                            </ng-template>
+
+                            <span
+                                [innerHTML]="googleFormKort.linktekst1 === 0 ? 'Les mer om ' + googleFormKort.tittel + ' her' : googleFormKort.linktekst1"
+                                (click)="opneUndersokelse(googleFormKort.link1);">
+                                <mat-icon>dynamic_form</mat-icon>
+                            </span>
+                        </div>
+                    </ng-container>
+                    <!-- Andre tilleggskort -->
+                    <ng-container *ngIf="einBedrift.tilleggskort">
+                        <div *ngFor="let kort of einBedrift.tilleggskort">
+                            <h1 style="margin-block-end: 5px;" [innerHTML]="kort.tittel"></h1>
+                            <p [innerHTML]="kort.beskriving1"></p>
+
+                            <a [href]="kort.link1"
+                                [innerHTML]="kort.linktekst1 === 0 ? 'Les mer om ' + kort.tittel + ' her' : kort.linktekst1"
+                                target="_blank" rel="noopener"></a>
+                        </div>
+                    </ng-container>
+                </div>
+
                 <h1 [innerHTML]="einBedrift.namn"></h1>
                 <p [innerHTML]="einBedrift.beskriving1"></p>
+                <p [innerHTML]="einBedrift.beskriving2"></p>
 
                 <p class="link1">
                     <a [href]="einBedrift.link1"
@@ -39,19 +68,6 @@
                     <br>
                     <span></span>
                 </p>
-
-                <p [innerHTML]="einBedrift.beskriving2"></p>
-
-                <div class="tilleggskort" *ngIf="einBedrift.tilleggskort">
-                    <div *ngFor="let kort of einBedrift.tilleggskort">
-                        <h1 style="margin-block-end: 5px;" [innerHTML]="kort.tittel"></h1>
-                        <p [innerHTML]="kort.beskriving1"></p>
-
-                        <a [href]="kort.link1"
-                            [innerHTML]="kort.linktekst1 === 0 ? 'Les mer om ' + kort.tittel + ' her' : kort.linktekst1"
-                            target="_blank" rel="noopener"></a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

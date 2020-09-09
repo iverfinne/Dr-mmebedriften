@@ -140,7 +140,8 @@
                 position: relative;
                 width: 100%;
                 height: auto;
-                margin-top: 40px;
+                margin-top: 5px;
+                margin-bottom: 30px;
                 box-sizing: border-box;
 
                 padding: 10px 30px;
@@ -170,7 +171,7 @@
 
                     $farge2: #55ADE0;
 
-                    >a {
+                    >a, >span {
                         display: block;
                         color: white;
                         text-decoration: none;
@@ -184,6 +185,11 @@
                         background-color: $farge2;
 
                         transition: 300ms ease;
+
+                        cursor: pointer;
+                        user-select: none;
+
+                        outline: none;
 
                         &:hover {
                             background-color: lighten($color: $farge2, $amount: 3%);
