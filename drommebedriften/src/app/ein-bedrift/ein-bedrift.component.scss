@@ -13,7 +13,7 @@
         position: absolute;
         left: 17px;
         top: calc(40vh + 20px);
-        background-color: cadetblue;
+        background-color: #55ADE0;
         opacity: 0.9;
     }
 
@@ -22,7 +22,7 @@
         position: absolute;
         left: calc(17px + 40px + 10px);
         top: calc(40vh + 20px);
-        background-color: cadetblue;
+        background-color: #55ADE0;
         opacity: 0.9;
         transform: translateY(14px);
     }
@@ -168,7 +168,7 @@
                         word-break: keep-all;
                     }
 
-                    $farge2: cadetblue;
+                    $farge2: #55ADE0;
 
                     >a {
                         display: block;

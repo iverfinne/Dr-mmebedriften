@@ -6,7 +6,7 @@
     box-sizing: border-box;
     padding: 20px 0;
     .mat-raised-button.mat-primary {
-        background-color: #49A4FC
+        background-color: #55ADE0
     }
     .sok-container {
         position: relative;
@@ -70,7 +70,7 @@
 
                 &:hover {
                     color: white;
-                    background-color: transparentize($color: lighten($color: #00796b, $amount: 10%), $amount: 0.4);
+                    background-color: transparentize($color: lighten($color: #4F89E0, $amount: 10%), $amount: 0.4);
                 }
 
                 transition: 0.1s;
@@ -78,7 +78,7 @@
 
             >div.aktiv {
                 color: white;
-                background-color: transparentize($color: lighten($color: #00796b, $amount: 9%), $amount: 0.05);
+                background-color: transparentize($color: lighten($color: #4F89E0, $amount: 9%), $amount: 0.05);
             }
         }
     }
