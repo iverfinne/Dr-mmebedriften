@@ -23,31 +23,6 @@ function gfise(iframeEmbedLink?: string): string | null {
 // Alle Bedrifter - Lokal database
 export const Bedrifter: Bedrift[] = [
     {
-        namn: 'Tester',
-        ruterLink: 'tester',
-        logoLink: null,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}evening-55067_1280.webp`,
-        beskriving1: 'tester1',
-        beskriving2: 'tester2',
-        linktekst1: 0,
-        link1: 'https://www.google.no/',
-        googleFormHTMLEmbedLink: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
-        tilleggskort: [
-            {
-                tittel: 'Test1',
-                beskriving1: 'Dette er ein test1.',
-                linktekst1: 'Custom link-tekst',
-                link1: 'https://google.no'
-            },
-            {
-                tittel: 'Test2',
-                beskriving1: 'Dette er ein test2.',
-                linktekst1: 0,
-                link1: 'https://google.no'
-            }
-        ]
-    },
-    {
         namn: 'DNV GL',
         ruterLink: 'dnv-gl',
         logoLink: `${LocalPaths.path_bedriftLogo}dnv_gl.png`,
@@ -55,7 +30,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: ` sustainability in the customer's businesses.`,
         linktekst1: 0,
         link1: 'https://www.dnvgl.no/',
-        googleFormHTMLEmbedLink: gfise(),
+        googleFormHTMLEmbedLink: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
         tilleggskort: [
             {
                 tittel: 'Speeddate',
