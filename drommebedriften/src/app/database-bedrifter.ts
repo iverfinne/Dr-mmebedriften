@@ -52,7 +52,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'dnv-gl',
         logoLink: `${LocalPaths.path_bedriftLogo}dnv_gl.png`,
         framsidebileteLink: null,
-        beskriving1: `With chosen in our goal of securing life, values and environmental supply DNV GL organizations to make security and sustainability in the customer's businesses.`,
+        beskriving1: ` sustainability in the customer's businesses.`,
         linktekst1: 0,
         link1: 'https://www.dnvgl.no/',
         googleFormHTMLEmbedLink: gfise(),
