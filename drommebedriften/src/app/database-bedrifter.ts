@@ -93,8 +93,22 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         beskriving2: `Bouvet er et skandinavisk konsulentselskap, som gjennom rådgivning, utvikling, design og forvaltning, bidrar til å maksimere effekter i krysningspunktet mellom moderne teknologi og digital kommunikasjon. Flotte ord - ingen overflødige. Varen vi leverer kommer fra faglig styrke. Derfor har vi også et bevisst forhold til faglig utvikling, som kommer i mange former tilpasset den enkelte. Vi har blant annet fagkvelder, arkitektskole, systemutviklerskole, deltakelse på konferanser, hackatons og internkonferanser med fokus på kompetansedeling.`,
         linktekst1: 0,
         link1: 'https://www.bouvet.no/',
-        gfhel: null,
-        tilleggskort: []
+        gfhel: [
+            {
+                tittel: 'Speeddate',
+                beskriving1: 'Meld deg på speeddate med DNV GL her',
+                linktekst1: 'Meld deg på',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
+            {
+                tittel: 'Middag',
+                beskriving1: 'Les mer om DNV GL middagen her',
+                linktekst1: 0,
+                link1: 'https://google.no'
+            }
+        ]
     },
     {
         namn: 'Yara',
@@ -105,17 +119,18 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         beskriving2: `Vår industrielle produktportefølje går til miljøforbedringer og til en rekke bransjer og prosesser. Miljøproduktene utgjør en egen produktgruppe med utspring fra nitrogenproduksjon. Denne produktgruppen spenner fra produkter og tjenester som fjerner skadelige utslipp fra kjøretøyer og stasjonære installasjoner til de som brukes til å kontrollere sjenerende lukt fra avløps- og kloakksystemer.`,
         linktekst1: 0,
         link1: 'https://www.yara.no/',
-        gfhel: null,
-        tilleggskort: [
+        gfhel: [
             {
                 tittel: 'Speeddate',
-                beskriving1: 'Meld deg på speeddate med Yara her',
-                linktekst1: 'Custom link-tekst',
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            },
+                beskriving1: 'Meld deg på speeddate med DNV GL her',
+                linktekst1: 'Meld deg på',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
             {
                 tittel: 'Middag',
-                beskriving1: 'Les mer om Yara middagen her',
+                beskriving1: 'Les mer om DNV GL middagen her',
                 linktekst1: 0,
                 link1: 'https://google.no'
             }
@@ -129,17 +144,18 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         beskriving1: `Finansdepartementet (FIN) har ansvaret for å planlegge og iverksette den økonomiske politikken, budsjettpolitikken, skatte- og avgiftspolitikken, finansiell stabilitet og forvaltningen av Statens pensjonsfond.`,
         linktekst1: 0,
         link1: 'https://www.regjeringen.no/no/dep/fin/id216/',
-        gfhel: null,
-        tilleggskort: [
+        gfhel: [
             {
                 tittel: 'Speeddate',
-                beskriving1: 'Meld deg på speeddate med Finansdepartementet her',
-                linktekst1: 'Custom link-tekst',
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            },
+                beskriving1: 'Meld deg på speeddate med DNV GL her',
+                linktekst1: 'Meld deg på',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
             {
                 tittel: 'Middag',
-                beskriving1: 'Les mer om Finansdepartementet middagen her',
+                beskriving1: 'Les mer om DNV GL middagen her',
                 linktekst1: 0,
                 link1: 'https://google.no'
             }
@@ -153,17 +169,18 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         beskriving1: `Sjøfartsdirektoratet er eit forvaltningsorgan under Nærings- og fiskeridepartementet og Klima- og miljødepartementet med myndigheitsansvar overfor norskregistrerte skip og utanlandske skip som går inn til norske hamner.`,
         linktekst1: 0,
         link1: 'https://www.sdir.no/',
-        gfhel: null,
-        tilleggskort: [
+        gfhel: [
             {
                 tittel: 'Speeddate',
-                beskriving1: 'Meld deg på speeddate med Sjøfartsdirektoratet her',
-                linktekst1: 'Custom link-tekst',
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            },
+                beskriving1: 'Meld deg på speeddate med DNV GL her',
+                linktekst1: 'Meld deg på',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
             {
                 tittel: 'Middag',
-                beskriving1: 'Les mer om Sjøfartsdirektoratet middagen her',
+                beskriving1: 'Les mer om DNV GL middagen her',
                 linktekst1: 0,
                 link1: 'https://google.no'
             }
@@ -178,17 +195,18 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         `,
         linktekst1: 0,
         link1: 'https://www.tryg.no/',
-        gfhel: null,
-        tilleggskort: [
+        gfhel: [
             {
                 tittel: 'Speeddate',
-                beskriving1: 'Meld deg på speeddate med Tryg her',
-                linktekst1: 'Custom link-tekst',
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            },
+                beskriving1: 'Meld deg på speeddate med DNV GL her',
+                linktekst1: 'Meld deg på',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
             {
                 tittel: 'Middag',
-                beskriving1: 'Les mer om Tryg middagen her',
+                beskriving1: 'Les mer om DNV GL middagen her',
                 linktekst1: 0,
                 link1: 'https://google.no'
             }
@@ -203,17 +221,18 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         `,
         linktekst1: 0,
         link1: 'https://www.obos.no/',
-        gfhel: null,
-        tilleggskort: [
+        gfhel: [
             {
                 tittel: 'Speeddate',
-                beskriving1: 'Meld deg på speeddate med Obos her',
-                linktekst1: 'Custom link-tekst',
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            },
+                beskriving1: 'Meld deg på speeddate med DNV GL her',
+                linktekst1: 'Meld deg på',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
             {
                 tittel: 'Middag',
-                beskriving1: 'Les mer om Obos middagen her',
+                beskriving1: 'Les mer om DNV GL middagen her',
                 linktekst1: 0,
                 link1: 'https://google.no'
             }
@@ -228,17 +247,18 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         `,
         linktekst1: 0,
         link1: 'https://www.tekna.no/',
-        gfhel: null,
-        tilleggskort: [
+        gfhel: [
             {
                 tittel: 'Speeddate',
-                beskriving1: 'Meld deg på speeddate med Tekna her',
-                linktekst1: 'Custom link-tekst',
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            },
+                beskriving1: 'Meld deg på speeddate med DNV GL her',
+                linktekst1: 'Meld deg på',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
             {
                 tittel: 'Middag',
-                beskriving1: 'Les mer om Tekna middagen her',
+                beskriving1: 'Les mer om DNV GL middagen her',
                 linktekst1: 0,
                 link1: 'https://google.no'
             }
@@ -253,17 +273,18 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         `,
         linktekst1: 0,
         link1: 'https://www.accenture.no/',
-        gfhel: null,
-        tilleggskort: [
+        gfhel: [
             {
                 tittel: 'Speeddate',
-                beskriving1: 'Meld deg på speeddate med Accenture her',
-                linktekst1: 'Custom link-tekst',
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            },
+                beskriving1: 'Meld deg på speeddate med DNV GL her',
+                linktekst1: 'Meld deg på',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
             {
                 tittel: 'Middag',
-                beskriving1: 'Les mer om Accenture middagen her',
+                beskriving1: 'Les mer om DNV GL middagen her',
                 linktekst1: 0,
                 link1: 'https://google.no'
             }
@@ -278,17 +299,18 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         `,
         linktekst1: 0,
         link1: 'https://www.forsvaret.no/',
-        gfhel: null,
-        tilleggskort: [
+        gfhel: [
             {
                 tittel: 'Speeddate',
-                beskriving1: 'Meld deg på speeddate med Forsvaret her',
-                linktekst1: 'Custom link-tekst',
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            },
+                beskriving1: 'Meld deg på speeddate med DNV GL her',
+                linktekst1: 'Meld deg på',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
             {
                 tittel: 'Middag',
-                beskriving1: 'Les mer om Forsvaret middagen her',
+                beskriving1: 'Les mer om DNV GL middagen her',
                 linktekst1: 0,
                 link1: 'https://google.no'
             }
@@ -303,18 +325,21 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         `,
         linktekst1: 0,
         link1: 'https://www.knowit.no/',
-        gfhel: null,
-        tilleggskort: [            {
-            tittel: 'Speeddate',
-            beskriving1: 'Meld deg på speeddate med Knowit her',
-            linktekst1: 'Custom link-tekst',
-            link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-        },
-        {
-            tittel: 'Middag',
-            beskriving1: 'Les mer om Knowit middagen her',
-            linktekst1: 0,
-            link1: 'https://google.no'
-        }]
+        gfhel: [
+            {
+                tittel: 'Speeddate',
+                beskriving1: 'Meld deg på speeddate med DNV GL her',
+                linktekst1: 'Meld deg på',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
+            {
+                tittel: 'Middag',
+                beskriving1: 'Les mer om DNV GL middagen her',
+                linktekst1: 0,
+                link1: 'https://google.no'
+            }
+        ]
     }
 ];
