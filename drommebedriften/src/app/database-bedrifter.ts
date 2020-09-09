@@ -68,12 +68,12 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         linktekst1: 0,
         link1: 'https://www.dnvgl.no/',
         gfhel: null,
-        tilleggskort: [
+        gfhel: [
             {
                 tittel: 'Speeddate',
                 beskriving1: 'Meld deg på speeddate med DNV GL her',
-                linktekst1: 'Custom link-tekst',
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+                linktekst1: 'Meld deg på',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             },
             {
                 tittel: 'Middag',
@@ -105,7 +105,20 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         linktekst1: 0,
         link1: 'https://www.yara.no/',
         gfhel: null,
-        tilleggskort: []
+        tilleggskort: [
+            {
+                tittel: 'Speeddate',
+                beskriving1: 'Meld deg på speeddate med Yara her',
+                linktekst1: 'Custom link-tekst',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            },
+            {
+                tittel: 'Middag',
+                beskriving1: 'Les mer om Yara middagen her',
+                linktekst1: 0,
+                link1: 'https://google.no'
+            }
+        ]
     },
     {
         namn: 'Finansdepartementet',
@@ -116,7 +129,20 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         linktekst1: 0,
         link1: 'https://www.regjeringen.no/no/dep/fin/id216/',
         gfhel: null,
-        tilleggskort: []
+        tilleggskort: [
+            {
+                tittel: 'Speeddate',
+                beskriving1: 'Meld deg på speeddate med Finansdepartementet her',
+                linktekst1: 'Custom link-tekst',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            },
+            {
+                tittel: 'Middag',
+                beskriving1: 'Les mer om Finansdepartementet middagen her',
+                linktekst1: 0,
+                link1: 'https://google.no'
+            }
+        ]
     },
     {
         namn: 'Sjøfartsdirektoratet',
@@ -127,7 +153,20 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         linktekst1: 0,
         link1: 'https://www.sdir.no/',
         gfhel: null,
-        tilleggskort: []
+        tilleggskort: [
+            {
+                tittel: 'Speeddate',
+                beskriving1: 'Meld deg på speeddate med Sjøfartsdirektoratet her',
+                linktekst1: 'Custom link-tekst',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            },
+            {
+                tittel: 'Middag',
+                beskriving1: 'Les mer om Sjøfartsdirektoratet middagen her',
+                linktekst1: 0,
+                link1: 'https://google.no'
+            }
+        ]
     },
     {
         namn: 'Tryg',
@@ -139,7 +178,20 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         linktekst1: 0,
         link1: 'https://www.tryg.no/',
         gfhel: null,
-        tilleggskort: []
+        tilleggskort: [
+            {
+                tittel: 'Speeddate',
+                beskriving1: 'Meld deg på speeddate med Tryg her',
+                linktekst1: 'Custom link-tekst',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            },
+            {
+                tittel: 'Middag',
+                beskriving1: 'Les mer om Tryg middagen her',
+                linktekst1: 0,
+                link1: 'https://google.no'
+            }
+        ]
     },
     {
         namn: 'OBOS',
@@ -151,7 +203,20 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         linktekst1: 0,
         link1: 'https://www.obos.no/',
         gfhel: null,
-        tilleggskort: []
+        tilleggskort: [
+            {
+                tittel: 'Speeddate',
+                beskriving1: 'Meld deg på speeddate med Obos her',
+                linktekst1: 'Custom link-tekst',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            },
+            {
+                tittel: 'Middag',
+                beskriving1: 'Les mer om Obos middagen her',
+                linktekst1: 0,
+                link1: 'https://google.no'
+            }
+        ]
     },
     {
         namn: 'Tekna',
@@ -163,7 +228,20 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         linktekst1: 0,
         link1: 'https://www.tekna.no/',
         gfhel: null,
-        tilleggskort: []
+        tilleggskort: [
+            {
+                tittel: 'Speeddate',
+                beskriving1: 'Meld deg på speeddate med Tekna her',
+                linktekst1: 'Custom link-tekst',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            },
+            {
+                tittel: 'Middag',
+                beskriving1: 'Les mer om Tekna middagen her',
+                linktekst1: 0,
+                link1: 'https://google.no'
+            }
+        ]
     },
     {
         namn: 'Accenture',
@@ -175,7 +253,20 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         linktekst1: 0,
         link1: 'https://www.accenture.no/',
         gfhel: null,
-        tilleggskort: []
+        tilleggskort: [
+            {
+                tittel: 'Speeddate',
+                beskriving1: 'Meld deg på speeddate med Accenture her',
+                linktekst1: 'Custom link-tekst',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            },
+            {
+                tittel: 'Middag',
+                beskriving1: 'Les mer om Accenture middagen her',
+                linktekst1: 0,
+                link1: 'https://google.no'
+            }
+        ]
     },
     {
         namn: 'Forsvaret',
@@ -187,7 +278,20 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         linktekst1: 0,
         link1: 'https://www.forsvaret.no/',
         gfhel: null,
-        tilleggskort: []
+        tilleggskort: [
+            {
+                tittel: 'Speeddate',
+                beskriving1: 'Meld deg på speeddate med Forsvaret her',
+                linktekst1: 'Custom link-tekst',
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            },
+            {
+                tittel: 'Middag',
+                beskriving1: 'Les mer om Forsvaret middagen her',
+                linktekst1: 0,
+                link1: 'https://google.no'
+            }
+        ]
     },
     {
         namn: 'Knowit',
@@ -199,6 +303,17 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         linktekst1: 0,
         link1: 'https://www.knowit.no/',
         gfhel: null,
-        tilleggskort: []
+        tilleggskort: [            {
+            tittel: 'Speeddate',
+            beskriving1: 'Meld deg på speeddate med Knowit her',
+            linktekst1: 'Custom link-tekst',
+            link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKVBnAKvLDBBtZGVOJSq-v5WKxup3rWvkfM5ee2VmwADEa3w/viewform?embedded=true" width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+        },
+        {
+            tittel: 'Middag',
+            beskriving1: 'Les mer om Knowit middagen her',
+            linktekst1: 0,
+            link1: 'https://google.no'
+        }]
     }
 ];
