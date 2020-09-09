@@ -51,7 +51,7 @@ export const Bedrifter: Bedrift[] = [
         namn: 'DNV GL',
         ruterLink: 'dnv-gl',
         logoLink: `${LocalPaths.path_bedriftLogo}dnv_gl.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}DNV-GL.jpg´,
+        framsidebileteLink: ${LocalPaths.path_bedriftFramsidebilete}DNV-GL.jpg',
         beskriving1: `Med utgangspunkt i vårt mål om å sikre liv, verdier og miljø bidrar DNV GL organisasjoner til å øke sikkerheten og bærekraften i våre kunders virksomheter.`,
         linktekst1: 0,
         link1: 'https://www.dnvgl.no/',
