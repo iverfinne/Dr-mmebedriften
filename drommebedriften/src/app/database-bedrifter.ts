@@ -67,7 +67,6 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
 `,
         linktekst1: 0,
         link1: 'https://www.dnvgl.no/',
-        gfhel: null,
         gfhel: [
             {
                 tittel: 'Speeddate',
