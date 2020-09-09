@@ -74,7 +74,8 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
                 beskriving1: 'Meld deg på speeddate med DNV GL her',
                 linktekst1: 'Meld deg på',
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            },
+            }
+        ],
             {
                 tittel: 'Middag',
                 beskriving1: 'Les mer om DNV GL middagen her',
