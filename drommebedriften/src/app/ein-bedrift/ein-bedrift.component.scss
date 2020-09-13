@@ -1,3 +1,5 @@
+@import '../../style-vars.scss';
+
 .container {
     z-index: 99;
     position: fixed;
@@ -13,7 +15,6 @@
         position: absolute;
         left: 17px;
         top: calc(40vh + 20px);
-        background-color: #55ADE0;
         opacity: 0.9;
     }
 
@@ -22,7 +23,6 @@
         position: absolute;
         left: calc(17px + 40px + 10px);
         top: calc(40vh + 20px);
-        background-color: #55ADE0;
         opacity: 0.9;
         transform: translateY(14px);
     }
@@ -42,7 +42,7 @@
 
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: top;
+            background-position: center;
 
             background-color: rgba(245, 245, 245, 0.411);
 
@@ -100,22 +100,18 @@
                 text-align: center;
             }
 
-            $farge0: #49A4FC;
-            $farge1: #55ADE0;
-
             .link1 {
-                // border: 2px dashed $farge1;
                 border-radius: 20px;
                 padding: 10px 20px;
 
                 >a {
-                    color: $farge0;
+                    color: $fargeUI_einBedrift;
                     text-decoration: none;
                 }
 
                 >sup {
                     >mat-icon {
-                        color: #49A4FC;
+                        color: $fargeUI_einBedrift;
                         font-size: 1.2em;
                     }
                 }
@@ -124,7 +120,7 @@
                     display: inline-block;
                     width: 0;
                     height: 2px;
-                    border-top: 2px solid $farge0;
+                    border-top: 2px solid $fargeUI_einBedrift;
 
                     transition: 800ms cubic-bezier(0.215, 0.610, 0.355, 1);
                 }
@@ -165,13 +161,16 @@
 
                     box-shadow: 0px 5px 18px 0px rgb(0 0 0 / 19%);
 
+                    .tittel {
+                        margin-block-end: 5px;
+                    }
+
                     >p {
                         word-break: keep-all;
                     }
 
-                    $farge2: #55ADE0;
-
-                    >a, >span {
+                    >a,
+                    >span {
                         display: block;
                         color: white;
                         text-decoration: none;
@@ -182,7 +181,7 @@
                         box-sizing: border-box;
                         border-radius: 6px;
                         font-weight: 100;
-                        background-color: $farge2;
+                        background-color: $fargeUI_einBedrift;
 
                         transition: 300ms ease;
 
@@ -192,11 +191,11 @@
                         outline: none;
 
                         &:hover {
-                            background-color: lighten($color: $farge2, $amount: 3%);
+                            background-color: lighten($color: $fargeUI_einBedrift, $amount: 3%);
                         }
 
                         &:active {
-                            background-color: darken($color: $farge2, $amount: 2%);
+                            background-color: darken($color: $fargeUI_einBedrift, $amount: 2%);
                         }
                     }
                 }

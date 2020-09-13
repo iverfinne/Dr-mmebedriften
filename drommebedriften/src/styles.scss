@@ -11,8 +11,12 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$drommebedriften-primary: mat-palette($mat-deep-orange);
-$drommebedriften-accent: mat-palette($mat-teal, A400);
+$drommebedriften-primary: mat-palette($mat-blue, 700);
+$drommebedriften-accent: mat-palette($mat-grey, 700);
+// **** Hugs å juster i fila: "style-vars.scss" også **** //
+
+// **^Curr.:
+// https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=1976D2&secondary.color=616161
 
 // The warn palette is optional (defaults to red).
 $drommebedriften-warn: mat-palette($mat-yellow, A400);

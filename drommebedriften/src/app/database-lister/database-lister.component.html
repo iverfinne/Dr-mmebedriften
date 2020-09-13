@@ -41,10 +41,12 @@
             </ng-container>
         </ng-container>
         <ng-template #lasterInn>
-            <mat-spinner style="margin: auto;"></mat-spinner>
+            <mat-spinner color="accent" style="margin: auto;"></mat-spinner>
         </ng-template>
         <ng-template #nullResultatSok>
-            Ingen treff på ditt søk "{{ sok.value.trim() }}".
+            <span *ngIf="sok.value.trim().length > 1">
+                Søket, <b>{{ sok.value.trim() }}</b>, gav ingen treff på noe bedrift.
+            </span>
         </ng-template>
     </div>
 

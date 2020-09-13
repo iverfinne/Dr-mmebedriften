@@ -10,7 +10,9 @@
 
         <div>
             <div class="header"
-                [style.backgroundImage]="einBedrift.framsidebileteLink ? 'url(' + einBedrift.framsidebileteLink + ')' : ''">
+                [style.backgroundImage]="einBedrift.framsidebileteLink ? 'url(' + einBedrift.framsidebileteLink + ')' : ''"
+                [style.backgroundPosition]="einBedrift.framsidebiletePosisjon"
+                [style.backgroundSize]="einBedrift.framsidebileteStorrelse">
                 <div class="logo">
                     <div *ngIf="einBedrift.logoLink else broken"
                         [style.backgroundImage]="'url(' + einBedrift.logoLink + ')'">
@@ -25,19 +27,39 @@
                     <!-- Google Form som "tilleggskort" -->
                     <ng-container *ngIf="einBedrift.gfhel">
                         <div *ngFor="let googleFormKort of einBedrift.gfhel">
-                            <h1 style="margin-block-end: 5px;" [innerHTML]="googleFormKort.tittel"></h1>
-                            <p *ngIf="googleFormKort.beskriving1 else br" [innerHTML]="googleFormKort.beskriving1">
-                            </p>
+                            <!-- Tittel -->
+                            <h1 class="tittel" *ngIf="googleFormKort.tittel.length else formKortTittel"
+                                [innerHTML]="googleFormKort.tittel"></h1>
+                            <ng-template #formKortTittel>
+                                <h1 class="tittel" *ngIf="googleFormKort.tittel === 1">
+                                    Speedate
+                                </h1>
+                            </ng-template>
+                            <!-- Beskrivelse -->
+                            <ng-container *ngIf="googleFormKort.beskriving1 else br">
+                                <p *ngIf="googleFormKort.beskriving1.length else standardBeskriving"
+                                    [innerHTML]="googleFormKort.beskriving1"></p>
+                                <ng-template #standardBeskriving>
+                                    <p *ngIf="googleFormKort.beskriving1 === 1">
+                                        Meld deg på Speedate med {{ einBedrift.namn }}!
+                                    </p>
+                                </ng-template>
+                            </ng-container>
                             <ng-template #br>
                                 <p>
                                     Google Form-skjema
                                 </p>
                             </ng-template>
 
-                            <span
-                                [innerHTML]="googleFormKort.linktekst1 === 0 ? 'Les mer om ' + googleFormKort.tittel + ' her' : googleFormKort.linktekst1"
-                                (click)="opneUndersokelse(googleFormKort.link1);">
-                                <mat-icon>dynamic_form</mat-icon>
+                            <span (click)="opneUndersokelse(googleFormKort.link1);">
+                                <ng-container *ngIf="googleFormKort.linktekst1.length else standardLinkTekst">
+                                    {{ googleFormKort.linktekst1 }}
+                                </ng-container>
+                                <ng-template #standardLinkTekst>
+                                    <ng-container *ngIf="googleFormKort.linktekst1 === 1">
+                                        Påmelding
+                                    </ng-container>
+                                </ng-template>
                             </span>
                         </div>
                     </ng-container>
@@ -48,7 +70,7 @@
                             <p [innerHTML]="kort.beskriving1"></p>
 
                             <a [href]="kort.link1"
-                                [innerHTML]="kort.linktekst1 === 0 ? 'Les mer om ' + kort.tittel + ' her' : kort.linktekst1"
+                                [innerHTML]="kort.linktekst1 === 1 ? 'Les mer om ' + kort.tittel + ' her' : kort.linktekst1"
                                 target="_blank" rel="noopener"></a>
                         </div>
                     </ng-container>
@@ -60,7 +82,7 @@
 
                 <p class="link1">
                     <a [href]="einBedrift.link1"
-                        [innerHTML]="einBedrift.linktekst1 !== 0 ? einBedrift.linktekst1 : einBedrift.namn + ' - Hjemmeside'"
+                        [innerHTML]="einBedrift.linktekst1 !== 1 ? einBedrift.linktekst1 : einBedrift.namn + ' - Hjemmeside'"
                         target="_blank" rel="noopener"></a>
                     <sup>
                         <mat-icon>open_in_new</mat-icon>
