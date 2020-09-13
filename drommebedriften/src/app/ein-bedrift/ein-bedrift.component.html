@@ -107,9 +107,6 @@
                 </div>
 
                 <h1 [innerHTML]="einBedrift.namn"></h1>
-                <p [innerHTML]="einBedrift.beskriving1"></p>
-                <p [innerHTML]="einBedrift.beskriving2"></p>
-
                 <p class="link1">
                     <a [href]="einBedrift.link1"
                         [innerHTML]="einBedrift.linktekst1 !== 1 ? einBedrift.linktekst1 : einBedrift.namn + ' - Hjemmeside'"
@@ -120,6 +117,8 @@
                     <br>
                     <span></span>
                 </p>
+                <p [innerHTML]="einBedrift.beskriving1"></p>
+                <p [innerHTML]="einBedrift.beskriving2"></p>
             </div>
         </div>
     </div>
