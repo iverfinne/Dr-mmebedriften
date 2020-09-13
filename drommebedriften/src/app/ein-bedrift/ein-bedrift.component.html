@@ -28,8 +28,9 @@
                     <ng-container *ngIf="einBedrift.gfhel">
                         <div *ngFor="let googleFormKort of einBedrift.gfhel">
                             <!-- Tittel -->
-                            <h1 class="tittel" *ngIf="googleFormKort.tittel.length else formKortTittel"
-                                [innerHTML]="googleFormKort.tittel"></h1>
+                            <h1 class="tittel" *ngIf="googleFormKort.tittel.length else formKortTittel">
+                                {{ googleFormKort.tittel }}
+                            </h1>
                             <ng-template #formKortTittel>
                                 <h1 class="tittel" *ngIf="googleFormKort.tittel === 1">
                                     Speedate
@@ -40,6 +41,7 @@
                                 <p *ngIf="googleFormKort.beskriving1.length else standardBeskriving"
                                     [innerHTML]="googleFormKort.beskriving1"></p>
                                 <ng-template #standardBeskriving>
+                                    <!-- Speedate -->
                                     <p *ngIf="googleFormKort.beskriving1 === 1">
                                         Meld deg på Speedate med {{ einBedrift.namn }}!
                                     </p>
@@ -56,6 +58,7 @@
                                     {{ googleFormKort.linktekst1 }}
                                 </ng-container>
                                 <ng-template #standardLinkTekst>
+                                    <!-- Speedate -->
                                     <ng-container *ngIf="googleFormKort.linktekst1 === 1">
                                         Påmelding
                                     </ng-container>
@@ -66,12 +69,39 @@
                     <!-- Andre tilleggskort -->
                     <ng-container *ngIf="einBedrift.tilleggskort">
                         <div *ngFor="let kort of einBedrift.tilleggskort">
-                            <h1 style="margin-block-end: 5px;" [innerHTML]="kort.tittel"></h1>
-                            <p [innerHTML]="kort.beskriving1"></p>
-
-                            <a [href]="kort.link1"
-                                [innerHTML]="kort.linktekst1 === 1 ? 'Les mer om ' + kort.tittel + ' her' : kort.linktekst1"
-                                target="_blank" rel="noopener"></a>
+                            <!-- Tittel -->
+                            <ng-container *ngIf="kort.tittel.length else standardKortTittel">
+                                <h1 class="tittel" [innerHTML]="kort.tittel"></h1>
+                            </ng-container>
+                            <ng-template #standardKortTittel>
+                                <ng-container *ngIf="kort.tittel === 1">
+                                    <h1 class="tittel">Middag !</h1>
+                                </ng-container>
+                            </ng-template>
+                            <!-- Beskrivelse -->
+                            <ng-container *ngIf="kort.beskriving1.length else standardKortBeskriving">
+                                <p [innerHTML]="kort.beskriving1"></p>
+                            </ng-container>
+                            <ng-template #standardKortBeskriving>
+                                <!-- Middag -->
+                                <ng-container *ngIf="kort.beskriving1 === 1">
+                                    <p>
+                                        Informasjon om {{ einBedrift.namn }}-middagen.
+                                    </p>
+                                </ng-container>
+                            </ng-template>
+                            <!-- Link -->
+                            <a [href]="kort.link1" target="_blank" rel="noopener">
+                                <ng-container *ngIf="kort.linktekst1.length else standardKortLinktekst">
+                                    Les mer om {{ kort.linktekst1 }}
+                                </ng-container>
+                                <ng-template #standardKortLinktekst>
+                                    <!-- Middag -->
+                                    <ng-container *ngIf="kort.linktekst1 === 1">
+                                        Les mer
+                                    </ng-container>
+                                </ng-template>
+                            </a>
                         </div>
                     </ng-container>
                 </div>

@@ -21,6 +21,7 @@ function gfise(iframeEmbedLink?: string): string | null {
 
 
 // Alle Bedrifter - Lokal database
+// *** Sjekk type-oversikt.ts for dokumentasjon *** //
 export const Bedrifter: Bedrift[] = [
     {
         namn: 'DNV GL',
@@ -46,8 +47,8 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         ],
         tilleggskort: [
             {
-                tittel: 'Middag',
-                beskriving1: 'Les mer om DNV GL middagen her',
+                tittel: 1,
+                beskriving1: 1,
                 linktekst1: 1,
                 link1: 'https://google.no'
             }
@@ -72,8 +73,8 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         ],
         tilleggskort: [
             {
-                tittel: 'Middag',
-                beskriving1: 'Les mer om middagen her',
+                tittel: 1,
+                beskriving1: 1,
                 linktekst1: 1,
                 link1: 'https://google.no'
             }
@@ -98,8 +99,8 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         ],
         tilleggskort: [
             {
-                tittel: 'Middag',
-                beskriving1: 'Les mer om middagen her',
+                tittel: 1,
+                beskriving1: 1,
                 linktekst1: 1,
                 link1: 'https://google.no'
             }
@@ -123,8 +124,8 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         ],
         tilleggskort: [
             {
-                tittel: 'Middag',
-                beskriving1: 'Les mer om middagen her',
+                tittel: 1,
+                beskriving1: 1,
                 linktekst1: 1,
                 link1: 'https://google.no'
             }
@@ -149,8 +150,8 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         ],
         tilleggskort: [
             {
-                tittel: 'Middag',
-                beskriving1: 'Les mer om middagen her',
+                tittel: 1,
+                beskriving1: 1,
                 linktekst1: 1,
                 link1: 'https://google.no'
             }
@@ -176,8 +177,8 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         ],
         tilleggskort: [
             {
-                tittel: 'Middag',
-                beskriving1: 'Les mer om middagen her',
+                tittel: 1,
+                beskriving1: 1,
                 linktekst1: 1,
                 link1: 'https://google.no'
             }
@@ -202,8 +203,8 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         ],
         tilleggskort: [
             {
-                tittel: 'Middag',
-                beskriving1: 'Les mer om middagen her',
+                tittel: 1,
+                beskriving1: 1,
                 linktekst1: 1,
                 link1: 'https://google.no'
             }
@@ -228,8 +229,8 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         ],
         tilleggskort: [
             {
-                tittel: 'Middag',
-                beskriving1: 'Les mer om middagen her',
+                tittel: 1,
+                beskriving1: 1,
                 linktekst1: 1,
                 link1: 'https://google.no'
             }
@@ -255,8 +256,8 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         ],
         tilleggskort: [
             {
-                tittel: 'Middag',
-                beskriving1: 'Les mer om middagen her',
+                tittel: 1,
+                beskriving1: 1,
                 linktekst1: 1,
                 link1: 'https://google.no'
             }
@@ -281,8 +282,8 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         ],
         tilleggskort: [
             {
-                tittel: 'Middag',
-                beskriving1: 'Les mer om middagen her',
+                tittel: 1,
+                beskriving1: 1,
                 linktekst1: 1,
                 link1: 'https://google.no'
             }
@@ -307,8 +308,8 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         ],
         tilleggskort: [
             {
-                tittel: 'Middag',
-                beskriving1: 'Les mer om middagen her',
+                tittel: 1,
+                beskriving1: 1,
                 linktekst1: 1,
                 link1: 'https://google.no'
             }
