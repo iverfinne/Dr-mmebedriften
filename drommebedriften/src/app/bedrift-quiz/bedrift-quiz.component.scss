@@ -37,3 +37,9 @@
         overflow: hidden;
     }
 }
+
+@media print {
+    .container {
+        display: none;
+    }
+}

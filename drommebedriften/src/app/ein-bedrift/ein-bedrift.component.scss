@@ -203,3 +203,54 @@
         }
     }
 }
+
+// For utskrift av sida...
+@media print {
+    .container {
+        background-color: white;
+        overflow-y: auto;
+
+        .pil-tilbake {
+            display: none;
+        }
+
+        .opne-google-form {
+            display: none;
+        }
+
+        >div {
+            position: relative;
+
+            .header {
+                .logo {
+                    border: 1px solid black;
+                    box-shadow: none;
+                }
+            }
+
+            .tekst {
+                padding: 20px 40px;
+                padding-bottom: 90px;
+                box-sizing: border-box;
+
+                >h1 {
+                    color: black;
+                    text-align: left;
+                }
+
+                >p {
+                    color: black;
+                    text-align: justify;
+                }
+
+                .link1 {
+                    display: none;
+                }
+
+                .tilleggskort {
+                    display: none;
+                }
+            }
+        }
+    }
+}

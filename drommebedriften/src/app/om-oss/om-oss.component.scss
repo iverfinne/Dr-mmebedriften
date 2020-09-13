@@ -62,3 +62,19 @@
         }
     }
 }
+
+@media print {
+    .container {
+        padding: 20px 20px;
+
+        >div {
+            .tekst {
+                padding-right: 0;
+            }
+
+            .gif {
+                display: none;
+            }
+        }
+    }
+}
