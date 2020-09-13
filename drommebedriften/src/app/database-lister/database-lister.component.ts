@@ -81,11 +81,15 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
 
     // Sett på lazy innlasting av bilete
     setTimeout(() => {
-      const alleFlisElementer = document.querySelectorAll('div > .flis');
+      const alleFlisElementer =
+        document.querySelectorAll('div > .flis').length > 0 ?
+          document.querySelectorAll('div > .flis') :
+          document.querySelectorAll('div > .flis-liste');
+
       alleFlisElementer.forEach(flisElement => {
         this.lazyLastInnBilete(flisElement);
       });
-    }, 800);
+    }, 430);
   }
 
   visning(visningsElement: HTMLElement, type: 0 | 1): void {

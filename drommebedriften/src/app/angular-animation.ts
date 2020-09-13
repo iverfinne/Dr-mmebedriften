@@ -24,7 +24,7 @@ export const meny = trigger('meny', [
 const bedriftStilFerdig = {
     bedrifterComfy: {
         flexFlow: 'row wrap',
-        justifyContent: 'space-between',
+        justifyContent: 'flex-end',
         alignItems: 'flex-start'
     },
     bedrifterListe: {
@@ -33,16 +33,16 @@ const bedriftStilFerdig = {
         alignItems: 'center'
     },
     bedrifterBedriftComfy: {
-        flex: '1 400px',
-        flexBasis: '330px',
-        width: 'auto',
+        /* flex: '1 400px',
+        flexBasis: '330px', */
+        width: '330px',
         transform: 'none',
         margin: '20px 10px',
         opacity: '1'
     },
     bedrifterBedriftListe: {
-        flex: 'none',
-        flexBasis: 'none',
+        /* flex: 'none',
+        flexBasis: 'none', */
         width: '400px',
         transform: 'none',
         margin: '13px 0',
@@ -80,9 +80,9 @@ export const bedrifter = trigger('bedrifter', [
     transition('liste => comfy', [
         animate('0ms 0ms', keyframes([style(bedriftStilFerdig.bedrifterComfy)])),
         query('@bedriftFlis', [
-            style({ width: '400px', transform: 'translateY(-20px)', opacity: '0' }),
-            /* stagger(200, [
-                animate('250ms 0ms ease-in', keyframes([style(bedriftStilFerdig.bedrifterBedriftComfy)]))
+            style({ width: '330px', transform: 'translateY(-20px)', opacity: '0' }),
+            /* stagger(300, [
+                animate('300ms 0ms ease-in', keyframes([style(bedriftStilFerdig.bedrifterBedriftComfy)]))
             ]), */
             animate('250ms 0ms ease-in', keyframes([style(bedriftStilFerdig.bedrifterBedriftComfy)]))
         ], { optional: true })
