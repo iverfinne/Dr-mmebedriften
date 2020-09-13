@@ -18,8 +18,10 @@ Små-ting:
 
 ******************
 ***Intervall 1:***
-- Legg til navigeringspiler på bedriftsidene - kan også bruke piltaster | 
-- Legg til margins på sidene av teksten på bedriftssidene (skal være justert til kortene) | 
 - Crop bedrifts fremside bildene til å være samme størrelse på alle | OK, lagg heller til CSS-instilling
 - Fjern teksten "Ingen treff på ditt søk " "." i søkefunksjon for bedriftskortene | OK
 - Listeview av bedrifter viser komprimenrt kort | OK
+- Legg til margins på sidene av teksten på bedriftssidene (skal være justert til kortene) | OK - Justert til to kort...
+- Juster padding (mindre) for mobil på "Om Oss"-sida | OK
+- Fikse bug for mindre skjermer, med bedriftkortene | OK
+- Legg til navigeringspiler på bedriftsidene - kan også bruke piltaster | 

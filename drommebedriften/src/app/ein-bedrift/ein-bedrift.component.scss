@@ -83,7 +83,7 @@
             top: calc(40vh + 80px);
             width: 100%;
             height: auto;
-            padding: 20px 40px;
+            padding: 20px 130px;
             padding-bottom: 90px;
             box-sizing: border-box;
 
@@ -197,6 +197,59 @@
                         &:active {
                             background-color: darken($color: $fargeUI_einBedrift, $amount: 2%);
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+
+        >div {
+
+            .tekst {
+                padding: 20px 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+
+        >div {
+
+            .tekst {
+                padding: 20px 70px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .container {
+
+        >div {
+
+            .tekst {
+                padding: 20px 30px;
+
+                .tilleggskort {
+                    padding: 10px 30px;
+
+                    >div {
+                        min-width: 280px;
+                        height: auto;
+                        background-color: white;
+                        box-sizing: border-box;
+                        padding: 14px 20px;
+                        border-radius: 10px;
+
+                        margin: 10px;
+
+                        box-shadow: 0px 5px 18px 0px rgb(0 0 0 / 19%);
                     }
                 }
             }

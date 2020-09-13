@@ -24,11 +24,11 @@ export const meny = trigger('meny', [
 const bedriftStilFerdig = {
     bedrifterComfy: {
         flexFlow: 'row wrap',
-        justifyContent: 'flex-end',
+        justifyContent: 'space-evenly',
         alignItems: 'flex-start'
     },
     bedrifterListe: {
-        flexFlow: 'column wrap',
+        flexFlow: 'column',
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -43,7 +43,7 @@ const bedriftStilFerdig = {
     bedrifterBedriftListe: {
         /* flex: 'none',
         flexBasis: 'none', */
-        width: '400px',
+        width: '100%',
         transform: 'none',
         margin: '13px 0',
         opacity: '1'
@@ -73,18 +73,18 @@ export const bedrifter = trigger('bedrifter', [
         query('@bedriftFlis', [
             style({ width: '400px', transform: 'translateY(10px)', opacity: '0' }),
             stagger(350, [
-                animate('250ms 0ms ease-in', keyframes([style(bedriftStilFerdig.bedrifterBedriftListe)]))
+                animate('250ms 50ms ease-in', keyframes([style(bedriftStilFerdig.bedrifterBedriftListe)]))
             ]),
         ], { optional: true })
     ]),
     transition('liste => comfy', [
         animate('0ms 0ms', keyframes([style(bedriftStilFerdig.bedrifterComfy)])),
         query('@bedriftFlis', [
-            style({ width: '330px', transform: 'translateY(-20px)', opacity: '0' }),
+            style({ width: '330px', transform: 'translateY(0px)', opacity: '0' }),
             /* stagger(300, [
                 animate('300ms 0ms ease-in', keyframes([style(bedriftStilFerdig.bedrifterBedriftComfy)]))
             ]), */
-            animate('250ms 0ms ease-in', keyframes([style(bedriftStilFerdig.bedrifterBedriftComfy)]))
+            animate('250ms 50ms ease-in', keyframes([style(bedriftStilFerdig.bedrifterBedriftComfy)]))
         ], { optional: true })
     ])
 ]);

@@ -62,6 +62,11 @@
         }
     }
 }
+@media screen and (max-width: 525px) {
+    .container {
+        padding: 20px 30px;
+    }
+}
 
 @media print {
     .container {
