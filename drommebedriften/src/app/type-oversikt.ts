@@ -3,7 +3,7 @@ export interface Bedrift {
     ruterLink: string;
     logoLink?: string;
     framsidebileteLink?: string;
-    framsidebiletePosisjon?: 'top' | 'center' | 'bottom'; // Def.: center
+    framsidebiletePosisjon?: 'top' | 'center' | 'bottom' | string; // Def.: center - e.g. 0 10px (x, y)
     framsidebileteStorrelse?: 'contain' | 'cover' | 'initial'; // Def.: cover
     beskriving1: string;
     beskriving2?: string;

@@ -1,3 +1,5 @@
+@import './style-vars.scss';
+
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
@@ -44,13 +46,58 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-p {
+p,
+.link1 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 
   font-size: 1.15em;
   line-height: 25px;
   color: rgb(39, 39, 39);
+}
+
+.link1 {
+  color: $fargeUI_einBedrift;
+  text-decoration: none;
+
+  padding: 0 10px;
+  margin: 10px;
+  margin-bottom: 40px;
+
+  >sup {
+    >mat-icon {
+      color: $fargeUI_einBedrift;
+      font-size: 1.2em;
+    }
+  }
+
+  >div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    width: 100%;
+    height: 2px;
+
+    >span {
+      display: inline-block;
+      width: 0;
+      height: 2px;
+      border-top: 1px solid $fargeUI_einBedrift;
+      transform: translate(-6px, 10px);
+
+      transition: 800ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+  }
+
+  &:hover {
+    >div {
+      >span {
+        width: 90%;
+      }
+    }
+  }
 }
 
 h1,

@@ -59,6 +59,7 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
         ruterLink: 'bouvet',
         logoLink: `${LocalPaths.path_bedriftLogo}bouvet.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Bouvet.jpg`,
+        framsidebiletePosisjon: '0px -250px',
         beskriving1: `Bouvet er et norsk konsulentselskap som bistår bedrifter og samfunnsaktører i alle bransjer.`,
         beskriving2: `Bouvet er et skandinavisk konsulentselskap, som gjennom rådgivning, utvikling, design og forvaltning, bidrar til å maksimere effekter i krysningspunktet mellom moderne teknologi og digital kommunikasjon. Flotte ord - ingen overflødige. Varen vi leverer kommer fra faglig styrke. Derfor har vi også et bevisst forhold til faglig utvikling, som kommer i mange former tilpasset den enkelte. Vi har blant annet fagkvelder, arkitektskole, systemutviklerskole, deltakelse på konferanser, hackatons og internkonferanser med fokus på kompetansedeling.`,
         linktekst1: 1,

@@ -107,16 +107,16 @@
                 </div>
 
                 <h1 [innerHTML]="einBedrift.namn"></h1>
-                <p class="link1">
-                    <a [href]="einBedrift.link1"
-                        [innerHTML]="einBedrift.linktekst1 !== 1 ? einBedrift.linktekst1 : einBedrift.namn + ' - Hjemmeside'"
-                        target="_blank" rel="noopener"></a>
+                <a class="link1" [href]="einBedrift.link1" target="_blank" rel="noopener">
+                    {{ einBedrift.linktekst1 !== 1 ? einBedrift.linktekst1 : einBedrift.namn + ' - Hjemmeside' }}
                     <sup>
                         <mat-icon>open_in_new</mat-icon>
                     </sup>
                     <br>
-                    <span></span>
-                </p>
+                    <div>
+                        <span></span>
+                    </div>
+                </a>
                 <p [innerHTML]="einBedrift.beskriving1"></p>
                 <p [innerHTML]="einBedrift.beskriving2"></p>
             </div>
