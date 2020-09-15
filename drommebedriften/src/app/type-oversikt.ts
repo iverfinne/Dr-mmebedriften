@@ -12,12 +12,12 @@ export interface Bedrift {
     gfhel?: GoogleFormTilleggskort[];
     tilleggskort?: BedriftTilleggskort[];
 }
-export interface BedrifterTreffSokVisning {
-    bedriftData: Bedrift;
-    antalTreff: number;
-}
 export interface BedriftSokMengdeTreff {
     namn: string;
+    antalTreff: number;
+}
+export interface BedrifterTreffSokVisning {
+    bedriftData: Bedrift;
     antalTreff: number;
 }
 export interface GoogleFormTilleggskort {

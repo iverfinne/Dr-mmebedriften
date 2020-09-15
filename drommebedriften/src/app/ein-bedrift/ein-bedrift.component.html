@@ -3,10 +3,19 @@
 </ng-container>
 
 <ng-container *ngIf="einBedrift else laster">
-    <div [@einBedrift]="containerStatus" class="container">
+    <div id="einBedriftContainer" [@einBedrift]="containerStatus" class="container">
         <button mat-mini-fab color="primary" class="pil-tilbake" (click)="lukkPanel()">
             <mat-icon>first_page</mat-icon>
         </button>
+
+        <aside class="navigering">
+            <button mat-mini-fab color="accent" (click)="byttBedriftForCurrVisning('forrige')">
+                <mat-icon>navigate_before</mat-icon>
+            </button>
+            <button mat-mini-fab color="accent" (click)="byttBedriftForCurrVisning('neste')">
+                <mat-icon>navigate_next</mat-icon>
+            </button>
+        </aside>
 
         <div>
             <div class="header"

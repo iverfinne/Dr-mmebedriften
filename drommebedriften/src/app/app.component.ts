@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { meny } from './angular-animation';
 import { Router, NavigationEnd } from '@angular/router';
+import { GlobaleLyttararService } from './ser/globale-lyttarar.service';
 
 @Component({
   selector: 'app-root',
@@ -10,11 +11,12 @@ import { Router, NavigationEnd } from '@angular/router';
     meny
   ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   public animasjonStatusMenyAvPaa: 'menyAv' | 'menyPa' = 'menyAv';
 
   constructor(
-    private ruter: Router
+    private ruter: Router,
+    private globaleLyttarar: GlobaleLyttararService
   ) {
     this.ruter.events.subscribe(e => {
       if (e instanceof NavigationEnd) {
@@ -36,6 +38,19 @@ export class AppComponent {
           }, 500);
         }
       }
+    });
+  }
+
+  ngOnInit(): void {
+    window.addEventListener('keydown', e => {
+      const key = e.key;
+
+      const mainContainerEinBedrift = document.getElementById('einBedriftContainer');
+
+      // Veksle mellom bedrifter
+      if (mainContainerEinBedrift) {
+        this.globaleLyttarar.einBedriftTastPress.next(key);
+      } else { this.globaleLyttarar.einBedriftTastPress.next(null); }
     });
   }
 }

@@ -19,13 +19,15 @@
         opacity: 0.9;
     }
 
-    .opne-google-form {
+    .navigering {
         z-index: 1;
         position: absolute;
-        left: calc(17px + 40px + 10px);
-        top: calc(58vh + 20px);
-        opacity: 0.9;
-        transform: translateY(14px);
+        right: 5px;
+        top: calc(58vh + 20px - 10px);
+
+        >button {
+            margin: 10px;
+        }
     }
 
     >div {

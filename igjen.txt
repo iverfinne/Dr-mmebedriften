@@ -25,7 +25,7 @@ Små-ting:
 - Juster padding (mindre) for mobil på "Om Oss"-sida | OK
 - Fikse bug for mindre skjermer, med bedriftkortene | OK
 - Forbetre søk, sånn ein sorterer dei med mest treff høgast (fyrst) | OK
-- Legg til navigeringspiler på bedriftsidene - kan også bruke piltaster | 
+- Legg til navigeringspiler på bedriftsidene - kan også bruke piltaster | OK
 - Legg til slik menyen lukker seg på mobil, når ein link blir trykket på | 
 - Legg til favico | 
 

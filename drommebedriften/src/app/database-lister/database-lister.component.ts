@@ -4,6 +4,7 @@ import { DatabaseService } from '../ser/database.service';
 import { TypeVaktService } from '../ser/type-vakt.service';
 
 import { bedrifter, bedriftFlis } from '../angular-animation';
+import { GlobaleLyttararService } from '../ser/globale-lyttarar.service';
 
 @Component({
   selector: 'app-database-lister',
@@ -23,6 +24,8 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
   bedrifterVisningsType: 'comfy' | 'liste' = 'comfy';
   startEitNyttSok;
 
+  sokVerdi = '';
+
   ioObservers: {
     io: IntersectionObserver,
     targetElmt: HTMLElement | Element
@@ -31,12 +34,13 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
 
   constructor(
     private databaseService: DatabaseService,
-    private typeVakt: TypeVaktService
+    private typeVakt: TypeVaktService,
+    private globaleLyttararService: GlobaleLyttararService
   ) { }
 
   async ngOnInit(): Promise<void> {
     this.alleBedrifter = await this.databaseService.hentAlleBedrifter();
-    this.alleBedrifterVisning = this.fullVisningDatabaseKonverterer(this.alleBedrifter);
+    this.settBedrifterVisningsData(this.fullVisningDatabaseKonverterer(this.alleBedrifter));
 
     const visningsTypeBedrifter = Number(window.localStorage.getItem('visningsTypeBedrifter'));
     if (visningsTypeBedrifter) {
@@ -46,13 +50,9 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
     }
   }
 
-  ngOnDestroy(): void {
-    this.ioObservers.forEach(v => { v.io.disconnect(); });
-  }
+  ngOnDestroy(): void { this.ioObservers.forEach(v => { v.io.disconnect(); }); }
 
-  ngAfterViewInit(): void {
-    this.leggTilNyLazyVisningBilete();
-  }
+  ngAfterViewInit(): void { this.leggTilNyLazyVisningBilete(); }
 
   private async lazyLastInnBilete(bileteElmt: HTMLElement | Element): Promise<void> {
     const io = new IntersectionObserver((entries, observer) => {
@@ -132,6 +132,7 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
 
     return splittetOrd;
   }
+
   fullVisningDatabaseKonverterer(database: Bedrift[]): BedrifterTreffSokVisning[] {
     const nyArray: BedrifterTreffSokVisning[] = [];
 
@@ -141,7 +142,10 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
 
     return nyArray;
   }
-  visningDatabaseKonverterer(filtrertDatabaseSok: Bedrift[], einBedriftMengdeTreff: BedriftSokMengdeTreff): BedrifterTreffSokVisning | null {
+  visningDatabaseKonverterer(
+    filtrertDatabaseSok: Bedrift[],
+    einBedriftMengdeTreff: BedriftSokMengdeTreff
+  ): BedrifterTreffSokVisning | null {
     const currNamn = einBedriftMengdeTreff.namn.toLocaleLowerCase();
     const nyData: BedrifterTreffSokVisning = { bedriftData: null, antalTreff: 0 };
 
@@ -152,6 +156,11 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
 
     if (nyData.bedriftData) { return nyData; } return null;
   }
+
+  settBedrifterVisningsData(data: BedrifterTreffSokVisning[]): void {
+    this.alleBedrifterVisning = data; this.globaleLyttararService.bedrifterSomCurrVises.next(data);
+  }
+
   async enkelSokMotor(database: Bedrift[], sokeOrd: string | null): Promise<BedrifterTreffSokVisning[] | null> {
     if (sokeOrd && sokeOrd.length > 1) {
       const sokeOrdFinale = sokeOrd.toLocaleLowerCase().trim();
@@ -207,24 +216,23 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
         } else { resolve(null); }
       });
 
-      // Sorter
       return alleSoksTreff;
     }
 
   }
   eitSokAvBedrifter(inputElement: HTMLInputElement): void {
     clearTimeout(this.startEitNyttSok);
-    this.alleBedrifterVisning = null;
+    this.settBedrifterVisningsData(null);
 
     // Start Søk
     if (inputElement.value.length === 0) {
-      this.alleBedrifterVisning = this.fullVisningDatabaseKonverterer(this.alleBedrifter);
+      this.settBedrifterVisningsData(this.fullVisningDatabaseKonverterer(this.alleBedrifter));
       this.leggTilNyLazyVisningBilete(); return;
     }
-    if (inputElement.value.length === 1) { this.alleBedrifterVisning = []; return; }
+    if (inputElement.value.length === 1) { this.settBedrifterVisningsData([]); return; }
 
     this.startEitNyttSok = setTimeout(async () => {
-      this.alleBedrifterVisning = await this.enkelSokMotor(this.alleBedrifter, inputElement.value);
+      this.settBedrifterVisningsData(await this.enkelSokMotor(this.alleBedrifter, inputElement.value));
       this.leggTilNyLazyVisningBilete();
     }, 600);
   }
