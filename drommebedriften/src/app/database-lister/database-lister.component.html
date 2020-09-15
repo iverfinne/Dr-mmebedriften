@@ -23,21 +23,21 @@
                     [class]="bedrifterVisningsType === 'comfy'? 'flis' : 'flis-liste'"
                     *ngFor="let bedrift of alleBedrifterVisning; trackBy: flisBedriftTracker">
                     <div class="logo">
-                        <div *ngIf="bedrift.logoLink else broken" [attr.data-logourl]="'url(' + bedrift.logoLink + ')'">
+                        <div *ngIf="bedrift.bedriftData.logoLink else broken" [attr.data-logourl]="'url(' + bedrift.bedriftData.logoLink + ')'">
                         </div>
                         <ng-template #broken>
                             <mat-icon>broken_image</mat-icon>
                         </ng-template>
                     </div>
                     <div class="annet">
-                        <h2 [innerHTML]="bedrift.namn" style="margin: 0 0 5px"></h2>
+                        <h2 [innerHTML]="bedrift.bedriftData.namn" style="margin: 0 0 5px"></h2>
                         <p *ngIf="bedrifterVisningsType === 'comfy'"
-                            [innerHTML]="forkortString(bedrift.beskriving1, 155)"></p>
+                            [innerHTML]="forkortString(bedrift.bedriftData.beskriving1, 155)"></p>
                         <p *ngIf="bedrifterVisningsType === 'liste'"
-                            [innerHTML]="forkortString(bedrift.beskriving1, 90)"></p>
+                            [innerHTML]="forkortString(bedrift.bedriftData.beskriving1, 90)"></p>
 
                         <button mat-raised-button color="primary"
-                            [routerLink]="['/bedrifter', { outlets: { bedrift: bedrift.ruterLink } }]">
+                            [routerLink]="['/bedrifter', { outlets: { bedrift: bedrift.bedriftData.ruterLink } }]">
                             Les mer <sup></sup>
                         </button>
                     </div>

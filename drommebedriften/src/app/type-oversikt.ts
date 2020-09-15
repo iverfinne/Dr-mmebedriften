@@ -12,6 +12,14 @@ export interface Bedrift {
     gfhel?: GoogleFormTilleggskort[];
     tilleggskort?: BedriftTilleggskort[];
 }
+export interface BedrifterTreffSokVisning {
+    bedriftData: Bedrift;
+    antalTreff: number;
+}
+export interface BedriftSokMengdeTreff {
+    namn: string;
+    antalTreff: number;
+}
 export interface GoogleFormTilleggskort {
     /**
     * 1: Speedate (må justere HTML for endring av standard visning)

@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild, ElementRef, OnDestroy, AfterViewInit, DefaultIterableDiffer } from '@angular/core';
-import { Bedrift } from '../type-oversikt';
+import { Component, OnInit, ViewChild, ElementRef, OnDestroy, AfterViewInit } from '@angular/core';
+import { Bedrift, BedrifterTreffSokVisning, BedriftSokMengdeTreff } from '../type-oversikt';
 import { DatabaseService } from '../ser/database.service';
 import { TypeVaktService } from '../ser/type-vakt.service';
 
@@ -19,7 +19,7 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
   @ViewChild('vi1', { static: true }) vi1: ElementRef<HTMLElement>;
 
   alleBedrifter: Bedrift[] = [];
-  alleBedrifterVisning: Bedrift[] = this.alleBedrifter;
+  alleBedrifterVisning: BedrifterTreffSokVisning[] = this.fullVisningDatabaseKonverterer(this.alleBedrifter);
   bedrifterVisningsType: 'comfy' | 'liste' = 'comfy';
   startEitNyttSok;
 
@@ -36,7 +36,7 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
 
   async ngOnInit(): Promise<void> {
     this.alleBedrifter = await this.databaseService.hentAlleBedrifter();
-    this.alleBedrifterVisning = this.alleBedrifter;
+    this.alleBedrifterVisning = this.fullVisningDatabaseKonverterer(this.alleBedrifter);
 
     const visningsTypeBedrifter = Number(window.localStorage.getItem('visningsTypeBedrifter'));
     if (visningsTypeBedrifter) {
@@ -132,41 +132,82 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
 
     return splittetOrd;
   }
-  async enkelSokMotor(database: Bedrift[], sokeOrd: string | null): Promise<Bedrift[] | null> {
+  fullVisningDatabaseKonverterer(database: Bedrift[]): BedrifterTreffSokVisning[] {
+    const nyArray: BedrifterTreffSokVisning[] = [];
+
+    for (const data of database) {
+      nyArray.push({ bedriftData: data, antalTreff: -1 });
+    }
+
+    return nyArray;
+  }
+  visningDatabaseKonverterer(filtrertDatabaseSok: Bedrift[], einBedriftMengdeTreff: BedriftSokMengdeTreff): BedrifterTreffSokVisning | null {
+    const currNamn = einBedriftMengdeTreff.namn.toLocaleLowerCase();
+    const nyData: BedrifterTreffSokVisning = { bedriftData: null, antalTreff: 0 };
+
+    if (filtrertDatabaseSok.some(v => v.namn.toLocaleLowerCase() === currNamn)) {
+      nyData.bedriftData = filtrertDatabaseSok.filter(v => v.namn.toLocaleLowerCase() === currNamn)[0];
+      nyData.antalTreff = einBedriftMengdeTreff.antalTreff;
+    }
+
+    if (nyData.bedriftData) { return nyData; } return null;
+  }
+  async enkelSokMotor(database: Bedrift[], sokeOrd: string | null): Promise<BedrifterTreffSokVisning[] | null> {
     if (sokeOrd && sokeOrd.length > 1) {
       const sokeOrdFinale = sokeOrd.toLocaleLowerCase().trim();
 
       // Prøv å finn eit treff
-      const alleSoksTreff: Bedrift[] = await new Promise(async (resolve, reject) => {
-        const databaseMedSokeOrdTreff = database.filter(einBedrift => {
+      const alleSoksTreff: BedrifterTreffSokVisning[] = await new Promise(async resolve => {
+        const mengdeTreffForEinBedrifter: BedriftSokMengdeTreff[] = [];
+
+        // Filtrer ut dei dataene brukar vil ha frå database...
+        const filtrertDatabaseSok = database.filter(einBedrift => {
           /**
-           * 1: Sjekk om søkeord er treff for heile namn
-           * 2: Sjekk om søkeord er treff for namn splitta i array på 4, 3, 2
-           * Om treff for kven som helst, så vis resultater for match -> Lagre alle treff i ein midlertidig array
+           * Sjekk om søkeord er treff for namn splitta i array på 4, 3, 2
+           *
+           * Om treff for kven som helst, så vis resultater for match --> Lagre alle treff i ein midlertidig array
           **/
           const namn = einBedrift.namn.toLocaleLowerCase();
 
-          if (namn === sokeOrdFinale) { return true; } else {
-            const arrSplittetOrd: string[][] = [
-              this.ordSplitter(namn, 4),
-              this.ordSplitter(namn, 3),
-              this.ordSplitter(namn, 2)
-            ];
+          // Splitt namn til sæks-ord
+          const arrSplittetOrd: string[][] = [
+            this.ordSplitter(namn, 4),
+            this.ordSplitter(namn, 3),
+            this.ordSplitter(namn, 2)
+          ];
 
-            // Søk
-            let erEitTreff = false;
-            for (const splittetOrd of arrSplittetOrd) {
-              splittetOrd.forEach(ord => { if (sokeOrdFinale.indexOf(ord) > -1) { erEitTreff = true; } });
-            }
-
-            return erEitTreff;
+          // Søk
+          let antalTreff = 0;
+          let erEitTreff = false;
+          for (const splittetOrd of arrSplittetOrd) {
+            splittetOrd.forEach(ord => {
+              if (sokeOrdFinale.indexOf(ord) > -1) {
+                antalTreff++; erEitTreff = true;
+              }
+            });
           }
+
+          mengdeTreffForEinBedrifter.push({ namn, antalTreff });
+          return erEitTreff;
         });
 
-        await new Promise(res => { setTimeout(() => res(), 300); });
-        if (databaseMedSokeOrdTreff) { resolve(databaseMedSokeOrdTreff); } else { resolve(null); }
+        if (filtrertDatabaseSok) {
+          // Lag til resultater for visning...
+          const nyDatabaseForSok: BedrifterTreffSokVisning[] = [];
+          for (const eitTreffMengdeBedrift of mengdeTreffForEinBedrifter) {
+            const kanskjeTreff = this.visningDatabaseKonverterer(filtrertDatabaseSok, eitTreffMengdeBedrift);
+            if (kanskjeTreff) { nyDatabaseForSok.push(kanskjeTreff); }
+          }
+
+          // Sorter (mest treff fyrst)
+          nyDatabaseForSok.sort((a, b) => b.antalTreff - a.antalTreff);
+
+          // OK -> Minst eit resultat
+          await new Promise(res => { setTimeout(() => res(), 300); }); resolve(nyDatabaseForSok);
+        } else { resolve(null); }
       });
 
+      // Sorter
       return alleSoksTreff;
     }
 
@@ -176,7 +217,10 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
     this.alleBedrifterVisning = null;
 
     // Start Søk
-    if (inputElement.value.length === 0) { this.alleBedrifterVisning = this.alleBedrifter; this.leggTilNyLazyVisningBilete(); return; }
+    if (inputElement.value.length === 0) {
+      this.alleBedrifterVisning = this.fullVisningDatabaseKonverterer(this.alleBedrifter);
+      this.leggTilNyLazyVisningBilete(); return;
+    }
     if (inputElement.value.length === 1) { this.alleBedrifterVisning = []; return; }
 
     this.startEitNyttSok = setTimeout(async () => {
