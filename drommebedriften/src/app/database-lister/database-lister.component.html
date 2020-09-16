@@ -25,28 +25,30 @@
         <ng-container *ngIf="alleBedrifterVisning else lasterInn">
             <ng-container *ngIf="alleBedrifterVisning.length > 0 else nullResultatSok">
                 <div [@bedriftFlis]="bedrifterVisningsType"
-                    [class]="bedrifterVisningsType === 'comfy'? 'flis' : 'flis-liste'"
+                    [class]="bedrift.bedriftData.namn !== '--falsk--' ? (bedrifterVisningsType === 'comfy'? 'flis' : 'flis-liste') : (bedrifterVisningsType === 'comfy' ? 'falsk-flis' : 'falsk-flis-liste')"
                     *ngFor="let bedrift of alleBedrifterVisning; trackBy: flisBedriftTracker">
-                    <div class="logo">
-                        <div *ngIf="bedrift.bedriftData.logoLink else broken"
-                            [attr.data-logourl]="'url(' + bedrift.bedriftData.logoLink + ')'">
+                    <ng-container *ngIf="bedrift.bedriftData.namn !== '--falsk--'">
+                        <div class="logo">
+                            <div *ngIf="bedrift.bedriftData.logoLink else broken"
+                                [attr.data-logourl]="'url(' + bedrift.bedriftData.logoLink + ')'">
+                            </div>
+                            <ng-template #broken>
+                                <mat-icon>broken_image</mat-icon>
+                            </ng-template>
                         </div>
-                        <ng-template #broken>
-                            <mat-icon>broken_image</mat-icon>
-                        </ng-template>
-                    </div>
-                    <div class="annet">
-                        <h2 [innerHTML]="bedrift.bedriftData.namn" style="margin: 0 0 5px"></h2>
-                        <p *ngIf="bedrifterVisningsType === 'comfy'"
-                            [innerHTML]="forkortString(bedrift.bedriftData.beskriving1, 155)"></p>
-                        <p *ngIf="bedrifterVisningsType === 'liste'"
-                            [innerHTML]="forkortString(bedrift.bedriftData.beskriving1, 90)"></p>
+                        <div class="annet">
+                            <h2 [innerHTML]="bedrift.bedriftData.namn" style="margin: 0 0 5px"></h2>
+                            <p *ngIf="bedrifterVisningsType === 'comfy'"
+                                [innerHTML]="forkortString(bedrift.bedriftData.beskriving1, 155)"></p>
+                            <p *ngIf="bedrifterVisningsType === 'liste'"
+                                [innerHTML]="forkortString(bedrift.bedriftData.beskriving1, 90)"></p>
 
-                        <button mat-raised-button color="primary"
-                            [routerLink]="['/bedrifter', { outlets: { bedrift: bedrift.bedriftData.ruterLink } }]">
-                            Les mer <sup></sup>
-                        </button>
-                    </div>
+                            <button mat-raised-button color="primary"
+                                [routerLink]="['/bedrifter', { outlets: { bedrift: bedrift.bedriftData.ruterLink } }]">
+                                Les mer <sup></sup>
+                            </button>
+                        </div>
+                    </ng-container>
                 </div>
             </ng-container>
         </ng-container>

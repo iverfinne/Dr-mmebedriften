@@ -10,7 +10,19 @@ export class DatabaseService {
 
   constructor() { }
 
-  async hentAlleBedrifter(): Promise<Bedrift[]> { return Bedrifter; }
+  async hentAlleBedrifter(): Promise<Bedrift[]> {
+    const BedrifterImportert = Bedrifter;
+    if (BedrifterImportert.length % 2 !== 0) {
+      // Legg til falsk sånn det blir partall...
+      BedrifterImportert.push({
+        namn: '--falsk--',
+        ruterLink: '-',
+        beskriving1: '-'
+      });
+    }
+
+    return BedrifterImportert;
+  }
 
   async hentEinBedrift(bedriftLinkID: string): Promise<Bedrift | null> {
     const einBedrift = Bedrifter.filter(v => v.ruterLink.toLocaleLowerCase() === bedriftLinkID.toLocaleLowerCase())[0];
