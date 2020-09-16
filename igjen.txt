@@ -26,7 +26,15 @@ Små-ting:
 - Fikse bug for mindre skjermer, med bedriftkortene | OK
 - Forbetre søk, sånn ein sorterer dei med mest treff høgast (fyrst) | OK
 - Legg til navigeringspiler på bedriftsidene - kan også bruke piltaster | OK
-- Legg til slik menyen lukker seg på mobil, når ein link blir trykket på | 
+- Legg til slik menyen lukker seg på mobil, når ein link blir trykket på | OK
+
+- Lag eit komponent som teller ned til ein dato, og bruk som einaste ruter (deaktiver alle andre)
+  til: 24.09.20 kl. 0000 | 
+- Integrere Intercom | 
+- Gjere slik alle fliser ligger under kvarandre; må justeres på mindre skjermer | 
+- Fjerne animasjon når ein navigerer med piltaster | 
+
+- Legge til footer ?? | 
 - Legg til favico | 
 
 ******************
@@ -36,4 +44,3 @@ Små-ting:
 - Legg til fixed statisk effekt på bakgrunnen (ein bedrift) | OK 
 - Justere farge for UI Lukk (form, ein bedrift) | OK
 - Justere logoen endå høgare opp på mobil | OK
-- Legge til footer ? | 

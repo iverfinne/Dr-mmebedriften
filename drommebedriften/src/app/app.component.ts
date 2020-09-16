@@ -53,4 +53,12 @@ export class AppComponent implements OnInit {
       } else { this.globaleLyttarar.einBedriftTastPress.next(null); }
     });
   }
+
+  lukkMenyMobil(): void {
+    if (this.animasjonStatusMenyAvPaa === 'menyAv') {
+      this.animasjonStatusMenyAvPaa = 'menyPa';
+    } else {
+      this.animasjonStatusMenyAvPaa = 'menyAv';
+    }
+  }
 }
