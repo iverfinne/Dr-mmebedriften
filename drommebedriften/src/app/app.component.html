@@ -1,6 +1,4 @@
-<!-- <app-nedteller-lansering></app-nedteller-lansering> -->
-
-<div class="container">
+<div class="container" [style.marginTop]="globaleLyttarar.heileSidaLukket.value.aktiverLaas ? '0' : ''">
   <br>
   <!-- Print only -->
   <div class="toolbar-logo-print">
@@ -9,7 +7,7 @@
 
   <!-- <app-intercom-module></app-intercom-module> -->
 
-  <div class="toolbar">
+  <div class="toolbar" *ngIf="!globaleLyttarar.heileSidaLukket.value.aktiverLaas">
     <button mat-icon-button
       (click)="animasjonStatusMenyAvPaa == 'menyAv' ? animasjonStatusMenyAvPaa = 'menyPa' : animasjonStatusMenyAvPaa = 'menyAv'">
       <mat-icon>menu</mat-icon>

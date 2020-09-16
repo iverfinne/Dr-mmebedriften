@@ -1,3 +1,5 @@
+@import '../../style-vars.scss';
+
 .container {
     width: calc(100%);
     height: auto;
@@ -203,32 +205,65 @@
             }
         }
 
-        /* Falsk flis */
-        .falsk-flis {
-            width: 100%;
-            height: 453px;
-            background-color: rgba(255, 255, 255, 0.623);
-            border-radius: 4px;
-            box-shadow: inset 0 0 6px 0px rgb(0 0 0 / 9%);
+        $borderRadiusPusher: 0px;
+        $boxShadowPusher: inset 0 0 22px 0px rgb(34 138 200 / 25%);
+        $opacityPusher: 0.5;
+
+        .flis-pusher {
+            flex: 1;
+            min-width: 40px;
+            height: calc(453px - 40px);
+            // background-color: $fargePusher_Bedrifter;
+            background: $bakgrunnPusher_Bedrifter;
+            // border: 1px dotted rgb(151 172 189 / 84%);
+            border-top-right-radius: $borderRadiusPusher;
+            border-bottom-left-radius: $borderRadiusPusher;
+            // box-shadow: $boxShadowPusher;
+            margin: 30px 5px;
+            opacity: $opacityPusher;
         }
 
-        /* Falsk flis Liste-view */
-        .falsk-flis-list {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            background-color: rgba(255, 255, 255, 0.623);
-            border-radius: 4px;
-            box-shadow: inset 0 0 6px 0px rgb(0 0 0 / 9%);
+        .flis-pusher-ekstra {
+            display: none;
+
+            width: 330px;
+            height: calc(453px - 40px);
+            overflow: hidden;
+            // background-color: $fargePusher_Bedrifter;
+            background: $bakgrunnPusher_Bedrifter;
+            // border: 1px solid #e3e3e3;
+            border-top-left-radius: $borderRadiusPusher;
+            border-bottom-right-radius: $borderRadiusPusher;
+            // box-shadow: $boxShadowPusher;
+            margin: 30px 5px;
+            opacity: $opacityPusher;
         }
     }
 }
 
 // Når bedrift-kortene wrapper
+@media screen and (max-width: 808px) {
+    .container {
+        .bedrifter-fliser-container {
+            .flis-pusher {
+                display: none;
+            }
+
+            .flis-pusher-ekstra {
+                display: block;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 757px) {
     .container {
         .bedrifter-fliser-container {
             justify-content: center;
+
+            .flis-pusher-ekstra {
+                display: none;
+            }
         }
     }
 }

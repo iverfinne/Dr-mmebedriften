@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { meny } from './angular-animation';
 import { Router, NavigationEnd } from '@angular/router';
 import { GlobaleLyttararService } from './ser/globale-lyttarar.service';
+import { LukkNedSideService } from './ser/lukk-ned-side.service';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ export class AppComponent implements OnInit {
 
   constructor(
     private ruter: Router,
-    private globaleLyttarar: GlobaleLyttararService
+    public globaleLyttarar: GlobaleLyttararService,
+    private lukkNedSideService: LukkNedSideService
   ) {
     this.ruter.events.subscribe(e => {
       if (e instanceof NavigationEnd) {
@@ -42,6 +44,8 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.lukkNedSideService.opneEllerLukkeSideForBruk();
+
     window.addEventListener('keydown', e => {
       const key = e.key;
 

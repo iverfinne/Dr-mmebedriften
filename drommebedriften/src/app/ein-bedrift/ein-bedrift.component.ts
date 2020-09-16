@@ -94,6 +94,16 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
       if (nesteIndeks < 0) { nesteIndeks = this.alleBedrifterSomCurrVises.length - 1; }
     }
 
+    // Visst falsk-flis...
+    if (this.alleBedrifterSomCurrVises[nesteIndeks].bedriftData.namn === '--falsk--') {
+      // Hopp over..
+      if (currLinkIndex === this.alleBedrifterSomCurrVises.length - 2) {
+        nesteIndeks = 0;
+      } else if (currLinkIndex === 0) {
+        nesteIndeks = nesteIndeks - 1;
+      }
+    }
+
     return nesteIndeks;
   }
 

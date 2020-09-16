@@ -38,3 +38,8 @@ export interface BedriftTilleggskort {
     linktekst1: string | 1; // 1 = Les mer om + tittel + her
     link1: string;
 }
+
+export interface InstillingerLaasNettside {
+    aktiverLaas: boolean;
+    tilDato?: string; // Format eksempel: 17. september 2020 15:00
+}

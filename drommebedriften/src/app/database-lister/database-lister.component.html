@@ -24,10 +24,9 @@
         <!-- Ein bedrift -->
         <ng-container *ngIf="alleBedrifterVisning else lasterInn">
             <ng-container *ngIf="alleBedrifterVisning.length > 0 else nullResultatSok">
-                <div [@bedriftFlis]="bedrifterVisningsType"
-                    [class]="bedrift.bedriftData.namn !== '--falsk--' ? (bedrifterVisningsType === 'comfy'? 'flis' : 'flis-liste') : (bedrifterVisningsType === 'comfy' ? 'falsk-flis' : 'falsk-flis-liste')"
-                    *ngFor="let bedrift of alleBedrifterVisning; trackBy: flisBedriftTracker">
-                    <ng-container *ngIf="bedrift.bedriftData.namn !== '--falsk--'">
+                <ng-container *ngFor="let bedrift of alleBedrifterVisning; trackBy: flisBedriftTracker">
+                    <div [@bedriftFlis]="bedrifterVisningsType"
+                        [class]="bedrifterVisningsType === 'comfy' ? 'flis' : 'flis-liste'">
                         <div class="logo">
                             <div *ngIf="bedrift.bedriftData.logoLink else broken"
                                 [attr.data-logourl]="'url(' + bedrift.bedriftData.logoLink + ')'">
@@ -48,8 +47,12 @@
                                 Les mer <sup></sup>
                             </button>
                         </div>
-                    </ng-container>
-                </div>
+                    </div>
+
+                    <div *ngIf="bedrifterVisningsType === 'comfy'" class="flis-pusher"></div>
+                </ng-container>
+                
+                <div class="flis-pusher-ekstra" *ngIf="alleBedrifterVisning.length % 2 !== 0"></div>
             </ng-container>
         </ng-container>
         <ng-template #lasterInn>
