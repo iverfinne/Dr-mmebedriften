@@ -85,6 +85,7 @@
         position: relative;
         width: 100%;
         display: flex;
+        justify-content: space-between;
 
         box-sizing: border-box;
         padding: 45px 20px;
@@ -200,6 +201,15 @@
                     width: 100%;
                 }
             }
+        }
+    }
+}
+
+// Når bedrift-kortene wrapper
+@media screen and (max-width: 757px) {
+    .container {
+        .bedrifter-fliser-container {
+            justify-content: center;
         }
     }
 }

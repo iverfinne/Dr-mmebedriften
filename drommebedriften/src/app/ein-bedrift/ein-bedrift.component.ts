@@ -81,34 +81,34 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
     return this.alleBedrifterSomCurrVises.findIndex(v => v.bedriftData.ruterLink === this.currBedriftRuterLink);
   }
 
+  hentFramtidigeBedrift(type: 'neste' | 'forrige', currLinkIndex: number): number {
+    let nesteIndeks = currLinkIndex;
+
+    if (type === 'neste') {
+      // Neste Bedrift
+      nesteIndeks = currLinkIndex + 1;
+      if (nesteIndeks > this.alleBedrifterSomCurrVises.length - 1) { nesteIndeks = 0; }
+    } else if (type === 'forrige') {
+      // Forrige Bedrift
+      nesteIndeks = currLinkIndex - 1;
+      if (nesteIndeks < 0) { nesteIndeks = this.alleBedrifterSomCurrVises.length - 1; }
+    }
+
+    return nesteIndeks;
+  }
+
   byttBedriftForCurrVisning(type: 'neste' | 'forrige'): void {
     const currLinkIndex = this.hentCurrIndexForVisningsArray();
 
     if (currLinkIndex > -1) {
-      let nesteIndeks = 0;
-
-      if (type === 'neste') {
-        // Neste Bedrift
-        nesteIndeks = currLinkIndex + 1;
-        if (nesteIndeks > this.alleBedrifterSomCurrVises.length - 1) { nesteIndeks = 0; }
-      } else if (type === 'forrige') {
-        // Forrige Bedrift
-        nesteIndeks = currLinkIndex - 1;
-        if (nesteIndeks < 0) { nesteIndeks = this.alleBedrifterSomCurrVises.length - 1; }
-      }
+      const framtidigeIndex = this.hentFramtidigeBedrift(type, currLinkIndex);
 
       // Bytt side
-      this.containerStatus = 'av';
+      this.ruter.navigateByUrl(`/bedrifter/(bedrift:${
+        this.alleBedrifterSomCurrVises[framtidigeIndex].bedriftData.ruterLink
+        })`);
 
-      setTimeout(() => {
-        this.ruter.navigateByUrl('[\'\', { outlets: { bedrift: null } }]');
-
-        setTimeout(() => {
-          this.ruter.navigateByUrl(`/bedrifter/(bedrift:${
-            this.alleBedrifterSomCurrVises[nesteIndeks].bedriftData.ruterLink
-            })`);
-        }, 150);
-      }, 150);
+      this.einBedrift = this.alleBedrifterSomCurrVises[framtidigeIndex].bedriftData;
     }
   }
 

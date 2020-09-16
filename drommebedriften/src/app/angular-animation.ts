@@ -24,7 +24,7 @@ export const meny = trigger('meny', [
 const bedriftStilFerdig = {
     bedrifterComfy: {
         flexFlow: 'row wrap',
-        justifyContent: 'space-evenly',
+        justifyContent: 'auto',
         alignItems: 'flex-start'
     },
     bedrifterListe: {

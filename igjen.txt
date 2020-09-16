@@ -31,8 +31,8 @@ Små-ting:
 - Lag eit komponent som teller ned til ein dato, og bruk som einaste ruter (deaktiver alle andre)
   til: 24.09.20 kl. 0000 | 
 - Integrere Intercom | 
-- Gjere slik alle fliser ligger under kvarandre; må justeres på mindre skjermer | 
-- Fjerne animasjon når ein navigerer med piltaster | 
+- Gjere slik alle fliser ligger under kvarandre; må justeres på mindre skjermer | OK
+- Fjerne animasjon når ein navigerer med piltaster | OK
 
 - Legge til footer ?? | 
 - Legg til favico | 
