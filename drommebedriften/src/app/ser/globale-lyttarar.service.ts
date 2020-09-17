@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { BedrifterTreffSokVisning, InstillingerLaasNettside } from '../type-oversikt';
+import { BedrifterTreffSokVisning, InnstillingerLaasNettside } from '../type-oversikt';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,7 @@ export class GlobaleLyttararService {
   animasjonsStatusGoogleFormEinBedrift = new BehaviorSubject<'av' | 'pa'>('av');
   einBedriftTastPress = new BehaviorSubject<KeyboardEvent['key'] | null>(null);
   bedrifterSomCurrVises = new BehaviorSubject<BedrifterTreffSokVisning[]>(null);
-  heileSidaLukket = new BehaviorSubject<InstillingerLaasNettside>({ aktiverLaas: false });
+  heileSidaLukket = new BehaviorSubject<InnstillingerLaasNettside | null>(null);
 
   constructor() { }
 }

@@ -39,7 +39,12 @@ export interface BedriftTilleggskort {
     link1: string;
 }
 
-export interface InstillingerLaasNettside {
+export interface InnstillingerLaasNettside {
     aktiverLaas: boolean;
     tilDato?: string; // Format:: YYYY/MM/DD HH:MM:SS
+}
+export interface InnstillingerNettside {
+    nettside: {
+        laas: InnstillingerLaasNettside
+    };
 }

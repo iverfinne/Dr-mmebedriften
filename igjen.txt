@@ -33,6 +33,7 @@ Små-ting:
 - Lag eit komponent som teller ned til ein dato, og bruk som einaste ruter (deaktiver alle andre)
   til: 24.09.20 kl. 0000 ++ Deaktiver alle knappar ++ iframe | OK
 - Integrere Intercom | OK
+- Legg til enkelt i DB for å aktivere/deaktivere nettside | OK
 
 - Legge til footer ?? | 
 - Legg til favico | 

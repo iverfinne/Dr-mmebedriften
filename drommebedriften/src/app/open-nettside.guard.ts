@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable, timer } from 'rxjs';
 import { GlobaleLyttararService } from './ser/globale-lyttarar.service';
 
 @Injectable({
@@ -9,11 +9,11 @@ import { GlobaleLyttararService } from './ser/globale-lyttarar.service';
 export class OpenNettsideGuardLoyve {
   constructor(
     private ruter: Router,
-    private globaleLyttararService: GlobaleLyttararService
+    public globaleLyttararService: GlobaleLyttararService
   ) { }
 
-  canActivate(next: ActivatedRouteSnapshot): UrlTree | boolean {
-    if (this.globaleLyttararService.heileSidaLukket.value.aktiverLaas) {
+  async canActivate(next: ActivatedRouteSnapshot): Promise<UrlTree | boolean> {
+    if (this.globaleLyttararService.heileSidaLukket.value && this.globaleLyttararService.heileSidaLukket.value.aktiverLaas) {
       if (next.url[0].path === 'nedtelling') {
         return true;
       } else {
@@ -35,11 +35,24 @@ export class OpenNettsideGuardLoyve {
 export class OpenNettsideGuard implements CanActivate {
   constructor(private loyve: OpenNettsideGuardLoyve) { }
 
-  canActivate(
+  async canActivate(
     next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+    state: RouterStateSnapshot
+  ): Promise<boolean | UrlTree> {
 
-    return this.loyve.canActivate(next);
+    await new Promise((res) => {
+      const obs = timer(0, 100).subscribe(x => {
+        // Sjekk om verdi ikkje er null lengere...
+        if (this.loyve.globaleLyttararService.heileSidaLukket.value !== null) {
+          obs.unsubscribe();
+          obs.remove(obs);
+
+          res();
+        }
+      });
+    });
+
+    return await this.loyve.canActivate(next);
   }
 
 }

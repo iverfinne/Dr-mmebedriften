@@ -18,6 +18,10 @@ import { OmOssComponent } from './om-oss/om-oss.component';
 import { DynamiskGoogleFormHTMLComponent } from './dynamisk-google-form-html/dynamisk-google-form-html.component';
 import { NedtellerLanseringComponent } from './nedteller-lansering/nedteller-lansering.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment.prod';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +38,8 @@ import { NedtellerLanseringComponent } from './nedteller-lansering/nedteller-lan
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,

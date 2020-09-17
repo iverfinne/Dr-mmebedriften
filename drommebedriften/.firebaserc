@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "bruno-ochgfd": {
+      "hosting": {
+        "drommebedriften": [
+          "bruno-ochgfd"
+        ]
+      }
+    }
+  }
+}
