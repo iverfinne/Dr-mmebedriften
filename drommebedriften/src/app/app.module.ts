@@ -16,7 +16,6 @@ import { EinBedriftComponent } from './ein-bedrift/ein-bedrift.component';
 import { StudentTestComponent } from './student-test/student-test.component';
 import { OmOssComponent } from './om-oss/om-oss.component';
 import { DynamiskGoogleFormHTMLComponent } from './dynamisk-google-form-html/dynamisk-google-form-html.component';
-import { IntercomModuleComponent } from './intercom-module/intercom-module.component';
 import { NedtellerLanseringComponent } from './nedteller-lansering/nedteller-lansering.component';
 
 @NgModule({
@@ -29,7 +28,6 @@ import { NedtellerLanseringComponent } from './nedteller-lansering/nedteller-lan
     StudentTestComponent,
     OmOssComponent,
     DynamiskGoogleFormHTMLComponent,
-    IntercomModuleComponent,
     NedtellerLanseringComponent
   ],
   imports: [

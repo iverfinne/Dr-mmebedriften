@@ -14,8 +14,8 @@ export class LukkNedSideService {
   opneEllerLukkeSideForBruk(): void {
     // Instillinger (dette kan og potensielt legges i ein DB)
     const laasSida: InstillingerLaasNettside = {
-      aktiverLaas: false,
-      tilDato: '24. september 2020 00:00'
+      aktiverLaas: true,
+      tilDato: '2020/09/19 00:00'
     };
 
     // Deaktiver om dato er forbi...

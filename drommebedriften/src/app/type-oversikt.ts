@@ -41,5 +41,5 @@ export interface BedriftTilleggskort {
 
 export interface InstillingerLaasNettside {
     aktiverLaas: boolean;
-    tilDato?: string; // Format eksempel: 17. september 2020 15:00
+    tilDato?: string; // Format:: YYYY/MM/DD HH:MM:SS
 }
