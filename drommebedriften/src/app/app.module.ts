@@ -16,8 +16,11 @@ import { EinBedriftComponent } from './ein-bedrift/ein-bedrift.component';
 import { StudentTestComponent } from './student-test/student-test.component';
 import { OmOssComponent } from './om-oss/om-oss.component';
 import { DynamiskGoogleFormHTMLComponent } from './dynamisk-google-form-html/dynamisk-google-form-html.component';
-import { IntercomModuleComponent } from './intercom-module/intercom-module.component';
 import { NedtellerLanseringComponent } from './nedteller-lansering/nedteller-lansering.component';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment.prod';
 
 @NgModule({
   declarations: [
@@ -29,13 +32,14 @@ import { NedtellerLanseringComponent } from './nedteller-lansering/nedteller-lan
     StudentTestComponent,
     OmOssComponent,
     DynamiskGoogleFormHTMLComponent,
-    IntercomModuleComponent,
     NedtellerLanseringComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,

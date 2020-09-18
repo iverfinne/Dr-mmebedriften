@@ -1,6 +1,6 @@
 <div class="container">
-    <div>
-        <h5>Lanseres snart ...</h5>
+    <div *ngIf="!ferdigNedtelling else opnerOpp">
+        <h5>Drømmebedriften åpner offiselt om:</h5>
         <div>
             {{ currNedtellingData.dager }}d
             {{ currNedtellingData.timer }}t
@@ -8,4 +8,12 @@
             {{ currNedtellingData.sekunder }}s
         </div>
     </div>
+    <ng-template #opnerOpp>
+        <div>
+            <h5>Drømmebedriften åpnes opp ...</h5>
+            <div>
+                Velkommen!
+            </div>
+        </div>
+    </ng-template>
 </div>

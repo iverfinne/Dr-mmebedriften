@@ -37,7 +37,7 @@ const bedriftStilFerdig = {
         flexBasis: '330px', */
         width: '330px',
         transform: 'none',
-        margin: '20px 10px',
+        margin: '10px 10px',
         opacity: '1'
     },
     bedrifterBedriftListe: {
@@ -72,7 +72,7 @@ export const bedrifter = trigger('bedrifter', [
         animate('0ms 0ms', keyframes([style(bedriftStilFerdig.bedrifterListe)])),
         query('@bedriftFlis', [
             style({ width: '400px', transform: 'translateY(10px)', opacity: '0' }),
-            stagger(350, [
+            stagger(100, [
                 animate('250ms 50ms ease-in', keyframes([style(bedriftStilFerdig.bedrifterBedriftListe)]))
             ]),
         ], { optional: true })

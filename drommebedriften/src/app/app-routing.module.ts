@@ -4,8 +4,15 @@ import { AlleBedrifterComponent } from './alle-bedrifter/alle-bedrifter.componen
 import { EinBedriftComponent } from './ein-bedrift/ein-bedrift.component';
 import { StudentTestComponent } from './student-test/student-test.component';
 import { OmOssComponent } from './om-oss/om-oss.component';
+import { NedtellerLanseringComponent } from './nedteller-lansering/nedteller-lansering.component';
+import { OpenNettsideGuard } from './open-nettside.guard';
 
 const routes: Routes = [
+  {
+    path: 'nedtelling',
+    component: NedtellerLanseringComponent,
+    canActivate: [OpenNettsideGuard]
+  },
   {
     path: 'bedrifter',
     component: AlleBedrifterComponent,
@@ -15,15 +22,18 @@ const routes: Routes = [
         component: EinBedriftComponent,
         outlet: 'bedrift'
       }
-    ]
+    ],
+    canActivate: [OpenNettsideGuard]
   },
   {
     path: 'ta-testen',
-    component: StudentTestComponent
+    component: StudentTestComponent,
+    canActivate: [OpenNettsideGuard]
   },
   {
     path: 'om-oss',
-    component: OmOssComponent
+    component: OmOssComponent,
+    canActivate: [OpenNettsideGuard]
   },
   {
     path: '**',

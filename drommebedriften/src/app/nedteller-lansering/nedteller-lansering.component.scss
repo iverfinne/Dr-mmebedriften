@@ -1,10 +1,12 @@
+@import '../../style-vars.scss';
+
 @keyframes bakgrunnFarge {
     from {
-        background-color: rgba(0, 0, 0, 0.849);
+        background-color: white;
     }
 
     to {
-        background-color: rgba(223, 117, 19, 0.849);
+        background-color: darken($color: $fargeUI_einBedrift, $amount: 5%);
     }
 }
 
@@ -15,31 +17,32 @@
     width: 100%;
     height: 100%;
 
-    background: radial-gradient(rgba(30, 58, 40, 0.702), 33%, rgba(0, 0, 0, 0.849));
+    background: radial-gradient(transparentize($color: $fargeUI_einBedrift, $amount: 0.5), 33%, white);
 
-    animation: bakgrunnFarge 3s cubic-bezier(0.39, 0.575, 0.565, 1) alternate infinite;
+    animation: bakgrunnFarge 4.6s cubic-bezier(0.39, 0.575, 0.565, 1) alternate infinite;
 
     top: 0;
     left: 0;
 
     >div {
         position: absolute;
-        left: calc(50% - 250px / 2);
+        left: calc(50% - 80% / 2);
         top: calc(50% - 250px / 2);
 
-        width: 250px;
+        width: 80%;
         height: 250px;
         box-sizing: border-box;
 
         padding: 10px 40px;
         text-align: center;
 
-        color: black;
+        color: $fargeUI_einBedrift;
         background-color: rgba(255, 255, 255, 0.603);
-        border: 4px solid orangered;
-        border-radius: 50%;
 
-        box-shadow: inset 0 0 6px 1px rgba(0, 0, 0, 0.749);
+        box-shadow: inset 0 0 6px 1px rgb(0 0 0 / 9%);
+
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
 
         display: flex;
         justify-content: center;

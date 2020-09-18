@@ -38,3 +38,13 @@ export interface BedriftTilleggskort {
     linktekst1: string | 1; // 1 = Les mer om + tittel + her
     link1: string;
 }
+
+export interface InnstillingerLaasNettside {
+    aktiverLaas: boolean;
+    tilDato?: string; // Format:: YYYY/MM/DD HH:MM:SS
+}
+export interface InnstillingerNettside {
+    nettside: {
+        laas: InnstillingerLaasNettside
+    };
+}

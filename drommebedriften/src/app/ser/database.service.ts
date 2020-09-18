@@ -12,14 +12,14 @@ export class DatabaseService {
 
   async hentAlleBedrifter(): Promise<Bedrift[]> {
     const BedrifterImportert = Bedrifter;
-    if (BedrifterImportert.length % 2 !== 0) {
+    /* if (BedrifterImportert.length % 2 !== 0) {
       // Legg til falsk sånn det blir partall...
       BedrifterImportert.push({
         namn: '--falsk--',
         ruterLink: '-',
         beskriving1: '-'
       });
-    }
+    } */
 
     return BedrifterImportert;
   }
