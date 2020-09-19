@@ -5,6 +5,7 @@ export interface Bedrift {
     framsidebileteLink?: string;
     framsidebiletePosisjon?: 'top' | 'center' | 'bottom' | string; // Def.: center - e.g. 0 10px (x, y)
     framsidebileteStorrelse?: 'contain' | 'cover' | 'initial'; // Def.: cover
+    framsidebileteFotoPerson?: string;
     beskriving1: string;
     beskriving2?: string;
     ekstraLink1?: string;

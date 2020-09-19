@@ -23,7 +23,7 @@ export class LukkNedSideService {
     if (this.typeVaktService.erInnstillingerNettside(innstillingerNettside)) {
       const laasIns = innstillingerNettside.laas;
 
-      // laasIns.aktiverLaas = false;
+      laasIns.aktiverLaas = false;
 
       // Deaktiver om dato er forbi...
       if (!laasIns.tilDato || new Date(laasIns.tilDato).getTime() - new Date().getTime() <= 0) {

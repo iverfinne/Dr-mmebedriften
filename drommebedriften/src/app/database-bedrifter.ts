@@ -69,12 +69,12 @@ export const Bedrifter: Bedrift[] = [
             }
         ],
         tilleggskort: [
-            {
+            /* {
                 tittel: 1,
                 beskriving1: 1,
                 linktekst1: 1,
                 link1: 'https://google.no'
-            }
+            } */
         ]
     },
     {
@@ -95,14 +95,7 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Yara',
@@ -122,24 +115,18 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Finansdepartementet',
         ruterLink: 'finansdepartementet',
         logoLink: `${LocalPaths.path_bedriftLogo}Finansdepartementet.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Finansdepartementet.jpeg`,
-        framsidebiletePosisjon: 'center -6vh',
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Finansdepartementet1.jpg`,
+        framsidebiletePosisjon: 'center -52.2vh',
+        framsidebileteFotoPerson: 'Lise Åserud / NTB scanpix',
         beskriving1: `Finansdepartementet er et tradisjonsrikt og sentralt departement som ble opprettet i 1814. Finansdepartementet er, med hovedansvar for landets økonomiske politikk, viktig for samfunnsutviklingen og av stor betydning for den enkelte innbyggers hverdag. Hos oss jobber det 300 dyktige medarbeidere som sammen utgjør en spennende kunnskapsorganisasjon.`,
         beskriving2: `Departementet ledes av finansministeren, som sammen med statssekretærer og politisk rådgiver utgjør den politiske ledelsen. Finansdepartementets embetsverk ledes av finansråden. I motsetning til den politiske ledelsen er embetsverket fast ansatte medarbeidere som jobber under skiftende regjeringer. Blant våre ansatte er de fleste jurister, økonomer og statsvitere.`,
-        ekstraLink1: `Følg oss gjerne på <a href="https://www.linkedin.com/company/2496901/" target="_blank" rel="noopener">www.linkedin.com</a>`,
+        ekstraLink1: `Følg oss gjerne på <a href="https://www.linkedin.com/company/2496901/" target="_blank" rel="noopener">linkedin.com/</a>`,
         linktekst1: 1,
         link1: 'https://www.regjeringen.no/no/dep/fin/id216/',
         gfhel: [
@@ -150,14 +137,7 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf1fHc1vfgrWsNraWiggklH51ZztC3HnZ_hyheNJdEIjlpETw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Sjøfartsdirektoratet',
@@ -176,14 +156,7 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Tryg',
@@ -203,14 +176,7 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'OBOS',
@@ -230,21 +196,14 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Tekna',
         ruterLink: 'tekna',
         logoLink: `${LocalPaths.path_bedriftLogo}Tekna.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Tekna.png`,
-        beskriving1: `Tekna Studnet er Bergens største studentorganisasjon for ingeniører, sivilingeniører, teknologer og naturvitere. Du finner oss både på universitetet og høyskolen. Vi arrangerer til sammen mer enn 30 faglige og sosiale arrangement som du som medlem kan delta på. Itillegg får våre student-medlemmer også tilbud om gratis forsikring, rådgivning på CV, jobbsøknader, og juridisk bistand dersom du trenger det.   Er du student og har planer om å fullføre en mastergrad som inneholder minimum 120 studiepoeng innenfor realfag, teknologi eller naturvitenskap på enten bachelor- eller mastergradsnivå, kan du bli studentmedlem. Medlemskap koster kr 150 pr halvår.`,
+        beskriving1: `Tekna Studnet er Bergens største studentorganisasjon for ingeniører, sivilingeniører, teknologer og naturvitere. Du finner oss både på universitetet og høyskolen. Vi arrangerer til sammen mer enn 30 faglige og sosiale arrangement som du som medlem kan delta på. Itillegg får våre student-medlemmer også tilbud om gratis forsikring, rådgivning på CV, jobbsøknader, og juridisk bistand dersom du trenger det.   Er du student og har planer om å fullføre en mastergrad som inneholder minimum 120 studiepoeng innenfor realfag, teknologi eller naturvitenskap på enten bachelor- eller mastergradsnivå, kan du bli studentmedlem. Medlemskap koster NOK 150 pr. halvår.`,
         linktekst1: 1,
         link1: 'https://www.tekna.no/',
         gfhel: [
@@ -256,14 +215,7 @@ export const Bedrifter: Bedrift[] = [
             }
         ],
         vimeoVideo: vimeoEmbedKonverter(`<iframe src="https://player.vimeo.com/video/422752048?color=35a39e&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p><a href="https://vimeo.com/422752048">Dette er Tekna</a> from <a href="https://vimeo.com/tekna">Tekna</a> on <a href="https://vimeo.com">Vimeo</a>.</p>`),
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://tekna.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Accenture',
@@ -271,9 +223,10 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Accenture.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Accenture.jpeg`,
         framsidebiletePosisjon: 'top',
-        beskriving1: `Accenture i Norge (hentet fra https://www.accenture.com/no-en/about/company/norway): Vi løser utfordringene selskaper, organisasjoner og etater står overfor. Dette gjør vi med entusiasme, kunnskap, innsikt og de aller siste og beste teknologiske løsningene. Vi kommer fra varierte bakgrunner, men jobber sammen. Med allsidigheten dette fører til, skal vi løse de største utfordringene selskaper, organisasjoner og etater står overfor. Vi har et bredt spekter av innovative verktøy, en læringskurve som aldri stanser og et globalt nettverk som gir oss en verden av erfaringer å høste av. Vi holder oss alltid i forkant; vi skaper endringer over alt.`,
+        /* Accenture i Norge (hentet fra https://www.accenture.com/no-en/about/company/norway): */
+        beskriving1: `Vi løser utfordringene selskaper, organisasjoner og etater står overfor. Dette gjør vi med entusiasme, kunnskap, innsikt og de aller siste og beste teknologiske løsningene. Vi kommer fra varierte bakgrunner, men jobber sammen. Med allsidigheten dette fører til, skal vi løse de største utfordringene selskaper, organisasjoner og etater står overfor. Vi har et bredt spekter av innovative verktøy, en læringskurve som aldri stanser og et globalt nettverk som gir oss en verden av erfaringer å høste av. Vi holder oss alltid i forkant; vi skaper endringer over alt.`,
         beskriving2: `Hos oss får du mulighet til å utvikle hele deg, også på det personlige plan. Du møter utfordringer på en rekke ulike områder og fagfelt, du tar all din kompetanse i bruk og lærer ny underveis. Slik får du en sjelden mulighet til å finne ut hva du liker aller best og hvor styrken din ligger, uten å måtte bytte jobb. Rundt deg vil du alltid ha eksperter, mentorer og veiledere, og et nettverk som strekker seg rundt hele kloden.`,
-        ekstraLink1: `Les mer om Accenture Global på <a href="https://www.accenture.com/no-en/about/company-index" target="_blank" rel="noopener">www.accenture.com</a>`,
+        ekstraLink1: `Les mer om Accenture Global på <a href="https://www.accenture.com/no-en/about/company-index" target="_blank" rel="noopener">accenture.com/</a>`,
         linktekst1: 1,
         link1: 'https://www.accenture.no/',
         gfhel: [
@@ -284,14 +237,7 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfOCIO21iMcFpdyWhImZgatlpdwL_u-wRz2AM36AD_bMuqSbw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Forsvaret',
@@ -311,14 +257,7 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Knowit',
@@ -338,14 +277,7 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Wintershall dea',
@@ -355,7 +287,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: `Wintershall Dea er Europas ledende, uavhengige olje- og gasselskap med aktiviteter på fem kontinenter. Vår virksomhet strekker seg over hele den norske kontinentalsokkelen, fra Nordsjøen til Barentshavet. Wintershall Dea har virksomhet i hele verdikjeden, fra leting via feltutbygging til produksjon. Norge er et av Wintershall Deas kjerneområder og vi er en stor operatør og en engasjert partner på norsk sokkel. Vi er operatør for feltene Brage, Maria og Vega og for utbyggingsprosjektene Dvalin og Nova. I tillegg er vi en aktiv partner i blant annet Skarv, Aasta Hansteen, Njord og Gjøa.`,
         beskriving2: `Er du nysgjerrig og klar for å bli en del av et nytt kapittel av eventyret i Nordsjøen? Wintershall Dea tilbyr spennende prosjekter som gir mulighet for faglig utvikling.
         Vi tilbyr spesielle trainee-programmer som nyutdannede medarbeidere kan starte på med det samme. Vi tilbyr og sommerjobber og mulighet for å skrive masteroppgave i samarbeid med en av våre eksperter.`,
-        ekstraLink1: `Les mer på vår hjemmeside <a href="https://wintershalldea.no/nb/karriere-norge" target="_blank" rel="noopener">www.wintershalldea.no/</a>`,
+        ekstraLink1: `Les mer på vår hjemmeside <a href="https://wintershalldea.no/nb/karriere-norge" target="_blank" rel="noopener">wintershalldea.no/</a>`,
         linktekst1: 1,
         link1: 'https://wintershalldea.no/en',
         gfhel: [
@@ -367,14 +299,7 @@ export const Bedrifter: Bedrift[] = [
             }
         ],
         vimeoVideo: vimeoEmbedKonverter(`<iframe src="https://player.vimeo.com/video/445542706?color=ff9933&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p><a href="https://vimeo.com/445542706">Graduates in Wintershall Dea</a> from <a href="https://vimeo.com/wintershalldea">Wintershall Dea in Norway</a> on <a href="https://vimeo.com">Vimeo</a>.</p>`),
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'ATEA',
@@ -397,14 +322,7 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Vinsit',
@@ -432,20 +350,14 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Jussformidlingen',
         ruterLink: 'jussformidlingen',
         logoLink: `${LocalPaths.path_bedriftLogo}Jussformidlingen.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Jussformidlingen.jpg`,
+        framsidebiletePosisjon: 'center -16vh',
         beskriving1: `
         `,
         beskriving2: `
@@ -460,24 +372,16 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYYOlT2GMdG_d9wGWUMEZ0phO-YiVZnsFV_E8JZkuJEixwTg/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Fremtind',
         ruterLink: 'fremtind',
         logoLink: `${LocalPaths.path_bedriftLogo}Fremtind.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Fremtind.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
+        framsidebiletePosisjon: 'center -10vh',
+        beskriving1: ``,
+        beskriving2: ``,
         linktekst1: 1,
         link1: 'https://www.fremtind.no/',
         gfhel: [
@@ -488,24 +392,16 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTXZO4cDYbaMUWU9y7_wnuVIQmy2xsupW6j8vzDTb7q8iVFw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'ConocoPhilips',
         ruterLink: 'conocophilips',
         logoLink: `${LocalPaths.path_bedriftLogo}Conocophilips.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Conocophilips.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
+        framsidebiletePosisjon: 'center -38vh',
+        beskriving1: ``,
+        beskriving2: ``,
         linktekst1: 1,
         link1: 'http://www.conocophillips.no/',
         gfhel: [
@@ -516,24 +412,16 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9R6me41qdcIrzHNWMlctYJFssYisiBi2B_boOMcJRqtneZg/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Capgemini',
         ruterLink: 'Capgemini',
         logoLink: `${LocalPaths.path_bedriftLogo}Capgemini.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Capgemini.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
+        framsidebiletePosisjon: 'center -14vh',
+        beskriving1: ``,
+        beskriving2: ``,
         linktekst1: 1,
         link1: 'https://www.capgemini.com/',
         gfhel: [
@@ -544,24 +432,16 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     },
     {
         namn: 'Schibsted',
         ruterLink: 'schibsted',
         logoLink: `${LocalPaths.path_bedriftLogo}Schibsted.jpg`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Schibsted.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
+        framsidebiletePosisjon: 'center -20vh',
+        beskriving1: ``,
+        beskriving2: ``,
         linktekst1: 1,
         link1: 'https://www.Schibsted.com/',
         gfhel: [
@@ -572,13 +452,6 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     }
 ];
