@@ -37,7 +37,7 @@ $fargeUI_menyKnapper2: transparentize($color: $fargeUI_menyKnapper, $amount: 0.9
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            margin-top: 0px;
+            margin-top: -0px;
             margin-left: 3px;
             outline: none;
         }
@@ -77,13 +77,13 @@ $fargeUI_menyKnapper2: transparentize($color: $fargeUI_menyKnapper, $amount: 0.9
         }
 
         .logo {
-            width: 300px;
+            width: 320px;
             height: 100%;
             background-image: url('../assets/drommedesign.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            margin-bottom: 3px;
+            margin-bottom: 0px;
             margin-left: 3px;
             outline: none;
 
