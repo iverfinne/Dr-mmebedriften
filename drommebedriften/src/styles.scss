@@ -54,6 +54,19 @@ p,
   font-size: 1.15em;
   line-height: 25px;
   color: rgb(39, 39, 39);
+
+  >span {
+    >span {
+      >a {
+        text-decoration: none;
+        color: $fargeUI_einBedrift;
+
+        &:hover {
+          text-decoration: underline dotted;
+        }
+      }
+    }
+  }
 }
 
 .link1 {

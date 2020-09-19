@@ -1,4 +1,4 @@
-import { Bedrift } from './type-oversikt';
+import { Bedrift, VimeoEmbedDataEinBedrift } from './type-oversikt';
 
 // Understier til mapper med filer i
 export const LocalPaths = {
@@ -19,6 +19,31 @@ function gfise(iframeEmbedLink?: string): string | null {
     return null;
 }
 
+// Ein Vimeo-video data-uthenter (link, farge, tittel) frå Embed-kode frå Vimeo
+// **Bruk embed-form med berre iframe som container.. E.g.:
+// <iframe src="https://player.vimeo.com/video/422752048?color=35a39e&title=0&byline=0&portrait=0" ....
+// <p><a href="https://vimeo.com/422752048">Dette er Tek .... </p>
+function vimeoEmbedKonverter(iframeEmbedLink?: string): VimeoEmbedDataEinBedrift {
+    if (iframeEmbedLink) {
+        // Link
+        const linkSplit = iframeEmbedLink.split('"');
+        const kjelde = linkSplit[1];
+
+        // Farge
+        const farge = `#${kjelde.split('?')[1].split('&')[0].split('=')[1]}`;
+
+        // Indre HTML
+        const indreHTML = iframeEmbedLink.split(/((<p>)(.{1,})(<\/p>))/gm);
+        if (indreHTML) {
+            // rydd opp...
+            indreHTML.shift(); indreHTML.pop();
+        }
+
+        return { kjelde, farge, indreHTML };
+    }
+
+    return null;
+}
 
 // Alle Bedrifter - Lokal database
 // *** Sjekk type-oversikt.ts for dokumentasjon *** //
@@ -269,6 +294,7 @@ Følg oss gjerne på <a href="https://www.linkedin.com/company/2496901/ ">www.li
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
+        vimeoVideo: vimeoEmbedKonverter(`<iframe src="https://player.vimeo.com/video/422752048?color=35a39e&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p><a href="https://vimeo.com/422752048">Dette er Tekna</a> from <a href="https://vimeo.com/tekna">Tekna</a> on <a href="https://vimeo.com">Vimeo</a>.</p>`),
         tilleggskort: [
             {
                 tittel: 1,

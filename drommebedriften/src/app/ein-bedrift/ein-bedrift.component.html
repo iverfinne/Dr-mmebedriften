@@ -115,7 +115,9 @@
                     </ng-container>
                 </div>
 
-                
+                <!-- Namn -->
+                <h1 [innerHTML]="einBedrift.namn"></h1>
+                <!-- Link 1 -->
                 <a class="link1" [href]="einBedrift.link1" target="_blank" rel="noopener">
                     {{ einBedrift.linktekst1 !== 1 ? einBedrift.linktekst1 : einBedrift.namn + ' - Hjemmeside' }}
                     <sup>
@@ -126,8 +128,29 @@
                         <span></span>
                     </div>
                 </a>
-                <p [innerHTML]="einBedrift.beskriving1"></p>
-                <p [innerHTML]="einBedrift.beskriving2"></p>
+
+                <div class="beskrivelse-video">
+                    <div>
+                        <!-- Beskrivelse -->
+                        <p [innerHTML]="einBedrift.beskriving1"></p>
+                        <p [innerHTML]="einBedrift.beskriving2"></p>
+                    </div>
+                    <!-- Vimeo Video -->
+                    <div *ngIf="einBedrift.vimeoVideo" class="vimeo-video"
+                        [style.borderLeftColor]="einBedrift.vimeoVideo.farge ? einBedrift.vimeoVideo.farge : ''">
+                        <iframe [src]="domSanitizer.bypassSecurityTrustResourceUrl(einBedrift.vimeoVideo.kjelde)"
+                            frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                        </iframe>
+                        <p>
+                            <span>
+                                <mat-icon
+                                    [style.color]="einBedrift.vimeoVideo.farge ? einBedrift.vimeoVideo.farge : ''">
+                                    whatshot</mat-icon>
+                                <span [innerHTML]="einBedrift.vimeoVideo.indreHTML[2]"></span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

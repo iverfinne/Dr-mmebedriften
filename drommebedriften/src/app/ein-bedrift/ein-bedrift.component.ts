@@ -4,7 +4,7 @@ import { DatabaseService } from '../ser/database.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { einBedrift } from '../angular-animation';
 import { GlobaleLyttararService } from '../ser/globale-lyttarar.service';
-import { SafeResourceUrl } from '@angular/platform-browser';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -29,7 +29,8 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
   constructor(
     private ruter: Router,
     private databaseService: DatabaseService,
-    private globaleLyttararService: GlobaleLyttararService
+    private globaleLyttararService: GlobaleLyttararService,
+    private domSanitizer: DomSanitizer
   ) {
     this.abonnement2 = this.ruter.events.subscribe(event => {
       if (event instanceof NavigationEnd) {

@@ -103,8 +103,60 @@
                 margin-block-end: 0;
             }
 
-            >p {
-                text-align: left;
+            .beskrivelse-video {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: row wrap;
+                text-align: center;
+
+                >p {
+                    text-align: center;
+                }
+
+                .vimeo-video {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    box-sizing: border-box;
+                    padding: 56.25% 0 0 0;
+
+                    margin-bottom: 50px;
+                    margin-top: 30px;
+
+                    border-left: 5px solid $fargeUI_einBedrift;
+
+                    >iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 8px;
+
+                        width: calc(100% - 10px);
+                        height: 100%;
+                    }
+
+                    >p {
+                        position: absolute;
+                        bottom: -39px;
+                        left: 0;
+
+                        width: 100%;
+                        text-align: right;
+
+                        font-weight: bold;
+                        font-size: 0.8em;
+
+                        >span {
+                            mat-icon {
+                                vertical-align: middle;
+                                font-size: 20px;
+                                text-shadow: -1px 0px 0px rgb(25 25 25 / 65%);
+                                margin-right: 2px;
+                                color: #ffe500;
+                            }
+                        }
+                    }
+                }
             }
 
             .tilleggskort {
@@ -173,6 +225,22 @@
                             background-color: darken($color: $fargeUI_einBedrift, $amount: 2%);
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .container {
+
+        >div {
+
+            .tekst {
+
+                .beskrivelse-video {
+                    flex-flow: row wrap-reverse;
+                    margin-top: 0;
                 }
             }
         }
