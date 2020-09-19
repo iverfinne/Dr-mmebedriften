@@ -215,8 +215,7 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Knowit.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Knowit.jpg`,
         framsidebiletePosisjon: 'center -19vh',
-        beskriving1: `Knowit AB (publ) er et konsulentselskap som, i den stadig raskere digitaliseringen, skaper unike kundeverdier gjennom å tilby grenseoverskridende leveranser fra de tre forretningsområdene Experience, Insight og Solutions. Det er evnen til å kombinere kompetanse innen design og kommunikasjon, management consulting og IT som skiller oss fra andre konsulentfirmaer. Vår kultur preges av åpenhet, forståelse for kundens forretninger, høy spesialistkompetanse og en vilje til å utvikles kontinuerlig. Knowit ble etablert i 1990 og har i dag ca. 2000 ansatte på 14 kontorer i Sverige, seks i Norge samt ett i Danmark, Finland og Tyskland. Knowit AB (publ) er notert på den Nordiska Börsen i Stockholm.
-        `,
+        beskriving1: `Knowit AB (publ) er et konsulentselskap som, i den stadig raskere digitaliseringen, skaper unike kundeverdier gjennom å tilby grenseoverskridende leveranser fra de tre forretningsområdene Experience, Insight og Solutions. Det er evnen til å kombinere kompetanse innen design og kommunikasjon, management consulting og IT som skiller oss fra andre konsulentfirmaer. Vår kultur preges av åpenhet, forståelse for kundens forretninger, høy spesialistkompetanse og en vilje til å utvikles kontinuerlig. Knowit ble etablert i 1990 og har i dag ca. 2000 ansatte på 14 kontorer i Sverige, seks i Norge samt ett i Danmark, Finland og Tyskland. Knowit AB (publ) er notert på den Nordiska Börsen i Stockholm.`,
         linktekst1: 1,
         link1: 'https://www.knowit.no/',
         gfhel: [],
@@ -280,10 +279,8 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Jussformidlingen.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Jussformidlingen.jpg`,
         framsidebiletePosisjon: 'center -16vh',
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
+        beskriving1: null,
+        beskriving2: null,
         linktekst1: 1,
         link1: 'https://jussformidlingen.no/',
         gfhel: [
@@ -302,8 +299,8 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Fremtind.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Fremtind.jpg`,
         framsidebiletePosisjon: 'center -10vh',
-        beskriving1: ``,
-        beskriving2: ``,
+        beskriving1: null,
+        beskriving2: null,
         linktekst1: 1,
         link1: 'https://www.fremtind.no/',
         gfhel: [
@@ -322,8 +319,8 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Conocophilips.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Conocophilips.jpg`,
         framsidebiletePosisjon: 'center -38vh',
-        beskriving1: ``,
-        beskriving2: ``,
+        beskriving1: null,
+        beskriving2: null,
         linktekst1: 1,
         link1: 'http://www.conocophillips.no/',
         gfhel: [
@@ -342,8 +339,8 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Capgemini.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Capgemini.jpg`,
         framsidebiletePosisjon: 'center -14vh',
-        beskriving1: ``,
-        beskriving2: ``,
+        beskriving1: null,
+        beskriving2: null,
         linktekst1: 1,
         link1: 'https://www.capgemini.com/',
         gfhel: [
@@ -362,8 +359,8 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Schibsted.jpg`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Schibsted.jpg`,
         framsidebiletePosisjon: 'center -20vh',
-        beskriving1: ``,
-        beskriving2: ``,
+        beskriving1: null,
+        beskriving2: null,
         linktekst1: 1,
         link1: 'https://www.Schibsted.com/',
         gfhel: [
