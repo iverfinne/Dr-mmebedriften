@@ -115,12 +115,20 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
       const framtidigeIndex = this.hentFramtidigeBedrift(type, currLinkIndex);
 
       // Bytt side
-      this.ruter.navigateByUrl(`/bedrifter/(bedrift:${
-        this.alleBedrifterSomCurrVises[framtidigeIndex].bedriftData.ruterLink
+      this.ruter.navigateByUrl(`/bedrifter/(bedrift:${this.alleBedrifterSomCurrVises[framtidigeIndex].bedriftData.ruterLink
         })`);
 
       this.einBedrift = this.alleBedrifterSomCurrVises[framtidigeIndex].bedriftData;
     }
+  }
+
+  kanskjeHentUtFramsidebiletePosisjonY(posisjon: string): string | null {
+    const posisjoner = posisjon.split(' ');
+    if (posisjoner && posisjoner.length === 2) {
+      return posisjoner[1];
+    }
+
+    return null;
   }
 
   lukkPanel(): void {
