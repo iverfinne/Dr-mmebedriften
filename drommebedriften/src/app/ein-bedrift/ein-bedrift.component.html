@@ -233,14 +233,14 @@
                         <iframe [src]="domSanitizer.bypassSecurityTrustResourceUrl(einBedrift.vimeoVideo.kjelde)"
                             frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
                         </iframe>
-                        <p>
+                        <div class="vimeo-link">
                             <span>
                                 <mat-icon
                                     [style.color]="einBedrift.vimeoVideo.farge ? einBedrift.vimeoVideo.farge : ''">
                                     whatshot</mat-icon>
                                 <span [innerHTML]="einBedrift.vimeoVideo.indreHTML[2]"></span>
                             </span>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
