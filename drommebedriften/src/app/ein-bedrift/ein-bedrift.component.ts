@@ -135,7 +135,7 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
     this.containerStatus = 'av';
 
     setTimeout(() => {
-      this.ruter.navigateByUrl('[\'\', { outlets: { bedrift: null } }]');
+      this.ruter.navigateByUrl(`'',{outlets:{bedrift:null}}]`);
     }, 300);
   }
 

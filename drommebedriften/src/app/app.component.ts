@@ -23,21 +23,23 @@ export class AppComponent implements OnInit {
     this.ruter.events.subscribe(e => {
       if (e instanceof NavigationEnd) {
         const url = e.url;
-        if (
-          !(
-            (
-              url.indexOf('bedrift') > -1 &&
-              url.indexOf('bedrifter') === -1
-            ) || (
-              url.indexOf('bedrifter') > -1
-            )
-          )
-        ) {
-          // Naviger scroll-posisjon Y
+
+        ///
+        // Naviger scroll-posisjon Y (HTML)
+        if (url.indexOf('bedrifter') === -1 && url.indexOf('bedrift:null') === -1) {
           setTimeout(() => {
             const scrollOptions: ScrollToOptions = { top: 0, left: 0, behavior: 'smooth' };
             document.querySelector('html').scrollTo(scrollOptions);
           }, 500);
+        }
+
+        ///
+        // Naviger scroll-posisjon Y (ein bedrift)
+        if (url.indexOf('bedrifter/(bedrift:') > -1) {
+          setTimeout(() => {
+            const scrollOptions: ScrollToOptions = { top: 0, left: 0, behavior: 'smooth' };
+            document.querySelector('#einBedriftContainer').scrollTo(scrollOptions);
+          }, 100);
         }
       }
     });
