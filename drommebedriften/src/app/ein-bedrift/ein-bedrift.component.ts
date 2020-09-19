@@ -30,7 +30,7 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
     private ruter: Router,
     private databaseService: DatabaseService,
     private globaleLyttararService: GlobaleLyttararService,
-    private domSanitizer: DomSanitizer
+    public domSanitizer: DomSanitizer
   ) {
     this.abonnement2 = this.ruter.events.subscribe(event => {
       if (event instanceof NavigationEnd) {

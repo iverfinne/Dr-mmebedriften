@@ -2,7 +2,7 @@ import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { dynamiskGoogleFormEinBedrift } from '../angular-animation';
 import { GlobaleLyttararService } from '../ser/globale-lyttarar.service';
-import { Subscription } from 'rxjs';
+import { Subscription, timer } from 'rxjs';
 
 @Component({
   selector: 'app-dynamisk-google-form-html',
@@ -18,6 +18,7 @@ export class DynamiskGoogleFormHTMLComponent implements OnInit, OnDestroy {
   animasjonsStatus: 'av' | 'pa' = 'av';
 
   abonnement0: Subscription;
+  abonnement1: Subscription;
 
   constructor(
     private domSanitizer: DomSanitizer,
@@ -26,16 +27,30 @@ export class DynamiskGoogleFormHTMLComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     if (this.abonnement0) { this.abonnement0.unsubscribe(); }
+    if (this.abonnement1) { this.abonnement0.unsubscribe(); }
   }
 
   ngOnInit(): void {
-    if (typeof this.htmlLink === 'string') {
-      this.htmlLink = this.domSanitizer.bypassSecurityTrustResourceUrl(this.htmlLink);
-    }
+    this.abonnement1 = timer(0, 300).subscribe(x => {
+      // Konvert visst ein ny link blir oppgitt...
+      this.settHTMLLink();
+    });
 
     this.abonnement0 = this.globaleLyttararService.animasjonsStatusGoogleFormEinBedrift.asObservable().subscribe(v => {
       this.animasjonsStatus = v;
     });
+  }
+
+  settHTMLLink(): void {
+    if (typeof this.htmlLink === 'string') {
+      this.htmlLink = this.domSanitizer.bypassSecurityTrustResourceUrl(this.htmlLink);
+    }
+  }
+
+  validSrcInput(src: string | SafeResourceUrl): boolean {
+    if (src && typeof src !== 'string') { return true; }
+
+    return false;
   }
 
   lukkPanel(): void {
