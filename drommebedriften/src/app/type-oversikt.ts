@@ -10,6 +10,7 @@ export interface Bedrift {
     linktekst1?: string | 1; // 1 = Standard visning for linktekst. Namn + tekst som ref. til heimeside
     link1?: string;
     gfhel?: GoogleFormTilleggskort[];
+    vimeoVideo?: VimeoEmbedDataEinBedrift;
     tilleggskort?: BedriftTilleggskort[];
 }
 export interface BedriftSokMengdeTreff {
@@ -28,6 +29,11 @@ export interface GoogleFormTilleggskort {
     beskriving1: string | 1;
     linktekst1: string | 1; // 1 = Standard visning for linktekst. Namn + tekst som ref. til Google Form
     link1: string;
+}
+export interface VimeoEmbedDataEinBedrift {
+    link: string;
+    farge: string;
+    indreHTML: string[];
 }
 export interface BedriftTilleggskort {
     /**

@@ -1,4 +1,4 @@
-import { Bedrift } from './type-oversikt';
+import { Bedrift, VimeoEmbedDataEinBedrift } from './type-oversikt';
 
 // Understier til mapper med filer i
 export const LocalPaths = {
@@ -19,6 +19,33 @@ function gfise(iframeEmbedLink?: string): string | null {
     return null;
 }
 
+// Ein Vimeo-video data-uthenter (link, farge, tittel) frå Embed-kode frå Vimeo
+// **Bruk embed-form med berre iframe som container.. E.g.:
+// <iframe src="https://player.vimeo.com/video/422752048?color=35a39e&title=0&byline=0&portrait=0" ....
+// <p><a href="https://vimeo.com/422752048">Dette er Tek .... </p>
+function vimeoEmbedKonverter(iframeEmbedLink?: string): VimeoEmbedDataEinBedrift {
+    if (iframeEmbedLink) {
+        // Link
+        const linkSplit = iframeEmbedLink.split('"');
+        const link = linkSplit[1];
+
+        // Farge
+        const farge = `#${link.split('?')[1].split('&')[0].split('=')[1]}`;
+
+        // Indre HTML
+        const indreHTML = iframeEmbedLink.split(/((<p>)(.{1,})(<\/p>))/gm);
+        // rydd opp...
+        indreHTML.shift(); indreHTML.pop();
+
+        return {
+            link,
+            farge,
+            indreHTML
+        };
+    }
+
+    return null;
+}
 
 // Alle Bedrifter - Lokal database
 // *** Sjekk type-oversikt.ts for dokumentasjon *** //
