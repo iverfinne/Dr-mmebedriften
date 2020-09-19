@@ -147,7 +147,7 @@ export const Bedrifter: Bedrift[] = [
                 tittel: 1,
                 beskriving1: 1,
                 linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf1fHc1vfgrWsNraWiggklH51ZztC3HnZ_hyheNJdEIjlpETw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
         tilleggskort: [
@@ -252,7 +252,7 @@ export const Bedrifter: Bedrift[] = [
                 tittel: 1,
                 beskriving1: 1,
                 linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfL4r2if_68fgFaDEyfHzzAw0ilRI9_ouUML0-RI_JIXbh6cg/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
         vimeoVideo: vimeoEmbedKonverter(`<iframe src="https://player.vimeo.com/video/422752048?color=35a39e&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p><a href="https://vimeo.com/422752048">Dette er Tekna</a> from <a href="https://vimeo.com/tekna">Tekna</a> on <a href="https://vimeo.com">Vimeo</a>.</p>`),
@@ -281,7 +281,7 @@ export const Bedrifter: Bedrift[] = [
                 tittel: 1,
                 beskriving1: 1,
                 linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfOCIO21iMcFpdyWhImZgatlpdwL_u-wRz2AM36AD_bMuqSbw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
         tilleggskort: [
@@ -430,6 +430,146 @@ export const Bedrifter: Bedrift[] = [
                 beskriving1: 1,
                 linktekst1: 1,
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: 'https://google.no'
+            }
+        ]
+    },
+    {
+        namn: 'Jussformidlingen',
+        ruterLink: 'jussformidlingen',
+        logoLink: `${LocalPaths.path_bedriftLogo}Jussformidlingen.png`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Jussformidlingen.jpg`,
+        beskriving1: `
+        `,
+        beskriving2: `
+        `,
+        linktekst1: 1,
+        link1: 'https://jussformidlingen.no/',
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYYOlT2GMdG_d9wGWUMEZ0phO-YiVZnsFV_E8JZkuJEixwTg/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: 'https://google.no'
+            }
+        ]
+    },
+    {
+        namn: 'Fremtind',
+        ruterLink: 'fremtind',
+        logoLink: `${LocalPaths.path_bedriftLogo}Fremtind.png`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Fremtind.jpg`,
+        beskriving1: `
+        `,
+        beskriving2: `
+        `,
+        linktekst1: 1,
+        link1: 'https://www.fremtind.no/',
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTXZO4cDYbaMUWU9y7_wnuVIQmy2xsupW6j8vzDTb7q8iVFw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: 'https://google.no'
+            }
+        ]
+    },
+    {
+        namn: 'ConocoPhilips',
+        ruterLink: 'conocophilips',
+        logoLink: `${LocalPaths.path_bedriftLogo}Conocophilips.png`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Conocophilips.jpg`,
+        beskriving1: `
+        `,
+        beskriving2: `
+        `,
+        linktekst1: 1,
+        link1: 'http://www.conocophillips.no/',
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9R6me41qdcIrzHNWMlctYJFssYisiBi2B_boOMcJRqtneZg/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: 'https://google.no'
+            }
+        ]
+    },
+    {
+        namn: 'Capgemini',
+        ruterLink: 'Capgemini',
+        logoLink: `${LocalPaths.path_bedriftLogo}Capgemini.png`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Capgemini.jpg`,
+        beskriving1: `
+        `,
+        beskriving2: `
+        `,
+        linktekst1: 1,
+        link1: 'https://www.capgemini.com/',
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
+            }
+        ],
+        tilleggskort: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: 'https://google.no'
+            }
+        ]
+    },
+    {
+        namn: 'Schibsted',
+        ruterLink: 'schibsted',
+        logoLink: `${LocalPaths.path_bedriftLogo}Schibsted.jpg`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Schibsted.jpg`,
+        beskriving1: `
+        `,
+        beskriving2: `
+        `,
+        linktekst1: 1,
+        link1: 'https://www.Schibsted.com/',
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
         tilleggskort: [
