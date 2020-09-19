@@ -27,21 +27,19 @@ function vimeoEmbedKonverter(iframeEmbedLink?: string): VimeoEmbedDataEinBedrift
     if (iframeEmbedLink) {
         // Link
         const linkSplit = iframeEmbedLink.split('"');
-        const link = linkSplit[1];
+        const kjelde = linkSplit[1];
 
         // Farge
-        const farge = `#${link.split('?')[1].split('&')[0].split('=')[1]}`;
+        const farge = `#${kjelde.split('?')[1].split('&')[0].split('=')[1]}`;
 
         // Indre HTML
         const indreHTML = iframeEmbedLink.split(/((<p>)(.{1,})(<\/p>))/gm);
-        // rydd opp...
-        indreHTML.shift(); indreHTML.pop();
+        if (indreHTML) {
+            // rydd opp...
+            indreHTML.shift(); indreHTML.pop();
+        }
 
-        return {
-            link,
-            farge,
-            indreHTML
-        };
+        return { kjelde, farge, indreHTML };
     }
 
     return null;
@@ -255,6 +253,7 @@ Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunne
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
+        vimeoVideo: vimeoEmbedKonverter(`<iframe src="https://player.vimeo.com/video/422752048?color=35a39e&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p><a href="https://vimeo.com/422752048">Dette er Tekna</a> from <a href="https://vimeo.com/tekna">Tekna</a> on <a href="https://vimeo.com">Vimeo</a>.</p>`),
         tilleggskort: [
             {
                 tittel: 1,

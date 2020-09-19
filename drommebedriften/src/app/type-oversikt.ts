@@ -31,7 +31,7 @@ export interface GoogleFormTilleggskort {
     link1: string;
 }
 export interface VimeoEmbedDataEinBedrift {
-    link: string;
+    kjelde: string;
     farge: string;
     indreHTML: string[];
 }
