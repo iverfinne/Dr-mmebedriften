@@ -47,6 +47,12 @@ function vimeoEmbedKonverter(iframeEmbedLink?: string): VimeoEmbedDataEinBedrift
 
 // Alle Bedrifter - Lokal database
 // *** Sjekk type-oversikt.ts for dokumentasjon *** //
+/* Middag... {
+    tittel: 1,
+    beskriving1: 1,
+    linktekst1: 1,
+    link1: ''
+} */
 export const Bedrifter: Bedrift[] = [
     {
         namn: 'DNV GL',
@@ -60,22 +66,8 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: `Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunnet generelt ved å investere tungt i forskning og utvikling. Med høyt utdannede ansatte i 100 land, jobber vi sammen med våre kunder om å gjøre verden sikrere, smartere og grønnere.`,
         linktekst1: 1,
         link1: 'https://www.dnvgl.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
-        tilleggskort: [
-            /* Middag... {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: ''
-            } */
-        ]
+        gfhel: [],
+        tilleggskort: []
     },
     {
         namn: 'Bouvet',
@@ -87,14 +79,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: `Bouvet er et skandinavisk konsulentselskap, som gjennom rådgivning, utvikling, design og forvaltning, bidrar til å maksimere effekter i krysningspunktet mellom moderne teknologi og digital kommunikasjon. Flotte ord - ingen overflødige. Varen vi leverer kommer fra faglig styrke. Derfor har vi også et bevisst forhold til faglig utvikling, som kommer i mange former tilpasset den enkelte. Vi har blant annet fagkvelder, arkitektskole, systemutviklerskole, deltakelse på konferanser, hackatons og internkonferanser med fokus på kompetansedeling.`,
         linktekst1: 1,
         link1: 'https://www.bouvet.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
+        gfhel: [],
         tilleggskort: []
     },
     {
@@ -107,14 +92,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: `Vår industrielle produktportefølje går til miljøforbedringer og til en rekke bransjer og prosesser. Miljøproduktene utgjør en egen produktgruppe med utspring fra nitrogenproduksjon. Denne produktgruppen spenner fra produkter og tjenester som fjerner skadelige utslipp fra kjøretøyer og stasjonære installasjoner til de som brukes til å kontrollere sjenerende lukt fra avløps- og kloakksystemer.`,
         linktekst1: 1,
         link1: 'https://www.yara.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
+        gfhel: [],
         tilleggskort: []
     },
     {
@@ -148,14 +126,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: `Sjøfartsdirektoratet er eit forvaltningsorgan under Nærings- og fiskeridepartementet og Klima- og miljødepartementet med myndigheitsansvar overfor norskregistrerte skip og utanlandske skip som går inn til norske hamner.`,
         linktekst1: 1,
         link1: 'https://www.sdir.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
+        gfhel: [],
         tilleggskort: []
     },
     {
@@ -168,14 +139,7 @@ export const Bedrifter: Bedrift[] = [
         `,
         linktekst1: 1,
         link1: 'https://www.tryg.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
+        gfhel: [],
         tilleggskort: []
     },
     {
@@ -188,14 +152,7 @@ export const Bedrifter: Bedrift[] = [
         `,
         linktekst1: 1,
         link1: 'https://www.obos.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
+        gfhel: [],
         tilleggskort: []
     },
     {
@@ -249,14 +206,7 @@ export const Bedrifter: Bedrift[] = [
         `,
         linktekst1: 1,
         link1: 'https://www.forsvaret.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
+        gfhel: [],
         tilleggskort: []
     },
     {
@@ -269,18 +219,11 @@ export const Bedrifter: Bedrift[] = [
         `,
         linktekst1: 1,
         link1: 'https://www.knowit.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
+        gfhel: [],
         tilleggskort: []
     },
     {
-        namn: 'Wintershall dea',
+        namn: 'Wintershall Dea',
         ruterLink: 'wintershall_dea',
         logoLink: `${LocalPaths.path_bedriftLogo}Wintershall_dea.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}wintershall_dea.jpg`,
@@ -290,14 +233,7 @@ export const Bedrifter: Bedrift[] = [
         ekstraLink1: `Les mer på vår hjemmeside <a href="https://wintershalldea.no/nb/karriere-norge" target="_blank" rel="noopener">wintershalldea.no/</a>`,
         linktekst1: 1,
         link1: 'https://wintershalldea.no/en',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
+        gfhel: [],
         vimeoVideo: vimeoEmbedKonverter(`<iframe src="https://player.vimeo.com/video/445542706?color=ff9933&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p><a href="https://vimeo.com/445542706">Graduates in Wintershall Dea</a> from <a href="https://vimeo.com/wintershalldea">Wintershall Dea in Norway</a> on <a href="https://vimeo.com">Vimeo</a>.</p>`),
         tilleggskort: []
     },
@@ -314,14 +250,7 @@ export const Bedrifter: Bedrift[] = [
         Atea finnes i syv land i Norden og Baltikum, har mer enn 7300 medarbeidere, er markedsleder i Norden og Baltikum og er den tredje største IT-infrastrukturleverandøren i Europa. Konsernet hadde en omsetning på 34,7 mrd. NOK i 2018 og er notert på Oslo Børs.`,
         linktekst1: 1,
         link1: 'www.atea.com"',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
+        gfhel: [],
         tilleggskort: []
     },
     {
@@ -342,14 +271,7 @@ export const Bedrifter: Bedrift[] = [
         eksamensperioden.`,
         linktekst1: 1,
         link1: 'vinsit.no/#jobb',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="1053" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
+        gfhel: [],
         tilleggskort: []
     },
     {
