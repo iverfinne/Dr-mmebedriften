@@ -136,14 +136,16 @@
                 box-sizing: border-box;
                 padding: 16px;
 
-                text-align: left;
-
                 >button {
                     display: block;
                     position: absolute;
                     bottom: 9px;
                     left: calc(10% / 2);
                     width: 90%;
+
+                    &:hover {
+                        transform: scale(1.017);
+                    }
                 }
             }
         }

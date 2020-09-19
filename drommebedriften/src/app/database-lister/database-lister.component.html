@@ -36,7 +36,7 @@
                             </ng-template>
                         </div>
                         <div class="annet">
-                            <h2 [innerHTML]="bedrift.bedriftData.namn" style="margin: 0 0 5px" [style.textAlign]="!bedrift.bedriftData.beskriving1 ? 'center' : ''"></h2>
+                            <h2 [innerHTML]="bedrift.bedriftData.namn" [style.textAlign]="!bedrift.bedriftData.beskriving1 ? 'center' : ''" [style.margin]="!bedrift.bedriftData.beskriving1 ? '28px 0px 5px' : '0px 0px 5px'"></h2>
                             <ng-container *ngIf="bedrift.bedriftData.beskriving1">
                                 <p *ngIf="bedrifterVisningsType === 'comfy'"
                                     [innerHTML]="forkortString(bedrift.bedriftData.beskriving1, 155)"></p>
