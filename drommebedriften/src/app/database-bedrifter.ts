@@ -69,11 +69,11 @@ export const Bedrifter: Bedrift[] = [
             }
         ],
         tilleggskort: [
-            /* {
+            /* Middag... {
                 tittel: 1,
                 beskriving1: 1,
                 linktekst1: 1,
-                link1: 'https://google.no'
+                link1: ''
             } */
         ]
     },
