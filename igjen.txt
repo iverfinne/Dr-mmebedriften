@@ -35,8 +35,8 @@ Små-ting:
 - Integrere Intercom | OK
 - Legg til enkelt i DB for å aktivere/deaktivere nettside | OK
 
-- Legge til footer ?? |
-- Legg til favico | OK https://favicon.io/favicon-generator/?t=D%C2%A8&ff=Aclonica&fs=70&fc=%23000&b=rounded&bc=%23ADF
+- Legge til footer ?? | Nei
+- Legg til favico | OK https://favicon.io/favicon-generator/?t=D%C2%A8&ff=Aclonica&fs=70&fc=%23222&b=rounded&bc=%23FDA
 
 ******************
 ** Små-ting (1) **
