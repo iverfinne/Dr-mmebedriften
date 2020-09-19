@@ -7,6 +7,7 @@ export interface Bedrift {
     framsidebileteStorrelse?: 'contain' | 'cover' | 'initial'; // Def.: cover
     beskriving1: string;
     beskriving2?: string;
+    ekstraLink1?: string;
     linktekst1?: string | 1; // 1 = Standard visning for linktekst. Namn + tekst som ref. til heimeside
     link1?: string;
     gfhel?: GoogleFormTilleggskort[];

@@ -42,7 +42,7 @@
             width: 100%;
             height: 58vh;
             border-bottom: 1px solid lightgray;
-            
+
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -112,6 +112,31 @@
 
                 >p {
                     text-align: center;
+                }
+
+                .midtstilt-venstre-tekst {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    flex-flow: row wrap;
+
+                    width: 100%;
+                    height: auto;
+
+                    >* {
+                        display: inline-block;
+                        text-align: left;
+                    }
+
+                    >h3 {
+                        margin-right: 30px;
+                    }
+
+                    >ul {
+                        padding: 8px 0;
+                        border-top: 1px dotted black;
+                        border-bottom: 1px dotted black;
+                    }
                 }
 
                 .vimeo-video {

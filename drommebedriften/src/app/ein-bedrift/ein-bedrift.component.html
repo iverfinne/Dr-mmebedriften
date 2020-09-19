@@ -132,8 +132,94 @@
                 <div class="beskrivelse-video">
                     <div>
                         <!-- Beskrivelse -->
-                        <p [innerHTML]="einBedrift.beskriving1"></p>
-                        <p [innerHTML]="einBedrift.beskriving2"></p>
+                        <p *ngIf="einBedrift.beskriving1" class="beskriving-p" [innerHTML]="einBedrift.beskriving1"></p>
+                        <p *ngIf="einBedrift.beskriving2" class="beskriving-p" [innerHTML]="einBedrift.beskriving2"></p>
+                        <!--  -->
+                        <!-- Finansdepartementet -->
+                        <ng-container *ngIf="einBedrift.ruterLink === 'finansdepartementet'">
+                            <div class="midtstilt-venstre-tekst">
+                                <h3>
+                                    Våre arbeidsoppgaver er blant annet å:
+                                </h3>
+                                <ul style="display: inline-block;">
+                                    <li>Planlegge og iverksette den økonomiske politikken</li>
+                                    <li>Samordne arbeidet med statsbudsjettet</li>
+                                    <li>Sørge for at det offentlige får inn skatter og avgifter</li>
+                                    <li>Overvåke og utarbeide regler for finansmarkedene</li>
+                                    <li>Forvalte Statens pensjonsfond</li>
+                                </ul>
+                            </div>
+                            <p>
+                                Som nyansatt hos oss har du en reell rolle i departementet fra første stund, og du vil
+                                få
+                                mye ansvar. Hos oss vil du kunne anvende og utvikle
+                                kunnskapen fra skolebenken på dagsaktuelle problemstillinger. Du fungerer som en
+                                selvstendig faglig rådgiver fra dag en, og gir råd til politisk
+                                ledelse i saker på ditt fagområde. Samtidig får du tett oppfølging av dyktige ledere og
+                                kollegaer som hører på dine synspunkter. Ditt arbeid er
+                                viktig for departementet, og du vil få en variert arbeidshverdag med høyt tempo.
+                            </p>
+                            <br>
+                            <p>
+                                Hvilke muligheter tilbyr vi studenter?
+                                <i>Praktikantopphold:</i> Formålet med praktikantoppholdet er å gi deg en opplevelse av
+                                hvordan
+                                det er å jobbe som jurist og økonom i Finansdepartementet.
+                            </p>
+                            <h3>
+                                <u>For jurister:</u>
+                            </h3>
+                            <p>
+                                Praktikantoppholdet tilbys nå i vår Skattelovavdeling, og er lønnet med fire til seks
+                                ukers
+                                varighet. Som praktikant hos oss får du anledning til å jobbe med saker i
+                                skjæringspunktet
+                                mellom juss, fag og politikk og får være en del av et sterkt fagmiljø som gir råd til
+                                vår
+                                politiske ledelse.
+                                Vi ser etter deg som har fullført 3. studieår/avdeling og har gode eksamensresultater.
+                                Les
+                                mer om stillingen her <a
+                                    href="https://www.jobbnorge.no/ledige-stillinger/stilling/191770/praktikantopphold-i-skattelovavdelingen-for-jusstudenter">www.jobbnorge.no</a>
+                                Søknadsfrist 1.okt.2020
+                            </p>
+                            <h3>
+                                <u>For økonomer:</u>
+                            </h3>
+                            <p>
+                                Finansdepartementet tilbyr ett til tre lønnede engasjementer for økonomistudenter med
+                                oppstart i begynnelsen av januar 2021 og med en varighet på 5-6 uker. Kortere opphold
+                                kan
+                                vurderes.
+                                Arbeidsoppgavene vil i hovedsak bestå av analyser og vurderinger av ulike faglige
+                                problemstillinger og understøtte avdelingene i deres arbeid. Engasjementet er en god
+                                mulighet til å bli bedre kjent med Finansdepartementet. Samtidig får du anledning til å
+                                arbeide med utfordrende og samfunnsnyttige oppgaver i et sterkt fagmiljø, samt få et
+                                innblikk i samspillet mellom økonomi og politikk. Du vil få tildelt en fadder under hele
+                                oppholdet.
+                                Studentene vil bli tilknyttet en avdeling, henholdsvis Skatteøkonomisk avdeling,
+                                Finansavdelingen eller Utviklingsprogrammet.
+                                Les mer om stillingen her: <a
+                                    href="https://www.jobbnorge.no/ledige-stillinger/stilling/191809/studentengasjement-for-oekonomer">www.jobbnorge.no</a>
+                                Søknadsfrist 29.sept. 2020.
+                            </p>
+
+                            <p>
+                                Vi rekrutterer studenter som har utdanning innen økonomi herunder siviløkonomi,
+                                samfunnsøkonomi etc, og jurister (til FMA og SL).
+                            </p>
+                            <p>
+                                Ønsker du mer informasjon om Finansdepartementet?
+                                På <a href="https://jobbifin.dep.no ">www.jobbifin.dep.no/</a>
+                                finner du mer informasjon om oss og om våre avdelinger.
+                            </p>
+                        </ng-container>
+                        <!--  -->
+                        <!-- Ekstra Link 1 -->
+                        <p class="beskriving-p" *ngIf="einBedrift.ekstraLink1">
+                            <br>
+                            &#8259; <span [innerHTML]="einBedrift.ekstraLink1"></span> &#8259;
+                        </p>
                     </div>
                     <!-- Vimeo Video -->
                     <div *ngIf="einBedrift.vimeoVideo" class="vimeo-video"

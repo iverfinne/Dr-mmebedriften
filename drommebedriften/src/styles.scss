@@ -55,18 +55,20 @@ p,
   line-height: 25px;
   color: rgb(39, 39, 39);
 
-  >span {
-    >span {
-      >a {
-        text-decoration: none;
-        color: $fargeUI_einBedrift;
+  a {
+    text-decoration: none;
+    color: $fargeUI_einBedrift;
 
-        &:hover {
-          text-decoration: underline dotted;
-        }
-      }
+    &:hover {
+      text-decoration: underline dotted;
     }
   }
+}
+
+.mat-body p,
+.mat-body-1 p,
+.mat-typography .beskriving-p {
+  margin: 0 0 20px;
 }
 
 .link1 {
