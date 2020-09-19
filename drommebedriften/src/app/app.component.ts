@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
         if (url.indexOf('bedrifter') === -1 && url.indexOf('bedrift:null') === -1) {
           setTimeout(() => {
             const scrollOptions: ScrollToOptions = { top: 0, left: 0, behavior: 'smooth' };
-            document.querySelector('html').scrollTo(scrollOptions);
+            const element = document.querySelector('html'); if (element) { element.scrollTo(scrollOptions); }
           }, 500);
         }
 
@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
         if (url.indexOf('bedrifter/(bedrift:') > -1) {
           setTimeout(() => {
             const scrollOptions: ScrollToOptions = { top: 0, left: 0, behavior: 'smooth' };
-            document.querySelector('#einBedriftContainer').scrollTo(scrollOptions);
+            const element = document.querySelector('#einBedriftContainer'); if (element) { element.scrollTo(scrollOptions); }
           }, 100);
         }
       }
