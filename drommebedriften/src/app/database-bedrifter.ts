@@ -365,7 +365,7 @@ Følg oss gjerne på <a href="https://www.linkedin.com/company/2496901/ ">www.li
         namn: 'Wintershall dea',
         ruterLink: 'wintershall_dea',
         logoLink: `${LocalPaths.path_bedriftLogo}Wintershall_dea.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Wintershall_dea.jpg`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}wintershall_dea.jpg`,
         beskriving1: `Wintershall Dea er Europas ledende, uavhengige olje- og gasselskap med aktiviteter på fem kontinenter. Vår virksomhet strekker seg over hele den norske kontinentalsokkelen, fra Nordsjøen til Barentshavet. Wintershall Dea har virksomhet i hele verdikjeden, fra leting via feltutbygging til produksjon. Norge er et av Wintershall Deas kjerneområder og vi er en stor operatør og en engasjert partner på norsk sokkel. Vi er operatør for feltene Brage, Maria og Vega og for utbyggingsprosjektene Dvalin og Nova. I tillegg er vi en aktiv partner i blant annet Skarv, Aasta Hansteen, Njord og Gjøa.
         <br /><br />
         Er du nysgjerrig og klar for å bli en del av et nytt kapittel av eventyret i Nordsjøen? Wintershall Dea tilbyr spennende prosjekter som gir mulighet for faglig utvikling.
@@ -435,7 +435,7 @@ Følg oss gjerne på <a href="https://www.linkedin.com/company/2496901/ ">www.li
         namn: 'Vinsit',
         ruterLink: 'vinsit',
         logoLink: `${LocalPaths.path_bedriftLogo}Vinsit.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Wintershall dea.jpg`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Vinsit.jpg`,
         beskriving1: `Vinsit er en salgsbedrift som siden oppstarten i 2017 har hentet flere 
         tusen nye kunder for våre samarbeidspartnere. Vår ekspertise ligger 
         innen telefon- og feltsalg, hovedsakelig mot B2C markedet, men vi 
