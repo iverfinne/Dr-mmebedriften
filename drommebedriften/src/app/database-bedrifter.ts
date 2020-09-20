@@ -251,10 +251,9 @@ export const Bedrifter: Bedrift[] = [
         Sammen med kundene våre i hele landet bygger Atea Norge med IT.  Vi vil bidra til mer effektiv læring i skolen. Vi vil styrke politiet og helseomsorgen i deres arbeid og på den måten være med og trygge vår felles velferd. Vi vil gjøre industrien mer konkurransedyktig og gi entreprenører muligheten til å realisere sine drømmer.
         Hos oss får du et heldekkende tilbud av produkter og tjenester. Vi hjelper deg med hele verdikjeden, fra behovskartlegging og rådgivning til utvikling, produkter og tjenester, drift og vedlikehold.
         Vi må forstå hvordan teknologi påvirker livene våre og hva teknologi kan bidra med for å gjøre de bedre. Derfor jobber vi i Atea med teknologi. Av og for mennesker.`,
-        beskriving2: `Atea-konsernet
-        Atea finnes i syv land i Norden og Baltikum, har mer enn 7300 medarbeidere, er markedsleder i Norden og Baltikum og er den tredje største IT-infrastrukturleverandøren i Europa. Konsernet hadde en omsetning på 34,7 mrd. NOK i 2018 og er notert på Oslo Børs.`,
+        beskriving2: `Atea-konsernet Atea finnes i syv land i Norden og Baltikum, har mer enn 7300 medarbeidere, er markedsleder i Norden og Baltikum og er den tredje største IT-infrastrukturleverandøren i Europa. Konsernet hadde en omsetning på 34,7 mrd. NOK i 2018 og er notert på Oslo Børs.`,
         linktekst1: 1,
-        link1: 'www.atea.com"',
+        link1: 'https://www.atea.com',
         gfhel: [],
         tilleggskort: []
     },
@@ -275,7 +274,7 @@ export const Bedrifter: Bedrift[] = [
         deltidsjobb hvor du kan jobbe mer i rolige perioder og mindre i
         eksamensperioden.`,
         linktekst1: 1,
-        link1: 'vinsit.no/#jobb',
+        link1: 'https://www.vinsit.no/#jobb',
         gfhel: [],
         tilleggskort: []
     },
@@ -288,7 +287,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: null,
         beskriving2: null,
         linktekst1: 1,
-        link1: 'https://jussformidlingen.no/',
+        link1: 'https://www.jussformidlingen.no/',
         gfhel: [
             {
                 tittel: 1,
