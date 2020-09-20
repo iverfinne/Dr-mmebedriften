@@ -3,6 +3,7 @@ import { meny } from './angular-animation';
 import { Router, NavigationEnd } from '@angular/router';
 import { GlobaleLyttararService } from './ser/globale-lyttarar.service';
 import { LukkNedSideService } from './ser/lukk-ned-side.service';
+import { AngularFireAnalytics } from '@angular/fire/analytics';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,8 @@ export class AppComponent implements OnInit {
   constructor(
     private ruter: Router,
     public globaleLyttarar: GlobaleLyttararService,
-    private lukkNedSideService: LukkNedSideService
+    private lukkNedSideService: LukkNedSideService,
+    analytics: AngularFireAnalytics
   ) {
     this.ruter.events.subscribe(e => {
       if (e instanceof NavigationEnd) {
@@ -43,6 +45,8 @@ export class AppComponent implements OnInit {
         }
       }
     });
+
+    analytics.setAnalyticsCollectionEnabled(true);
   }
 
   ngOnInit(): void {
