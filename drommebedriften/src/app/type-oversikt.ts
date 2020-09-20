@@ -32,6 +32,7 @@ export interface GoogleFormTilleggskort {
     beskriving1: string | 1;
     linktekst1: string | 1; // 1 = Standard visning for linktekst. Namn + tekst som ref. til Google Form
     link1: string;
+    googleAnalyticsID?: 'speedate';
 }
 export interface VimeoEmbedDataEinBedrift {
     kjelde: string;

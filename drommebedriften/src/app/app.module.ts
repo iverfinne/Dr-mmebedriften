@@ -22,7 +22,10 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment.prod';
 
-import { AngularFireAnalyticsModule, ScreenTrackingService } from '@angular/fire/analytics';
+// For Google Analytics...
+import { initializeApp, analytics } from 'firebase';
+initializeApp(environment.firebase);
+analytics();
 
 @NgModule({
   declarations: [
@@ -37,20 +40,17 @@ import { AngularFireAnalyticsModule, ScreenTrackingService } from '@angular/fire
     NedtellerLanseringComponent
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAnalyticsModule,
-    AngularFirestoreModule,
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
     MatProgressSpinnerModule
   ],
-  providers: [
-    ScreenTrackingService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -65,7 +65,8 @@
                                 </p>
                             </ng-template>
 
-                            <span (click)="opneUndersokelse(googleFormKort.link1);">
+                            <span
+                                (click)="opneUndersokelse(googleFormKort.link1);(googleFormKort.googleAnalyticsID === 'speedate' ? analyticsFunksjonar.EinBedrift_KlikkPaaSpeedateKnapp(einBedrift.namn) : null);">
                                 <ng-container *ngIf="googleFormKort.linktekst1.length else standardLinkTekst">
                                     {{ googleFormKort.linktekst1 }}
                                 </ng-container>
@@ -121,7 +122,8 @@
                 <!-- Namn -->
                 <h1 [innerHTML]="einBedrift.namn"></h1>
                 <!-- Link 1 -->
-                <a class="link1" [href]="einBedrift.link1" target="_blank" rel="noopener">
+                <a class="link1" [href]="einBedrift.link1" target="_blank" rel="noopener"
+                    (click)="analyticsFunksjonar.EinBedrift_KlikkPaaEksternHeimesideKnapp(einBedrift.namn)">
                     {{ einBedrift.linktekst1 !== 1 ? einBedrift.linktekst1 : einBedrift.namn + ' - Hjemmeside' }}
                     <sup>
                         <mat-icon>open_in_new</mat-icon>
@@ -220,19 +222,27 @@
                                 finner du mer informasjon om oss og om våre avdelinger.
                             </p>
                         </ng-container>
-
+                        <!--  -->
+                        <!-- Accenture -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'accenture'">
                             Hvilke studieretninger man eventuelt rekrutterer fra/til hvilke stillinger man rekrutterer:
                             <div class="midtstilt-venstre-tekst">
                                 <ul>
                                     <li>Rekrutterer helst studenter fra: IT, Ingeniørkunst, Økonomi.</li>
-                                    <li>Vil tilbyr mange forskjellige stillinger som f.eks: Utvikler (Frontend og/eller Backend), Tekniske Arkitekter, Sikkerhets Arkitekter, UX Designere, Business Analyst, Project Manager</li>
-                                    <li>Følge denne siden for oppdateringer på ledige stillinger: <a href="https://www.accenture.com/no-en/careers/jobsearch?jk=&sb=0">https://www.accenture.com/no-en/careers/jobsearch</a></li>
-                                    <li>NB!!! Pga. COVID-19 har muligheter blitt begrenset. Vi ønsker selvfølgelig å informere studenter om muligheter men vil også understreke at mange opplegg settes på vente, avlyses, eller flyttes.</li>
+                                    <li>Vil tilbyr mange forskjellige stillinger som f.eks: Utvikler (Frontend og/eller
+                                        Backend), Tekniske Arkitekter, Sikkerhets Arkitekter, UX Designere, Business
+                                        Analyst, Project Manager</li>
+                                    <li>Følge denne siden for oppdateringer på ledige stillinger: <a
+                                            href="https://www.accenture.com/no-en/careers/jobsearch?jk=&sb=0">https://www.accenture.com/no-en/careers/jobsearch</a>
+                                    </li>
+                                    <li>NB!!! Pga. COVID-19 har muligheter blitt begrenset. Vi ønsker selvfølgelig å
+                                        informere studenter om muligheter men vil også understreke at mange opplegg
+                                        settes på vente, avlyses, eller flyttes.</li>
                                 </ul>
                             </div>
                         </ng-container>
-
+                        <!--  -->
+                        <!-- Knowit -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'knowit'">
                             Om rekruttering
                             <div class="midtstilt-venstre-tekst">
@@ -265,7 +275,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>

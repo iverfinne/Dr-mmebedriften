@@ -5,6 +5,7 @@ import { TypeVaktService } from '../ser/type-vakt.service';
 
 import { bedrifter, bedriftFlis } from '../angular-animation';
 import { GlobaleLyttararService } from '../ser/globale-lyttarar.service';
+import { GoogleAnalyticsService } from '../ser/google-analytics.service';
 
 @Component({
   selector: 'app-database-lister',
@@ -35,7 +36,8 @@ export class DatabaseListerComponent implements OnInit, OnDestroy, AfterViewInit
   constructor(
     private databaseService: DatabaseService,
     private typeVakt: TypeVaktService,
-    private globaleLyttararService: GlobaleLyttararService
+    private globaleLyttararService: GlobaleLyttararService,
+    public analyticsFunksjonar: GoogleAnalyticsService
   ) { }
 
   async ngOnInit(): Promise<void> {

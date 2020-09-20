@@ -1,11 +1,12 @@
-import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Bedrift, BedrifterTreffSokVisning } from '../type-oversikt';
 import { DatabaseService } from '../ser/database.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { einBedrift } from '../angular-animation';
 import { GlobaleLyttararService } from '../ser/globale-lyttarar.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { Subscription } from 'rxjs';
+import { Subscription, timer } from 'rxjs';
+import { GoogleAnalyticsService } from '../ser/google-analytics.service';
 
 @Component({
   templateUrl: './ein-bedrift.component.html',
@@ -16,6 +17,8 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
   einBedrift: Bedrift;
   currBedriftRuterLink;
 
+  currTidBrukarPaaSida = 0;
+
   containerStatus: 'av' | 'pa' = 'pa';
 
   einBedriftCurrentGoogleFormLink: string | SafeResourceUrl;
@@ -23,6 +26,7 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
   abonnement0: Subscription;
   abonnement1: Subscription;
   abonnement2: Subscription;
+  abonnement3: Subscription;
 
   alleBedrifterSomCurrVises: BedrifterTreffSokVisning[];
 
@@ -30,7 +34,8 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
     private ruter: Router,
     private databaseService: DatabaseService,
     private globaleLyttararService: GlobaleLyttararService,
-    public domSanitizer: DomSanitizer
+    public domSanitizer: DomSanitizer,
+    public analyticsFunksjonar: GoogleAnalyticsService
   ) {
     this.abonnement2 = this.ruter.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
@@ -46,6 +51,8 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
     if (this.abonnement0) { this.abonnement0.unsubscribe(); }
     if (this.abonnement1) { this.abonnement1.unsubscribe(); }
     if (this.abonnement2) { this.abonnement2.unsubscribe(); }
+
+    this.stoppTimerForASjekkeKorLengeEinBrukarErPaaSida();
 
     // Vask opp litt til...
     this.globaleLyttararService.einBedriftTastPress.next(null);
@@ -71,6 +78,8 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
     this.abonnement1 = this.globaleLyttararService.bedrifterSomCurrVises.subscribe(bedrifter => {
       this.alleBedrifterSomCurrVises = bedrifter;
     });
+
+    this.startTimerForASjekkeKorLengeEinBrukarErPaaSida();
   }
 
   opneUndersokelse(googleFormLink: string | SafeResourceUrl): void {
@@ -112,6 +121,8 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
     const currLinkIndex = this.hentCurrIndexForVisningsArray();
 
     if (currLinkIndex > -1) {
+      this.stoppTimerForASjekkeKorLengeEinBrukarErPaaSida();
+
       const framtidigeIndex = this.hentFramtidigeBedrift(type, currLinkIndex);
 
       // Bytt side
@@ -119,6 +130,8 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
         })`);
 
       this.einBedrift = this.alleBedrifterSomCurrVises[framtidigeIndex].bedriftData;
+
+      this.startTimerForASjekkeKorLengeEinBrukarErPaaSida();
     }
   }
 
@@ -137,6 +150,19 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       this.ruter.navigateByUrl(`'',{outlets:{bedrift:null}}]`);
     }, 300);
+  }
+
+  //// /
+  // For Google Analyse...
+  startTimerForASjekkeKorLengeEinBrukarErPaaSida(): void {
+    this.abonnement3 = timer(0, 100).subscribe(x => { this.currTidBrukarPaaSida = x * 100; });
+  }
+  stoppTimerForASjekkeKorLengeEinBrukarErPaaSida(): void {
+    // Send...
+    this.analyticsFunksjonar.EinBedrift_korLengeEinBrukarVarPaSida(this.einBedrift.namn, this.currTidBrukarPaaSida);
+
+    if (this.abonnement3) { this.abonnement3.unsubscribe(); }
+    this.currTidBrukarPaaSida = 0;
   }
 
 }
