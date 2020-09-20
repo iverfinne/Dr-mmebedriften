@@ -220,6 +220,28 @@
                                 finner du mer informasjon om oss og om våre avdelinger.
                             </p>
                         </ng-container>
+
+                        <ng-container *ngIf="einBedrift.ruterLink === 'accenture'">
+                            Hvilke studieretninger man eventuelt rekrutterer fra/til hvilke stillinger man rekrutterer:
+                            <div class="midtstilt-venstre-tekst">
+                                <ul>
+                                    <li>Rekrutterer helst studenter fra: IT, Ingeniørkunst, Økonomi.</li>
+                                    <li>Vil tilbyr mange forskjellige stillinger som f.eks: Utvikler (Frontend og/eller Backend), Tekniske Arkitekter, Sikkerhets Arkitekter, UX Designere, Business Analyst, Project Manager</li>
+                                    <li>Følge denne siden for oppdateringer på ledige stillinger: <a href="https://www.accenture.com/no-en/careers/jobsearch?jk=&sb=0">https://www.accenture.com/no-en/careers/jobsearch</a></li>
+                                    <li>NB!!! Pga. COVID-19 har muligheter blitt begrenset. Vi ønsker selvfølgelig å informere studenter om muligheter men vil også understreke at mange opplegg settes på vente, avlyses, eller flyttes.</li>
+                                </ul>
+                            </div>
+                        </ng-container>
+
+                        <ng-container *ngIf="einBedrift.ruterLink === 'knowit'">
+                            Om rekruttering
+                            <div class="midtstilt-venstre-tekst">
+                                <ul>
+                                    <li>Vi rekrutterer for tiden hovedsakelig IT-studenter til utviklerjobber.</li>
+                                    <li>Rekrutterer for sommerjobb og fast jobb.</li>
+                                </ul>
+                            </div>
+                        </ng-container>
                         <!--  -->
                         <!-- Ekstra Link 1 -->
                         <p class="beskriving-p" *ngIf="einBedrift.ekstraLink1">
@@ -243,6 +265,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>

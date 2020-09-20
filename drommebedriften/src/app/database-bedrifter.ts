@@ -190,8 +190,8 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Knowit.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Knowit.jpg`,
         framsidebiletePosisjon: 'center -19vh',
-        beskriving1: `Knowit AB (publ) er et konsulentselskap som, i den stadig raskere digitaliseringen, skaper unike kundeverdier gjennom å tilby grenseoverskridende leveranser fra de tre forretningsområdene Experience, Insight og Solutions.`,
-        beskriving2: `Det er evnen til å kombinere kompetanse innen design og kommunikasjon, management consulting og IT som skiller oss fra andre konsulentfirmaer. Vår kultur preges av åpenhet, forståelse for kundens forretninger, høy spesialistkompetanse og en vilje til å utvikles kontinuerlig. Knowit ble etablert i 1990 og har i dag ca. 2000 ansatte på 14 kontorer i Sverige, seks i Norge samt ett i Danmark, Finland og Tyskland. Knowit AB (publ) er notert på den Nordiska Börsen i Stockholm.`,
+        beskriving1: `Knowit er Nordens største digitalbyrå. Vi lager en haug med løsninger som gjør hverdagen bedre og enklere for millioner av mennesker. Du har kanskje hørt om Vipps, RuterReise og BankID på mobil? Knowit er idédrevet, og oppmuntrer innovasjon, tverrfaglighet og personlig engasjement. Siden 1990 har vi turt å tenke annerledes her eneste dag, og våre 2300 entusiaster innenfor teknologi, design, strategi og kommunikasjon finner nye måter å gjøre ting enda bedre på. Vi har kontorer midt i smørøyet av Bergen og Oslo, i tillegg til Stavanger og Kristiansand. Hos Knowit får du en spennende og sosial arbeidsplass med høyt fokus på faglig utvikling – hvor kolleger heier på hverandre og deler ut high fives over en lav sko.`,
+        beskriving2: ``,
         linktekst1: 1,
         link1: 'https://www.knowit.no/',
         gfhel: [],
@@ -491,7 +491,7 @@ export const Bedrifter: Bedrift[] = [
     {
         namn: 'Deloitte',
         ruterLink: 'deloitte',
-        logoLink: `${LocalPaths.path_bedriftLogo}Deloitte.jpg`,
+        logoLink: `${LocalPaths.path_bedriftLogo}Deloitte.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Deloitte.jpg`,
         beskriving1: `
         `,
@@ -519,7 +519,7 @@ export const Bedrifter: Bedrift[] = [
     {
         namn: 'Skatteetaten',
         ruterLink: 'skatteetaten',
-        logoLink: `${LocalPaths.path_bedriftLogo}Skatteetaten.jpg`,
+        logoLink: `${LocalPaths.path_bedriftLogo}Skatteetaten.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Skatteetaten.jpg`,
         beskriving1: `
         `,
@@ -547,7 +547,7 @@ export const Bedrifter: Bedrift[] = [
     {
         namn: 'StartUpLab',
         ruterLink: 'startuplab',
-        logoLink: `${LocalPaths.path_bedriftLogo}StartUpLab.jpg`,
+        logoLink: `${LocalPaths.path_bedriftLogo}StartUpLab.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}StartUpLab.jpg`,
         beskriving1: `
         `,
@@ -575,7 +575,7 @@ export const Bedrifter: Bedrift[] = [
     {
         namn: 'DNB',
         ruterLink: 'dnb',
-        logoLink: `${LocalPaths.path_bedriftLogo}DNB.jpg`,
+        logoLink: `${LocalPaths.path_bedriftLogo}DNB.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}DNB.jpg`,
         beskriving1: `
         `,
@@ -602,9 +602,9 @@ export const Bedrifter: Bedrift[] = [
     },
     {
         namn: 'Bergen Næringsråd',
-        ruterLink: 'bergennæringsråd',
-        logoLink: `${LocalPaths.path_bedriftLogo}Bergen_Næringsråd.jpg`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Bergen_Næringsråd.jpg`,
+        ruterLink: 'bergennæringsrad',
+        logoLink: `${LocalPaths.path_bedriftLogo}Bergen_Næringsrad.png`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Bergen_Næringsrad.jpg`,
         beskriving1: `
         `,
         beskriving2: `
