@@ -54,15 +54,15 @@ export class GoogleAnalyticsService { /* https://firebase.google.com/docs/refere
     } else if (tidMS <= 9000) {
       cirkaTid = '>7000<=9000';
     } else if (tidMS <= 11000) {
-      cirkaTid = '<=11000';
+      cirkaTid = '>9000<=11000';
     } else if (tidMS <= 13000) {
       cirkaTid = '>11000<=13000';
     } else if (tidMS <= 15000) {
       cirkaTid = '>13000<=15000';
     } else if (tidMS <= 17000) {
-      cirkaTid = '<=1>15000700';
+      cirkaTid = '>15000<=17000';
     } else if (tidMS <= 19000) {
-      cirkaTid = '<=1>170009000';
+      cirkaTid = '>17000<=19000';
     } else if (tidMS <= 21000) {
       cirkaTid = '>19000<=21000';
     } else if (tidMS <= 29000) {
