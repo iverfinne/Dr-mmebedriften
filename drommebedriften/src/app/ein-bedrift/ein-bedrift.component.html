@@ -30,6 +30,9 @@
                         <mat-icon>broken_image</mat-icon>
                     </ng-template>
                 </div>
+                <div *ngIf="einBedrift.framsidebileteFotoPerson" class="foto">
+                    Foto: {{ einBedrift.framsidebileteFotoPerson }}
+                </div>
             </div>
             <div class="tekst">
                 <div class="tilleggskort" *ngIf="einBedrift.gfhel || einBedrift.tilleggskort">
@@ -134,19 +137,18 @@
                         <!-- Beskrivelse -->
                         <p *ngIf="einBedrift.beskriving1" class="beskriving-p" [innerHTML]="einBedrift.beskriving1"></p>
                         <p *ngIf="einBedrift.beskriving2" class="beskriving-p" [innerHTML]="einBedrift.beskriving2"></p>
+                        <p *ngIf="einBedrift.beskriving3" class="beskriving-p" [innerHTML]="einBedrift.beskriving3"></p>
                         <!--  -->
                         <!-- Finansdepartementet -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'finansdepartementet'">
+                            Våre arbeidsoppgaver er blant annet å:
                             <div class="midtstilt-venstre-tekst">
-                                <h3>
-                                    Våre arbeidsoppgaver er blant annet å:
-                                </h3>
-                                <ul style="display: inline-block;">
-                                    <li>Planlegge og iverksette den økonomiske politikken</li>
-                                    <li>Samordne arbeidet med statsbudsjettet</li>
-                                    <li>Sørge for at det offentlige får inn skatter og avgifter</li>
-                                    <li>Overvåke og utarbeide regler for finansmarkedene</li>
-                                    <li>Forvalte Statens pensjonsfond</li>
+                                <ul>
+                                    <li>planlegge og iverksette den økonomiske politikken</li>
+                                    <li>samordne arbeidet med statsbudsjettet</li>
+                                    <li>sørge for at det offentlige får inn skatter og avgifter</li>
+                                    <li>overvåke og utarbeide regler for finansmarkedene</li>
+                                    <li>forvalte Statens pensjonsfond</li>
                                 </ul>
                             </div>
                             <p>
@@ -222,7 +224,7 @@
                         <!-- Ekstra Link 1 -->
                         <p class="beskriving-p" *ngIf="einBedrift.ekstraLink1">
                             <br>
-                            &#8259; <span [innerHTML]="einBedrift.ekstraLink1"></span> &#8259;
+                            <span [innerHTML]="einBedrift.ekstraLink1"></span>
                         </p>
                     </div>
                     <!-- Vimeo Video -->
@@ -231,14 +233,14 @@
                         <iframe [src]="domSanitizer.bypassSecurityTrustResourceUrl(einBedrift.vimeoVideo.kjelde)"
                             frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
                         </iframe>
-                        <p>
+                        <div class="vimeo-link">
                             <span>
                                 <mat-icon
                                     [style.color]="einBedrift.vimeoVideo.farge ? einBedrift.vimeoVideo.farge : ''">
                                     whatshot</mat-icon>
                                 <span [innerHTML]="einBedrift.vimeoVideo.indreHTML[2]"></span>
                             </span>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>

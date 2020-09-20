@@ -5,7 +5,7 @@
     background-color: white;
     opacity: 0.98;
     margin: auto;
-    overflow: hidden;
+    overflow: visible;
 
     margin-top: 30px;
     margin-bottom: 65px;
@@ -16,7 +16,7 @@
         margin: 0;
         overflow: hidden;
 
-        border: 2px solid rgba(122, 122, 122, 0.11);
+        // border: 2px solid rgba(122, 122, 122, 0.11);
         border-radius: 10px;
 
         padding-bottom: 10px;

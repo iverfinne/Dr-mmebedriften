@@ -37,6 +37,25 @@ Små-ting:
 
 - Legge til footer ?? | Nei
 - Legg til favico | OK https://favicon.io/favicon-generator/?t=D%C2%A8&ff=Aclonica&fs=70&fc=%23222&b=rounded&bc=%23FDA
+- Legg til HTML-header for sokemotor + Facebook-data | OK
+- Fix sånn att google form-link oppdateres når side blir byttet med piltaster | OK
+
+************************
+** Mangler av DB-info **
+- ALLE Bedrifter mangler middags-link
+- Bedrifter som mangler Google Form-link:
+
+  DNV GL
+  Bouvet
+  Yara
+  Sjøfartsdirektoratet
+  Tryg
+  OBOS
+  Forsvaret
+  Knowit
+  Wintershall Dea
+  ATEA
+  Vinsit
 
 ******************
 ** Små-ting (1) **

@@ -3,7 +3,7 @@
         <mat-icon>close</mat-icon>
     </button>
 
-    <iframe [src]="htmlLink" frameborder="0" marginheight="0" marginwidth="0">
+    <iframe *ngIf="validSrcInput(htmlLink)" [src]="htmlLink" frameborder="0" marginheight="0" marginwidth="0">
         Laster inn …
     </iframe>
 </div>
