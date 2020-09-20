@@ -105,7 +105,7 @@ export const Bedrifter: Bedrift[] = [
         framsidebileteFotoPerson: 'Lise Åserud / NTB scanpix',
         beskriving1: `Finansdepartementet er et tradisjonsrikt og sentralt departement som ble opprettet i 1814. Finansdepartementet er, med hovedansvar for landets økonomiske politikk, viktig for samfunnsutviklingen og av stor betydning for den enkelte innbyggers hverdag. Hos oss jobber det 300 dyktige medarbeidere som sammen utgjør en spennende kunnskapsorganisasjon.`,
         beskriving2: `Departementet ledes av finansministeren, som sammen med statssekretærer og politisk rådgiver utgjør den politiske ledelsen. Finansdepartementets embetsverk ledes av finansråden. I motsetning til den politiske ledelsen er embetsverket fast ansatte medarbeidere som jobber under skiftende regjeringer. Blant våre ansatte er de fleste jurister, økonomer og statsvitere.`,
-        ekstraLink1: `Følg oss gjerne på <a href="https://www.linkedin.com/company/2496901/" target="_blank" rel="noopener">linkedin.com/</a>`,
+        ekstraLink1: `Følg oss gjerne på <a href="https://www.linkedin.com/company/2496901/" target="_blank" rel="noopener">linkedin.com</a>`,
         linktekst1: 1,
         link1: 'https://www.regjeringen.no/no/dep/fin/id216/',
         gfhel: [
@@ -185,7 +185,7 @@ export const Bedrifter: Bedrift[] = [
         /* Accenture i Norge (hentet fra https://www.accenture.com/no-en/about/company/norway): */
         beskriving1: `Vi løser utfordringene selskaper, organisasjoner og etater står overfor. Dette gjør vi med entusiasme, kunnskap, innsikt og de aller siste og beste teknologiske løsningene. Vi kommer fra varierte bakgrunner, men jobber sammen. Med allsidigheten dette fører til, skal vi løse de største utfordringene selskaper, organisasjoner og etater står overfor. Vi har et bredt spekter av innovative verktøy, en læringskurve som aldri stanser og et globalt nettverk som gir oss en verden av erfaringer å høste av. Vi holder oss alltid i forkant; vi skaper endringer over alt.`,
         beskriving2: `Hos oss får du mulighet til å utvikle hele deg, også på det personlige plan. Du møter utfordringer på en rekke ulike områder og fagfelt, du tar all din kompetanse i bruk og lærer ny underveis. Slik får du en sjelden mulighet til å finne ut hva du liker aller best og hvor styrken din ligger, uten å måtte bytte jobb. Rundt deg vil du alltid ha eksperter, mentorer og veiledere, og et nettverk som strekker seg rundt hele kloden.`,
-        ekstraLink1: `Les mer om Accenture Global på <a href="https://www.accenture.com/no-en/about/company-index" target="_blank" rel="noopener">accenture.com/</a>`,
+        ekstraLink1: `Les mer om Accenture Global på <a href="https://www.accenture.com/no-en/about/company-index" target="_blank" rel="noopener">accenture.com</a>`,
         linktekst1: 1,
         link1: 'https://www.accenture.no/',
         gfhel: [
@@ -232,7 +232,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: `Wintershall Dea er Europas ledende, uavhengige olje- og gasselskap med aktiviteter på fem kontinenter. Vår virksomhet strekker seg over hele den norske kontinentalsokkelen, fra Nordsjøen til Barentshavet. Wintershall Dea har virksomhet i hele verdikjeden, fra leting via feltutbygging til produksjon. Norge er et av Wintershall Deas kjerneområder og vi er en stor operatør og en engasjert partner på norsk sokkel. Vi er operatør for feltene Brage, Maria og Vega og for utbyggingsprosjektene Dvalin og Nova. I tillegg er vi en aktiv partner i blant annet Skarv, Aasta Hansteen, Njord og Gjøa.`,
         beskriving2: `Er du nysgjerrig og klar for å bli en del av et nytt kapittel av eventyret i Nordsjøen? Wintershall Dea tilbyr spennende prosjekter som gir mulighet for faglig utvikling.
         Vi tilbyr spesielle trainee-programmer som nyutdannede medarbeidere kan starte på med det samme. Vi tilbyr og sommerjobber og mulighet for å skrive masteroppgave i samarbeid med en av våre eksperter.`,
-        ekstraLink1: `Les mer på vår hjemmeside <a href="https://wintershalldea.no/nb/karriere-norge" target="_blank" rel="noopener">wintershalldea.no/</a>`,
+        ekstraLink1: `Les mer på vår hjemmeside <a href="https://wintershalldea.no/nb/karriere-norge" target="_blank" rel="noopener">wintershalldea.no</a>`,
         linktekst1: 1,
         link1: 'https://wintershalldea.no/en',
         gfhel: [],
