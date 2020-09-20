@@ -54,7 +54,21 @@ function vimeoEmbedKonverter(iframeEmbedLink?: string): VimeoEmbedDataEinBedrift
     link1: ''
 } */
 export const Bedrifter: Bedrift[] = [
-
+    {
+        namn: 'DNV GL',
+        ruterLink: 'dnv-gl',
+        logoLink: `${LocalPaths.path_bedriftLogo}dnv_gl.png`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}DNV-GL.jpg`,
+        framsidebiletePosisjon: 'center -34.5vh',
+        beskriving1: `Siden 1864 har vårt formål vært å sikre liv, verdier og miljøet. Vi bistår våre kunder med å forbedre deres virksomhet på en sikker og bærekraftig måte. <br>
+        Vi leverer klassifisering, sertifisering, teknisk risiko- og pålitelighetsanalyse sammen med programvare, datahåndtering og uavhengig ekspertrådgivning til maritim sektor, til olje- og gass-sektoren, og til energibedrifter. Med 80,000 bedriftskunder på tvers av alle industrisektorer er vi også verdensledende innen sertifisering av ledelsessystemer.`,
+        beskriving2: `Ved å kombinere uavhengig teknisk, digital og operasjonell ekspertise med metoder for risikohåndtering, hjelper vi våre kunder med å ta bedre beslutninger og med å skape tillit mellom bedrifter og interessentene deres.`,
+        beskriving3: `Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunnet generelt ved å investere tungt i forskning og utvikling. Med høyt utdannede ansatte i 100 land, jobber vi sammen med våre kunder om å gjøre verden sikrere, smartere og grønnere.`,
+        linktekst1: 1,
+        link1: 'https://www.dnvgl.no/',
+        gfhel: [],
+        tilleggskort: []
+    },
     {
         namn: 'Bouvet',
         ruterLink: 'bouvet',
@@ -66,6 +80,19 @@ export const Bedrifter: Bedrift[] = [
         beskriving3: `Varen vi leverer kommer fra faglig styrke. Derfor har vi også et bevisst forhold til faglig utvikling, som kommer i mange former tilpasset den enkelte. Vi har blant annet fagkvelder, arkitektskole, systemutviklerskole, deltakelse på konferanser, hackatons og internkonferanser med fokus på kompetansedeling.`,
         linktekst1: 1,
         link1: 'https://www.bouvet.no/',
+        gfhel: [],
+        tilleggskort: []
+    },
+    {
+        namn: 'Yara',
+        ruterLink: 'yara',
+        logoLink: `${LocalPaths.path_bedriftLogo}yara.png`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Yara.jpg`,
+        framsidebiletePosisjon: 'center -16vh',
+        beskriving1: `Yaras produktportefølje og agronomiske ekspertise blir stadig mer verdifull i et miljø med økt fokus på effektivitet i landbruket, matsikkerhet og god produktforvaltning. I Norge leverer vi et komplett sortiment tilpasset alle typer produksjoner i norsk landbruk.`,
+        beskriving2: `Vår industrielle produktportefølje går til miljøforbedringer og til en rekke bransjer og prosesser. Miljøproduktene utgjør en egen produktgruppe med utspring fra nitrogenproduksjon. Denne produktgruppen spenner fra produkter og tjenester som fjerner skadelige utslipp fra kjøretøyer og stasjonære installasjoner til de som brukes til å kontrollere sjenerende lukt fra avløps- og kloakksystemer.`,
+        linktekst1: 1,
+        link1: 'https://www.yara.no/',
         gfhel: [],
         tilleggskort: []
     },
@@ -190,8 +217,8 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Knowit.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Knowit.jpg`,
         framsidebiletePosisjon: 'center -19vh',
-        beskriving1: `Knowit er Nordens største digitalbyrå. Vi lager en haug med løsninger som gjør hverdagen bedre og enklere for millioner av mennesker. Du har kanskje hørt om Vipps, RuterReise og BankID på mobil? Knowit er idédrevet, og oppmuntrer innovasjon, tverrfaglighet og personlig engasjement. Siden 1990 har vi turt å tenke annerledes her eneste dag, og våre 2300 entusiaster innenfor teknologi, design, strategi og kommunikasjon finner nye måter å gjøre ting enda bedre på. Vi har kontorer midt i smørøyet av Bergen og Oslo, i tillegg til Stavanger og Kristiansand. Hos Knowit får du en spennende og sosial arbeidsplass med høyt fokus på faglig utvikling – hvor kolleger heier på hverandre og deler ut high fives over en lav sko.`,
-        beskriving2: ``,
+        beskriving1: `Knowit AB (publ) er et konsulentselskap som, i den stadig raskere digitaliseringen, skaper unike kundeverdier gjennom å tilby grenseoverskridende leveranser fra de tre forretningsområdene Experience, Insight og Solutions.`,
+        beskriving2: `Det er evnen til å kombinere kompetanse innen design og kommunikasjon, management consulting og IT som skiller oss fra andre konsulentfirmaer. Vår kultur preges av åpenhet, forståelse for kundens forretninger, høy spesialistkompetanse og en vilje til å utvikles kontinuerlig. Knowit ble etablert i 1990 og har i dag ca. 2000 ansatte på 14 kontorer i Sverige, seks i Norge samt ett i Danmark, Finland og Tyskland. Knowit AB (publ) er notert på den Nordiska Börsen i Stockholm.`,
         linktekst1: 1,
         link1: 'https://www.knowit.no/',
         gfhel: [],
@@ -347,285 +374,6 @@ export const Bedrifter: Bedrift[] = [
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
         ],
-    },
-    {
-        namn: 'Jussformidlingen',
-        ruterLink: 'jussformidlingen',
-        logoLink: `${LocalPaths.path_bedriftLogo}Jussformidlingen.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Jussformidlingen.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
-        linktekst1: 1,
-        link1: 'https://jussformidlingen.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYYOlT2GMdG_d9wGWUMEZ0phO-YiVZnsFV_E8JZkuJEixwTg/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
-    },
-    {
-        namn: 'Fremtind',
-        ruterLink: 'fremtind',
-        logoLink: `${LocalPaths.path_bedriftLogo}Fremtind.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Fremtind.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
-        linktekst1: 1,
-        link1: 'https://www.fremtind.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTXZO4cDYbaMUWU9y7_wnuVIQmy2xsupW6j8vzDTb7q8iVFw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
-    },
-    {
-        namn: 'ConocoPhilips',
-        ruterLink: 'conocophilips',
-        logoLink: `${LocalPaths.path_bedriftLogo}Conocophilips.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Conocophilips.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
-        linktekst1: 1,
-        link1: 'http://www.conocophillips.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9R6me41qdcIrzHNWMlctYJFssYisiBi2B_boOMcJRqtneZg/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
-    },
-    {
-        namn: 'Capgemini',
-        ruterLink: 'Capgemini',
-        logoLink: `${LocalPaths.path_bedriftLogo}Capgemini.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Capgemini.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
-        linktekst1: 1,
-        link1: 'https://www.capgemini.com/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1gKFqVXGmHDY0lSK7C9nKfxIVWccwDc5TBdiw9mUE-Zq_3w/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
-    },
-    {
-        namn: 'Schibsted',
-        ruterLink: 'schibsted',
-        logoLink: `${LocalPaths.path_bedriftLogo}Schibsted.jpg`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Schibsted.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
-        linktekst1: 1,
-        link1: 'https://www.Schibsted.com/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
-    },
-    {
-        namn: 'Deloitte',
-        ruterLink: 'deloitte',
-        logoLink: `${LocalPaths.path_bedriftLogo}Deloitte.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Deloitte.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
-        linktekst1: 1,
-        link1: 'https://www.Deloitte.com/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
-    },
-    {
-        namn: 'Skatteetaten',
-        ruterLink: 'skatteetaten',
-        logoLink: `${LocalPaths.path_bedriftLogo}Skatteetaten.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Skatteetaten.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
-        linktekst1: 1,
-        link1: 'https://www.skatteetaten.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
-    },
-    {
-        namn: 'StartUpLab',
-        ruterLink: 'startuplab',
-        logoLink: `${LocalPaths.path_bedriftLogo}StartUpLab.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}StartUpLab.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
-        linktekst1: 1,
-        link1: 'https://www.startuplab.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
-    },
-    {
-        namn: 'DNB',
-        ruterLink: 'dnb',
-        logoLink: `${LocalPaths.path_bedriftLogo}DNB.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}DNB.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
-        linktekst1: 1,
-        link1: 'https://www.dnb.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
-    },
-    {
-        namn: 'Bergen Næringsråd',
-        ruterLink: 'bergennæringsrad',
-        logoLink: `${LocalPaths.path_bedriftLogo}Bergen_Næringsrad.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Bergen_Næringsrad.jpg`,
-        beskriving1: `
-        `,
-        beskriving2: `
-        `,
-        linktekst1: 1,
-        link1: 'https://bergen-chamber.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
-            }
-        ],
-        tilleggskort: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: 'https://google.no'
-            }
-        ]
+        tilleggskort: []
     }
 ];
