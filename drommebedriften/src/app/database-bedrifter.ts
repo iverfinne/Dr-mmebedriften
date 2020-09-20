@@ -373,6 +373,7 @@ export const Bedrifter: Bedrift[] = [
                 linktekst1: 1,
                 link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>')
             }
+<<<<<<< HEAD
         ]
     },
     {
@@ -514,7 +515,5 @@ export const Bedrifter: Bedrift[] = [
                 link1: 'https://google.no'
             }
         ]
-        ],
-        tilleggskort: []
     }
 ];
