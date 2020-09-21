@@ -360,20 +360,11 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'deloitte',
         logoLink: `${LocalPaths.path_bedriftLogo}Deloitte.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Deloitte.jpg`,
-        framsidebiletePosisjon: 'center -20vh',
         beskriving1: null,
         beskriving2: null,
         linktekst1: 1,
         link1: 'https://www.deloitte.com/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
-                googleAnalyticsID: 'speedate'
-            }
-        ],
+        gfhel: [],
         tilleggskort: []
     },
     {
@@ -381,20 +372,11 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'startuplab',
         logoLink: `${LocalPaths.path_bedriftLogo}StartUpLab.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}StartUpLab.jpg`,
-        framsidebiletePosisjon: 'center -20vh',
         beskriving1: null,
         beskriving2: null,
         linktekst1: 1,
         link1: 'https://www.startuplab.com/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
-                googleAnalyticsID: 'speedate'
-            }
-        ],
+        gfhel: [],
         tilleggskort: []
     },
     {
@@ -402,20 +384,11 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'dnb',
         logoLink: `${LocalPaths.path_bedriftLogo}DNB.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}DNB.jpg`,
-        framsidebiletePosisjon: 'center -20vh',
         beskriving1: null,
         beskriving2: null,
         linktekst1: 1,
         link1: 'https://www.dnb.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
-                googleAnalyticsID: 'speedate'
-            }
-        ],
+        gfhel: [],
         tilleggskort: []
     }
 ];
