@@ -55,21 +55,6 @@ function vimeoEmbedKonverter(iframeEmbedLink?: string): VimeoEmbedDataEinBedrift
 } */
 export const Bedrifter: Bedrift[] = [
     {
-        namn: 'DNV GL',
-        ruterLink: 'dnv-gl',
-        logoLink: `${LocalPaths.path_bedriftLogo}dnv_gl.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}DNV-GL.jpg`,
-        framsidebiletePosisjon: 'center -34.5vh',
-        beskriving1: `Siden 1864 har vårt formål vært å sikre liv, verdier og miljøet. Vi bistår våre kunder med å forbedre deres virksomhet på en sikker og bærekraftig måte. <br>
-        Vi leverer klassifisering, sertifisering, teknisk risiko- og pålitelighetsanalyse sammen med programvare, datahåndtering og uavhengig ekspertrådgivning til maritim sektor, til olje- og gass-sektoren, og til energibedrifter. Med 80,000 bedriftskunder på tvers av alle industrisektorer er vi også verdensledende innen sertifisering av ledelsessystemer.`,
-        beskriving2: `Ved å kombinere uavhengig teknisk, digital og operasjonell ekspertise med metoder for risikohåndtering, hjelper vi våre kunder med å ta bedre beslutninger og med å skape tillit mellom bedrifter og interessentene deres.`,
-        beskriving3: `Vi utvikler nye industristandarder og bedre innsikt for våre kunder og samfunnet generelt ved å investere tungt i forskning og utvikling. Med høyt utdannede ansatte i 100 land, jobber vi sammen med våre kunder om å gjøre verden sikrere, smartere og grønnere.`,
-        linktekst1: 1,
-        link1: 'https://www.dnvgl.no/',
-        gfhel: [],
-        tilleggskort: []
-    },
-    {
         namn: 'Bouvet',
         ruterLink: 'bouvet',
         logoLink: `${LocalPaths.path_bedriftLogo}bouvet.png`,
@@ -80,19 +65,6 @@ export const Bedrifter: Bedrift[] = [
         beskriving3: `Varen vi leverer kommer fra faglig styrke. Derfor har vi også et bevisst forhold til faglig utvikling, som kommer i mange former tilpasset den enkelte. Vi har blant annet fagkvelder, arkitektskole, systemutviklerskole, deltakelse på konferanser, hackatons og internkonferanser med fokus på kompetansedeling.`,
         linktekst1: 1,
         link1: 'https://www.bouvet.no/',
-        gfhel: [],
-        tilleggskort: []
-    },
-    {
-        namn: 'Yara',
-        ruterLink: 'yara',
-        logoLink: `${LocalPaths.path_bedriftLogo}yara.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Yara.jpg`,
-        framsidebiletePosisjon: 'center -16vh',
-        beskriving1: `Yaras produktportefølje og agronomiske ekspertise blir stadig mer verdifull i et miljø med økt fokus på effektivitet i landbruket, matsikkerhet og god produktforvaltning. I Norge leverer vi et komplett sortiment tilpasset alle typer produksjoner i norsk landbruk.`,
-        beskriving2: `Vår industrielle produktportefølje går til miljøforbedringer og til en rekke bransjer og prosesser. Miljøproduktene utgjør en egen produktgruppe med utspring fra nitrogenproduksjon. Denne produktgruppen spenner fra produkter og tjenester som fjerner skadelige utslipp fra kjøretøyer og stasjonære installasjoner til de som brukes til å kontrollere sjenerende lukt fra avløps- og kloakksystemer.`,
-        linktekst1: 1,
-        link1: 'https://www.yara.no/',
         gfhel: [],
         tilleggskort: []
     },
@@ -372,6 +344,69 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: null,
         linktekst1: 1,
         link1: 'https://www.Schibsted.com/',
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
+        tilleggskort: []
+    },
+    {
+        namn: 'Deloitte',
+        ruterLink: 'deloitte',
+        logoLink: `${LocalPaths.path_bedriftLogo}Deloitte.png`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Deloitte.jpg`,
+        framsidebiletePosisjon: 'center -20vh',
+        beskriving1: null,
+        beskriving2: null,
+        linktekst1: 1,
+        link1: 'https://www.deloitte.com/',
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
+        tilleggskort: []
+    },
+    {
+        namn: 'StartUpLab',
+        ruterLink: 'startuplab',
+        logoLink: `${LocalPaths.path_bedriftLogo}StartUpLab.png`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}StartUpLab.jpg`,
+        framsidebiletePosisjon: 'center -20vh',
+        beskriving1: null,
+        beskriving2: null,
+        linktekst1: 1,
+        link1: 'https://www.startuplab.com/',
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevk3HCnS06ho4o-sWee6R8e-4skJuGyQCCnGTmh_0-WKidKw/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
+        tilleggskort: []
+    },
+    {
+        namn: 'DNB',
+        ruterLink: 'dnb',
+        logoLink: `${LocalPaths.path_bedriftLogo}DNB.png`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}DNB.jpg`,
+        framsidebiletePosisjon: 'center -20vh',
+        beskriving1: null,
+        beskriving2: null,
+        linktekst1: 1,
+        link1: 'https://www.dnb.no/',
         gfhel: [
             {
                 tittel: 1,
