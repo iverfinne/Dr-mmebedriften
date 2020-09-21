@@ -155,14 +155,14 @@ export class EinBedriftComponent implements OnInit, OnDestroy {
   //// /
   // For Google Analyse...
   startTimerForASjekkeKorLengeEinBrukarErPaaSida(): void {
-    this.abonnement3 = timer(0, 100).subscribe(x => { this.currTidBrukarPaaSida = x * 100; });
+    /* this.abonnement3 = timer(0, 100).subscribe(x => { this.currTidBrukarPaaSida = x * 100; }); */
   }
   stoppTimerForASjekkeKorLengeEinBrukarErPaaSida(): void {
     // Send...
-    this.analyticsFunksjonar.EinBedrift_korLengeEinBrukarVarPaSida(this.einBedrift.namn, this.currTidBrukarPaaSida);
+    /* this.analyticsFunksjonar.EinBedrift_korLengeEinBrukarVarPaSida(this.einBedrift.namn, this.currTidBrukarPaaSida);
 
     if (this.abonnement3) { this.abonnement3.unsubscribe(); }
-    this.currTidBrukarPaaSida = 0;
+    this.currTidBrukarPaaSida = 0; */
   }
 
 }
