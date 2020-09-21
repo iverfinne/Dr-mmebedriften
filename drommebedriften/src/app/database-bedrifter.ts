@@ -65,7 +65,15 @@ export const Bedrifter: Bedrift[] = [
         beskriving3: `Varen vi leverer kommer fra faglig styrke. Derfor har vi også et bevisst forhold til faglig utvikling, som kommer i mange former tilpasset den enkelte. Vi har blant annet fagkvelder, arkitektskole, systemutviklerskole, deltakelse på konferanser, hackatons og internkonferanser med fokus på kompetansedeling.`,
         linktekst1: 1,
         link1: 'https://www.bouvet.no/',
-        gfhel: [],
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBfwnKpEn8MpPv10ddDR7eDB7QN6FGD5n4EC_kc8NXgok6tw/viewform?embedded=true" width="640" height="1480" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
         tilleggskort: []
     },
     {
@@ -100,7 +108,15 @@ export const Bedrifter: Bedrift[] = [
         beskriving1: `Sjøfartsdirektoratet er eit forvaltningsorgan under Nærings- og fiskeridepartementet og Klima- og miljødepartementet med myndigheitsansvar overfor norskregistrerte skip og utanlandske skip som går inn til norske hamner.`,
         linktekst1: 1,
         link1: 'https://www.sdir.no/',
-        gfhel: [],
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTLL-GgBjG4Iv00yhzrtqjf75Z2gqDasolb4VoLx_RBWfDSA/viewform?embedded=true" width="640" height="1456" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
         tilleggskort: []
     },
     {
@@ -113,7 +129,15 @@ export const Bedrifter: Bedrift[] = [
         `,
         linktekst1: 1,
         link1: 'https://www.tryg.no/',
-        gfhel: [],
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-fwKx3wei-LAOcJHHr1PjXaKXM7JEPzs1l4fBXLJd9tOKkg/viewform?embedded=true" width="640" height="1480" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
         tilleggskort: []
     },
     {
@@ -126,7 +150,15 @@ export const Bedrifter: Bedrift[] = [
         `,
         linktekst1: 1,
         link1: 'https://www.obos.no/',
-        gfhel: [],
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfj_Kqib9TeYKHTYzF5IcY9s94i7_veQ4MXL-PVPnFwBADzHg/viewform?embedded=true" width="640" height="1456" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
         tilleggskort: []
     },
     {
@@ -183,7 +215,15 @@ export const Bedrifter: Bedrift[] = [
         `,
         linktekst1: 1,
         link1: 'https://www.forsvaret.no/',
-        gfhel: [],
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrOXYXgjIH60VmMJ05qLhpU42TD9Qa7rbmrfgZa1y1RTPFXA/viewform?embedded=true" width="640" height="1476" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
         tilleggskort: []
     },
     {
@@ -196,7 +236,15 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: `Det er evnen til å kombinere kompetanse innen design og kommunikasjon, management consulting og IT som skiller oss fra andre konsulentfirmaer. Vår kultur preges av åpenhet, forståelse for kundens forretninger, høy spesialistkompetanse og en vilje til å utvikles kontinuerlig. Knowit ble etablert i 1990 og har i dag ca. 2000 ansatte på 14 kontorer i Sverige, seks i Norge samt ett i Danmark, Finland og Tyskland. Knowit AB (publ) er notert på den Nordiska Börsen i Stockholm.`,
         linktekst1: 1,
         link1: 'https://www.knowit.no/',
-        gfhel: [],
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd26oeCriqBRxdYU6uczdUKIWVN9ztIVAHPUJ7BoBy6DbWsnA/viewform?embedded=true" width="640" height="1480" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
         tilleggskort: []
     },
     {
@@ -210,7 +258,15 @@ export const Bedrifter: Bedrift[] = [
         ekstraLink1: `Les mer på vår hjemmeside <a href="https://wintershalldea.no/nb/karriere-norge" target="_blank" rel="noopener">wintershalldea.no</a>`,
         linktekst1: 1,
         link1: 'https://wintershalldea.no/en',
-        gfhel: [],
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSffdf2jJySGfrnOv6-QcxLnAZJLQbKA3g-1Ofe71OrShUIq6A/viewform?embedded=true" width="640" height="1476" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
         vimeoVideo: vimeoEmbedKonverter(`<iframe src="https://player.vimeo.com/video/445542706?color=ff9933&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p><a href="https://vimeo.com/445542706">Graduates in Wintershall Dea</a> from <a href="https://vimeo.com/wintershalldea">Wintershall Dea in Norway</a> on <a href="https://vimeo.com">Vimeo</a>.</p>`),
         tilleggskort: []
     },
@@ -226,7 +282,15 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: `Atea-konsernet Atea finnes i syv land i Norden og Baltikum, har mer enn 7300 medarbeidere, er markedsleder i Norden og Baltikum og er den tredje største IT-infrastrukturleverandøren i Europa. Konsernet hadde en omsetning på 34,7 mrd. NOK i 2018 og er notert på Oslo Børs.`,
         linktekst1: 1,
         link1: 'https://www.atea.com',
-        gfhel: [],
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-OTjAMryapZsj0-DNyyhMHVhmQjYNlnJNoWKKihxn6jziPQ/viewform?embedded=true" width="640" height="1456" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
         tilleggskort: []
     },
     {
@@ -247,7 +311,15 @@ export const Bedrifter: Bedrift[] = [
         eksamensperioden.`,
         linktekst1: 1,
         link1: 'https://www.vinsit.no/#jobb',
-        gfhel: [],
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeL2z__itB1jAM7Sr18zPlc4H92qYYi-OKJhpzYjzm0TF3l9w/viewform?embedded=true" width="640" height="1456" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
         tilleggskort: []
     },
     {
@@ -364,7 +436,15 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: null,
         linktekst1: 1,
         link1: 'https://www.deloitte.com/',
-        gfhel: [],
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeAfmZ1PjTB9MfSa_5yzGtdl8nBNjXs9ExZGb5i3MRNxrW8Iw/viewform?embedded=true" width="640" height="1456" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
         tilleggskort: []
     },
     {
@@ -376,7 +456,15 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: null,
         linktekst1: 1,
         link1: 'https://www.startuplab.com/',
-        gfhel: [],
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeBrTbrSnp1whlgrGZLC1lUhFFDjSeOpUN2xhH8iqjPnSqXtA/viewform?embedded=true" width="640" height="1456" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
         tilleggskort: []
     },
     {
@@ -388,7 +476,15 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: null,
         linktekst1: 1,
         link1: 'https://www.dnb.no/',
-        gfhel: [],
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBZn5K_8gFJRfEpF6oQC0hlw7UsSt7u84HF4cZqChROmnU3g/viewform?embedded=true" width="640" height="1480" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
         tilleggskort: []
     }
 ];
