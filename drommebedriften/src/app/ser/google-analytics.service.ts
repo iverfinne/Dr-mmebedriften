@@ -13,8 +13,8 @@ export class GoogleAnalyticsService { /* https://firebase.google.com/docs/refere
    * Bedrift som blir trykket på (frå Bedrifter-lista aka 'Les mer'-knappen)
   **/
   Bedrifter_KlikkPaaLesMerKnappEinBedrift(bedriftFintNamn: string): void {
-    this.googleAnalytics.logEvent('Bedrifter_EnBedrift_LesMer', {
-      bedrift: bedriftFintNamn
+    this.googleAnalytics.logEvent('bedrifter', {
+      les_mer_knapp: bedriftFintNamn
     });
   }
 
@@ -24,8 +24,8 @@ export class GoogleAnalyticsService { /* https://firebase.google.com/docs/refere
    * Google Form; (speedate)-knappen
   **/
   EinBedrift_KlikkPaaSpeedateKnapp(bedriftFintNamn: string): void {
-    this.googleAnalytics.logEvent('EnBedrift_Speedate', {
-      bedrift: bedriftFintNamn
+    this.googleAnalytics.logEvent('en_bedrift', {
+      speedate_knapp: bedriftFintNamn
     });
   }
 
@@ -33,8 +33,8 @@ export class GoogleAnalyticsService { /* https://firebase.google.com/docs/refere
    * Link til ekstern heimeside som blir trykket på
   **/
   EinBedrift_KlikkPaaEksternHeimesideKnapp(bedriftFintNamn: string): void {
-    this.googleAnalytics.logEvent('EnBedrift_EksternHjemmeside', {
-      bedrift: bedriftFintNamn
+    this.googleAnalytics.logEvent('en_bedrift', {
+      ekstern_hjemmeside_knapp: bedriftFintNamn
     });
   }
 
@@ -95,9 +95,10 @@ export class GoogleAnalyticsService { /* https://firebase.google.com/docs/refere
       cirkaTid = '>100000';
     }
 
-    this.googleAnalytics.logEvent('EnBedrift_AnonymHvorLengePåEnBedriftSide', {
-      millisekund: cirkaTid
-    });
+    // *** Slått av... Bruker kanskje for mykje data...
+    /* this.googleAnalytics.logEvent('en_bedrift', {
+      hvor_lenge_paa_besok_msek: cirkaTid
+    }); */
   }
 
   // *****************
