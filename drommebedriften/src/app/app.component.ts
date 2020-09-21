@@ -3,6 +3,7 @@ import { meny } from './angular-animation';
 import { Router, NavigationEnd } from '@angular/router';
 import { GlobaleLyttararService } from './ser/globale-lyttarar.service';
 import { LukkNedSideService } from './ser/lukk-ned-side.service';
+import { analytics } from 'firebase';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,12 @@ export class AppComponent implements OnInit {
     public globaleLyttarar: GlobaleLyttararService,
     private lukkNedSideService: LukkNedSideService
   ) {
+    if (window.location.host.match(new RegExp('localhost', 'gm'))) {
+      analytics().setAnalyticsCollectionEnabled(false);
+    } else {
+      analytics().setAnalyticsCollectionEnabled(true);
+    }
+
     this.ruter.events.subscribe(e => {
       if (e instanceof NavigationEnd) {
         const url = e.url;

@@ -23,9 +23,8 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment.prod';
 
 // For Google Analytics...
-import { initializeApp, analytics } from 'firebase';
+import { initializeApp } from 'firebase';
 initializeApp(environment.firebase);
-analytics();
 
 @NgModule({
   declarations: [
