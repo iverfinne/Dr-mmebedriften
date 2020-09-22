@@ -100,26 +100,6 @@ export const Bedrifter: Bedrift[] = [
         tilleggskort: []
     },
     {
-        namn: 'Sjøfartsdirektoratet',
-        ruterLink: 'sjofartsdirektoratet',
-        logoLink: `${LocalPaths.path_bedriftLogo}Sjøfartsdirektoratet.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Sjøfartdirektoratet.jpg`,
-        framsidebiletePosisjon: 'center -30vh',
-        beskriving1: `Sjøfartsdirektoratet er eit forvaltningsorgan under Nærings- og fiskeridepartementet og Klima- og miljødepartementet med myndigheitsansvar overfor norskregistrerte skip og utanlandske skip som går inn til norske hamner.`,
-        linktekst1: 1,
-        link1: 'https://www.sdir.no/',
-        gfhel: [
-            {
-                tittel: 1,
-                beskriving1: 1,
-                linktekst1: 1,
-                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTLL-GgBjG4Iv00yhzrtqjf75Z2gqDasolb4VoLx_RBWfDSA/viewform?embedded=true" width="640" height="1456" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
-                googleAnalyticsID: 'speedate'
-            }
-        ],
-        tilleggskort: []
-    },
-    {
         namn: 'Tryg',
         ruterLink: 'tryg',
         logoLink: `${LocalPaths.path_bedriftLogo}Tryg.png`,
@@ -211,8 +191,9 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Forsvaret.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Forsvaret.jpg`,
         framsidebiletePosisjon: 'center -20vh',
-        beskriving1: `Forsvaret har et bredt utdanningstilbud med mange muligheter. En utdanning i Forsvaret er ikke det samme som ved de fleste sivile høgskoler- og universiteter. Noen dager er det tradisjonell klasseromsundervisning, mens andre dager tilbringes ute på øvelse, på trening eller skytebanen. Forsvaret kombinerer teori og praksis på en måte som gir en spennende og variert skolehverdag.
-        `,
+        beskriving1: `Etterretningsbataljonen (EBN) er en operativ avdeling i Hæren, som bidrar med relevant og tidskritisk informasjon til støtte for militære operasjoner, både i utlandet og hjemme i Norge.`,
+        beskriving2: `EBN ser etter nye kolleger til stillinger innen etterretningsanalyse og menneskebasert innhenting. Avdelingen verdsetter søkere med variert utdanning, bakgrunn og erfaring. 
+        Hverdagen er spennende og utradisjonell, og avdelingen er avhengig av mangfold blant operatørene og analytikerne for å opprettholde fleksibilitet og tilpasningsevne.`,
         linktekst1: 1,
         link1: 'https://www.forsvaret.no/',
         gfhel: [
