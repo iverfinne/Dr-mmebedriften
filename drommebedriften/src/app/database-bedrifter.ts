@@ -372,7 +372,7 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Capgemini.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Capgemini.jpg`,
         framsidebiletePosisjon: 'center -14vh',
-        beskriving1: null,
+        beskriving1: `Med mer enn 270 000 ansatte i over 40 land er Capgemini et av verdens ledende selskaper innen teknologi og rådgivning. Capgemini utvikler og leverer forretnings- og teknologiløsninger som møter kundenes behov, og hjelper med å oppnå de resultatene de ønsker. I Norge har vi rundt 1200 konsulenter som jobber med på interessante oppdrag i privat og offentlig sektor. Vi har kontorer i Oslo, Bergen, Stavanger, Fredrikstad, Trondheim og Lillehammer.`,
         beskriving2: null,
         linktekst1: 1,
         link1: 'https://www.capgemini.com/',
@@ -393,10 +393,10 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Schibsted.jpg`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Schibsted.jpg`,
         framsidebiletePosisjon: 'center -20vh',
-        beskriving1: null,
+        beskriving1: `Schibsted er en familie av digitale forbrukermerker med fokus på media, markedsplasser og smarte digitale tjenester. Våre varemerker innen media - som VG, Aftenposten, Aftonbladet, og SvD - er kjente for sin troverdighet, eksepsjonelle journalistikk og redaksjonelle uavhengighet. Våre ledende markedsplasser Finn, Blocket og Tori kobler millioner av brukere hver måned. Digitale tjenester - som Lendo, Prisjakt og Compricer - hjelper konsumenter til å ta bedre valg. Schibsted sitt oppdrag er å empower people in their daily life, ved å bruke teknikk og data for å skape innovative produkter og fantastiske brukeropplevelser - og hjelpe til med å bygge en bærekraftig fremtid. `,
         beskriving2: null,
         linktekst1: 1,
-        link1: 'https://www.Schibsted.com/',
+        link1: 'https://schibsted.com/career/for-students/',
         gfhel: [
             {
                 tittel: 1,
@@ -413,8 +413,8 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'deloitte',
         logoLink: `${LocalPaths.path_bedriftLogo}Deloitte.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Deloitte.jpg`,
-        beskriving1: null,
-        beskriving2: null,
+        beskriving1: `Deloitte er en arbeidsplass for fremtiden. Vi er en virksomhet med høyt utdannede mennesker innen mange forskjellige fagfelt som arbeider sammen for å bidra til de beste løsningene for våre kunder. Våre medarbeidere ønsker å være en del av en organisasjon som bidrar til et bærekraftig næringsliv og samfunn; og utgjøre en forskjell. Vi er verdens største leverandør av profesjonelle tjenester innen revisjon, rådgivning og advokattjenester med ca. 1500 medarbeidere i Norge. Deloitte er en internasjonal organisasjon med mer enn 312 000 medarbeidere i over 150 land.`,
+        beskriving2: `Deloitte søker nysgjerrige og engasjerte studenter, fortrinnsvis med en økonomisk, teknisk eller samfunnsvitenskapelig mastergrad. Ønsket studieretning vil derimot kunne variere mellom forretningsområdene og andre studieretninger vil også kunne være aktuelle for enkelte stillinger.`,
         linktekst1: 1,
         link1: 'https://www.deloitte.com/',
         gfhel: [
@@ -433,8 +433,10 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'startuplab',
         logoLink: `${LocalPaths.path_bedriftLogo}StartUpLab.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}StartUpLab.jpg`,
-        beskriving1: null,
-        beskriving2: null,
+        beskriving1: `StartupLab is an incubator and early stage investor for ambitious technology startups, located in Oslo and Bergen. Our role is to provide an arena where founders can focus on what matters; building their product and onboarding customers that are willing to pay for it. Making life easier for startups is about more than just office space and advice. StartupLab is a facilitator of a relevant network, competence and founder friendly capital. We have been home to companies such as reMarkable, No Isolation, Kahoot, Huddly and we continue to work with 80+ tech startups in our incubator.
+        `,
+        beskriving2: `The people at StartupLab come from diverse backgrounds, but we share a common passion: empowering ambitious entrepreneurs. Our mission is to help make our entrepreneurs successful. 
+        <br /><br /> At startupLab you will have the opportunity to work with some of Norway's most promising startups. StartupLab also plays a central role within the Norwegian tech startup community, so you will have access to our network and get to know the future tech leaders in the country.`,
         linktekst1: 1,
         link1: 'https://www.startuplab.com/',
         gfhel: [
@@ -453,8 +455,9 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'dnb',
         logoLink: `${LocalPaths.path_bedriftLogo}DNB.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}DNB.jpg`,
-        beskriving1: null,
-        beskriving2: null,
+        beskriving1: `Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.
+        `,
+        beskriving2: `Vi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer. Likevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.`,
         linktekst1: 1,
         link1: 'https://www.dnb.no/',
         gfhel: [
