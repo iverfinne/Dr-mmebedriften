@@ -470,5 +470,50 @@ export const Bedrifter: Bedrift[] = [
             }
         ],
         tilleggskort: []
+    },
+    {
+        namn: 'Skanska',
+        ruterLink: 'skanska',
+        logoLink: `${LocalPaths.path_bedriftLogo}Skanska.png`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Skanska.jpg`,
+        beskriving1: `Skanska er et av verdens ledende prosjektutvikler- og entreprenørkonsern. Vi har ekspertise innen bygg og anlegg, utvikling av kommersielle lokaler, boliger og prosjekter i offentlig-privat samarbeid. Konsernet har i dag ca. 34 000 ansatte i utvalgte hjemmemarkeder i Europa og USA.  `,
+        beskriving2: `Skanska er en av landets største og ledende entreprenør og prosjektutvikler, og har vært til stede i det norske markedet siden 1906.<br />
+        I Skanska Norge jobber det ca 3800 ansatte, og vi har rundt 200 pågående prosjekter over hele landet til enhver tid.<br /><br />
+         
+        Skanska rekrutterer følgende:<br />
+        Studenter med studier innenfor Bygg- og Anleggsfag, og Geomatikk/Landmåling. Sommerjobb og stillinger for nyutdannede innen vår Bygg- og Anleggsvirksomhet, samt til vår Survey-avdeling.
+        `,
+        linktekst1: 1,
+        link1: 'https://www.skanska.no/hvem-vi-er/jobb-i-skanska/studenter/',
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc05sSl_gNPZ_G0E_gZh76P1DJIAN9DHV-P4jUO5jXvQJzYUw/viewform?embedded=true" width="640" height="1456" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
+        tilleggskort: []
+    },
+    {
+        namn: 'Trainee Vest',
+        ruterLink: 'traineevest',
+        logoLink: `${LocalPaths.path_bedriftLogo}TraineeVest.png`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}TraineeVest.jpg`,
+        beskriving1: ``,
+        beskriving2: ``,
+        linktekst1: 1,
+        link1: 'https://www.traineevest.no/',
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise(''),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
+        tilleggskort: []
     }
 ];
