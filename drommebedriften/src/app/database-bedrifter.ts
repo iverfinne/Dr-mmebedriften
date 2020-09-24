@@ -195,7 +195,7 @@ export const Bedrifter: Bedrift[] = [
         beskriving2: `EBN ser etter nye kolleger til stillinger innen etterretningsanalyse og menneskebasert innhenting. Avdelingen verdsetter søkere med variert utdanning, bakgrunn og erfaring. 
         Hverdagen er spennende og utradisjonell, og avdelingen er avhengig av mangfold blant operatørene og analytikerne for å opprettholde fleksibilitet og tilpasningsevne.`,
         linktekst1: 1,
-        link1: 'https://www.forsvaret.no/',
+        link1: 'http://forsvaret.no/etterretning',
         gfhel: [
             {
                 tittel: 1,
