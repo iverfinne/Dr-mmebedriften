@@ -55,16 +55,14 @@ function vimeoEmbedKonverter(iframeEmbedLink?: string): VimeoEmbedDataEinBedrift
 } */
 export const Bedrifter: Bedrift[] = [
     {
-        namn: 'Bouvet',
+        namn: 'Bouvet Norge',
         ruterLink: 'bouvet',
         logoLink: `${LocalPaths.path_bedriftLogo}bouvet.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Bouvet.jpg`,
         framsidebiletePosisjon: 'center -35vh',
-        beskriving1: `Bouvet er et norsk konsulentselskap som bistår bedrifter og samfunnsaktører i alle bransjer.`,
-        beskriving2: `Bouvet er et skandinavisk konsulentselskap, som gjennom rådgivning, utvikling, design og forvaltning, bidrar til å maksimere effekter i krysningspunktet mellom moderne teknologi og digital kommunikasjon. Flotte ord - ingen overflødige.`,
-        beskriving3: `Varen vi leverer kommer fra faglig styrke. Derfor har vi også et bevisst forhold til faglig utvikling, som kommer i mange former tilpasset den enkelte. Vi har blant annet fagkvelder, arkitektskole, systemutviklerskole, deltakelse på konferanser, hackatons og internkonferanser med fokus på kompetansedeling.`,
+        beskriving1: `Vil du jobbe med noen av Norges mest fremtredende virksomheter og være med å skape løsninger med stor betydning for enkeltmennesker så vel som for samfunnet? Ønsker du å kunne påvirke din egen hverdag og din egen utvikling? Vil du prøve nye veier uten å stenge gamle?`,
         linktekst1: 1,
-        link1: 'https://www.bouvet.no/',
+        link1: 'https://www.bouvet.no/om-bouvet',
         gfhel: [
             {
                 tittel: 1,
@@ -105,8 +103,12 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Tryg.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Tryg.jpg`,
         framsidebiletePosisjon: 'top',
-        beskriving1: `Tryg er Nordens nest største skadeforsikringsselskap med aktiviteter i Danmark, Norge og Sverige. Vi har levert økonomisk og personlig sikkerhet for kundene våre i snart 300 år.
-        `,
+        beskriving1: `Tryg er Nordens nest største skadeforsikringsselskap med aktiviteter i Danmark, Norge
+        og Sverige. Vi har levert økonomisk og personlig sikkerhet for kundene våre i snart 300
+        år. Med et bredt spekter av forsikringer til både privat, bedrift og industri, behandler Tryg
+        årlig mer enn 1 million skader i Norden. Sammen jobber vi for en tryggere og enklere
+        hverdag for kundene våre. Vi har et av nordens sterkeste merkevarer og en solid
+        kapitalposisjon.`,
         linktekst1: 1,
         link1: 'https://www.tryg.no/',
         gfhel: [
@@ -126,7 +128,9 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}OBOS.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Obos.jpg`,
         framsidebiletePosisjon: 'center -16vh',
-        beskriving1: `OBOS ble stiftet i 1929, og det første borettslaget sto ferdig på Etterstad to år etter. Helt siden den gang har vi skaffet våre medlemmer boliger og forvaltet disse på en trygg måte. Og det skal vi fortsette med – lenge!
+        beskriving1: `OBOS har virksomhet innen boligutvikling, bank, forsikring, eiendomsmegling, forvaltning, rådgivning, næringseiendom og digitale tjenester.
+ 
+        OBOS kan mer enn bare bolig. I OBOS er verdiskapning å utøve samfunnsansvar, skape merverdi for medlemmene og oppnå lønnsom vekst over tid.
         `,
         linktekst1: 1,
         link1: 'https://www.obos.no/',
@@ -213,8 +217,7 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Knowit.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Knowit.jpg`,
         framsidebiletePosisjon: 'center -19vh',
-        beskriving1: `Knowit AB (publ) er et konsulentselskap som, i den stadig raskere digitaliseringen, skaper unike kundeverdier gjennom å tilby grenseoverskridende leveranser fra de tre forretningsområdene Experience, Insight og Solutions.`,
-        beskriving2: `Det er evnen til å kombinere kompetanse innen design og kommunikasjon, management consulting og IT som skiller oss fra andre konsulentfirmaer. Vår kultur preges av åpenhet, forståelse for kundens forretninger, høy spesialistkompetanse og en vilje til å utvikles kontinuerlig. Knowit ble etablert i 1990 og har i dag ca. 2000 ansatte på 14 kontorer i Sverige, seks i Norge samt ett i Danmark, Finland og Tyskland. Knowit AB (publ) er notert på den Nordiska Börsen i Stockholm.`,
+        beskriving1: `Knowit er Nordens største digitalbyrå. Vi lager en haug med løsninger som gjør hverdagen bedre og enklere for millioner av mennesker. Du har kanskje hørt om Vipps, RuterReise og BankID på mobil? Knowit er idédrevet, og oppmuntrer innovasjon, tverrfaglighet og personlig engasjement. Siden 1990 har vi turt å tenke annerledes her eneste dag, og våre 2300 entusiaster innenfor teknologi, design, strategi og kommunikasjon finner nye måter å gjøre ting enda bedre på. Vi har kontorer midt i smørøyet av Bergen og Oslo, i tillegg til Stavanger og Kristiansand. Hos Knowit får du en spennende og sosial arbeidsplass med høyt fokus på faglig utvikling – hvor kolleger heier på hverandre og deler ut high fives over en lav sko.`,
         linktekst1: 1,
         link1: 'https://www.knowit.no/',
         gfhel: [
@@ -257,10 +260,9 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}ATEA.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Atea.jpg`,
         beskriving1: `Fremtiden er ikke bare noe som skjer. Den er noe vi skaper
-        Sammen med kundene våre i hele landet bygger Atea Norge med IT.  Vi vil bidra til mer effektiv læring i skolen. Vi vil styrke politiet og helseomsorgen i deres arbeid og på den måten være med og trygge vår felles velferd. Vi vil gjøre industrien mer konkurransedyktig og gi entreprenører muligheten til å realisere sine drømmer.
-        Hos oss får du et heldekkende tilbud av produkter og tjenester. Vi hjelper deg med hele verdikjeden, fra behovskartlegging og rådgivning til utvikling, produkter og tjenester, drift og vedlikehold.
+        Sammen med kundene våre i hele landet bygger Atea Norge med IT.  Vi vil bidra til mer effektiv læring i skolen. Vi vil styrke politiet og helseomsorgen i deres arbeid og på den måten være med og trygge vår felles velferd. Vi vil gjøre industrien mer konkurransedyktig og gi entreprenører muligheten til å realisere sine drømmer.`,
+        beskriving2: `Hos oss får du et heldekkende tilbud av produkter og tjenester. Vi hjelper deg med hele verdikjeden, fra behovskartlegging og rådgivning til utvikling, produkter og tjenester, drift og vedlikehold.
         Vi må forstå hvordan teknologi påvirker livene våre og hva teknologi kan bidra med for å gjøre de bedre. Derfor jobber vi i Atea med teknologi. Av og for mennesker.`,
-        beskriving2: `Atea-konsernet Atea finnes i syv land i Norden og Baltikum, har mer enn 7300 medarbeidere, er markedsleder i Norden og Baltikum og er den tredje største IT-infrastrukturleverandøren i Europa. Konsernet hadde en omsetning på 34,7 mrd. NOK i 2018 og er notert på Oslo Børs.`,
         linktekst1: 1,
         link1: 'https://www.atea.com',
         gfhel: [
@@ -309,8 +311,8 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Jussformidlingen.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Jussformidlingen.jpg`,
         framsidebiletePosisjon: 'center -16vh',
-        beskriving1: null,
-        beskriving2: null,
+        beskriving1: `Jussformidlingen er et rettshjelpstiltak som ble stiftet i 1972 og som tilbyr gratis rettshjelp, og gratis juridisk bistand til privatpersoner. Jussformidlingen får hvert år rundt 5000 henvendelser fra personer med juridiske problemer, og dette tallet stiger årlig. `,
+        beskriving2: `Til deg som student kan Jussformidlingen tilby verdifull praktisk erfaring under studietiden. Vi gir deg ansvaret for egne klienter og saker, der du får jobbet med private personer, advokater og det offentlige som motpart. Som saksbehandler hos oss får du muligheten til å representere klienter i forhandlingsmøter, forliksrådet og husleietvistutvalget.`,
         linktekst1: 1,
         link1: 'https://www.jussformidlingen.no/',
         gfhel: [
@@ -330,7 +332,13 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Fremtind.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Fremtind.jpg`,
         framsidebiletePosisjon: 'center -10vh',
-        beskriving1: null,
+        beskriving1: `Sparebank 1 og DNB har gått sammen om å bygge et forsikringsselskap som skal
+        kjennetegnes av digital innovasjon og fornyelse. Fremtind er allerede landets tredje største
+        forsikringsselskap, og landets største med distribusjon gjennom bank. Vi er i overkant av 900
+        medarbeidere som hver dag jobber med å lage produkter og tjenester som betyr noe i folks
+        liv. Sammen med bankene, kundene og partnerne tar vi nå nye steg og forbereder oss på en
+        ny og spennende hverdag.
+        `,
         beskriving2: null,
         linktekst1: 1,
         link1: 'https://www.fremtind.no/',
@@ -351,7 +359,7 @@ export const Bedrifter: Bedrift[] = [
         logoLink: `${LocalPaths.path_bedriftLogo}Conocophilips.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Conocophilips.jpg`,
         framsidebiletePosisjon: 'center -30vh',
-        beskriving1: null,
+        beskriving1: `ConocoPhillips Norge er et av de største utenlandske operatørselskapene på norsk sokkel. Selskapet har hovedkontor i Tananger i Sola kommune og har rundt 1800 ansatte. Hovedvirksomheten er leting etter og utvinning av olje og gass. ConocoPhillips har en sterk posisjon i store felt på norsk sokkel. Selskapet er operatør for feltene i Ekofisk-området, som er bærebjelken i selskapets aktiviteter i Norge. Eierandelen er 35,112 prosent i feltene Ekofisk, Eldfisk og Embla og 30,658 prosent i Tor-feltet. Selskapet har også eierandeler i felter der andre selskaper er operatør, blant annet feltene Heidrun, Visund, Oseberg, Grane, Troll, Aasta Hansteen og Alvheim. `,
         beskriving2: null,
         linktekst1: 1,
         link1: 'http://www.conocophillips.no/',
@@ -368,7 +376,7 @@ export const Bedrifter: Bedrift[] = [
     },
     {
         namn: 'Capgemini',
-        ruterLink: 'Capgemini',
+        ruterLink: 'capgemini',
         logoLink: `${LocalPaths.path_bedriftLogo}Capgemini.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Capgemini.jpg`,
         framsidebiletePosisjon: 'center -14vh',
