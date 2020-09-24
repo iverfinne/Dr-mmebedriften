@@ -46,9 +46,15 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+.casual-underline {
+  text-decoration: dotted underline;
+}
+
 p,
 .link1,
-.vimeo-link {
+.vimeo-link,
+.midtstilt-venstre-tekst,
+.midtstilt-venstre-tekst-type-2 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 
