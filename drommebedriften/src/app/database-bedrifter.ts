@@ -196,7 +196,7 @@ export const Bedrifter: Bedrift[] = [
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Forsvaret.jpg`,
         framsidebiletePosisjon: 'center -20vh',
         beskriving1: `Etterretningsbataljonen (EBN) er en operativ avdeling i Hæren, som bidrar med relevant og tidskritisk informasjon til støtte for militære operasjoner, både i utlandet og hjemme i Norge.`,
-        beskriving2: `EBN ser etter nye kolleger til stillinger innen etterretningsanalyse og menneskebasert innhenting. Avdelingen verdsetter søkere med variert utdanning, bakgrunn og erfaring. 
+        beskriving2: `EBN ser etter nye kolleger til stillinger innen etterretningsanalyse og menneskebasert innhenting. Avdelingen verdsetter søkere med variert utdanning, bakgrunn og erfaring.
         Hverdagen er spennende og utradisjonell, og avdelingen er avhengig av mangfold blant operatørene og analytikerne for å opprettholde fleksibilitet og tilpasningsevne.`,
         linktekst1: 1,
         link1: 'http://forsvaret.no/etterretning',
@@ -443,7 +443,7 @@ export const Bedrifter: Bedrift[] = [
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}StartUpLab.jpg`,
         beskriving1: `StartupLab is an incubator and early stage investor for ambitious technology startups, located in Oslo and Bergen. Our role is to provide an arena where founders can focus on what matters; building their product and onboarding customers that are willing to pay for it. Making life easier for startups is about more than just office space and advice. StartupLab is a facilitator of a relevant network, competence and founder friendly capital. We have been home to companies such as reMarkable, No Isolation, Kahoot, Huddly and we continue to work with 80+ tech startups in our incubator.
         `,
-        beskriving2: `The people at StartupLab come from diverse backgrounds, but we share a common passion: empowering ambitious entrepreneurs. Our mission is to help make our entrepreneurs successful. 
+        beskriving2: `The people at StartupLab come from diverse backgrounds, but we share a common passion: empowering ambitious entrepreneurs. Our mission is to help make our entrepreneurs successful.
         <br /><br /> At startupLab you will have the opportunity to work with some of Norway's most promising startups. StartupLab also plays a central role within the Norwegian tech startup community, so you will have access to our network and get to know the future tech leaders in the country.`,
         linktekst1: 1,
         link1: 'https://www.startuplab.com/',
@@ -486,11 +486,7 @@ export const Bedrifter: Bedrift[] = [
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Skanska.jpg`,
         beskriving1: `Skanska er et av verdens ledende prosjektutvikler- og entreprenørkonsern. Vi har ekspertise innen bygg og anlegg, utvikling av kommersielle lokaler, boliger og prosjekter i offentlig-privat samarbeid. Konsernet har i dag ca. 34 000 ansatte i utvalgte hjemmemarkeder i Europa og USA.  `,
         beskriving2: `Skanska er en av landets største og ledende entreprenør og prosjektutvikler, og har vært til stede i det norske markedet siden 1906.<br />
-        I Skanska Norge jobber det ca 3800 ansatte, og vi har rundt 200 pågående prosjekter over hele landet til enhver tid.<br /><br />
-         
-        Skanska rekrutterer følgende:<br />
-        Studenter med studier innenfor Bygg- og Anleggsfag, og Geomatikk/Landmåling. Sommerjobb og stillinger for nyutdannede innen vår Bygg- og Anleggsvirksomhet, samt til vår Survey-avdeling.
-        `,
+        I Skanska Norge jobber det ca 3800 ansatte, og vi har rundt 200 pågående prosjekter over hele landet til enhver tid.`,
         linktekst1: 1,
         link1: 'https://www.skanska.no/hvem-vi-er/jobb-i-skanska/studenter/',
         gfhel: [
