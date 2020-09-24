@@ -274,8 +274,6 @@ export const Bedrifter: Bedrift[] = [
                 googleAnalyticsID: 'speedate'
             }
         ],
-        vimeoVideo: vimeoEmbedKonverter(`<iframe src="https://player.vimeo.com/video/461547495" width="640" height="338" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <p><a href="https://vimeo.com/461547495">Original reklamefilm</a> from <a href="https://vimeo.com/user123842776">Iver Raknes Finne</a> on <a href="https://vimeo.com">Vimeo</a>.</p>`),
         tilleggskort: []
     },
     {
