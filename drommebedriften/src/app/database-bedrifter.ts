@@ -120,6 +120,7 @@ export const Bedrifter: Bedrift[] = [
                 googleAnalyticsID: 'speedate'
             }
         ],
+        vimeoVideo: vimeoEmbedKonverter(`<iframe src="https://player.vimeo.com/video/461547495?color=35a39e&title=0&byline=0&portrait=0" width="640" height="338" frameborder="0" allow="autoplay; fullscreen"</p>`),
         tilleggskort: []
     },
     {
