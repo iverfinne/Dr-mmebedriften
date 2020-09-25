@@ -59,7 +59,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'bouvet',
         logoLink: `${LocalPaths.path_bedriftLogo}bouvet.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Bouvet.jpg`,
-        framsidebiletePosisjon: 'center -35vh',
+        framsidebiletePosisjon: '',
         beskriving1: `Vil du jobbe med noen av Norges mest fremtredende virksomheter og være med å skape løsninger med stor betydning for enkeltmennesker så vel som for samfunnet? Ønsker du å kunne påvirke din egen hverdag og din egen utvikling? Vil du prøve nye veier uten å stenge gamle?`,
         linktekst1: 1,
         link1: 'https://www.bouvet.no/om-bouvet',
@@ -79,7 +79,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'finansdepartementet',
         logoLink: `${LocalPaths.path_bedriftLogo}Finansdepartementet.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Finansdepartementet1.jpg`,
-        framsidebiletePosisjon: 'center -33vh',
+        framsidebiletePosisjon: '',
         framsidebileteFotoPerson: 'Lise Åserud / NTB scanpix',
         beskriving1: `Finansdepartementet er et tradisjonsrikt og sentralt departement som ble opprettet i 1814. Finansdepartementet er, med hovedansvar for landets økonomiske politikk, viktig for samfunnsutviklingen og av stor betydning for den enkelte innbyggers hverdag. Hos oss jobber det 300 dyktige medarbeidere som sammen utgjør en spennende kunnskapsorganisasjon.`,
         beskriving2: `Departementet ledes av finansministeren, som sammen med statssekretærer og politisk rådgiver utgjør den politiske ledelsen. Finansdepartementets embetsverk ledes av finansråden. I motsetning til den politiske ledelsen er embetsverket fast ansatte medarbeidere som jobber under skiftende regjeringer. Blant våre ansatte er de fleste jurister, økonomer og statsvitere.`,
@@ -102,7 +102,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'tryg',
         logoLink: `${LocalPaths.path_bedriftLogo}Tryg.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Tryg.jpg`,
-        framsidebiletePosisjon: 'top',
+        framsidebiletePosisjon: '',
         beskriving1: `Tryg er Nordens nest største skadeforsikringsselskap med aktiviteter i Danmark, Norge
         og Sverige. Vi har levert økonomisk og personlig sikkerhet for kundene våre i snart 300
         år. Med et bredt spekter av forsikringer til både privat, bedrift og industri, behandler Tryg
@@ -128,7 +128,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'obos',
         logoLink: `${LocalPaths.path_bedriftLogo}OBOS.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Obos.jpg`,
-        framsidebiletePosisjon: 'center -16vh',
+        framsidebiletePosisjon: '',
         beskriving1: `OBOS har virksomhet innen boligutvikling, bank, forsikring, eiendomsmegling, forvaltning, rådgivning, næringseiendom og digitale tjenester.
 
         OBOS kan mer enn bare bolig. I OBOS er verdiskapning å utøve samfunnsansvar, skape merverdi for medlemmene og oppnå lønnsom vekst over tid.
@@ -172,7 +172,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'accenture',
         logoLink: `${LocalPaths.path_bedriftLogo}Accenture.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Accenture.jpeg`,
-        framsidebiletePosisjon: 'top',
+        framsidebiletePosisjon: '',
         /* Accenture i Norge (hentet fra https://www.accenture.com/no-en/about/company/norway): */
         beskriving1: `Vi løser utfordringene selskaper, organisasjoner og etater står overfor. Dette gjør vi med entusiasme, kunnskap, innsikt og de aller siste og beste teknologiske løsningene. Vi kommer fra varierte bakgrunner, men jobber sammen. Med allsidigheten dette fører til, skal vi løse de største utfordringene selskaper, organisasjoner og etater står overfor. Vi har et bredt spekter av innovative verktøy, en læringskurve som aldri stanser og et globalt nettverk som gir oss en verden av erfaringer å høste av. Vi holder oss alltid i forkant; vi skaper endringer over alt.`,
         beskriving2: `Hos oss får du mulighet til å utvikle hele deg, også på det personlige plan. Du møter utfordringer på en rekke ulike områder og fagfelt, du tar all din kompetanse i bruk og lærer ny underveis. Slik får du en sjelden mulighet til å finne ut hva du liker aller best og hvor styrken din ligger, uten å måtte bytte jobb. Rundt deg vil du alltid ha eksperter, mentorer og veiledere, og et nettverk som strekker seg rundt hele kloden.`,
@@ -188,14 +188,22 @@ export const Bedrifter: Bedrift[] = [
                 googleAnalyticsID: 'speedate'
             }
         ],
-        tilleggskort: []
+        tilleggskort: [
+            {
+                tittel: 'Middag',
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise(),
+                googleAnalyticsID: 'middag'
+            }
+        ]
     },
     {
         namn: 'Forsvaret',
         ruterLink: 'forsvaret',
         logoLink: `${LocalPaths.path_bedriftLogo}Forsvaret.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Forsvaret.jpg`,
-        framsidebiletePosisjon: 'center -20vh',
+        framsidebiletePosisjon: '',
         beskriving1: `Etterretningsbataljonen (EBN) er en operativ avdeling i Hæren, som bidrar med relevant og tidskritisk informasjon til støtte for militære operasjoner, både i utlandet og hjemme i Norge.`,
         beskriving2: `EBN ser etter nye kolleger til stillinger innen etterretningsanalyse og menneskebasert innhenting. Avdelingen verdsetter søkere med variert utdanning, bakgrunn og erfaring.
         Hverdagen er spennende og utradisjonell, og avdelingen er avhengig av mangfold blant operatørene og analytikerne for å opprettholde fleksibilitet og tilpasningsevne.`,
@@ -217,7 +225,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'knowit',
         logoLink: `${LocalPaths.path_bedriftLogo}Knowit.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Knowit.jpg`,
-        framsidebiletePosisjon: 'center -0vh',
+        framsidebiletePosisjon: '',
         beskriving1: `Knowit er Nordens største digitalbyrå. Vi lager en haug med løsninger som gjør hverdagen bedre og enklere for millioner av mennesker. Du har kanskje hørt om Vipps, RuterReise og BankID på mobil? Knowit er idédrevet, og oppmuntrer innovasjon, tverrfaglighet og personlig engasjement. Siden 1990 har vi turt å tenke annerledes her eneste dag, og våre 2300 entusiaster innenfor teknologi, design, strategi og kommunikasjon finner nye måter å gjøre ting enda bedre på. Vi har kontorer midt i smørøyet av Bergen og Oslo, i tillegg til Stavanger og Kristiansand. Hos Knowit får du en spennende og sosial arbeidsplass med høyt fokus på faglig utvikling – hvor kolleger heier på hverandre og deler ut high fives over en lav sko.`,
         linktekst1: 1,
         link1: 'https://www.knowit.no/',
@@ -311,7 +319,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'jussformidlingen',
         logoLink: `${LocalPaths.path_bedriftLogo}Jussformidlingen.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Jussformidlingen.jpg`,
-        framsidebiletePosisjon: 'center -16vh',
+        framsidebiletePosisjon: '',
         beskriving1: `Jussformidlingen er et rettshjelpstiltak som ble stiftet i 1972 og som tilbyr gratis rettshjelp, og gratis juridisk bistand til privatpersoner. Jussformidlingen får hvert år rundt 5000 henvendelser fra personer med juridiske problemer, og dette tallet stiger årlig. `,
         beskriving2: `Til deg som student kan Jussformidlingen tilby verdifull praktisk erfaring under studietiden. Vi gir deg ansvaret for egne klienter og saker, der du får jobbet med private personer, advokater og det offentlige som motpart. Som saksbehandler hos oss får du muligheten til å representere klienter i forhandlingsmøter, forliksrådet og husleietvistutvalget.`,
         linktekst1: 1,
@@ -332,7 +340,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'fremtind',
         logoLink: `${LocalPaths.path_bedriftLogo}Fremtind.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Fremtind.jpg`,
-        framsidebiletePosisjon: 'center -10vh',
+        framsidebiletePosisjon: '',
         beskriving1: `Sparebank 1 og DNB har gått sammen om å bygge et forsikringsselskap som skal
         kjennetegnes av digital innovasjon og fornyelse. Fremtind er allerede landets tredje største
         forsikringsselskap, og landets største med distribusjon gjennom bank. Vi er i overkant av 900
@@ -359,7 +367,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'conocophilips',
         logoLink: `${LocalPaths.path_bedriftLogo}Conocophilips.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Conocophilips.jpg`,
-        framsidebiletePosisjon: 'center -30vh',
+        framsidebiletePosisjon: '',
         beskriving1: `ConocoPhillips Norge er et av de største utenlandske operatørselskapene på norsk sokkel. Selskapet har hovedkontor i Tananger i Sola kommune og har rundt 1800 ansatte. Hovedvirksomheten er leting etter og utvinning av olje og gass. ConocoPhillips har en sterk posisjon i store felt på norsk sokkel. Selskapet er operatør for feltene i Ekofisk-området, som er bærebjelken i selskapets aktiviteter i Norge. Eierandelen er 35,112 prosent i feltene Ekofisk, Eldfisk og Embla og 30,658 prosent i Tor-feltet. Selskapet har også eierandeler i felter der andre selskaper er operatør, blant annet feltene Heidrun, Visund, Oseberg, Grane, Troll, Aasta Hansteen og Alvheim. `,
         beskriving2: null,
         linktekst1: 1,
@@ -380,7 +388,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'capgemini',
         logoLink: `${LocalPaths.path_bedriftLogo}Capgemini.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Capgemini.jpg`,
-        framsidebiletePosisjon: 'center -14vh',
+        framsidebiletePosisjon: '',
         beskriving1: `Med mer enn 270 000 ansatte i over 40 land er Capgemini et av verdens ledende selskaper innen teknologi og rådgivning. Capgemini utvikler og leverer forretnings- og teknologiløsninger som møter kundenes behov, og hjelper med å oppnå de resultatene de ønsker. I Norge har vi rundt 1200 konsulenter som jobber med på interessante oppdrag i privat og offentlig sektor. Vi har kontorer i Oslo, Bergen, Stavanger, Fredrikstad, Trondheim og Lillehammer.`,
         beskriving2: null,
         linktekst1: 1,
@@ -401,7 +409,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'schibsted',
         logoLink: `${LocalPaths.path_bedriftLogo}Schibsted.jpg`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Schibsted.jpg`,
-        framsidebiletePosisjon: 'center -20vh',
+        framsidebiletePosisjon: '',
         beskriving1: `Schibsted er en familie av digitale forbrukermerker med fokus på media, markedsplasser og smarte digitale tjenester. Våre varemerker innen media - som VG, Aftenposten, Aftonbladet, og SvD - er kjente for sin troverdighet, eksepsjonelle journalistikk og redaksjonelle uavhengighet. Våre ledende markedsplasser Finn, Blocket og Tori kobler millioner av brukere hver måned. Digitale tjenester - som Lendo, Prisjakt og Compricer - hjelper konsumenter til å ta bedre valg. Schibsted sitt oppdrag er å empower people in their daily life, ved å bruke teknikk og data for å skape innovative produkter og fantastiske brukeropplevelser - og hjelpe til med å bygge en bærekraftig fremtid. `,
         beskriving2: null,
         linktekst1: 1,
