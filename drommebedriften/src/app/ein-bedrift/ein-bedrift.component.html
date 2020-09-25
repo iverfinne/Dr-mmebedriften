@@ -35,6 +35,20 @@
                 </div>
             </div>
             <div class="tekst">
+                <!-- Namn -->
+                <h1 [innerHTML]="einBedrift.namn"></h1>
+                <!-- Link 1 -->
+                <a class="link1" [href]="einBedrift.link1" target="_blank" rel="noopener"
+                    (click)="analyticsFunksjonar.EinBedrift_KlikkPaaEksternHeimesideKnapp(einBedrift.namn)">
+                    {{ einBedrift.linktekst1 !== 1 ? einBedrift.linktekst1 : einBedrift.namn + ' - Hjemmeside' }}
+                    <sup>
+                        <mat-icon>open_in_new</mat-icon>
+                    </sup>
+                    <br>
+                    <div>
+                        <span></span>
+                    </div>
+                </a>
                 <div class="tilleggskort" *ngIf="einBedrift.gfhel || einBedrift.tilleggskort">
                     <!-- Google Form som "tilleggskort" -->
                     <ng-container *ngIf="einBedrift.gfhel">
@@ -119,21 +133,6 @@
                     </ng-container>
                 </div>
 
-                <!-- Namn -->
-                <h1 [innerHTML]="einBedrift.namn"></h1>
-                <!-- Link 1 -->
-                <a class="link1" [href]="einBedrift.link1" target="_blank" rel="noopener"
-                    (click)="analyticsFunksjonar.EinBedrift_KlikkPaaEksternHeimesideKnapp(einBedrift.namn)">
-                    {{ einBedrift.linktekst1 !== 1 ? einBedrift.linktekst1 : einBedrift.namn + ' - Hjemmeside' }}
-                    <sup>
-                        <mat-icon>open_in_new</mat-icon>
-                    </sup>
-                    <br>
-                    <div>
-                        <span></span>
-                    </div>
-                </a>
-
                 <div class="beskrivelse-video">
                     <div>
                         <!-- Beskrivelse -->
@@ -174,9 +173,9 @@
                                     hvordan
                                     det er å jobbe som jurist og økonom i Finansdepartementet.
                                 </p>
-                                <h3>
+                                <h2>
                                     <u>For jurister:</u>
-                                </h3>
+                                </h2>
                                 <p>
                                     Praktikantoppholdet tilbys nå i vår Skattelovavdeling, og er lønnet med fire til
                                     seks
@@ -197,9 +196,9 @@
                                     </a>
                                     <i>(søknadsfrist 1. okt. 2020)</i>
                                 </p>
-                                <h3>
+                                <h2>
                                     <u>For økonomer:</u>
-                                </h3>
+                                </h2>
                                 <p>
                                     Finansdepartementet tilbyr ett til tre lønnede engasjementer for økonomistudenter
                                     med
@@ -294,7 +293,7 @@
                             </div>
                             <div class="mvt-type-2">
                                 <ul>
-                                    <h3 class="normal">Informasjon om jobb i Etterretningsbataljonen:</h3>
+                                    <h2 class="normal">Informasjon om jobb i Etterretningsbataljonen:</h2>
                                     <li>Du kan søke uten å ha gjennomført førstegangstjeneste hvis du har fullført
                                         utdanning på bachelornivå eller høyere.
                                     </li>
@@ -308,7 +307,7 @@
                             </div>
                             <div class="mvt-type-2">
                                 <ul>
-                                    <h3 class="normal">Informasjon til studenter som er interessert:</h3>
+                                    <h2 class="normal">Informasjon til studenter som er interessert:</h2>
                                     <li>Aktuelle studenter vil bli kontaktet av Forsvaret for en speed-date på et hotell
                                         sentralt i Bergen sentrum <u class="c-u">torsdag 1. oktober</u></li>
                                     <li>Forholdsregler for smittevern vil bli overholdt</li>
@@ -330,7 +329,7 @@
                         <!-- Atea -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'atea'">
                             <div class="mvt-type-3">
-                                <h3>Atea-konsernet</h3>
+                                <h2>Atea-konsernet</h2>
                                 <p>Atea finnes i syv land i Norden og Baltikum, har mer enn 7300 medarbeidere, er
                                     markedsleder i Norden og Baltikum og er den tredje største
                                     IT-infrastrukturleverandøren
@@ -341,7 +340,7 @@
                                     Mer informasjon på
                                     <a href="http://www.atea.com/" target="_blank" rel="noopener">atea.com</a>.
                                 </p>
-                                <h3>Atea Norge</h3>
+                                <h2>Atea Norge</h2>
                                 <p>
                                     I Norge er vi over 1600 medarbeidere fordelt på 24 kontorer fra Hammerfest i nord
                                     til
@@ -378,7 +377,7 @@
                                     Dette
                                     takket være inspirerte og målfokuserte medarbeidere.
                                 </p>
-                                <h3>Atea Graduate</h3>
+                                <h2>Atea Graduate</h2>
                                 <p>
                                     Vi søker neste års Graduates i Atea! Brenner du for teknologi og har lyst til å
                                     forme
@@ -398,10 +397,10 @@
                                 - Da bør du snakke med oss.
                             </p>
                             <div class="mvt-type-3">
-                                <h3>
+                                <h2>
                                     Bouvet består av over 1550 kloke hoder som bistår bedrifter og samfunnsaktører i
                                     alle bransjer.
-                                </h3>
+                                </h2>
                                 <p>
                                     Sammen leverer vi løsninger som bidrar til stabil energiforsyning, en mer effektiv
                                     offentlig sektor, sikrere banker, rikere medietilbud, bedre HMS i oljesektoren,
@@ -426,20 +425,19 @@
                         <!-- Capgemini -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'capgemini'">
                             <div class="mvt-type-3">
-                                <h2 class="normal">Hvilke kandidater vi ser etter:</h2>
-                                <h3>
+                                <h1>Hvilke kandidater vi ser etter:</h1>
+                                <p>
                                     Vi rekrutterer fra tekniske linjer som f.eks. informatikk, maskinlæring/kunstig
                                     intelligens/cloud/programmering osv.
-                                </h3>
+                                </p>
 
-                                <h2>Graduate:</h2>
-                                <h3 class="box-1">
+                                <h1>Graduate: søknadsfrist 12.oktober.</h1>
+                                <h2 class="box-1">
                                     <a href="https://www.capgemini.com/no-no/careers/job-search/?search_term=graduate"
                                         target="_blank"
-                                        rel="noopener">https://www.capgemini.com/no-no/careers/job-search/?search_term=graduate</a>,
-                                    søknadsfrist 12.oktober.
-                                </h3>
-
+                                        rel="noopener">Her kan du lese om graduate programmet</a>
+                                </h2>
+                                <p>Her søker vi kandidater som er ferdig utdannet våren 2021 til følgende områder: </p>
                                 <p>
                                     <i>“IgnITe er de unge talentene som gir energi til våre kunder med nye ideer og
                                         engasjement. Vi er ivrige etter å lære og vokse i alle aspekter av vår karriere.
@@ -463,7 +461,6 @@
                                     vekst og jobber med de nyeste teknologiene på markedet.
                                 </p>
                                 <div class="mvt">
-                                    Her søker vi kandidater som er ferdig utdannet våren 2021 til følgende områder:
                                     <ul>
                                         <li>Graduate Software development (Bergen, Oslo, Stavanger, Fredrikstad og
                                             Trondheim)
@@ -473,13 +470,12 @@
                                     </ul>
                                 </div>
 
-                                <h2>Summer internship:</h2>
-                                <h3 class="box-1">
+                                <h1>Summer internship: søknadsfrist 15.oktober</h1>
+                                <h2 class="box-1">
                                     <a href="https://www.capgemini.com/no-no/careers/job-search/?search_term=summer"
                                         target="_blank"
-                                        rel="noopener">https://www.capgemini.com/no-no/careers/job-search/?search_term=summer</a>,
-                                    søknadsfrist 15.oktober
-                                </h3>
+                                        rel="noopener">Her kan du lese om summer internship</a>
+                                </h2>
 
                                 <div class="mvt">
                                     Her søker vi kandidater som går 2-4 studieår til følgende områder:
@@ -510,18 +506,18 @@
                                     verdsetter alles stemmer og meninger. Sammen, med de ulike bakgrunnene, erfaringene,
                                     ideene og perspektivene til våre ansatte driver vi vår suksess.
                                 </p>
-                                <h3>
-                                    - Hvilke studieretninger man eventuelt rekrutterer fra/til hvilke stillinger man
+                                <h2>
+                                    Hvilke studieretninger man eventuelt rekrutterer fra/til hvilke stillinger man
                                     rekrutterer:
-                                </h3>
+                                </h2>
                                 <div class="box-2">
                                     <span style="font-size:1.1em;">
                                         IT, Geologi, Geofysikk, Drilling, Supply Chain og Finans
                                     </span>
                                 </div>
-                                <h3>
-                                    - Hvilke muligheter det finnes for studenter i den gitte bedriften/organisasjonen?
-                                </h3>
+                                <h2>
+                                    Hvilke muligheter det finnes for studenter i den gitte bedriften/organisasjonen?
+                                </h2>
                                 <h2 class="normal">Program for nyutdannede</h2>
                                 <p>
                                     Hvert år ansetter ConocoPhillips nyutdannede med
@@ -534,8 +530,8 @@
                                 <p>ConocoPhillips tilbyr også sommerjobber og mulighet for å skrive masteroppgave.</p>
                             </div>
                             <div class="mvt-type-2">
+                                <h2>Linker</h2>
                                 <ul>
-                                    <h2>Linker</h2>
                                     <li>
                                         <a href="https://careers.conocophillips.com/nb/job-search-results/"
                                             target="_blank" rel="noopener">Her kan du søke på en av våre ‘Early Career’
@@ -557,7 +553,7 @@
                         <!-- Fremtind Forsikring -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'fremtind'">
                             <div class="mvt-type-3">
-                                <h3>Vil du være først kan du aldri stå stille.</h3>
+                                <h2>Vil du være først kan du aldri stå stille.</h2>
                                 <p>
                                     Jobben vi gjør er et resultat av hvem vi er. Derfor er Fremtind en dynamisk blanding
                                     av ulike fagpersoner og nytenkere som ønsker å utvikle hverandre, markedet og
@@ -566,7 +562,7 @@
                                     perspektiver. I jakten på svar bruker vi også deep-data, AI og annen avansert
                                     teknologi for å pushe grensene for det mulige.
                                 </p>
-                                <h3>Hvem ser vi etter?</h3>
+                                <h2>Hvem ser vi etter?</h2>
                                 <p>
                                     Vi ser etter deg som ønsker å sette studiene ut i praksis og oppleve hvordan det er
                                     å jobbe i et av Norges fremste teknologimiljøer. Du studerer interaksjonsdesign,
@@ -576,7 +572,7 @@
                                     maskinlæring, kunstig intelligens, wireframes og prototyping, teller det også
                                     positivt.
                                 </p>
-                                <h3>Hva kan vi tilby deg?</h3>
+                                <h2>Hva kan vi tilby deg?</h2>
                                 <p>
                                     Som sommerstudent hos oss vil du være med på spennende initiativer der du får brukt
                                     kompetansen din. Du vil jobbe i et tverrfaglig team (teamleder, systemeier,
@@ -602,21 +598,25 @@
                         <!--  -->
                         <!-- Jussformidlingen -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'jussformidlingen'">
-                            <p>Jussformidlingen har også virksomhet knyttet til rettighetsinformasjon og rettspolitikk.
-                                Dette skjer gjennom å avholde foredrag,
-                                skrive høringsuttalelser og komme med utspill i media i et forsøk på å endre
-                                rettstilstanden der vi mener den ikke
-                                er tilfredsstillende for våre klientgrupper.</p>
-                            <p>Etter ett år hos oss får du godkjent 30 studiepoeng gjennom valgfaget <a
-                                    href="https://www.uib.no/emne/JUS325" target="_blank" rel="noopener">Rettshjelp
-                                    JUS325</a> I tillegg er arbeidet lønnet.
-                                Du får også ta del i et inkluderende, godt og sosialt arbeidsmiljø med mange flinke og
-                                engasjerte folk.</p>
-                            <p>Du må ha fullført 3. studieår før du begynner å jobbe hos oss. I ansettelsesprosessen
-                                legges det særlig vekt på dine personlige egenskaper og din motivasjon.</p>
-                            <p>Søknadsfrist for å begynne som saksbehandler i mars 2021 er den 15.11.20.</p>
-                            <p>Du kan lese mer om Jussformidlingen på <a href="www.jussformidlingen.no" target="_blank"
-                                    rel="noopener">www.jussformidlingen.no</a></p>
+                            <div class="mvt-type-2">
+                                    <p>Jussformidlingen har også virksomhet knyttet til rettighetsinformasjon og rettspolitikk.
+                                        Dette skjer gjennom å avholde foredrag,
+                                        skrive høringsuttalelser og komme med utspill i media i et forsøk på å endre
+                                        rettstilstanden der vi mener den ikke
+                                        er tilfredsstillende for våre klientgrupper.</p>
+                                <ul>
+                                        <li>Etter ett år hos oss får du godkjent 30 studiepoeng gjennom valgfaget <a
+                                                href="https://www.uib.no/emne/JUS325" target="_blank" rel="noopener">Rettshjelp
+                                                JUS325</a> I tillegg er arbeidet lønnet.
+                                            Du får også ta del i et inkluderende, godt og sosialt arbeidsmiljø med mange flinke og
+                                            engasjerte folk.</li>
+                                        <li>Du må ha fullført 3. studieår før du begynner å jobbe hos oss. I ansettelsesprosessen
+                                            legges det særlig vekt på dine personlige egenskaper og din motivasjon.</li>
+                                        <li>Søknadsfrist for å begynne som saksbehandler i mars 2021 er den 15.11.20.</li>
+                                        <li>Du kan lese mer om Jussformidlingen på <a href="www.jussformidlingen.no" target="_blank"
+                                                rel="noopener">www.jussformidlingen.no</a></li>
+                                </ul>
+                            </div>
                         </ng-container>
                         <!--  -->
                         <!-- Tryg -->
@@ -639,12 +639,12 @@
                                     med
                                     IT-utdanning
                                     <br>(1-2 dager i uken)</h1>
-                                <h3>Er du en rå IT-student som har lyst til å forvandle våre administrative oppgaver til
-                                    automatiserte prosesser? </h3>
+                                <h2>Er du en rå IT-student som har lyst til å forvandle våre administrative oppgaver til
+                                    automatiserte prosesser? </h2>
                                 <p>Ønsker du å starte karrieren i et stort og spennende kompetansemiljø som er inne i en
                                     digital transformasjon? Vi tilbyr deg spennende muligheter i et godt arbeidsmiljø.
                                 </p>
-                                <h3>Om Tryg Skade</h3>
+                                <h2>Om Tryg Skade</h2>
                                 <p>Tryg Skade er i kontakt med kundene når de har vært utsatt for en skade, et uhell
                                     eller
                                     har hatt en ulykke. Skade Norge er markedsledende på automatisert skadebehandling.
@@ -652,7 +652,7 @@
                                     ytterste
                                     for å skape trygghet for kundene våre, og å løse kundenes problem raskt og enkelt.
                                 </p>
-                                <h3>Bli en del av et sterkt faglig og sosialt miljø</h3>
+                                <h2>Bli en del av et sterkt faglig og sosialt miljø</h2>
                                 <p>Du vil inngå i avdelingen Økonomi og Analyse som bestå av et team av spesialiser hvor
                                     vi
                                     vektlegger samarbeid og faglig sparring. I vår avdeling legger vi vekt på åpenhet og
@@ -662,9 +662,9 @@
                                     administrative
                                     oppgaver ved bruk av teknologi og anvendelse av roboter.
                                 </p>
-                                <h3>Er du utadvendt, strukturert, liker å arbeide i team og har høy teknologisk
+                                <h2>Er du utadvendt, strukturert, liker å arbeide i team og har høy teknologisk
                                     kompetanse?
-                                </h3>
+                                </h2>
                                 <p>Du må kunne vise til faglig dyktighet innen ditt fagfelt. Du er utadvendt,
                                     entusiastisk
                                     og nysgjerrig. Du stiller gjerne spørsmål og omsetter nysgjerrighet til handling.
@@ -684,19 +684,19 @@
                                         søke på deltidsstillingen, og send oss gjerne en søknad med CV og relevante
                                         vitnemål. </b></p>
                                 <p>Om du har spørsmål, kontakt Avdelingsleder Marte Collin, tlf 91853535</p>
-                                <h3>Vi ser frem til å høre fra deg!</h3>
+                                <h2>Vi ser frem til å høre fra deg!</h2>
                                 <br><br>
                                 <h1 class="normal">Studentmedarbeider til Digital Kundeopplevelse & Selvbetjening<br>
                                     (1-2 dager i uken)</h1>
-                                <h3>Studerer du Media- og Interaksjonsdesign (eller tilsvarende) og har lyst til å bidra
+                                <h2>Studerer du Media- og Interaksjonsdesign (eller tilsvarende) og har lyst til å bidra
                                     til
-                                    unike digitale kundeopplevelser for Tryg sine kunder? </h3>
+                                    unike digitale kundeopplevelser for Tryg sine kunder? </h2>
                                 <p>Ønsker du å være med i teamet som jobber med samtlige av Trygs kundevendte digitale
                                     løsninger? Vi er et sterkt fagmiljø med engasjement og takhøyde og stort spenn i
                                     oppgaver. Dette er en unik mulighet til å være med å påvirke hvordan Tryg blir
                                     oppfattet
                                     i våre selvbetjeningsløsninger.</p>
-                                <h3>Om Tryg</h3>
+                                <h2>Om Tryg</h2>
                                 <p>Tryg er Nordens nest største skadeforsikringsselskap med aktiviteter i Danmark, Norge
                                     og
                                     Sverige. Vi har levert økonomisk og personlig sikkerhet for kundene våre i snart 300
@@ -706,9 +706,9 @@
                                     enklere hverdag for kundene våre. Vi har et av nordens sterkeste merkevarer og en
                                     solid
                                     kapitalposisjon.</p>
-                                <h3>Vi søker etter en student som er i sitt avsluttende år på Media- og
+                                <h2>Vi søker etter en student som er i sitt avsluttende år på Media- og
                                     Interaksjonsdesign
-                                    (eller tilsvarende). </h3>
+                                    (eller tilsvarende). </h2>
                                 <p>Du blir en del av et sterkt faglig miljø med et godt felleskap!
                                     Du vil inngå i avdelingen Digital Kundeopplevelse & Selvbetjening som blant annet
                                     har
@@ -726,9 +726,9 @@
                                     webdisipliner og
                                     vil være med til å lage løsninger som balanserer brukerbehov og forretningsbehov.
                                 </p>
-                                <h3>Du tar utgangspunkt i kundenes opplevelser og forventninger når du jobber med Tryg
+                                <h2>Du tar utgangspunkt i kundenes opplevelser og forventninger når du jobber med Tryg
                                     sine
-                                    digitale løsninger</h3>
+                                    digitale løsninger</h2>
                                 <p>Vi søker etter deg som brenner for gode brukeropplevelser og evner å formidle dette
                                     til
                                     gode løsninger og kundereiser. Du har engasjement og gode samarbeidsevner og liker å
@@ -821,9 +821,9 @@
                                     their daily life, ved å bruke teknikk og data for å skape innovative produkter og
                                     fantastiske brukeropplevelser - og hjelpe til med å bygge en bærekraftig fremtid.
                                 </p>
-                                <div class="mvt">
+                                <div class="mvt-type-2">
+                                    <h2>Muligheter for studenter i Schibsted:</h2>
                                     <ul>
-                                        <h2>Muligheter for studenter i Schibsted:</h2>
                                         <li>Link til vår studentside: <a
                                                 href="https://schibsted.com/career/for-students/" target="_blank"
                                                 rel="noopener">https://schibsted.com/career/for-students</a>
@@ -833,8 +833,8 @@
                                                 target="_blank"
                                                 rel="noopener">https://schibsted.com/career/for-students/internships-theses</a>
                                         </li>
-                                        <li>Schibsted Connect har søknadsfrist 30. september og i utgangspunktet skal
-                                            studentene
+                                        <li>Schibsted Connect har søknadsfrist 30. september og
+                                            studenten skal
                                             være plassert i Oslo. <a
                                                 href="https://schibsted.com/career/for-students/buddy-program/"
                                                 target="_blank"
@@ -851,8 +851,8 @@
                                     </ul>
                                 </div>
                                 <div class="mvt-type-2">
+                                    <h2>Lær mer om Schibsted:</h2>
                                     <ul>
-                                        <h3>Lær mer om Schibsted:</h3>
                                         <li>
                                             Link til vår podcast Schibsted Talks: <a
                                                 href="https://open.spotify.com/show/20CtGkMTTYZQZZD8BtjmX"
@@ -873,17 +873,17 @@
                             <div class="mvt-type-3">
                                 <h2 class="normal">Om rekruttering</h2>
                             </div>
-                            <div class="mvt">
+                            <div class="mvt-type-3">
+                                <h2>Tax & Legal</h2>
                                 <ul>
-                                    <h3>Tax & Legal</h3>
                                     <li>Deloitte Advokatfirma er et av Norges største forretningsjuridiske
                                         advokatfirmaer, med nesten 200 profesjonelle medarbeidere med spisskompetanse
                                         innen transaksjoner, skatt og avgift samt forretningsjus. Advokatfirmaet er
                                         organisert i faggrupper og tverrfaglige bransjegrupper.
                                     </li>
                                 </ul>
+                                <h2>Consulting</h2>
                                 <ul>
-                                    <h3>Consulting</h3>
                                     <li>I Deloitte Consulting tilbyr vi rådgivningstjenester innenfor Strategy,
                                         Analytics and M&A, Customer & Marketing, Business Operations, Human Capital og
                                         Enterprise Technology & Performance. Vi arbeider med alt fra strategi og
@@ -892,8 +892,8 @@
                                         og presentasjoner gjennom utvikling av menneskelige ressurser.
                                     </li>
                                 </ul>
+                                <h2>Audit & Assurance</h2>
                                 <ul>
-                                    <h3>Audit & Assurance</h3>
                                     <li>Audit & Assurance er vårt største forretningsområde, med rundt 600 dyktige
                                         medarbeidere i Norge. Vi utfører revisjon for en rekke klienter av varierende
                                         størrelse og i ulike bransjer og sektorer. Vi kan vi bidra med rådgivning innen
@@ -903,8 +903,8 @@
                                         jobb med gode utviklingsmuligheter og stor innflytelse på din hverdag.
                                     </li>
                                 </ul>
+                                <h2>Financial Advisory</h2>
                                 <ul>
-                                    <h3>Financial Advisory</h3>
                                     <li>Vi bistår private selskaper og den offentlige sektoren ved transaksjoner,
                                         tvister, gjennomføring av større investeringer og omstruktureringer. Vårt
                                         tjenestespekter dekker Corporate Finance, Transaction Services/Due Diligence,
@@ -912,8 +912,8 @@
                                         Capital Restructuring.
                                     </li>
                                 </ul>
+                                <h2>Business Process Solutions</h2>
                                 <ul>
-                                    <h3>Business Process Solutions</h3>
                                     <li>I Business Process Solutions bistår vi våre klienter med forbedring og utvikling
                                         av økonomifunksjonen gjennom å levere interimløsninger og prosjektstøtte. Som
                                         konsulent i Business Process Solutions (BPS) får du muligheten til å jobbe med
@@ -921,8 +921,8 @@
                                         eksempelvis regnskapsansvarlig, controller eller CFO i en overgangsperiode.
                                     </li>
                                 </ul>
+                                <h2>Risk Advisory og Cyber</h2>
                                 <ul>
-                                    <h3>Risk Advisory og Cyber</h3>
                                     <li>Vi tilbyr rådgivningstjenester innenfor styring og kontroll, samfunnsansvar,
                                         risikostyring, antikorrupsjon og informasjonssikkerhet til alle typer
                                         virksomheter innenfor offentlig og privat sektor. Dette omfatter blant annet
@@ -935,8 +935,8 @@
                                         summer internships eller gjennom deltakelse på våre mange studenttilbud.
                                     </li>
                                 </ul>
+                                <h2>Internship i Deloitte i 2021?</h2>
                                 <ul>
-                                    <h3>Internship i Deloitte i 2021?</h3>
                                     <li>Vil du ha faglige utfordringer, lære av erfarne kolleger og utvikle deg som
                                         person? Vil du finne ut hvordan det egentlig er å jobbe som konsulent eller
                                         revisor? Ved Oslo-kontoret tilbyr vi Internship både i januar og på sommeren.
@@ -945,8 +945,8 @@
                                             rel="noopener">https://deloitte.recman.no/job</a>
                                     </li>
                                 </ul>
+                                <h2>Hva kan vi tilby:</h2>
                                 <ul>
-                                    <h3>Hva kan vi tilby:</h3>
                                     <li>I Deloitte har vi et arbeidsmiljø som bygger på tillit og samarbeid. Vi er
                                         opptatt av å ha dyktige medarbeidere som trives, og har et variert tilbud til
                                         ansatte både innen kultur, idrett og sosiale aktiviteter. De første ukene hos
@@ -996,7 +996,7 @@
                             </div>
                             <div class="mvt">
                                 <ul>
-                                    <h3>Internship</h3>
+                                    <h2>Internship</h2>
                                     <li>Vi tilbyr internship for studenter i DNB Markets og andre forretningsområder som
                                         for eksempel: IT & Operations, Kommunikasjon, Wealth Management, Risikostyring,
                                         Bedriftsmarked, og Storkunde & Internasjonal.</li>
@@ -1005,7 +1005,7 @@
                                         desember/januar.</li>
                                 </ul>
                                 <ul>
-                                    <h3>Graduate</h3>
+                                    <h2>Graduate</h2>
                                     <li>Er du nesten ferdig med studiene eller nettopp begynt å jobbe? Bli en del av
                                         DNBs Graduateprogram! Som graduate i DNB vil du bli plassert i et
                                         forretningsområde som matcher din ekspertise og dine preferanser. Det forventes
