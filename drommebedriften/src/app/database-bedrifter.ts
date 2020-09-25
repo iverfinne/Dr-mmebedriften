@@ -424,8 +424,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'deloitte',
         logoLink: `${LocalPaths.path_bedriftLogo}Deloitte.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Deloitte.jpg`,
-        beskriving1: `Deloitte er en arbeidsplass for fremtiden. Vi er en virksomhet med høyt utdannede mennesker innen mange forskjellige fagfelt som arbeider sammen for å bidra til de beste løsningene for våre kunder. Våre medarbeidere ønsker å være en del av en organisasjon som bidrar til et bærekraftig næringsliv og samfunn; og utgjøre en forskjell. Vi er verdens største leverandør av profesjonelle tjenester innen revisjon, rådgivning og advokattjenester med ca. 1500 medarbeidere i Norge. Deloitte er en internasjonal organisasjon med mer enn 312 000 medarbeidere i over 150 land.`,
-        beskriving2: `Deloitte søker nysgjerrige og engasjerte studenter, fortrinnsvis med en økonomisk, teknisk eller samfunnsvitenskapelig mastergrad. Ønsket studieretning vil derimot kunne variere mellom forretningsområdene og andre studieretninger vil også kunne være aktuelle for enkelte stillinger.`,
+        beskriving1: `Deloitte er en arbeidsplass for fremtiden. Vi er en virksomhet med høyt utdannede mennesker innen mange forskjellige fagfelt som arbeider sammen for å bidra til de beste løsningene for våre kunder. Våre medarbeidere ønsker å være en del av en organisasjon som bidrar til et bærekraftig næringsliv og samfunn; og utgjøre en forskjell. Vi er verdens største leverandør av profesjonelle tjenester innen revisjon, rådgivning og advokattjenester med ca. 1500 medarbeidere i Norge. Deloitte er en internasjonal organisasjon med mer enn 312 000 medarbeidere i over 150 land. <br />`,
         linktekst1: 1,
         link1: 'https://www.deloitte.com/',
         gfhel: [
