@@ -194,7 +194,6 @@ export const Bedrifter: Bedrift[] = [
                 beskriving1: 1,
                 linktekst1: 1,
                 link1: gfise(),
-                googleAnalyticsID: 'middag'
             }
         ]
     },
