@@ -59,7 +59,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'bouvet',
         logoLink: `${LocalPaths.path_bedriftLogo}bouvet.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Bouvet.jpg`,
-        framsidebiletePosisjon: 'center -50vh',
+        framsidebiletePosisjon: 'center -35vh',
         beskriving1: `Vil du jobbe med noen av Norges mest fremtredende virksomheter og være med å skape løsninger med stor betydning for enkeltmennesker så vel som for samfunnet? Ønsker du å kunne påvirke din egen hverdag og din egen utvikling? Vil du prøve nye veier uten å stenge gamle?`,
         linktekst1: 1,
         link1: 'https://www.bouvet.no/om-bouvet',
@@ -130,7 +130,7 @@ export const Bedrifter: Bedrift[] = [
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Obos.jpg`,
         framsidebiletePosisjon: 'center -16vh',
         beskriving1: `OBOS har virksomhet innen boligutvikling, bank, forsikring, eiendomsmegling, forvaltning, rådgivning, næringseiendom og digitale tjenester.
- 
+
         OBOS kan mer enn bare bolig. I OBOS er verdiskapning å utøve samfunnsansvar, skape merverdi for medlemmene og oppnå lønnsom vekst over tid.
         `,
         linktekst1: 1,
@@ -379,7 +379,7 @@ export const Bedrifter: Bedrift[] = [
         namn: 'Capgemini',
         ruterLink: 'capgemini',
         logoLink: `${LocalPaths.path_bedriftLogo}Capgemini.png`,
-        framsidebileteLink: `${LocalPaths.path_bedriftframsidebilete}Capgemini.jpg`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Capgemini.jpg`,
         framsidebiletePosisjon: 'center -14vh',
         beskriving1: `Med mer enn 270 000 ansatte i over 40 land er Capgemini et av verdens ledende selskaper innen teknologi og rådgivning. Capgemini utvikler og leverer forretnings- og teknologiløsninger som møter kundenes behov, og hjelper med å oppnå de resultatene de ønsker. I Norge har vi rundt 1200 konsulenter som jobber med på interessante oppdrag i privat og offentlig sektor. Vi har kontorer i Oslo, Bergen, Stavanger, Fredrikstad, Trondheim og Lillehammer.`,
         beskriving2: null,
