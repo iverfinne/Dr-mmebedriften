@@ -237,7 +237,6 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'wintershall_dea',
         logoLink: `${LocalPaths.path_bedriftLogo}Wintershall_dea.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}wintershall_dea.jpg`,
-        framsidebiletePosisjon: 'center -20vh',
         beskriving1: `Wintershall Dea er Europas ledende, uavhengige olje- og gasselskap med aktiviteter på fem kontinenter. Vår virksomhet strekker seg over hele den norske kontinentalsokkelen, fra Nordsjøen til Barentshavet. Wintershall Dea har virksomhet i hele verdikjeden, fra leting via feltutbygging til produksjon. Norge er et av Wintershall Deas kjerneområder og vi er en stor operatør og en engasjert partner på norsk sokkel. Vi er operatør for feltene Brage, Maria og Vega og for utbyggingsprosjektene Dvalin og Nova. I tillegg er vi en aktiv partner i blant annet Skarv, Aasta Hansteen, Njord og Gjøa.`,
         beskriving2: `Er du nysgjerrig og klar for å bli en del av et nytt kapittel av eventyret i Nordsjøen? Wintershall Dea tilbyr spennende prosjekter som gir mulighet for faglig utvikling.
         Vi tilbyr spesielle trainee-programmer som nyutdannede medarbeidere kan starte på med det samme. Vi tilbyr og sommerjobber og mulighet for å skrive masteroppgave i samarbeid med en av våre eksperter.`,
@@ -261,7 +260,6 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'atea',
         logoLink: `${LocalPaths.path_bedriftLogo}ATEA.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Atea.jpg`,
-        framsidebiletePosisjon: 'center -5vh',
         beskriving1: `Fremtiden er ikke bare noe som skjer. Den er noe vi skaper
         Sammen med kundene våre i hele landet bygger Atea Norge med IT.  Vi vil bidra til mer effektiv læring i skolen. Vi vil styrke politiet og helseomsorgen i deres arbeid og på den måten være med og trygge vår felles velferd. Vi vil gjøre industrien mer konkurransedyktig og gi entreprenører muligheten til å realisere sine drømmer.`,
         beskriving2: `Hos oss får du et heldekkende tilbud av produkter og tjenester. Vi hjelper deg med hele verdikjeden, fra behovskartlegging og rådgivning til utvikling, produkter og tjenester, drift og vedlikehold.
@@ -313,7 +311,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'jussformidlingen',
         logoLink: `${LocalPaths.path_bedriftLogo}Jussformidlingen.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Jussformidlingen.jpg`,
-        framsidebiletePosisjon: 'center -35vh',
+        framsidebiletePosisjon: 'center -16vh',
         beskriving1: `Jussformidlingen er et rettshjelpstiltak som ble stiftet i 1972 og som tilbyr gratis rettshjelp, og gratis juridisk bistand til privatpersoner. Jussformidlingen får hvert år rundt 5000 henvendelser fra personer med juridiske problemer, og dette tallet stiger årlig. `,
         beskriving2: `Til deg som student kan Jussformidlingen tilby verdifull praktisk erfaring under studietiden. Vi gir deg ansvaret for egne klienter og saker, der du får jobbet med private personer, advokater og det offentlige som motpart. Som saksbehandler hos oss får du muligheten til å representere klienter i forhandlingsmøter, forliksrådet og husleietvistutvalget.`,
         linktekst1: 1,
@@ -403,7 +401,7 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'schibsted',
         logoLink: `${LocalPaths.path_bedriftLogo}Schibsted.jpg`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Schibsted.jpg`,
-        framsidebiletePosisjon: 'center -0vh',
+        framsidebiletePosisjon: 'center -20vh',
         beskriving1: `Schibsted er en familie av digitale forbrukermerker med fokus på media, markedsplasser og smarte digitale tjenester. Våre varemerker innen media - som VG, Aftenposten, Aftonbladet, og SvD - er kjente for sin troverdighet, eksepsjonelle journalistikk og redaksjonelle uavhengighet. Våre ledende markedsplasser Finn, Blocket og Tori kobler millioner av brukere hver måned. Digitale tjenester - som Lendo, Prisjakt og Compricer - hjelper konsumenter til å ta bedre valg. Schibsted sitt oppdrag er å empower people in their daily life, ved å bruke teknikk og data for å skape innovative produkter og fantastiske brukeropplevelser - og hjelpe til med å bygge en bærekraftig fremtid. `,
         beskriving2: null,
         linktekst1: 1,
@@ -446,6 +444,8 @@ export const Bedrifter: Bedrift[] = [
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}StartUpLab.jpg`,
         beskriving1: `StartupLab is an incubator and early stage investor for ambitious technology startups, located in Oslo and Bergen. Our role is to provide an arena where founders can focus on what matters; building their product and onboarding customers that are willing to pay for it. Making life easier for startups is about more than just office space and advice. StartupLab is a facilitator of a relevant network, competence and founder friendly capital. We have been home to companies such as reMarkable, No Isolation, Kahoot, Huddly and we continue to work with 80+ tech startups in our incubator.
         `,
+        beskriving2: `The people at StartupLab come from diverse backgrounds, but we share a common passion: empowering ambitious entrepreneurs. Our mission is to help make our entrepreneurs successful.
+        <br /><br /> At startupLab you will have the opportunity to work with some of Norway's most promising startups. StartupLab also plays a central role within the Norwegian tech startup community, so you will have access to our network and get to know the future tech leaders in the country.`,
         linktekst1: 1,
         link1: 'https://www.startuplab.com/',
         gfhel: [

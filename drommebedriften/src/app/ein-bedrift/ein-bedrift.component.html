@@ -35,20 +35,6 @@
                 </div>
             </div>
             <div class="tekst">
-                <!-- Namn -->
-                <h1 [innerHTML]="einBedrift.namn"></h1>
-                <!-- Link 1 -->
-                <a class="link1" [href]="einBedrift.link1" target="_blank" rel="noopener"
-                    (click)="analyticsFunksjonar.EinBedrift_KlikkPaaEksternHeimesideKnapp(einBedrift.namn)">
-                    {{ einBedrift.linktekst1 !== 1 ? einBedrift.linktekst1 : einBedrift.namn + ' - Hjemmeside' }}
-                    <sup>
-                        <mat-icon>open_in_new</mat-icon>
-                    </sup>
-                    <br>
-                    <div>
-                        <span></span>
-                    </div>
-                </a>
                 <div class="tilleggskort" *ngIf="einBedrift.gfhel || einBedrift.tilleggskort">
                     <!-- Google Form som "tilleggskort" -->
                     <ng-container *ngIf="einBedrift.gfhel">
@@ -133,7 +119,20 @@
                     </ng-container>
                 </div>
 
-
+                <!-- Namn -->
+                <h1 [innerHTML]="einBedrift.namn"></h1>
+                <!-- Link 1 -->
+                <a class="link1" [href]="einBedrift.link1" target="_blank" rel="noopener"
+                    (click)="analyticsFunksjonar.EinBedrift_KlikkPaaEksternHeimesideKnapp(einBedrift.namn)">
+                    {{ einBedrift.linktekst1 !== 1 ? einBedrift.linktekst1 : einBedrift.namn + ' - Hjemmeside' }}
+                    <sup>
+                        <mat-icon>open_in_new</mat-icon>
+                    </sup>
+                    <br>
+                    <div>
+                        <span></span>
+                    </div>
+                </a>
 
                 <div class="beskrivelse-video">
                     <div>
@@ -144,64 +143,83 @@
                         <!--  -->
                         <!-- Finansdepartementet -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'finansdepartementet'">
-                            <h1>Våre arbeidsoppgaver er blant annet å:</h1>
-                                    <li>planlegge og iverksette den økonomiske politikken</li>
-                                    <li>samordne arbeidet med statsbudsjettet</li>
-                                    <li>sørge for at det offentlige får inn skatter og avgifter</li>
-                                    <li>overvåke og utarbeide regler for finansmarkedene</li>
-                                    <li>forvalte Statens pensjonsfond</li>
-                            <br />
-                            <p>
-                                Som nyansatt hos oss har du en reell rolle i departementet fra første stund, og du vil
-                                få
-                                mye ansvar. Hos oss vil du kunne anvende og utvikle
-                                kunnskapen fra skolebenken på dagsaktuelle problemstillinger. Du fungerer som en
-                                selvstendig faglig rådgiver fra dag en, og gir råd til politisk
-                                ledelse i saker på ditt fagområde. Samtidig får du tett oppfølging av dyktige ledere og
-                                kollegaer som hører på dine synspunkter. Ditt arbeid er
-                                viktig for departementet, og du vil få en variert arbeidshverdag med høyt tempo.
-                            </p>
-                            <br>
-                            <h2>Hvilke muligheter tilbyr vi studenter?</h2>
-                            <p>
-                                <i>Praktikantopphold:</i> Formålet med praktikantoppholdet er å gi deg en opplevelse av
-                                hvordan
-                                det er å jobbe som jurist og økonom i Finansdepartementet.
-                                <h2>For jurister: </h2>
+                            <div class="mvt-type-3">
+                                <h2 class="normal">Våre arbeidsoppgaver er blant annet å:</h2>
+                                <div class="mvt">
+                                    <ul>
+                                        <li>planlegge og iverksette den økonomiske politikken</li>
+                                        <li>samordne arbeidet med statsbudsjettet</li>
+                                        <li>sørge for at det offentlige får inn skatter og avgifter</li>
+                                        <li>overvåke og utarbeide regler for finansmarkedene</li>
+                                        <li>forvalte Statens pensjonsfond</li>
+                                    </ul>
+                                </div>
                                 <p>
-                                    Praktikantoppholdet tilbys nå i vår Skattelovavdeling, og er lønnet med fire til seks
+                                    Som nyansatt hos oss har du en reell rolle i departementet fra første stund, og du
+                                    vil
+                                    få
+                                    mye ansvar. Hos oss vil du kunne anvende og utvikle
+                                    kunnskapen fra skolebenken på dagsaktuelle problemstillinger. Du fungerer som en
+                                    selvstendig faglig rådgiver fra dag en, og gir råd til politisk
+                                    ledelse i saker på ditt fagområde. Samtidig får du tett oppfølging av dyktige ledere
+                                    og
+                                    kollegaer som hører på dine synspunkter. Ditt arbeid er
+                                    viktig for departementet, og du vil få en variert arbeidshverdag med høyt tempo.
+                                </p>
+                                <br>
+                                <p>
+                                    Hvilke muligheter tilbyr vi studenter?
+                                    <i>Praktikantopphold:</i> Formålet med praktikantoppholdet er å gi deg en opplevelse
+                                    av
+                                    hvordan
+                                    det er å jobbe som jurist og økonom i Finansdepartementet.
+                                </p>
+                                <h3>
+                                    <u>For jurister:</u>
+                                </h3>
+                                <p>
+                                    Praktikantoppholdet tilbys nå i vår Skattelovavdeling, og er lønnet med fire til
+                                    seks
                                     ukers
                                     varighet. Som praktikant hos oss får du anledning til å jobbe med saker i
                                     skjæringspunktet
-                                    mellom juss, fag og politikk og får være en del av et sterkt fagmiljø som gir råd til
+                                    mellom juss, fag og politikk og får være en del av et sterkt fagmiljø som gir råd
+                                    til
                                     vår
                                     politiske ledelse.
-                                    Vi ser etter deg som har fullført 3. studieår/avdeling og har gode eksamensresultater.
+                                    Vi ser etter deg som har fullført 3. studieår/avdeling og har gode
+                                    eksamensresultater.
                                     Les
                                     mer om stillingen her <a
-                                        href="https://www.jobbnorge.no/ledige-stillinger/stilling/191770/praktikantopphold-i-skattelovavdelingen-for-jusstudenter" target="_blank"
-                                        rel="noopener">
+                                        href="https://www.jobbnorge.no/ledige-stillinger/stilling/191770/praktikantopphold-i-skattelovavdelingen-for-jusstudenter"
+                                        target="_blank" rel="noopener">
                                         www.jobbnorge.no
                                     </a>
                                     <i>(søknadsfrist 1. okt. 2020)</i>
                                 </p>
-                                <h2>For økonomer: </h2>
+                                <h3>
+                                    <u>For økonomer:</u>
+                                </h3>
                                 <p>
-                                    Finansdepartementet tilbyr ett til tre lønnede engasjementer for økonomistudenter med
-                                    oppstart i begynnelsen av januar 2021 og med en varighet på 5-6 uker. Kortere opphold
+                                    Finansdepartementet tilbyr ett til tre lønnede engasjementer for økonomistudenter
+                                    med
+                                    oppstart i begynnelsen av januar 2021 og med en varighet på 5-6 uker. Kortere
+                                    opphold
                                     kan
                                     vurderes.
                                     Arbeidsoppgavene vil i hovedsak bestå av analyser og vurderinger av ulike faglige
                                     problemstillinger og understøtte avdelingene i deres arbeid. Engasjementet er en god
-                                    mulighet til å bli bedre kjent med Finansdepartementet. Samtidig får du anledning til å
+                                    mulighet til å bli bedre kjent med Finansdepartementet. Samtidig får du anledning
+                                    til å
                                     arbeide med utfordrende og samfunnsnyttige oppgaver i et sterkt fagmiljø, samt få et
-                                    innblikk i samspillet mellom økonomi og politikk. Du vil få tildelt en fadder under hele
+                                    innblikk i samspillet mellom økonomi og politikk. Du vil få tildelt en fadder under
+                                    hele
                                     oppholdet.
                                     Studentene vil bli tilknyttet en avdeling, henholdsvis Skatteøkonomisk avdeling,
                                     Finansavdelingen eller Utviklingsprogrammet.
                                     Les mer om stillingen her: <a
-                                        href="https://www.jobbnorge.no/ledige-stillinger/stilling/191809/studentengasjement-for-oekonomer" target="_blank"
-                                        rel="noopener">
+                                        href="https://www.jobbnorge.no/ledige-stillinger/stilling/191809/studentengasjement-for-oekonomer"
+                                        target="_blank" rel="noopener">
                                         www.jobbnorge.no
                                     </a>
                                     <i>(søknadsfrist 29. sept. 2020)</i>.
@@ -217,16 +235,22 @@
                                         rel="noopener">www.jobbifin.dep.no/</a>
                                     finner du mer informasjon om oss og om våre avdelinger.
                                 </p>
-                                
-                            <
+                            </div>
                         </ng-container>
                         <!--  -->
                         <!-- Accenture -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'accenture'">
-                            <h1>Hvilke studieretninger man eventuelt rekrutterer fra/til hvilke stillinger man rekrutterer:</h1>
-                            <ul>
-                                    <li>Rekrutterer helst studenter fra: IT, Ingeniørkunst, Økonomi.</li>
-                                    <li>Vil tilbyr mange forskjellige stillinger som f.eks: Utvikler (Frontend og/eller
+                            <div class="mvt">
+                                <ul>
+                                    <h2>
+                                        Hvilke studieretninger man eventuelt rekrutterer fra/til hvilke stillinger man
+                                        rekrutterer:
+                                    </h2>
+                                    <li>
+                                        Rekrutterer helst studenter fra: IT, Ingeniørkunst, Økonomi.
+                                    </li>
+                                    <li>
+                                        Vil tilbyr mange forskjellige stillinger som f.eks: Utvikler (Frontend og/eller
                                         Backend), Tekniske Arkitekter, Sikkerhets Arkitekter, UX Designere, Business
                                         Analyst, Project Manager
                                     </li>
@@ -236,10 +260,15 @@
                                             target="_blank"
                                             rel="noopener">https://www.accenture.com/no-en/careers/jobsearch</a>
                                     </li>
-                                    <li>NB!!! Pga. COVID-19 har muligheter blitt begrenset. Vi ønsker selvfølgelig å
-                                        informere studenter om muligheter men vil også understreke at mange opplegg
-                                        settes på vente, avlyses, eller flyttes.</li>
-                            </ul>
+                                    <li>
+                                        <b>NB.: </b>
+                                        <u>Pga. COVID-19 har muligheter blitt begrenset. Vi ønsker
+                                            selvfølgelig å informere studenter om muligheter men vil også understreke at
+                                            mange opplegg settes på vente, avlyses, eller flyttes.
+                                        </u>
+                                    </li>
+                                </ul>
+                            </div>
                         </ng-container>
                         <!--  -->
                         <!-- Forsvaret -->
@@ -300,68 +329,211 @@
                         <!--  -->
                         <!-- Atea -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'atea'">
-                            <h2>Atea-konsernet</h2>
-                            <p>Atea finnes i syv land i Norden og Baltikum, har mer enn 7300 medarbeidere, er markedsleder i Norden og Baltikum og er den tredje største IT-infrastrukturleverandøren i Europa. Konsernet hadde en omsetning på 34,7 mrd. NOK i 2018 og er notert på Oslo Børs.</p>
-                            <p><a href="http://www.atea.com/">Mer informasjon på www.atea.com</a></p>
-                            <h2>Atea Norge</h2>
-                            <p>I Norge er vi over 1600 medarbeidere fordelt på 24 kontorer fra Hammerfest i nord til Kristiansand i sør.</p>
-                            <p><a href="https://www.atea.no/om-atea/kontorer/">Her finner du ditt nærmeste Atea-kontor </a></p>
-                            <p>Atea har samlet IT-bransjens mest dedikerte hjerter og raskeste hjerner. Våre medarbeidere brenner for å være med å bygge Norge med IT. Sammen tar vi personlig ansvar, og vi står på for å gjøre Atea til The Place to Be.</p>
-                            <h2>Hvorfor jobbe i Atea?</h2>
-                            <p>Vi er stolte over å ha tilstedeværelse i hele Norge og at vi har kompetente medarbeidere innenfor alle områder av IT. Vi har spesialister som vet hva som kreves for å skape konkurransekraft innen eksportindustrien og oljesektoren, som vet hvordan IT kan bidra til å forbedre læringen i skolen, som vet hvordan lokale virksomheter kan vokse med IT, og spesialister som vil være med og skape helse og omsorg i verdensklasse. </p>
-                            <p>Vi driver målbevisst satsing på medarbeidernes utvikling, og en viktig oppgave for våre ledere er å skape bransjens beste arbeidsplass. Hos oss er det alltid nærhet til beslutningene og vi liker å utfordre gjeldende praksis og går ofte vår egen vei. Dette takket være inspirerte og målfokuserte medarbeidere.</p>
-                            <h2>Atea Graduate</h2>
-                            <p>Vi søker neste års Graduates i Atea! Brenner du for teknologi og har lyst til å forme fremtiden i Norge? Vi er på jakt etter deg som er nyutdannet innen IT, økonomi og design, og som er genuint opptatt av hva teknologi kan gjøre for mennesker. Neste års opptak starter i september 2020. <a href="https://www.atea.no/karriere/atea-graduate/">https://www.atea.no/karriere/atea-graduate/</a></p>
+                            <div class="mvt-type-3">
+                                <h3>Atea-konsernet</h3>
+                                <p>Atea finnes i syv land i Norden og Baltikum, har mer enn 7300 medarbeidere, er
+                                    markedsleder i Norden og Baltikum og er den tredje største
+                                    IT-infrastrukturleverandøren
+                                    i Europa. Konsernet hadde en omsetning på 34,7 mrd. NOK i 2018 og er notert på Oslo
+                                    Børs.
+                                </p>
+                                <p>
+                                    Mer informasjon på
+                                    <a href="http://www.atea.com/" target="_blank" rel="noopener">atea.com</a>.
+                                </p>
+                                <h3>Atea Norge</h3>
+                                <p>
+                                    I Norge er vi over 1600 medarbeidere fordelt på 24 kontorer fra Hammerfest i nord
+                                    til
+                                    Kristiansand i sør.
+                                </p>
+                                <p>
+                                    <i>
+                                        (Du finner du ditt nærmeste Atea-kontor <a
+                                            href="https://www.atea.no/om-atea/kontorer" target="_blank"
+                                            rel="noopener">her</a>)
+                                    </i>
+                                </p>
+                                <p>
+                                    Atea har samlet IT-bransjens mest dedikerte hjerter og raskeste hjerner. Våre
+                                    medarbeidere brenner for å være med å bygge Norge med IT. Sammen tar vi personlig
+                                    ansvar, og vi står på for å gjøre Atea til The Place to Be.
+                                </p>
+                                <h2 class="normal">Hvorfor jobbe i Atea?</h2>
+                                <p>
+                                    Vi er stolte over å ha tilstedeværelse i hele Norge og at vi har kompetente
+                                    medarbeidere
+                                    innenfor alle områder av IT. Vi har spesialister som vet hva som kreves for å skape
+                                    konkurransekraft innen eksportindustrien og oljesektoren, som vet hvordan IT kan
+                                    bidra
+                                    til å forbedre læringen i skolen, som vet hvordan lokale virksomheter kan vokse med
+                                    IT,
+                                    og spesialister som vil være med og skape helse og omsorg i verdensklasse.
+                                </p>
+                                <p>
+                                    Vi driver målbevisst satsing på medarbeidernes utvikling, og en viktig oppgave for
+                                    våre
+                                    ledere er å skape bransjens beste arbeidsplass. Hos oss er det alltid nærhet til
+                                    beslutningene og vi liker å utfordre gjeldende praksis og går ofte vår egen vei.
+                                    Dette
+                                    takket være inspirerte og målfokuserte medarbeidere.
+                                </p>
+                                <h3>Atea Graduate</h3>
+                                <p>
+                                    Vi søker neste års Graduates i Atea! Brenner du for teknologi og har lyst til å
+                                    forme
+                                    fremtiden i Norge? Vi er på jakt etter deg som er nyutdannet innen IT, økonomi og
+                                    design, og som er genuint opptatt av hva teknologi kan gjøre for mennesker. Neste
+                                    års
+                                    opptak starter i september 2020. <a
+                                        href="https://www.atea.no/karriere/atea-graduate/" target="_blank"
+                                        rel="noopener">https://www.atea.no/karriere/atea-graduate</a>
+                                </p>
+                            </div>
                         </ng-container>
                         <!--  -->
                         <!-- Bouvet Norge -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'bouvet'">
-                            <p>Da bør du snakke med oss!</p>
-                            <h2>Bouvet består av over 1550 kloke hoder som bistår bedrifter og samfunnsaktører i alle bransjer.</h2>
-                            <p>Sammen leverer vi løsninger som bidrar til stabil energiforsyning, en mer effektiv offentlig sektor, sikrere banker, rikere medietilbud, bedre HMS i oljesektoren, mindre administrasjon i transportnæringen og bedre kundeopplevelser i varehandelen. Og mye mer.</p>
-                            <p>I Bouvet venter fagutfordringene på deg, sammen med kunder som tør gi deg ansvar, og kollegaer som ønsker å se deg på ditt beste. Det betyr at du får stor frihet i hverdagen, at du kan være deg selv – og at du blir utfordret og satt krav til.</p>
-                            <p>Det betyr også at du kan utfordre og sette krav tilbake, for alt handler om gode individer i samspill. Hos oss vil du jobbe og utvikle deg i et uformelt og høykompetent miljø med stort fokus på kompetansedeling – og på fellesskapet vi faktisk utgjør. Vi jobber sammen, vi leverer sammen, og vi lykkes sammen. Vi håper du vil lykkes, sammen med oss.</p>
+                            <p>
+                                - Da bør du snakke med oss.
+                            </p>
+                            <div class="mvt-type-3">
+                                <h3>
+                                    Bouvet består av over 1550 kloke hoder som bistår bedrifter og samfunnsaktører i
+                                    alle bransjer.
+                                </h3>
+                                <p>
+                                    Sammen leverer vi løsninger som bidrar til stabil energiforsyning, en mer effektiv
+                                    offentlig sektor, sikrere banker, rikere medietilbud, bedre HMS i oljesektoren,
+                                    mindre administrasjon i transportnæringen og bedre kundeopplevelser i varehandelen.
+                                    Og mye mer.
+                                </p>
+                                <p>
+                                    I Bouvet venter fagutfordringene på deg, sammen med kunder som tør gi deg ansvar, og
+                                    kollegaer som ønsker å se deg på ditt beste. Det betyr at du får stor frihet i
+                                    hverdagen, at du kan være deg selv – og at du blir utfordret og satt krav til.
+                                </p>
+                                <p>
+                                    Det betyr også at du kan utfordre og sette krav tilbake, for alt handler om gode
+                                    individer i samspill. Hos oss vil du jobbe og utvikle deg i et uformelt og
+                                    høykompetent miljø med stort fokus på kompetansedeling – og på fellesskapet vi
+                                    faktisk utgjør. Vi jobber sammen, vi leverer sammen, og vi lykkes sammen. Vi håper
+                                    du vil lykkes, sammen med oss.
+                                </p>
+                            </div>
                         </ng-container>
                         <!--  -->
                         <!-- Capgemini -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'capgemini'">
-                            <h1>Hvilke kandidater vi ser etter: <h3>Vi rekrutterer fra tekniske linjer som feks informatikk, maskinlæring/kunstig intelligens/cloud/programmering osv.</h3>
-                            </h1>
-                            <h1> Graduate:</h1>
-                            <div class="midtstilt-venstre-tekst">
-                                <ul>
-                                    <a href="https://www.capgemini.com/no-no/careers/job-search/?search_term=graduate">Her kan du søke om graduate stillinger</a>, søknadsfrist 12.oktober.
-                                </ul>
+                            <div class="mvt-type-3">
+                                <h2 class="normal">Hvilke kandidater vi ser etter:</h2>
+                                <h3>
+                                    Vi rekrutterer fra tekniske linjer som f.eks. informatikk, maskinlæring/kunstig
+                                    intelligens/cloud/programmering osv.
+                                </h3>
+
+                                <h2>Graduate:</h2>
+                                <h3 class="box-1">
+                                    <a href="https://www.capgemini.com/no-no/careers/job-search/?search_term=graduate"
+                                        target="_blank"
+                                        rel="noopener">https://www.capgemini.com/no-no/careers/job-search/?search_term=graduate</a>,
+                                    søknadsfrist 12.oktober.
+                                </h3>
+
+                                <p>
+                                    <i>“IgnITe er de unge talentene som gir energi til våre kunder med nye ideer og
+                                        engasjement. Vi er ivrige etter å lære og vokse i alle aspekter av vår karriere.
+                                        Vi
+                                        er fremtiden til Capgemini!”</i> - IgnITer 2019
+                                </p>
+                                <p>
+                                    IgnITe er et skreddersydd utviklingsløp for nyutdannede. Her vil du få en kick-start
+                                    på
+                                    karrieren med god oppfølging, og mulighet til å delta på en rekke relevante kurs og
+                                    ta
+                                    sertifiseringer. Graduate-programmet løper parallelt med prosjekt ute hos kunde og
+                                    gir
+                                    deltakerne faglig tyngde og en bred forståelse av kultur, arbeidsmetodikk, rollen
+                                    som
+                                    konsulent og karriereveier i Capgemini.
+                                </p>
+                                <p>
+                                    Capgemini er et av de største konsulentselskapene i Norge og Europa. I Norge har vi
+                                    kontorer i Oslo, Stavanger, Bergen, Trondheim og Fredrikstad. Capgemini er i stadig
+                                    vekst og jobber med de nyeste teknologiene på markedet.
+                                </p>
+                                <div class="mvt">
+                                    Her søker vi kandidater som er ferdig utdannet våren 2021 til følgende områder:
+                                    <ul>
+                                        <li>Graduate Software development (Bergen, Oslo, Stavanger, Fredrikstad og
+                                            Trondheim)
+                                        </li>
+                                        <li>Graduate Insights & Data (Bergen og Stavanger)</li>
+                                        <li>Graduate Cloud (Bergen)</li>
+                                    </ul>
+                                </div>
+
+                                <h2>Summer internship:</h2>
+                                <h3 class="box-1">
+                                    <a href="https://www.capgemini.com/no-no/careers/job-search/?search_term=summer"
+                                        target="_blank"
+                                        rel="noopener">https://www.capgemini.com/no-no/careers/job-search/?search_term=summer</a>,
+                                    søknadsfrist 15.oktober
+                                </h3>
+
+                                <div class="mvt">
+                                    Her søker vi kandidater som går 2-4 studieår til følgende områder:
+                                    <ul>
+                                        <li>Summer internship Software development (Bergen, Trondheim, Fredrikstad,
+                                            Oslo)
+                                        </li>
+                                        <li>Summer Internship Insights & Data 2021</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <p><i>“IgnITe er de unge talentene som gir energi til våre kunder med nye ideer og engasjement. Vi er ivrige etter å lære og vokse i alle aspekter av vår karriere. Vi er fremtiden til Capgemini!”</i> - IgnITer 2019</p>
-                            <p>IgnITe er et skreddersydd utviklingsløp for nyutdannede. Her vil du få en kick-start på karrieren med god oppfølging, og mulighet til å delta på en rekke relevante kurs og ta sertifiseringer. Graduate-programmet løper parallelt med prosjekt ute hos kunde og gir deltakerne faglig tyngde og en bred forståelse av kultur, arbeidsmetodikk, rollen som konsulent og karriereveier i Capgemini.</p>
-                            <p>Capgemini er et av de største konsulentselskapene i Norge og Europa. I Norge har vi kontorer i Oslo, Stavanger, Bergen, Trondheim og Fredrikstad. Capgemini er i stadig vekst og jobber med de nyeste teknologiene på markedet.</p>
-                            <p>Her søker vi kandidater som er ferdig utdannet våren 2021 til følgende områder:</p>
-                            <li>Graduate Software development (Bergen, Oslo, Stavanger, Fredrikstad og Trondheim)</li>
-                            <li>Graduate Insights & Data (Bergen og Stavanger)</li>
-                            <li>Graduate Cloud (Bergen)</li>
-                            <br />
-                            <h1>Summer internship: </h1>
-                            <div class="midtstilt-venstre-tekst">
-                                <ul>
-                                    <a href="https://www.capgemini.com/no-no/careers/job-search/?search_term=summer">Her kan du søke om summer internship stillinger</a>, søknadsfrist 15.oktober.
-                                </ul>
-                            </div>
-                            <p>Her søker vi kandidater som går 2-4 studieår til følgende områder: </p>
-                            <li>Summer internship Software development (Bergen, Trondheim, Fredrikstad, Oslo)</li>
-                            <li>Summer Internship Insights & Data 2021</li>
                         </ng-container>
                         <!--  -->
                         <!-- ConocoPhilips -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'conocophilips'">
-                            <p>Selskapet legger stor vekt på bruk av innovativ teknologi, derunder digitalisering, og vi trenger nye medarbeidere som «tenker digitalt» og er dyktige både mht. utvelgelse, bruk og support av digitale løsninger.</p>
-                            <p>Våre <b>SPIRIT</b> Verdier - sikkerhet, mennesker, integritet, ansvar, innovasjon og teamarbeid posisjonerer oss for å levere gode resultater i en dynamisk virksomhet - men ikke for enhver pris. Vi tror at det ikke bare er hva vi gjør, men hvordan vi gjør det som skiller oss ut. Vi streber etter å gjøre en betydelig forskjell i lokalsamfunnene der vi bor og opererer. Vi ønsker å skape et inkluderende miljø som verdsetter alles stemmer og meninger. Sammen, med de ulike bakgrunnene, erfaringene, ideene og perspektivene til våre ansatte driver vi vår suksess.</p>
-                            <h2>Hvilke studieretninger man eventuelt rekrutterer fra/til hvilke stillinger man rekrutterer:</h2>
-                            <p>IT, Geologi, Geofysikk, Drilling, Supply Chain og Finans</p>
-                            <h2>Hvilke muligheter det finnes for studenter i den gitte bedriften/organisasjonen </h2>
-                            <p>Program for nyutdannede:<br />Hvert år ansetter ConocoPhillips nyutdannede med fullført mastergrad. Selskapet er en teknologidrevet arbeidsplass. Vi tilbyr stillinger innen geo- og ingeniørfag, samt for eksempel IT, økonomi, kontraktsadministrasjon og HMS. Nyutdannede tilbys fast ansettelse som starter som et ett- eller toårig program, der hvert enkelt får en individuelt tilpasset plan, med profesjonell opplæring og rotasjon mellom forskjellige avdelinger og fagområder.</p>
-                            <h2>ConocoPhillips tilbyr også sommerjobber og mulighet for å skrive masteroppgave.</h2>
-                            <div class="midtstilt-venstre-tekst">
+                            <div class="mvt-type-3">
+                                <p>
+                                    Selskapet legger stor vekt på bruk av innovativ teknologi, derunder digitalisering,
+                                    og vi trenger nye medarbeidere som «tenker digitalt» og er dyktige både mht.
+                                    utvelgelse, bruk og support av digitale løsninger.
+                                </p>
+                                <p>
+                                    Våre <b>SPIRIT</b> Verdier - sikkerhet, mennesker, integritet, ansvar, innovasjon og
+                                    teamarbeid posisjonerer oss for å levere gode resultater i en dynamisk virksomhet -
+                                    men ikke for enhver pris. Vi tror at det ikke bare er hva vi gjør, men hvordan vi
+                                    gjør det som skiller oss ut. Vi streber etter å gjøre en betydelig forskjell i
+                                    lokalsamfunnene der vi bor og opererer. Vi ønsker å skape et inkluderende miljø som
+                                    verdsetter alles stemmer og meninger. Sammen, med de ulike bakgrunnene, erfaringene,
+                                    ideene og perspektivene til våre ansatte driver vi vår suksess.
+                                </p>
+                                <h3>
+                                    - Hvilke studieretninger man eventuelt rekrutterer fra/til hvilke stillinger man
+                                    rekrutterer:
+                                </h3>
+                                <div class="box-2">
+                                    <span style="font-size:1.1em;">
+                                        IT, Geologi, Geofysikk, Drilling, Supply Chain og Finans
+                                    </span>
+                                </div>
+                                <h3>
+                                    - Hvilke muligheter det finnes for studenter i den gitte bedriften/organisasjonen?
+                                </h3>
+                                <h2 class="normal">Program for nyutdannede</h2>
+                                <p>
+                                    Hvert år ansetter ConocoPhillips nyutdannede med
+                                    fullført mastergrad. Selskapet er en teknologidrevet arbeidsplass. Vi tilbyr
+                                    stillinger innen geo- og ingeniørfag, samt for eksempel IT, økonomi,
+                                    kontraktsadministrasjon og HMS. Nyutdannede tilbys fast ansettelse som starter som
+                                    et ett- eller toårig program, der hvert enkelt får en individuelt tilpasset plan,
+                                    med profesjonell opplæring og rotasjon mellom forskjellige avdelinger og fagområder.
+                                </p>
+                                <p>ConocoPhillips tilbyr også sommerjobber og mulighet for å skrive masteroppgave.</p>
+                            </div>
+                            <div class="mvt-type-2">
                                 <ul>
                                     <h2>Linker</h2>
                                     <li>
@@ -384,35 +556,48 @@
                         <!--  -->
                         <!-- Fremtind Forsikring -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'fremtind'">
-                        <h1>Vil du være først kan du aldri stå stille.</h1>
-                        <p>Jobben vi gjør er et resultat av hvem vi er. Derfor er Fremtind en dynamisk blanding av ulike
-                            fagpersoner og nytenkere som ønsker å utvikle hverandre, markedet og samfunnet vi bor i.
-                            Når vi sammen skaper et lærende tech-miljø der vi setter spørsmålstegn ved etablerte
-                            sannheter og løsninger, får vi hele tiden nye perspektiver. I jakten på svar bruker vi også
-                            deep-data, AI og annen avansert teknologi for å pushe grensene for det mulige.
-                            </p>
-                        <h2>Hvem ser vi etter?</h2>
-                        <p>Vi ser etter deg som ønsker å sette studiene ut i praksis og oppleve hvordan det er å jobbe i
-                            et av Norges fremste teknologimiljøer. Du studerer interaksjonsdesign, datateknikk,
-                            informatikk, matematikk eller tilsvarende på 3. eller 4. året. Du liker å programmere i Java,
-                            Python, JavaScript el. eller å jobbe brukersentrert med interaksjonsdesign. Liker du begge
-                            deler eller har andre interesser som maskinlæring, kunstig intelligens, wireframes og
-                            prototyping, teller det også positivt.
-                            </p>
-                        <h2>Hva kan vi tilby deg?</h2>
-                        <p>Som sommerstudent hos oss vil du være med på spennende initiativer der du får brukt
-                            kompetansen din. Du vil jobbe i et tverrfaglig team (teamleder, systemeier, designer,
-                            utviklere og testere) som kan levere på hele verdikjeden. Hvert team har selv ansvar for sin
-                            systemportefølje hvor de bestemmer oppgaver, arbeidsmetodikk og teknologi. Vårt summer
-                            internship varer i syv uker f.o.m. 14. juni t.o.m. 2. august. De første dagene vil du få en
-                            introduksjon til Fremtind, våre produkter og systemer, samt arbeidsmetodikk og teknologi.
-                            Deretter vil du gå inn i et av våre kryssfunksjonelle utviklingsteam.
-                            </p>
-                        <p>I løpet av sommeren vil vi ha flere faglige og sosiale samlinger hvor du har mulighet til å bli
-                            bedre kjent med oss og de andre sommerstudentene. Vi har arbeidsplass i nyoppussede og
-                            moderne lokaler midt i Oslo sentrum, med hyggelig kaffebar og treningsmuligheter etter jobb.
-                            </p>
-                        <p>Du finner søknaden for Summer Internship 2021 her: <a href="https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1889&amp;ProjectId=144150&amp;DepartmentId=20575&amp;MediaId=4630&amp;SkipAdvertisement=False">candidate.hr-manager.net/Application</a></p>
+                            <div class="mvt-type-3">
+                                <h3>Vil du være først kan du aldri stå stille.</h3>
+                                <p>
+                                    Jobben vi gjør er et resultat av hvem vi er. Derfor er Fremtind en dynamisk blanding
+                                    av ulike fagpersoner og nytenkere som ønsker å utvikle hverandre, markedet og
+                                    samfunnet vi bor i. Når vi sammen skaper et lærende tech-miljø der vi setter
+                                    spørsmålstegn ved etablerte sannheter og løsninger, får vi hele tiden nye
+                                    perspektiver. I jakten på svar bruker vi også deep-data, AI og annen avansert
+                                    teknologi for å pushe grensene for det mulige.
+                                </p>
+                                <h3>Hvem ser vi etter?</h3>
+                                <p>
+                                    Vi ser etter deg som ønsker å sette studiene ut i praksis og oppleve hvordan det er
+                                    å jobbe i et av Norges fremste teknologimiljøer. Du studerer interaksjonsdesign,
+                                    datateknikk, informatikk, matematikk eller tilsvarende på 3. eller 4. året. Du liker
+                                    å programmere i Java, Python, JavaScript el. eller å jobbe brukersentrert med
+                                    interaksjonsdesign. Liker du begge deler eller har andre interesser som
+                                    maskinlæring, kunstig intelligens, wireframes og prototyping, teller det også
+                                    positivt.
+                                </p>
+                                <h3>Hva kan vi tilby deg?</h3>
+                                <p>
+                                    Som sommerstudent hos oss vil du være med på spennende initiativer der du får brukt
+                                    kompetansen din. Du vil jobbe i et tverrfaglig team (teamleder, systemeier,
+                                    designer, utviklere og testere) som kan levere på hele verdikjeden. Hvert team har
+                                    selv ansvar for sin systemportefølje hvor de bestemmer oppgaver, arbeidsmetodikk og
+                                    teknologi. Vårt summer
+                                    internship varer i syv uker f.o.m. 14. juni t.o.m. 2. august. De første dagene vil
+                                    du få en introduksjon til Fremtind, våre produkter og systemer, samt arbeidsmetodikk
+                                    og teknologi. Deretter vil du gå inn i et av våre kryssfunksjonelle utviklingsteam.
+                                </p>
+                                <p>
+                                    I løpet av sommeren vil vi ha flere faglige og sosiale samlinger hvor du har
+                                    mulighet til å bli bedre kjent med oss og de andre sommerstudentene. Vi har
+                                    arbeidsplass i nyoppussede og moderne lokaler midt i Oslo sentrum, med hyggelig
+                                    kaffebar og treningsmuligheter etter jobb.
+                                </p>
+                                <p>Du finner søknaden for Summer Internship 2021 her: <a
+                                        href="https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1889&amp;ProjectId=144150&amp;DepartmentId=20575&amp;MediaId=4630&amp;SkipAdvertisement=False"
+                                        target="_blank" rel="noopener">Summer Internship 2021</a>
+                                </p>
+                            </div>
                         </ng-container>
                         <!--  -->
                         <!-- Jussformidlingen -->
@@ -567,120 +752,177 @@
                         <!--  -->
                         <!-- OBOS -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'obos'">
-                            <h2>Sommertraineeprogram:</h2>
-                            <p>Programmet er for studenter fra ulike studieretninger. Her får man relevante arbeidsoppgaver og verdifull erfaring. Man får jobbe sammen med faglig sterke og trivelige kollegaer og ha det gøy sammen med de andre traineene. (Vi har også faste stillinger, men her må man følge med på hjemmesiden underveis da alle stillinger lyses ut der).</p>
-                                    <p>Sommertraineesiden vår: <a href="https://nye.obos.no/dette-er-obos/jobb-i-obos/sommertrainee-i-obos/">https://nye.obos.no/dette-er-obos/jobb-i-obos/sommertrainee-i-obos/</a></p>
-                                    <p>Karrieresiden vår: <a href="https://nye.obos.no/dette-er-obos/jobb-i-obos">https://nye.obos.no/dette-er-obos/jobb-i-obos</a></p>
-                                    <h2>Til sommertraineeprogrammet vårt er vi på jakt etter studenter som har fullført minst 2 år av høyere utdanning (bachelor/mastergrad) innenfor følgende fagområder:</h2>
-                                    <li>Ingeniørfag innen bygg/anlegg/energi/miljø</li>
-                                    <li>Eiendomsfag/-utvikling</li>
-                                    <li>Eiendomsmegling</li>
-                                    <li>IT</li>
-                                    <li>Økonomi/finans/regnskap</li>
-                                    <li>Marked/kommunikasjon</li>
-                                    <li>HR/organisasjonsutvikling</li>
-                                    <li>Rettsvitenskap/jus</li>
-                                    <br />
-                            <p>Her kan du søke på sommertraineeprogrammet: <a href="https://100200.webcruiter.no/Main/Recruit/Public/4277708757?link_source_id=0">https://100200.webcruiter.no/Main/Recruit/Public/4277708757?link_source_id=0</a></p>
+                            <div class="mvt-type-3">
+                                <h2 class="normal">Sommertraineeprogram:</h2>
+                                <p>
+                                    Programmet er for studenter fra ulike studieretninger. Her får man relevante
+                                    arbeidsoppgaver og verdifull erfaring. Man får jobbe sammen med faglig sterke og
+                                    trivelige kollegaer og ha det gøy sammen med de andre traineene. (Vi har også faste
+                                    stillinger, men her må man følge med på hjemmesiden underveis da alle stillinger
+                                    lyses ut der).
+                                </p>
+                                <div class="mvt">
+                                    <ul>
+                                        <h4>- Sidene våre</h4>
+                                        <li>
+                                            Sommertrainee:
+                                            <a href="https://nye.obos.no/dette-er-obos/jobb-i-obos/sommertrainee-i-obos/"
+                                                target="_blank"
+                                                rel="noopener">https://nye.obos.no/dette-er-obos/jobb-i-obos/sommertrainee-i-obos</a>
+                                        </li>
+                                        <li>
+                                            Karriere:
+                                            <a href="https://nye.obos.no/dette-er-obos/jobb-i-obos" target="_blank"
+                                                rel="noopener">https://nye.obos.no/dette-er-obos/jobb-i-obos</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <br>
+                                <b>
+                                    Til sommertraineeprogrammet vårt er vi på jakt etter studenter som har
+                                    fullført minst 2 år av høyere utdanning (bachelor/mastergrad) innenfor
+                                    følgende fagområder:
+                                </b>
+                                <div class="mvt-type-2">
+                                    <ul>
+                                        <li>Ingeniørfag innen bygg/anlegg/energi/miljø</li>
+                                        <li>Eiendomsfag/-utvikling</li>
+                                        <li>Eiendomsmegling</li>
+                                        <li>IT</li>
+                                        <li>Økonomi/finans/regnskap</li>
+                                        <li>Marked/kommunikasjon</li>
+                                        <li>HR/organisasjonsutvikling</li>
+                                        <li>Rettsvitenskap/jus</li>
+                                    </ul>
+                                </div>
+                                <p>
+                                    Her kan du søke på sommertrainee-programmet: <a
+                                        href="https://100200.webcruiter.no/Main/Recruit/Public/4277708757?link_source_id=0"
+                                        target="_blank" rel="noopener">Søk som Sommertrainee</a>.
+                                </p>
+                            </div>
                         </ng-container>
                         <!--  -->
                         <!-- Schibsted -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'schibsted'">
-                            <h1> Hvem er vi?</h1>
-                            <p>Schibsted er en familie av digitale forbrukermerker med fokus på media, markedsplasser og smarte digitale tjenester.
-                                 Våre varemerker innen media - som VG, Aftenposten, Aftonbladet, og SvD - er kjente for sin troverdighet, 
-                                 eksepsjonelle journalistikk og redaksjonelle uavhengighet. Våre ledende markedsplasser Finn, Blocket og
-                                  Tori kobler millioner av brukere hver måned. Digitale tjenester - som Lendo, Prisjakt og Compricer - 
-                                  hjelper konsumenter til å ta bedre valg. Schibsted sitt oppdrag er å empower people in their daily life, 
-                                  ved å bruke teknikk og data for å skape innovative produkter og fantastiske brukeropplevelser - og hjelpe 
-                                  til med å bygge en bærekraftig fremtid. </p>
-                            <h1>Muligheter for studenter i Schibsted</h1>
-                            <div class="midtstilt-venstre-tekst-type-2">
-                                <ul>
-                                    <li>
-                                        Sommerjobber publiseres desember/januar - les mer her: <a
-                                            href="https://schibsted.com/career/for-students/internships-theses/" target="_blank"
-                                            rel="noopener">
-                                            https://schibsted.com/career/for-students/internships-theses
-                                        </a>
-                                    </li>
-                                    <li>
-                                        Schibsted Connect har søknadsfrist 30. september
-                                        og i utgangspunktet skal
-                                        studentene
-                                        være plassert i Oslo.
-                                    </li>
-                                    <li>
-                                        Vi ansetter studenter til å være lærere under Kids Coding Camp (normalt
-                                        vinterferien
-                                        og sommerferien).
-                                    </li>
-                                    <li>
-                                        Link til vår podcast Schibsted Talks: <a
-                                            href="https://open.spotify.com/show/270CtGkMTTYZQZZD8BtjmX" target="_blank"
-                                            rel="noopener">
-                                            https://open.spotify.com/show/...
-                                        </a>
-                                    </li>
-                                    <li>
-                                        Her kan dere bli bedre kjent med Schibsted: <a
-                                            href=" https://schibsted.com/about/#BrandMovie" target="_blank"
-                                            rel="noopener">
-                                            https://schibsted.com/about/#BrandMovie
-                                        </a>
-                                    </li>
-                                    <li>
-                                        Link til vår studentside <a href="https://schibsted.com/career/for-students/" target="_blank"
-                                        rel="noopener">
-                                        https://schibsted.com/career/for-students/
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="mvt-type-3">
+                                <h2 class="normal">Hvem er vi?</h2>
+                                <p>
+                                    Schibsted er en familie av digitale forbrukermerker med fokus på media,
+                                    markedsplasser og
+                                    smarte digitale tjenester. Våre varemerker innen media - som VG, Aftenposten,
+                                    Aftonbladet, og SvD - er kjente for sin troverdighet, eksepsjonelle journalistikk og
+                                    redaksjonelle uavhengighet. Våre ledende markedsplasser Finn, Blocket og Tori kobler
+                                    millioner av brukere hver måned. Digitale tjenester - som Lendo, Prisjakt og
+                                    Compricer -
+                                    hjelper konsumenter til å ta bedre valg. Schibsted sitt oppdrag er å empower people
+                                    in
+                                    their daily life, ved å bruke teknikk og data for å skape innovative produkter og
+                                    fantastiske brukeropplevelser - og hjelpe til med å bygge en bærekraftig fremtid.
+                                </p>
+                                <div class="mvt">
+                                    <ul>
+                                        <h2>Muligheter for studenter i Schibsted:</h2>
+                                        <li>Link til vår studentside: <a
+                                                href="https://schibsted.com/career/for-students/" target="_blank"
+                                                rel="noopener">https://schibsted.com/career/for-students</a>
+                                        </li>
+                                        <li>Sommerjobber publiseres desember/januar - les mer her: <a
+                                                href="https://schibsted.com/career/for-students/internships-theses/"
+                                                target="_blank"
+                                                rel="noopener">https://schibsted.com/career/for-students/internships-theses</a>
+                                        </li>
+                                        <li>Schibsted Connect har søknadsfrist 30. september og i utgangspunktet skal
+                                            studentene
+                                            være plassert i Oslo. <a
+                                                href="https://schibsted.com/career/for-students/buddy-program/"
+                                                target="_blank"
+                                                rel="noopener">https://schibsted.com/career/for-students/buddy-program</a>
+                                        </li>
+                                        <li>Vi ansetter studenter til å være lærere under Kids Coding Camp (normalt
+                                            vinterferien
+                                            og
+                                            sommerferien). <a
+                                                href="https://schibsted.com/career/for-students/kids-coding-camp/"
+                                                target="_blank"
+                                                rel="noopener">https://schibsted.com/career/for-students/kids-coding-camp</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mvt-type-2">
+                                    <ul>
+                                        <h3>Lær mer om Schibsted:</h3>
+                                        <li>
+                                            Link til vår podcast Schibsted Talks: <a
+                                                href="https://open.spotify.com/show/20CtGkMTTYZQZZD8BtjmX"
+                                                target="_blank" rel="noopener">https://open.spotify.com/show/ ...</a>
+                                        </li>
+                                        <li>
+                                            Her kan dere bli bedre kjent med Schibsted: <a
+                                                href="https://schibsted.com/about/#BrandMovie" target="_blank"
+                                                rel="noopener">https://schibsted.com/about/#BrandMovie</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </ng-container>
                         <!--  -->
                         <!-- Deloitte -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'deloitte'">
-
-                            <h1>Om rekruttering</h1>
-                            <div class="midtstilt-venstre-tekst">
-                                    <h2>Tax & Legal</h2>
+                            <div class="mvt-type-3">
+                                <h2 class="normal">Om rekruttering</h2>
+                            </div>
+                            <div class="mvt">
+                                <ul>
+                                    <h3>Tax & Legal</h3>
                                     <li>Deloitte Advokatfirma er et av Norges største forretningsjuridiske
                                         advokatfirmaer, med nesten 200 profesjonelle medarbeidere med spisskompetanse
                                         innen transaksjoner, skatt og avgift samt forretningsjus. Advokatfirmaet er
-                                        organisert i faggrupper og tverrfaglige bransjegrupper.</li>
-                                    <h2>Consulting</h2>
+                                        organisert i faggrupper og tverrfaglige bransjegrupper.
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <h3>Consulting</h3>
                                     <li>I Deloitte Consulting tilbyr vi rådgivningstjenester innenfor Strategy,
                                         Analytics and M&A, Customer & Marketing, Business Operations, Human Capital og
                                         Enterprise Technology & Performance. Vi arbeider med alt fra strategi og
                                         forretningsutvikling til teknologi og forvaltning av IT som skaper verdi for
                                         våre kunder. Vi bistår også våre klienter med å fremme produktivitet, lønnsomhet
-
-                                        og presentasjoner gjennom utvikling av menneskelige ressurser.</li>
-                                    <h2>Audit & Assurance</h2>
+                                        og presentasjoner gjennom utvikling av menneskelige ressurser.
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <h3>Audit & Assurance</h3>
                                     <li>Audit & Assurance er vårt største forretningsområde, med rundt 600 dyktige
                                         medarbeidere i Norge. Vi utfører revisjon for en rekke klienter av varierende
                                         størrelse og i ulike bransjer og sektorer. Vi kan vi bidra med rådgivning innen
                                         områder som norske og internasjonale regnskapsstandarder (IFRS), Statlige
                                         regnskapsstandarder (SRS), samt en rekke andre fagområder med tilknytning til
                                         regnskaps- og økonomifunksjonen. Som revisor i Deloitte får du en utfordrende
-
-                                        jobb med gode utviklingsmuligheter og stor innflytelse på din hverdag.</li>
-                                    <h2>Financial Advisory</h2>
+                                        jobb med gode utviklingsmuligheter og stor innflytelse på din hverdag.
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <h3>Financial Advisory</h3>
                                     <li>Vi bistår private selskaper og den offentlige sektoren ved transaksjoner,
                                         tvister, gjennomføring av større investeringer og omstruktureringer. Vårt
                                         tjenestespekter dekker Corporate Finance, Transaction Services/Due Diligence,
                                         Valuation/Financial Analysis & Modeling, Infrastructure/Capital Projects samt
-
-                                        Capital Restructuring.</li>
-                                    <h2>Business Process Solutions</h2>
+                                        Capital Restructuring.
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <h3>Business Process Solutions</h3>
                                     <li>I Business Process Solutions bistår vi våre klienter med forbedring og utvikling
                                         av økonomifunksjonen gjennom å levere interimløsninger og prosjektstøtte. Som
                                         konsulent i Business Process Solutions (BPS) får du muligheten til å jobbe med
                                         alle typer virksomheter og bransjer, hvor du vil tre inn i en rolle som
-
-                                        eksempelvis regnskapsansvarlig, controller eller CFO i en overgangsperiode.</li>
-                                    <h2>Risk Advisory og Cyber</h2>
+                                        eksempelvis regnskapsansvarlig, controller eller CFO i en overgangsperiode.
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <h3>Risk Advisory og Cyber</h3>
                                     <li>Vi tilbyr rådgivningstjenester innenfor styring og kontroll, samfunnsansvar,
                                         risikostyring, antikorrupsjon og informasjonssikkerhet til alle typer
                                         virksomheter innenfor offentlig og privat sektor. Dette omfatter blant annet
@@ -690,17 +932,21 @@
                                     <li>Deloitte er kontinuerlig på utkikk etter nye talenter og ansetter hvert år mange
                                         nyutdannede til våre forretningsområder.</li>
                                     <li>Det finnes også flere muligheter underveis i studiet både gjennom winter og
-                                        summer internships eller gjennom deltakelse på våre mange studenttilbud.</li>
-                                    <h2>Internship i Deloitte i 2021?</h2>
+                                        summer internships eller gjennom deltakelse på våre mange studenttilbud.
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <h3>Internship i Deloitte i 2021?</h3>
                                     <li>Vil du ha faglige utfordringer, lære av erfarne kolleger og utvikle deg som
                                         person? Vil du finne ut hvordan det egentlig er å jobbe som konsulent eller
                                         revisor? Ved Oslo-kontoret tilbyr vi Internship både i januar og på sommeren.
-                                        Søknadsfrist er 1. oktober. Les mer og søk her:
-                                        <a
-                                            href="https://deloitte.recman.no/job.php?job_id=162309" target="_blank"
+                                        <u class="c-u">Søknadsfrist er 1. oktober</u>. Les mer og søk her:
+                                        <a href="https://deloitte.recman.no/job.php?job_id=162309" target="_blank"
                                             rel="noopener">https://deloitte.recman.no/job</a>
                                     </li>
-                                    <h2>Hva kan vi tilby:</h2>
+                                </ul>
+                                <ul>
+                                    <h3>Hva kan vi tilby:</h3>
                                     <li>I Deloitte har vi et arbeidsmiljø som bygger på tillit og samarbeid. Vi er
                                         opptatt av å ha dyktige medarbeidere som trives, og har et variert tilbud til
                                         ansatte både innen kultur, idrett og sosiale aktiviteter. De første ukene hos
@@ -711,26 +957,27 @@
                                         job». I Deloitte vil du få mulighet til å jobbe på prosjekter innenfor mange
                                         ulike bransjer, tilpasset dine kvalifikasjoner og interesser. Å starte en
                                         karriere i Deloitte vil, uavhengig av fremtidige karrierevalg, åpne en verden av
-                                        muligheter for deg</li>
+                                        muligheter for deg
+                                    </li>
+                                </ul>
                             </div>
                         </ng-container>
                         <!--  -->
                         <!-- DNB -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'dnb'">
-                            <h1>Hvilke studieretninger dere normalt rekrutterer fra</h1>
-                            <div class="midtstilt-venstre-tekst">
+                            <div class="mvt-type-3">
+                                <h2 class="normal">Hvilke studieretninger dere normalt rekrutterer fra</h2>
+                            </div>
+                            <div class="mvt">
                                 <ul>
-                                    <ul>
-                                        <li>DNB er i utgangspunktet åpne for alle studieretninger. Vi er mer opptatt av hvem
-                                            du er og hva som opptar deg. Ønsker du å skape det neste som gjør livet til
-                                            kundene litt enklere? Er du nysgjerrig, våger å utfordre, men også klok nok til
-                                            å lytte? Brenner du for teknologi og har lyst til å gjøre en forskjell? Da kan
-                                            du være kandidaten vi ser etter.</li>
-                                        </ul>
-                                        <li>
-                                            <p>Vi ser etter både kandidater med og uten erfaring:</p>
-                                        </li>
-
+                                    <li>DNB er i utgangspunktet åpne for alle studieretninger. Vi er mer opptatt av hvem
+                                        du er og hva som opptar deg. Ønsker du å skape det neste som gjør livet til
+                                        kundene litt enklere? Er du nysgjerrig, våger å utfordre, men også klok nok til
+                                        å lytte? Brenner du for teknologi og har lyst til å gjøre en forskjell? Da kan
+                                        du være kandidaten vi ser etter.</li>
+                                    <li>
+                                        <h4>Vi ser etter både kandidater med og uten erfaring:</h4>
+                                    </li>
                                     <ul>
                                         <li>God forretningsforståelse og interesse for bank/finans</li>
                                         <li>Interesse for teknologi og teknologiutvikling, og hvordan digitalisering
@@ -744,55 +991,77 @@
                                     </ul>
                                 </ul>
                             </div>
-
-                            <h1>Hvilke muligheter det finnes for studenter i DNB?</h1>
-                            <div class="midtstilt-venstre-tekst">
+                            <div class="mvt-type-3">
+                                <h2 class="normal">Hvilke muligheter det finnes for studenter i DNB?</h2>
+                            </div>
+                            <div class="mvt">
                                 <ul>
-                                    <h2>Internship</h2>
-                                    <p>Vi tilbyr internship for studenter i DNB Markets og andre forretningsområder som
+                                    <h3>Internship</h3>
+                                    <li>Vi tilbyr internship for studenter i DNB Markets og andre forretningsområder som
                                         for eksempel: IT & Operations, Kommunikasjon, Wealth Management, Risikostyring,
-                                        Bedriftsmarked, og Storkunde & Internasjonal.</p>
-                                    <p>Søknadsfristen til DNB Markets er utgått for 2021, men DNB Corporate Summer
+                                        Bedriftsmarked, og Storkunde & Internasjonal.</li>
+                                    <li>Søknadsfristen til DNB Markets er utgått for 2021, men DNB Corporate Summer
                                         Internship 2021 som omhandler de andre forretningsområdene vil bli utlyst i
-                                        desember/januar.</p>
-                                    <h2>Graduate</h2>
-                                    <p>Er du nesten ferdig med studiene eller nettopp begynt å jobbe? Bli en del av
+                                        desember/januar.</li>
+                                </ul>
+                                <ul>
+                                    <h3>Graduate</h3>
+                                    <li>Er du nesten ferdig med studiene eller nettopp begynt å jobbe? Bli en del av
                                         DNBs Graduateprogram! Som graduate i DNB vil du bli plassert i et
                                         forretningsområde som matcher din ekspertise og dine preferanser. Det forventes
                                         at du inntar en aktiv rolle i ditt team og at du er beredt til å håndtere
                                         utfordrende arbeidsoppgaver fra første dag. Fra oss kan du forvente god støtte
                                         fra din nærmeste leder sammen med muligheten for å lære fra de beste på det
-                                        aktuelle området.</p>
-                                    <h2>Søknadsfrister graduate-program:</h2>
+                                        aktuelle området.</li>
+                                    <li>
+                                        <h4>Søknadsfrister graduate-program:</h4>
+                                    </li>
                                     <ul>
-                                        <li> DNB Corporate Graduate 2021, øknadsfrist: 30.09.20</li>
-                                        <li>Architect Greenhouse - Program for IT graduates 2021, søknadsfrist:30.09.20</li>
-                                        <li>DNB Corporate Graduate 2021 - Group Treasury, søknadsfrist: 03.10.20</li>
-                                        <li>Cyber Security Graduate (2-year program starting fall 2021) søknadsfrist: 04.10.20</li>
+                                        <li> DNB Corporate Graduate 2021, <u class="c-u">søknadsfrist:
+                                                30.09.20</u></li>
+                                        <li>Architect Greenhouse - Program for IT graduates 2021, <u
+                                                class="c-u">søknadsfrist:
+                                                30.09.20</u>
+                                        </li>
+                                        <li>DNB Corporate Graduate 2021 - Group Treasury, <u class="c-u">søknadsfrist:
+                                                03.10.20</u>
+                                        </li>
+                                        <li>Cyber Security Graduate (2-year program starting fall 2021) <u
+                                                class="c-u">søknadsfrist:
+                                                04.10.20</u></li>
                                     </ul>
-                                    <h2>Deltidsjobb</h2>
-                                    <p>En deltidsjobb i DNB kan by på arbeidsoppgaver innen salg, service og
+                                </ul>
+                            </div>
+
+                            <div class="mvt-type-3">
+                                <h2 class="normal">Deltidsjobb</h2>
+                            </div>
+                            <div class="mvt-type-2">
+                                <ul>
+                                    <li>En deltidsjobb i DNB kan by på arbeidsoppgaver innen salg, service og
                                         rådgivning, og kan åpne dører for fremtidige muligheter i konsernet. Du må være
                                         minst 18 år og ha fullført minst ett års høyere utdannelse (universitets- eller
-                                        høyskolenivå) for å starte i deltidsjobb i DNB.</p>
-                                    <p>Vi legger løpende ut deltidsstillinger i Oslo, Stavanger, Bergen, Gjøvik og
-                                        Trondheim.</p>
-                                    <p>Her kan du lese mer om jobb i DNB: <a
+                                        høyskolenivå) for å starte i deltidsjobb i DNB.</li>
+                                    <li>Vi legger løpende ut deltidsstillinger i Oslo, Stavanger, Bergen, Gjøvik og
+                                        Trondheim.</li>
+                                    <li>Her kan du lese mer om jobb i DNB: <a
                                             href="https://www.dnb.no/om-oss/jobb-og-karriere.html" target="_blank"
                                             rel="noopener">https://www.dnb.no/om-oss/jobb-og-karriere</a>
                                         Hvorfor velge DNB: <a
                                             href="https://www.dnb.no/om-oss/karriere/hvorfor-velge-oss.html"
                                             target="_blank"
                                             rel="noopener">https://www.dnb.no/om-oss/karriere/hvorfor-velge-oss</a>
-                                    </p>
+                                    </li>
                                 </ul>
                             </div>
                         </ng-container>
                         <!--  -->
                         <!-- Skansa -->
                         <ng-container *ngIf="einBedrift.ruterLink === 'skanska'">
-                            <h1>Skanska rekrutterer følgende</h1>
-                            <div>
+                            <div class="mvt-type-3">
+                                <h2 class="normal">Skanska rekrutterer følgende</h2>
+                            </div>
+                            <div class="mvt">
                                 <ul>
                                     <li>Studenter med studier innenfor Bygg- og Anleggsfag, og Geomatikk/Landmåling.
                                         Sommerjobb og stillinger for nyutdannede innen vår Bygg- og Anleggsvirksomhet,
@@ -801,16 +1070,6 @@
                             </div>
                         </ng-container>
                         <!--  -->
-                        <!-- StartUpLab-->
-                         <ng-container *ngIf="einBedrift.ruterLink === 'startuplab'">
-                            <h1>Our mission is to help make our entrepreneurs successful.</h1>
-                            <p>The people at StartupLab come from diverse backgrounds, but we share a common passion: empowering 
-                                ambitious entrepreneurs. Our mission is to help make our entrepreneurs successful.
-                                At startupLab you will have the opportunity to work with some of Norway's most promising startups.
-                                 StartupLab also plays a central role within the Norwegian tech startup community, so you will have access
-                                  to our network and get to know the future tech leaders in the country.
-                            </p>
-                        </ng-container>
                         <!-- Ekstra Link 1 -->
                         <p class="beskriving-p" *ngIf="einBedrift.ekstraLink1">
                             <br>
