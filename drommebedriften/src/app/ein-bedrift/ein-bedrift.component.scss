@@ -125,8 +125,8 @@
                     text-align: center;
                 }
 
-                .midtstilt-venstre-tekst,
-                .midtstilt-venstre-tekst-type-2 {
+                .mvt,
+                .mvt-type-2 {
                     display: flex;
                     justify-content: left;
                     align-items: flex-end;
@@ -153,20 +153,16 @@
                         padding: 8px 0;
                         border-top: 1px dotted black;
                         border-bottom: 1px dotted black;
+                        width: 100%;
 
-<<<<<<< HEAD
                         >h1,
                         >h2,
                         >h3,
                         >h4,
                         >h5 {
 
-=======
-                        >h4 {
-                            font-size: 0.95em;
->>>>>>> parent of 50339c5... Fikset noen linker + Lagt til target="_blank" paa alle linker som manglet det.. + formatert all tekst til fin felles formatering HTML (kan finjusteres meir) + Lagt til litt ny SCSS for formatering
                             font-weight: bold;
-                            transform: translateX(5px);
+                            transform: translateX(-11px);
                             letter-spacing: 1.6px;
                             font-variant-caps: all-petite-caps;
                             text-emphasis: filled circle rgba(233, 69, 38, 0.759);
@@ -182,10 +178,14 @@
                                 padding-bottom: 3px;
                             }
                         }
+
+                        .normal {
+                            text-emphasis: none;
+                        }
                     }
                 }
 
-                .midtstilt-venstre-tekst-type-2 {
+                .mvt-type-2 {
                     >ul {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -200,6 +200,42 @@
                         padding: 13px 0;
                         border-top: 1px dotted black;
                         border-bottom: 1px dotted black;
+                    }
+                }
+
+                .mvt-type-3 {
+                    width: 100%;
+                    height: auto;
+
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5 {
+                        letter-spacing: 1.6px;
+                        font-variant-caps: all-petite-caps;
+                        text-emphasis: filled circle rgba(233, 69, 38, 0.759);
+                    }
+                    
+                    .normal {
+                        text-emphasis: none;
+                    }
+
+                    .box-1,
+                    .box-2 {
+                        letter-spacing: 1.6px;
+                        font-variant-caps: all-petite-caps;
+                        text-emphasis: none;
+                        box-sizing: border-box;
+                        border: 2px solid black;
+                        padding: 10px;
+                        margin-block-start: -6px;
+                    }
+
+                    .box-2 {
+                        margin-block-start: 0px;
+                        margin-block-end: 23px;
+                        padding: 14px;
                     }
                 }
 

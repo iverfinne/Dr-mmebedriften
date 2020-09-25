@@ -52,18 +52,7 @@ body {
   text-decoration: dotted underline;
 }
 
-p,
-.link1,
-.vimeo-link,
-.midtstilt-venstre-tekst,
-.midtstilt-venstre-tekst-type-2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-
-  font-size: 1.15em;
-  line-height: 25px;
-  color: rgb(39, 39, 39);
-
+@mixin linkType1 {
   a {
     text-decoration: none;
     color: $fargeUI_einBedrift;
@@ -72,6 +61,21 @@ p,
       text-decoration: underline dotted;
     }
   }
+}
+
+p,
+.link1,
+.vimeo-link,
+.mvt,
+.mvt-type-2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+
+  font-size: 1.15em;
+  line-height: 25px;
+  color: rgb(39, 39, 39);
+
+  @include linkType1;
 }
 
 .mat-body p,
@@ -133,14 +137,9 @@ h3,
 h4,
 h5 {
   color: rgb(29, 29, 29);
-<<<<<<< HEAD
 
   font-weight: 800!important;
   
-=======
-  font-weight: 800!important;
-}
->>>>>>> parent of 50339c5... Fikset noen linker + Lagt til target="_blank" paa alle linker som manglet det.. + formatert all tekst til fin felles formatering HTML (kan finjusteres meir) + Lagt til litt ny SCSS for formatering
 
 
 .container {
