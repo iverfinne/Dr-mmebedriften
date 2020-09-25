@@ -198,7 +198,7 @@ export const Bedrifter: Bedrift[] = [
         ]
     },
     {
-        namn: 'Forsvaret',
+        namn: 'Forsvaret / Etterretningsbataljonen',
         ruterLink: 'forsvaret',
         logoLink: `${LocalPaths.path_bedriftLogo}Forsvaret.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}Forsvaret.jpg`,
