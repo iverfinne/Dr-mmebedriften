@@ -11,6 +11,8 @@
     overflow-y: scroll;
     box-sizing: border-box;
 
+
+
     .pil-tilbake {
         z-index: 1;
         position: absolute;
@@ -145,63 +147,32 @@
                         align-self: flex-start;
                     }
 
-                    >ul ul {
-                        list-style-type: disc;
-                    }
                     >ul {
                         list-style-type: disc;
                         padding: 8px 0;
-                        border-top: 1px dotted black;
-                        border-bottom: 1px dotted black;
+                        margin-block-start: 0em;
+                        margin-block-end: 0em;                    
 
-<<<<<<< HEAD
-                        >h1,
-                        >h2,
-                        >h3,
-                        >h4,
-                        >h5 {
-
-=======
-                        >h4 {
-                            font-size: 0.95em;
->>>>>>> parent of 50339c5... Fikset noen linker + Lagt til target="_blank" paa alle linker som manglet det.. + formatert all tekst til fin felles formatering HTML (kan finjusteres meir) + Lagt til litt ny SCSS for formatering
-                            font-weight: bold;
-                            transform: translateX(5px);
-                            letter-spacing: 1.6px;
-                            font-variant-caps: all-petite-caps;
-                            text-emphasis: filled circle rgba(233, 69, 38, 0.759);
-                        }
 
                         >li {
                             list-style-type: disc;
+                            font-family: "Roboto", sans-serif;
+                            font-weight: 300;
+                            font-size: 1.15em;
+                            line-height: 25px;
+                            color: #272727;
+                            
 
                             h4 {
                                 font-size: 0.87em;
                                 font-weight: normal;
-                                margin-block-end: 8px;
+                                margin-block-end: 0px;
                                 padding-bottom: 3px;
                             }
                         }
                     }
                 }
 
-                .midtstilt-venstre-tekst-type-2 {
-                    >ul {
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-                        list-style-type: disc;
-=======
-                        list-style-type: upper-roman bold;
->>>>>>> parent of a9a7456... Finjustert HTML-formatering
-=======
-                        list-style-type: upper-roman bold;
->>>>>>> parent of a9a7456... Finjustert HTML-formatering
-                        padding: 13px 0;
-                        border-top: 1px dotted black;
-                        border-bottom: 1px dotted black;
-                    }
-                }
 
                 .vimeo-video {
                     position: relative;
