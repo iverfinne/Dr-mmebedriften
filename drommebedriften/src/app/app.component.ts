@@ -3,7 +3,9 @@ import { meny } from './angular-animation';
 import { Router, NavigationEnd } from '@angular/router';
 import { GlobaleLyttararService } from './ser/globale-lyttarar.service';
 import { LukkNedSideService } from './ser/lukk-ned-side.service';
-import { analytics } from 'firebase';
+
+import * as firebase from 'firebase/app';
+import 'firebase/analytics';
 
 @Component({
   selector: 'app-root',
@@ -22,9 +24,9 @@ export class AppComponent implements OnInit {
     private lukkNedSideService: LukkNedSideService
   ) {
     if (window.location.host.match(new RegExp('localhost', 'gm'))) {
-      analytics().setAnalyticsCollectionEnabled(false);
+      firebase.analytics().setAnalyticsCollectionEnabled(false);
     } else {
-      analytics().setAnalyticsCollectionEnabled(true);
+      firebase.analytics().setAnalyticsCollectionEnabled(true);
     }
 
     this.ruter.events.subscribe(e => {
