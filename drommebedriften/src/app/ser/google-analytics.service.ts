@@ -1,9 +1,5 @@
 import { Injectable } from '@angular/core';
 import * as firebase from 'firebase/app';
-<<<<<<< HEAD
-import 'firebase/analytics';
-=======
->>>>>>> 6ef62cd... Fikset ein importerings-feil av Google Analyse...
 
 @Injectable({
   providedIn: 'root'
