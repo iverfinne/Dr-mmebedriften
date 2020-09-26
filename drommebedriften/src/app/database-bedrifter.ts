@@ -144,6 +144,8 @@ export const Bedrifter: Bedrift[] = [
                 googleAnalyticsID: 'speedate'
             }
         ],
+        vimeoVideo: vimeoEmbedKonverter(`<iframe src="https://player.vimeo.com/video/462084042?color=35a39e&title=0&byline=0&portrait=0" width="640" height="801" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <p><a href="https://vimeo.com/462084042">OBOS traineeprogram</a> from <a href="https://vimeo.com/user123842776">Iver Raknes Finne</a> on <a href="https://vimeo.com">Vimeo</a>.</p>`),
         tilleggskort: []
     },
     {
