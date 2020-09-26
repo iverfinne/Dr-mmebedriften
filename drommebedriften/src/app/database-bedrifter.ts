@@ -515,8 +515,8 @@ export const Bedrifter: Bedrift[] = [
         ruterLink: 'traineevest',
         logoLink: `${LocalPaths.path_bedriftLogo}TraineeVest.png`,
         framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}TraineeVest.jpg`,
-        beskriving1: ``,
-        beskriving2: ``,
+        beskriving1: `Trainee Vest er et av Norges mest attraktive traineeprogram med rundt 1000 søkere til 30 traineestillinger hvert år. Traineestillingen er en fullt lønnet stilling i en bedrift i Vestland og gir deltagelse i et traineeprogram av høy verdi med andre nyutdannede i forskjellige bedrifter. Traineestillingen byr på faglig innhold, nye utfordringer, nettverk i næringslivet og flotte opplevelser igjennom året.`,
+        beskriving2: `Vi tilbyr et bredt spekter av stillinger innen mange ulike fagområder. Som søker på en traineestilling må du ha en bachelor- eller mastergrad og maksimalt tre års arbeidserfaring etter avsluttende studier. `,
         linktekst1: 1,
         link1: 'https://www.traineevest.no/',
         gfhel: [
