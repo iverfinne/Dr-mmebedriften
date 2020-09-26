@@ -42,6 +42,8 @@ const routes: Routes = [
   }
 ];
 
+/* https://www.xn--drmmebedriften-rqb.no/bedrifter/(bedrift:conocophilips)?fbclid=IwAR3e3MoyWA4f_GzsoZ-c2fkq-qdWm-Ww9ISd7BO247B9kR7ZsWZjX1Z4x2o */
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

@@ -53,7 +53,8 @@
             height: 48vh;
             border-bottom: 1px solid lightgray;
             background-size: cover;
-            background-position-x: center;;
+            background-position-x: center;
+            ;
             background-repeat: no-repeat;
             background-position: top auto;
             background-attachment: local;
@@ -200,7 +201,22 @@
                     h5 {
                         text-emphasis: none
                     }
-                    
+
+                    p {
+                        font-size: 1em;
+                    }
+
+                    .ramme-merke {
+                        padding: 8px 0;
+                        border-top: 1px dotted black;
+                        border-bottom: 1px dotted black;
+                        width: 100%;
+                    }
+
+                    .blank {
+                        list-style-type: none;
+                    }
+
                     .normal {
                         text-emphasis: none;
                     }

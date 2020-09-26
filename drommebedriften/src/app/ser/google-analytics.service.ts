@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { analytics } from 'firebase';
+import * as firebase from 'firebase/app';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GoogleAnalyticsService { /* https://firebase.google.com/docs/reference/js/firebase.analytics.Analytics */
-  private googleAnalytics = analytics();
+  private googleAnalytics = firebase.analytics();
 
   // *****************
   // ** BEDRIFTER **

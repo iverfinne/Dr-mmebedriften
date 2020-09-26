@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { meny } from './angular-animation';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 import { GlobaleLyttararService } from './ser/globale-lyttarar.service';
 import { LukkNedSideService } from './ser/lukk-ned-side.service';
 import { analytics } from 'firebase';
+import { Location } from '@angular/common';
+
+import * as firebase from 'firebase/app';
 
 @Component({
   selector: 'app-root',
@@ -19,17 +22,35 @@ export class AppComponent implements OnInit {
   constructor(
     private ruter: Router,
     public globaleLyttarar: GlobaleLyttararService,
-    private lukkNedSideService: LukkNedSideService
+    private lukkNedSideService: LukkNedSideService,
+    private location: Location
   ) {
     if (window.location.host.match(new RegExp('localhost', 'gm'))) {
-      analytics().setAnalyticsCollectionEnabled(false);
+      firebase.analytics().setAnalyticsCollectionEnabled(false);
     } else {
-      analytics().setAnalyticsCollectionEnabled(true);
+      firebase.analytics().setAnalyticsCollectionEnabled(true);
     }
 
+    let nyStartUrl = null;
     this.ruter.events.subscribe(e => {
+      if (e instanceof NavigationStart) {
+        // Visst e.g. Facebook-link.. Ta vekk queryen... Sett inn lengere nede
+        const url = e.url;
+        if (url.match(/[?]/gm)) {
+          nyStartUrl = url.split('?');
+
+          // Naviger videre til ny plass...
+          this.ruter.navigateByUrl(nyStartUrl[0]);
+        }
+      }
+
       if (e instanceof NavigationEnd) {
         const url = e.url;
+
+        // Rediger URL, og sett inn queryen..
+        if (nyStartUrl) {
+          this.location.go(e.url, nyStartUrl[1]);
+        }
 
         ///
         // Naviger scroll-posisjon Y (HTML)
