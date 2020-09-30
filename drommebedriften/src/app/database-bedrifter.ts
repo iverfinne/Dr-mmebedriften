@@ -76,6 +76,25 @@ export const Bedrifter: Bedrift[] = [
         tilleggskort: []
     },
     {
+        namn: 'Statens Vegvesen',
+        ruterLink: 'statensvegvesen',
+        logoLink: `${LocalPaths.path_bedriftLogo}StatensVegvesen.png`,
+        framsidebileteLink: `${LocalPaths.path_bedriftFramsidebilete}StatensVegvesen.jpg`,
+        beskriving1: ``,
+        linktekst1: 1,
+        link1: 'https://www.vegvesen.no/',
+        gfhel: [
+            {
+                tittel: 1,
+                beskriving1: 1,
+                linktekst1: 1,
+                link1: gfise('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdsQvueumWYixepOHBb6Z-SxTw83avDRklxa7LDF1TOHaGAOQ/viewform?embedded=true" width="640" height="1456" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>'),
+                googleAnalyticsID: 'speedate'
+            }
+        ],
+        tilleggskort: []
+    },
+    {
         namn: 'Bouvet Norge',
         ruterLink: 'bouvet',
         logoLink: `${LocalPaths.path_bedriftLogo}bouvet.png`,
