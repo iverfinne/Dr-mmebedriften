@@ -64,3 +64,8 @@ Små-ting:
 - Legg til fixed statisk effekt på bakgrunnen (ein bedrift) | OK 
 - Justere farge for UI Lukk (form, ein bedrift) | OK
 - Justere logoen endå høgare opp på mobil | OK
+
+*****************
+** Små-Bugs *****
+- Redirect til 404-not found-side om ugyldig bedrift i link.. | 
+- Legg til mat-tooltip på neste/forrige knapp (bedrift) ? | 
